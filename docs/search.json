@@ -2,56 +2,56 @@
   {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "",
-    "text": "Term: Fall 2025\nInstructor: Isaac Quintanilla Salinas\nEmail: isaac.qs@csuci.edu\nOffice Location: Marin Hall 2326\nOffice Hours:\n\nTue/Thur 5-6 PM\nWed 2-4 PM\n\nOr by Zoom appointment.\nLecture:\n\nSec 01: T/TH 10:30-11:45 AM\nSec 02: T/TH 3-4:45 PM\n\nPre-Requisites: MATH 151"
+    "text": "Term: Fall 2025\nInstructor: Isaac Quintanilla Salinas\nEmail: isaac.qs@csuci.edu\nOffice Location: Marin Hall 2326\nWebsite: m352.inqs.info\nOffice Hours:\n\nTue/Thur 5-6 PM\nWed 2-4 PM\n\nOr by Zoom appointment.\nLecture:\n\nSec 01: T/TH 10:30-11:45 AM\nSec 02: T/TH 3-4:45 PM\n\nPre-Requisites: MATH 151"
   },
   {
     "objectID": "syllabus.html#course-description",
     "href": "syllabus.html#course-description",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Course Description",
     "text": "Course Description\nStatistics is the science of reasoning from data. It is both an exciting intellectual discipline and a powerful scientific tool. Statistics is a mathematical science, in the sense that it makes use of mathematics extensively, but it is not a branch of mathematics.\nThe practice of statistics involves collecting data, analyzing data, and drawing inferences from data. The mathematical foundations of statistical inference lie in probability, the study of randomness and uncertainty. This course introduces you to fundamental ideas and methods of probability and statistics."
   },
   {
     "objectID": "syllabus.html#learning-outcomes",
     "href": "syllabus.html#learning-outcomes",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Learning Outcomes",
     "text": "Learning Outcomes\n\nUnderstand and apply basic ideas and methods of probability, including conditional probability and random variables.\nApply and interpret the results of a variety of statistical techniques, including both descriptive and inferential methods;\nUnderstand many of the fundamental ideas of statistics, such as variability, distribution, sampling, confidence, and significance;\nUse statistical software to conduct simulations and analyze data;\nCommunicate your knowledge of probability and statistics effectively."
   },
   {
     "objectID": "syllabus.html#recommended-texts",
     "href": "syllabus.html#recommended-texts",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Recommended Texts",
     "text": "Recommended Texts\nProbability for Data Science and Course Materials"
   },
   {
     "objectID": "syllabus.html#required-software",
     "href": "syllabus.html#required-software",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Required Software",
     "text": "Required Software\nFor this course, we will use R, RMarkdown, and RStudio. Please download and install on your computer.\n\nR is a free statistical software program that is available for download at: https://www.r-project.org/.\nQuarto is a scientific documentation system used to write scientific documentation. Quarto is freely available at: https://quarto.org/\nRStudio provides free and open source tools for your data analysis in R: https://www.rstudio.com/"
   },
   {
     "objectID": "syllabus.html#course-grading",
     "href": "syllabus.html#course-grading",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Course Grading",
     "text": "Course Grading\n\n\n\nCategory\nPercentage\n\n\n\n\nHomework\n20%\n\n\nR Assignments\n20%\n\n\nIn-Person Exam 1\n15%\n\n\nIn-Person Exam 2\n15%\n\n\nTake-Home Exam 1\n15%\n\n\nTake-Home Exam 2\n15%\n\n\n\nAt the end of the quarter, course grades will be assigned according to the following scale:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA+\n98 – 100\nB+\n87 – &lt;90\nC+\n77 – &lt;80\nD+\n67 – &lt;70\n\n\n\n\nA\n93 – &lt;98\nB\n83 – &lt;87\nC\n73 – &lt;77\nD\n63 – &lt;67\nF\n&lt; 60\n\n\nA–\n90 - &lt;93\nB-\n80 – &lt;83\nC–\n70 – &lt;73\nD–\n60 – &lt;63\n\n\n\n\n\n\nHomework\nHomework will be assigned on a regular basis and posted on https://m352.inqs.info/hw.html and CANVAS. The homework is to help you practice the concepts learned in lecture and to help you study. You must turn in your own individual homework and show your understanding of the material. At the end of the semester, the two lowest homework grades will be dropped. Late work will be accepted, but with a 25% penalty. The last day late work will be accepted is on 12/5/2025 at 11:59 PM.\n\n\nR Labs\nThe objective of the labs are to develop both your statistical and programming skills. We will work on these labs in class. The lowest R Lab will be dropped.\n\n\nExams\nThere will be four exams this semester, two in-person exams and two take-home exams. While the exams are not considered cumulative, the material builds on each other. Developing a strong understanding of the material through out the course is important for your success. At the end of the semester, your lowest exam grade will be replaced by the median of all exam grades.\nThis course will operate under a zero-tolerance policy. Talking during the time of the exam, sharing materials, looking at another students’ exam, or not following directions given will be subject to the University’s academic integrity policy.\n\n\nExtra Credit\nThere will be 4 extra credit opportunities worth a total of 10% of your overall grade. There are no make-ups for missed extra credit assignments!"
   },
   {
     "objectID": "syllabus.html#class-schedule",
     "href": "syllabus.html#class-schedule",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "Class Schedule",
     "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\nHW #0\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nRegression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
   },
   {
     "objectID": "syllabus.html#university-policies",
     "href": "syllabus.html#university-policies",
-    "title": "Math 352: Probability and Statistics",
+    "title": "Syllabus",
     "section": "University Policies",
     "text": "University Policies\n\nAcademic Honesty:\nPlease conduct yourself with honesty and integrity. Do not submit others’ work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials are allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.\n\n\nDisabilities:\nIf you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: https://www.csuci.edu/dass/students/apply-for-services.htm. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.\n\n\nDisruption\n\nIf I Am Out: I will communicate via email and will hold classes asynchronously.\nIf You Are Out: Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided."
   },

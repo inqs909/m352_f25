@@ -1,6 +1,6 @@
 ---
-title: "Math 352: Probability and Statistics"
-subtitle: "Syllabus"
+subtitle: "Math 352: Probability and Statistics"
+title: "Syllabus"
 editor: source
 navbar: false
 format:
@@ -22,6 +22,8 @@ format:
 **Email:** isaac.qs\@csuci.edu
 
 **Office Location:** Marin Hall 2326
+
+**Website:** m352.inqs.info
 
 **Office Hours:**
 
