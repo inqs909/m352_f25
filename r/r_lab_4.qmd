@@ -1,0 +1,88 @@
+---
+title: "Lab 4: Generalized Linear Models"
+editor: source
+date: 5-7-2022
+draft: true
+---
+
+## R Packages Used
+
+```{r}
+#| message: false
+library(VGAM) # Multinomial and Ordinal Regression
+library(statmod) #Used to obtaine quatile residuals
+library(survival) # Data sets
+library(MASS) # Data Set
+library(GLMsData) # Data Set
+library(tidyverse)
+library(haven) # Reading Stata File
+```
+
+## References
+
+For more information on this topic, I recommend you reading the following books:
+
+1. Generalized Linear Models with Examples in R - Dunn
+
+2. Vectorized Generalized Linear and Additive Models - Yee
+
+## Generalized Linear Models
+
+In linear regression, we are fitting a model between a set of predictors and an outcome variable. The outcome variable is generally normally distributed. However, if the outcome is not normally distributed, you must use a generalized linear model to assess the association between a set of predictors and an outcome variable.
+
+### Link Functions
+
+Due to the outcome variable being non-normally distributed, we must use link functions. The link function allows us to link the outcome variable to a linear model.
+
+### Logistic Regression
+
+A logistic regression model is used when the outcome is binary, yes and no. The link function is the logit function that models the association between a set of linear predictors and the odds of observing yes:
+
+$$
+\log\left\{\frac{P(Y=1)}{P(Y=0)}\right\} = \boldsymbol{X^T\beta}
+$$
+
+Fitting a logistic regression requires you to use the `glm()` function and specifying `family=binomial`. Then use the summary function to obtain the coefficients and `broom::tidy()`^[The double colon tells R to use a specific function from a package. Here, use the tidy function from the broom package.] We are going to fit `y` the presence of bacteria and `ap` active or placebo drug and `hilo` high/low compliance.
+
+```{r}
+logit_glm <- glm(y ~ ap + hilo, data = bacteria, 
+                 family = binomial)
+summary(logit_glm)
+
+## OR ##
+
+logit_glm %>% broom::tidy(exp=T)
+```
+
+A $\beta$ coefficient is interpreted as an odds ratio. The odds of having bacteria presence is `r round(exp(0.7933),2)` times higher with a placebo drug than when an active drug is used, adjusting for high/low compliance.
+
+
+### Poisson Regression
+
+Poisson regression is used when the outcome is count data. The link function is the log of the mean count:
+
+$$
+\log(\mu)=\boldsymbol{X^T\beta}
+$$
+
+Fitting a Poisson regression requires you to use the `glm()` function and specifying `family=poisson`. Then use the summary function to obtain the coefficients and `broom::tidy()`^[The double colon tells R to use a specific function from a package. Here, use the tidy function from the broom package.]
+
+```{r}
+pois_glm <- glm(recur ~ treatment + number, data = bladder1, 
+                family = poisson)
+summary(pois_glm)
+pois_glm %>% broom::tidy(exp=T)
+```
+The line `pois_glm %>% broom::tidy(exp=T)` provides the exponentiated values of the $\beta$ coefficients. Interpreting the `number` variable, as the initial number of tumors increases, the mean number of recurrences increases by a factor of 1.12, adjusting for treatment status.
+
+
+## Questions
+
+Answer the following questions and check for outliers.
+
+1. The `ccancer` data set in `GLMSData` package contains information on the number of deaths `Count` for different regions in Canada. Fit a model on the variable `Count` and the independent variables `Gender` and `Region`. Use `data("ccancer")` to load the data.
+
+2. The `diabetic` data set in the `survival` package contains information on diabetic retinopathy prescence (`status`) after treatment and follow-up. Fit a model on `status` with independent variables `age` and `trt` (treatment).  
+**Submit your assignment on canvas as an QMD file**
+
+**Due May 14 \@ 11:59 PM**

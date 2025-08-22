@@ -1,0 +1,139 @@
+---
+title: "Expected Value of Continuous Random Variables"
+format:
+  revealjs:
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Expectations
+
+-   Variance
+
+-   Properties
+
+# Continuous Random Variables
+
+## Expected Value
+
+The expected value for a continuous distribution is defined as
+
+$$
+E(X)=\int x f(x)dx
+$$
+
+The expectation of a function $g(X)$ is defined as
+
+$$
+E\{g(X)\}=\int g(x)f(x)dx
+$$
+
+## Expected Value Properties
+
+1.  $E(c)=c$, where $c$ is constant
+2.  $E\{cg(X)\}=cE\{g(X)\}$
+3.  $E\{g_1(X)+g_2(X)+\cdots+g_n(X)\}=E\{g_1(X)\}+E\{g_2(X)\}+\cdots+E\{g_n(X)\}$
+
+## Variance
+
+The variance of continuous variable is defined as
+
+$$
+Var(X) =  E[\{X-E(X)\}^2] = \int \{X-E(X)\}^2 f(x)dx 
+$$
+
+## Variance Properties
+
+$Y=aX+b$
+
+::: fragment
+$Var(Y) = Var(aX+b) = Var(aX) + Var(b) = a^2Var(X)$
+:::
+
+# Uniform Distribution
+
+## Expected Value
+
+$X\sim\mathrm{U(a,b)}$
+
+$a<x<b$
+
+$f_X(x) = \frac{1}{b-a}$
+
+## Variance
+
+$X\sim\mathrm{U(a,b)}$
+
+$a<x<b$
+
+$f_X(x) = \frac{1}{b-a}$
+
+# Normal Distribution
+
+## Expected Value
+
+$X\sim\mathrm{N}(\mu, \sigma^2)$
+
+$-\infty < x < \infty$
+
+$f_X(x) = \frac{1}{\sqrt{2\pi \sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$
+
+## Variance
+
+$X\sim\mathrm{N}(\mu, \sigma^2)$
+
+$-\infty < x < \infty$
+
+$f_X(x) = \frac{1}{\sqrt{2\pi \sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$
+
+# Beta Distribution
+
+## Expected Value
+
+$X\sim\mathrm{Beta}(\alpha, \beta)$
+
+$0<x<1$
+
+$f_X(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}$
+
+## Variance
+
+$X\sim\mathrm{Beta}(\alpha, \beta)$
+
+$0<x<1$
+
+$f_X(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}$
+
+# $\chi^2$-Distribution
+
+## Expected Value
+
+$X\sim\chi^2_k$
+
+$x>0$
+
+$f_X(x)=\frac{x^{k/2-1}\exp\{-x/2\}}{2^{k/2}\Gamma(k/2)}$
+
+## Variance
+
+$X\sim\chi^2_k$
+
+$x>0$
+
+$f_X(x)=\frac{x^{k/2-1}\exp\{-x/2\}}{2^{k/2}\Gamma(k/2)}$

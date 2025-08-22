@@ -1,0 +1,25 @@
+---
+title: "Extra Credit 2"
+description: Instructions for extra credit two.
+date: 01-16-2023
+editor: source
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+Write a 2 page report on non academic related activities you will be do for Spring Break. Make sure to highlight activities that will benefit your well being. If you written the wellness report, you can write an update on that and if there is any changes you want to do.
+
+**Worth 1 percent points.**
+
+Report guidelines
+
+-   Max 2 Pages
+
+-   Double Spaced
+
+-   12 point font
+
+-   Due 3/17/2023

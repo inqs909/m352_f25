@@ -1,0 +1,87 @@
+---
+title: "Expectation of a Random Variable"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Expected Values
+
+-   Variances
+
+-   Properties of Expected Values
+
+## Expected Value
+
+The *expected value* is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of $Y$ is
+
+$$
+E(Y)=\sum_y yP(y)
+$$
+
+where $P(y)$ is the PMF of $Y$.
+
+## Expected Value
+
+The *expected value* of a function of a random variable $Y$ is provided as
+
+$$
+E\{g(Y)\} = \sum_y g(y)P(y)
+$$
+
+## Variance
+
+The *variance* is the expected squared difference between the random variable and expected value.
+
+$$
+Var(Y)= E[\{Y-E(Y)\}^2]=\sum_y\{y-E(Y)\}^2P(y)
+$$
+
+$$
+Var(Y) = E(Y^2) - E(Y)^2
+$$
+
+# Binomial Distribution
+
+## Expected Value
+
+## Variance
+
+# Poisson Distribution
+
+## Expected Value
+
+## Variance
+
+# Geometric Distribution Distribution
+
+## Expected Value
+
+## Variance
+
+# Expected Value Properties
+
+## Properties
+
+1.  $E(c)=c$, where $c$ is constant
+2.  $E\{cg(Y)\}=cE\{g(Y)\}$
+3.  $E\{g_1(Y)+\cdots+g_n(Y)\}=E\{g_1(Y)\}+\cdots+E\{g_n(Y)\}$

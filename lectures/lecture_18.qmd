@@ -1,0 +1,78 @@
+---
+title: "Maximum Likelihood Estimators"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      storage: "chalkboard_pres"
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Maximum Likelihood Estimators
+
+-   Properties
+
+# Background Information
+
+## Estimators
+
+An *estimator* is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample.
+
+## Data
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}F(\boldsymbol \theta)$ where $F(\cdot)$ is a known distribution function and $\boldsymbol\theta$ is a vector of parameters. Let $\boldsymbol X = (X_1,\ldots, X_n)^\mathrm{T}$, be the sample collected.
+
+# MLE Properties
+
+## Unbiased Estimators
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be an estimator for a parameter $\theta$. Then $\hat \theta$ is an unbiased estimator if $E(\hat \theta) = \theta$. Otherwise, $\hat\theta$ is considered biased.
+
+## Consistent Estimators
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. The estimator $\hat \theta$ is a consistent estimator of the $\theta$ if
+
+1.  $E\{(\hat\theta-\theta)^2\}\rightarrow0$ as $n\rightarrow \infty$
+2.  $P(|\hat\theta-\theta|\ge \epsilon)\rightarrow0$ as $n\rightarrow \infty$ for every $\epsilon>0$
+
+## Invariance Property
+
+If $\hat \theta$ is an ML estimator of $\theta$, then for any one-to-one function $g$, the ML estimator for $g(\theta)$ is $g(\hat\theta)$.
+
+## Large Sample Theory
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be the MLE estimator for a parameter $\theta$. As $n\rightarrow\infty$, then $\hat \theta$ has a normal distribution with mean $\theta$ and variance $1/nI(\theta)$, where
+
+$$
+I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
+$$
+
+# Example
+
+## Exponential Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}Exp(\lambda)$. Find the sampling distribution of the MLE of $\lambda$
+
+## Poisson Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Pois}(\lambda)$, Find the sampling distribution of the MLE.
+
+## Normal Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$. Are the MLE's of $\mu$ and $\sigma^2$ unbiased?

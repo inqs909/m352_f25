@@ -1,0 +1,117 @@
+---
+title: "Introduction to Probability"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: source
+---
+
+## Learning Outcomes
+
+-   Describe disjoint events
+
+-   Describe a conditional probability
+
+-   Define independent events
+
+-   Law of Total Probability
+
+-   Baye's Theorem
+
+# Disjoint Events
+
+## Disjoint Events
+
+Two events **A** and **B** are considered disjoint if $P(A\cap B)=0$. In general terms, only one event can occur, not both.
+
+## Diagram
+
+# Conditional Probability
+
+## Conditional Probability
+
+Let there be 2 events **A** and **B**. Given that **B** has occurred, what is the probability that **A** occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as $P(A|B)$, the probability of **A** given **B** has occurred.
+
+$$
+P(A|B)=\frac{P(A\cap B)}{P(B)}
+$$
+
+## Diagram
+
+## Example
+
+|               |                  |     |
+|---------------|------------------|-----|
+|               | Uses Eye Glasses |     |
+| Needs Glasses | Yes              | No  |
+| Yes           | 44               | 14  |
+| No            | 2                | 40  |
+
+-   Find the probability of needing glasses
+
+-   Find the probability of not using glasses
+
+-   Find the probability of not using glasses and needing glasses
+
+-   Find the probability of not using glasses, given they need glasses
+
+## Work
+
+# Independent Events
+
+## Independent Events
+
+Events **A** and **B** are considered independent if $P(A\cap B)=P(A)P(B)$. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.
+
+## Example
+
+|               | Uses Eye Glasses |     |
+|---------------|------------------|-----|
+| Needs Glasses | Yes              | No  |
+| Yes           | 44               | 14  |
+| No            | 2                | 40  |
+
+# Law of Total Probability
+
+## Law of Total Probability
+
+The law of total probability allows you to compute the probability of an event **A** given that the sets {$B_1$, ... , $B_n$} partitions event **A**. The law of total probability is given as
+
+$$
+P(A)= \sum^n_{i=1}P(A\cap B_i)
+$$
+
+::: fragment
+$$
+P(A)=\sum^n_{i=1}P(A|B_i)P(B_i)
+$$
+:::
+
+## Diagrams
+
+## Example
+
+The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?
+
+# Baye's Theorem
+
+## Baye's Theorem
+
+Baye's theorem computes the probability of an event $B_i$ given event **A**
+
+$$
+P(B_i|A) = \frac{P(A\cap B_i)}{P(A)}=\frac{P(A|B_i)P(B_i)}{\sum^n_{i=1}P(A|B_i)P(B_i)}
+$$
+
+## Example
+
+The probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?

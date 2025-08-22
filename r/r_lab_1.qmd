@@ -1,0 +1,169 @@
+---
+title: "RLab 1: Probability Distributions"
+editor: visual
+date: 02-15-2022
+draft: true
+---
+
+## Setup
+
+If you want to use the custom R Markdown templates for this course install the following packages:
+
+```{r}
+#| eval: false
+install.packages("remotes") # Allows you to install packages from GitHub
+remotes::install_github("inqs909/inqstools") # Installs my R package for the course
+```
+
+## Probability
+
+We will discuss several R functions used for different probability distributions
+
+### Distributions
+
+To see what distributions R supports, use
+
+``` default
+?Distributions
+```
+
+or
+
+``` default
+help(Distributions)
+```
+
+for more information. Every distribution has four different functions associated to them. The letter at the beginning of the distribution indicates the functions capabilities.
+
+| Letter | Functionality                                                  |
+|:-------|:---------------------------------------------------------------|
+| "d"    | returns the height of the probability density function         |
+| "p"    | returns the cummulative density function value                 |
+| "q"    | returns the inverse cummulative density function (percentiles) |
+| "r"    | returns a randomly generated number                            |
+
+### Probabilities
+
+R can compute the probabilities of a distribution given the correct parameters. If you need the cummulative probability, `p` in front of the distribution function is needed. If you need the probability for a discrete distribution, the `d` in front of the distribution function is needed. Below are a few examples.
+
+To find $P(X \leq 3 )$ where $X \sim Bin(6,0.4)$. Here we will use the `pbinom()` and we set `q = 3`, `sizw = 6` and `prob = 0.4`.
+
+```{r}
+pbinom(3, 6, 0.4)
+```
+
+To find $P(X \geq 7 )$ where $X \sim Pois(2.3)$. Here we will use the `ppois()` and we set `q = 6`, `lambda = 2.3`, and `lower.tail = F`.
+
+```{r}
+ppois(6, 2.3, F)
+```
+
+To find $P(X = 10 )$ where $X \sim Geo(0.3)$. Here we will use the `dgeom()` and we set `x = 10` and `p = 0.3`.
+
+```{r}
+dgeom(10, .3)
+```
+
+### Percentiles
+
+Percentiles identify the $x_9$ that satisfies $P(X \le x_0)=p$, where p is the percentile.
+
+Finding the $95^{th}$ percentile from a $Bin(50, 0.6)$, we will use the `qbinom()`. We will set `size=50`, `prob=0.6`, and `p=0.95`.
+
+```{r}
+qbinom(.95, 50, 0.6)
+```
+
+Finding the $95^{th}$ percentile from a $Pois(6.3)$, we will use the `qpois()`. We will set `lambda=6.3` and `p=0.95`.
+
+```{r}
+qpois(.95, 6.3)
+```
+
+### Random Number Generator
+
+R is capable of generating random numbers. For example if we want to generate a random sample of size fifty from a normal distribution with mean eight and variance three, we will use the `rnorm()`. If we want to generate a random sample from any distribution, use the distribution function with `r` in front of it.
+
+Let's first generate the random sample of fifty from $X \sim Bin(75, .3)$. This is done with the `rnorm()` and setting `n = 50`, `size = 75` and `prob = .3`.
+
+```{r}
+rbinom(50, 75, 0.3)
+```
+
+No let's generate a random sample of 100 form an $X \sim Geo (0.4)$. This is done by using the `rgamma()` and setting `n = 100` and `prob = 0.4`.
+
+```{r}
+rgeom(100, .4)
+```
+
+## Histograms
+
+Histograms are used to plot the frequencies of observed values of a random variable. This provides a rough estimate of how a distribution function will look like. Below, we will use the `hist()` function to plot the distribution of a random sample of 1000 generated from a $Bin(20, 0.3)$:
+
+```{r}
+x <- rbinom(1000, 20, 0.3)
+hist(x)
+```
+
+Looking at the plot above, we can see that the mos common values are around 6. This is to be expected because the $E(X)=6$ from the binomial distribution. Another way to roughly estimate the expected value is by taking the mean:
+
+```{r}
+mean(x)
+```
+
+Notice how close it is to the expected value. If we are interested in computing the $E(X^2)$, we can roughly estimate it by squaring all the values and taking the mean of it:
+
+```{r}
+mean(x^2)
+```
+
+Now, we know that the variance of a binomial distribution is $np(1-p)$ which leads the $Var(X)=4.2$ with the above distribution. We can roughly estimate the variance with the rough estimates of $E(X^2)-E(X)^2$:
+
+```{r}
+mean(x^2) - mean(x)^2
+```
+
+While it is not exact, it can give you a rough idea.
+
+## Problems
+
+Use an RMD file to answer the following questions:
+
+1.  Find the following probabilities:
+    a.  $X\sim Bin(30, .35)$; Find $P(2 \le X \le 6)$
+
+    b.  $X\sim Pois(6.8)$; Find $P(2 \le X \le 20)$
+
+    c.  $X\sim Geo(0.5)$; Find $P(X=4)$
+
+    d.  $X\sim NegBinom(6, .8)$; Find $P(3 \le X \le 4)$
+2.  Find the following percentiles:
+    a.  $X\sim Pois(31.5)$; Find the $68$th percentile.
+    b.  $X\sim Bin(71, .8)$; Find the $52$th percentile.
+    c.  $X\sim Geo(0.4)$; Find the $43$th percentile.
+3.  Generate the 50 realizations of the following random variables: **(SKIP)**
+    a.  $X\sim Multinomial(20, 0.5)$
+
+    b.  $X\sim Weibull(3,2)$
+
+    c.  $X\sim Laplace(2,1/2)$[^1]
+
+    d.  $X\sim LogNorm(0.5, \sqrt 2)$
+4.  Generate 500 realizations of the following random variables and create a histogram:
+    1.  $X\sim Pois(1)$
+
+    2.  $X \sim Pois(2)$
+
+    3.  $X \sim Pois(5)$
+
+    4.  $X\sim Pois(10)$
+5.  Generate 5000 realizations of $X\sim Pois(15)$ and compute the following rough estimates:
+    1.  $E(X)$
+
+    2.  $E(X^2)$
+
+    3.  $Var(X)$
+
+[^1]: You will need to install the VGAM R package.
+
+Submit your Lab assignment as an RMD file in Canvas on 2/24/2022 by 11:59 PM.

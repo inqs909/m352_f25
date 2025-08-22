@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/week_1.html"
+    ]
+  },
+  {
+    "listing": "/hw.html",
+    "items": []
+  },
+  {
+    "listing": "/ec.html",
+    "items": []
+  },
+  {
+    "listing": "/r.html",
+    "items": []
+  }
+]

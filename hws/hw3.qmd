@@ -1,0 +1,38 @@
+---
+title: "Homework 3"
+editor: source
+date: 2-25-2023
+description: Due 3/3/23 at 11:59 PM
+
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+## Problem 1
+
+Let the random variable $X$ follow an exponential distribution with $\lambda=1.5$. Find the probability of $X$ being in between 1 and 2? The pdf of an exponential distribution:
+
+$$
+    f_X(x) = \left\{\begin{array}{cc}
+    \lambda e^{-x\lambda} & x>0\\
+    0 & \mathrm{otherwise}
+    \end{array}\right.
+$$
+
+## Problem 2
+
+Find the expected value and variance of an exponential distribution.
+
+## Problem 3
+
+Find the variance of a random variable $X$ that follows a beta distribution.
+
+$$
+    f_X(x) = \left\{\begin{array}{cc}
+    \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1} & 0 \le X \le 1 \\
+    0 & \mathrm{otherwise}
+    \end{array}\right.
+$$

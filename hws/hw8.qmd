@@ -1,0 +1,91 @@
+---
+title: "Homework 8"
+editor: source
+date: 5-4-2023
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+**Homework 8 is due 5/12/2023 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+
+## Problem 1
+
+The palmerpenguins dataset is a collection of morphological measurements and observational data for three species of penguins (Adelie, Gentoo, and Chinstrap) collected from 2007 to 2009 on the Palmer Archipelago, Antarctica. The dataset consists of 344 penguin observations with 8 variables, including species, sex, bill length, bill depth, flipper length, body mass, and several other measurements.
+
+Researchers are interested if the there is a significant relationship between `body_mass_g` (body mass measured in grams) and a set of predictors: `flipper_length_mm` (measured in mm), `bill_length_mm` (measured in mm), and `bill_depth_mm` (measured in mm). They decide to run a multiple linear regression to describe the relationship between the variables. The output is provided below:
+
+```{r}
+#| echo: false
+#| message: false
+library(palmerpenguins)
+library(tidyverse)
+library(magrittr)
+penguins %<>% drop_na
+penguins %$% lm(body_mass_g ~ flipper_length_mm + bill_length_mm + bill_depth_mm) %>%
+  summary
+```
+
+Describe the model and is there a significant relationship between body mass and the predictors? What is the predicted body mass of a penguin with a flipper length of 213, bill length of 43, and bill depth of 17.
+
+## Problem 2
+
+In logistic regression, the odds ratio is a measure of the strength of the relationship between the predictor variables and the dependent variable. It represents the ratio of the odds of the dependent variable for two different values of the predictor variable, holding all other variables constant.
+
+To interpret the odds ratio, we first need to understand what odds are. Odds are a way of expressing the probability of an event occurring as a ratio of the number of times the event occurs to the number of times it does not occur. For example, if a coin has a 50% chance of landing heads, the odds of it landing heads are 1:1 or 1/1.
+
+To compute the odds ratio:
+
+1.  Determine the beta coefficient value for the predictor variable of interest from the logistic regression model output.
+2.  Calculate the exponential function of the beta coefficient value. This can be done using a scientific calculator or software like R or Python.
+3.  For example, if the beta coefficient value is 0.8, the exponential function would be e\^0.8 = 2.2255.
+4.  Interpret the resulting value as the odds ratio. The odds ratio represents the change in the odds of the outcome variable for a one-unit increase in the predictor variable.
+5.  For example, if the odds ratio is 2.2255, it means that for every one-unit increase in the predictor variable, the odds of the outcome variable occurring are 2.2255 times higher.
+6.  Consider the confidence interval and the p-value associated with the odds ratio. The confidence interval provides a range of values within which the true odds ratio is likely to lie with a certain level of certainty. A p-value less than 0.05 indicates that the odds ratio is statistically significant.
+
+Researchers are interested in whether the probability of being admitted to graduate school is affected by an individual's GRE and GPA score. They fit a Logistic regression modeling the probability of being accepted. The output is printed below
+
+```{r}
+#| echo: false
+#| message: false
+library(MASS)
+mydata <- read.csv("https://stats.idre.ucla.edu/stat/data/binary.csv")
+mydata$rank <- factor(mydata$rank)
+glm(admit ~ gre + gpa, data = mydata, family = "binomial") %>%  summary
+```
+
+Describe the model and is there a significant relationship between the probability of being admitted and the predictors?
+
+## Problem 3
+
+In Poisson regression, the beta coefficient ($\beta$) represents the change in the logarithm of the expected count of the response variable for a one-unit increase in the corresponding predictor variable while holding all other variables constant.
+
+More specifically, the Poisson regression model assumes that the expected count of the response variable Y, denoted as λ, is related to the predictor variable X through the following equation:
+
+$$
+λ = \exp(β_0 + β_1X_1 + β_2X_2 + ... + β_pX_p)
+$$
+
+where $\beta_0$ is the intercept term, $\beta_1$ to $\beta_p$ are the coefficients for the predictor variables $X_1$ to $X_p$, and $\exp()$ is the exponential function.
+
+Thus, a beta coefficient of $\beta_j$ means that, for a one-unit increase in the predictor variable $X_j$, the expected count of the response variable Y is expected to increase by a factor of $\exp(β_j)$, while holding all other predictor variables constant.
+
+For example, if the coefficient for a predictor variable is 0.2, then a one-unit increase in that predictor variable is associated with a 1.22 increase in the expected count of the response variable while holding all other predictor variables constant.
+
+Researchers are interested if the number of awards earned by high school students can be explained by the type of program (prog: General, Vocational, Academic) and their final math exam score (math). They fit a Poisson regression on the number of awards and using the predictors prog (reference=General) and math in the model.
+
+```{r}
+#| echo: false
+#| message: false
+p <- read.csv("https://stats.idre.ucla.edu/stat/data/poisson_sim.csv")
+p <- within(p, {
+  prog <- factor(prog, levels=1:3, labels=c("General", "Academic", 
+                                                     "Vocational"))
+  id <- factor(id)
+})
+summary(m1 <- glm(num_awards ~ prog + math, family="poisson", data=p))
+```
+
+Describe the model and is there a significant relationship between the expected number of awards and the predictors? What is the expected count if a student came from general school and had a math score of 75?

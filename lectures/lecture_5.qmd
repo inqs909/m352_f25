@@ -1,0 +1,127 @@
+---
+title: "Distribution Functions"
+format:
+  revealjs:
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: true 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Discrete Random Variables
+
+    -   Obtain Probabilities
+
+# Discrete Random Variables
+
+## Discrete Random Variables
+
+A random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.
+
+::: fragment
+| Distribution      | Parameter(s) | PMF $P(Y=y)$                        |
+|-------------------|--------------|-------------------------------------|
+| Bernoulli         | $p$          | $p^y(1-p)^{1-y}$                    |
+| Binomial          | $n$ and $p$  | $(^n_y)p^y(1-p)^{n-y}$              |
+| Geometric         | $p$          | $(1-p)^{y-1}p$                      |
+| Negative Binomial | $r$ and $p$  | $(^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}$  |
+| Poisson           | $\lambda$    | $\frac{\lambda^y}{y!} e^{-\lambda}$ |
+:::
+
+## Probability Mass Function
+
+The probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as $P(Y=y)$ for all values of $y$.
+
+## Cumulative Density Function
+
+The cumulative distribution function provides the $P(Y\leq y)$ for a random variable $Y$.
+
+# Bernoulli Distribution
+
+## Bernoulli Distribution
+
+A Bernoulli distribution is probability of having a success out of two outcomes. In essence, a coin flip with probability of success $p$.
+
+# Binomial Distribution
+
+## Binomial Distribution
+
+For a given sample, the number of success is represent with a binomial distribution. Binary outcomes are represented with either a Bernoulli of binomial distribution. For a binomial experiment, the following must be satisfied:
+
+::: fragment
+-   There is a fixed $n$ trials
+
+-   The there are two outcomes for each trial
+
+-   The probability of success ($p$) is constant for each trial
+
+-   The trials are independent of each other
+:::
+
+## PMF
+
+## Example
+
+The probability of a planted seed to germinate is 0.3. An arborist decides to plant 8 seeds in the community. What is the probability that 3 to 5 seeds will germinate?
+
+## Example
+
+The probability of a planted seed to germinate is 0.6. An arborist decides to plant 8 seeds in the community. What is the probability that at least 1 seed germinates?
+
+## Example
+
+The probability of a planted seed to germinate is 0.8. An arborist decides to plant 6 seeds in the community. What is the probability that an even number of seed will germinate?
+
+# Poisson Distribution
+
+## Poisson Distribution
+
+The poisson distribution describes an experiment that measures that occurrence of an event at specific point and/or time period.
+
+## PMF
+
+## Example
+
+The number of industrial accidents at a particular manufacturing plant is found to be an average of 1 accident per month. In the previous month, there were 3 accidents. What is the probability of observing 3 or more accidents in a given month?
+
+## Example
+
+The number of industrial accidents at a particular manufacturing plant is found to be an average of 8 accidents per year. What is the probability of observing 15 or more accidents in a given year?
+
+# Geometric Distribution
+
+## Geometric Distribution
+
+A geometric distribution models the number of Bernoulli trials until the first success (or failure).
+
+## PMF
+
+## Example
+
+Suppose 30% of the applicants for a certain industrial job possess the necessary skills. What is the probability that the first applicant with the necessary skills is found on the 5th interview.
+
+# Negative Binomial Distribution
+
+## Negative Binomial Distribution
+
+A negative binomial distribution models the number of successful Bernoulli trials until the $r$th failure.
+
+## PMF
+
+## Example
+
+Ten percent of engines manufactured on an assembly line are defective. If engines are randomly selected one at a time and tested, what is the probability that third nondefective engine is found on the 4th trial.

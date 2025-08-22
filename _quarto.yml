@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: docs
+  render: 
+    - "*.qmd"
+    - "!resources/"
+  resources:
+    - "*.json"
+    - "files"
+    - "resources"
+  lib-dir: "site_libs"
+
+website:
+  title: "MATH 352"
+  site-url: m352.inqs.info
+  navbar:
+    right:
+      - syllabus.qmd
+      - hw.qmd
+      - r.qmd
+      - ec.qmd
+
+execute:
+  freeze: auto
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    css: styles.css
+    toc: true
+
+
+

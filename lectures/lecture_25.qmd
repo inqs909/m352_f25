@@ -1,0 +1,147 @@
+---
+title: "Interpreting Output"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: false
+    message: false
+    warnings: false
+    comment: "#>" 
+
+editor: visual
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| label: setup
+
+library(DT)
+library(tidyverse)
+library(GLMsData)
+library(broom)
+library(palmerpenguins)
+library(magrittr)
+
+x <- rnorm(50, 4)
+y <- 3 + 2 * x + rnorm(50, sd = 2)
+df <- tibble(x, y)
+
+
+
+```
+
+## Learning Objectives
+
+-   R
+
+-   Python
+
+-   Julia
+
+-   SPSS
+
+-   Stata
+
+-   SAS
+
+-   Excel
+
+-   Minitab
+
+# Software
+
+## R
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/2560px-R_logo.svg.png){fig-align="center"}
+
+## Python
+
+![](https://www.python.org/static/community_logos/python-logo-master-v3-TM.png){fig-align="center"}
+
+## Julia
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Julia_Programming_Language_Logo.svg/1200px-Julia_Programming_Language_Logo.svg.png){fig-align="center"}
+
+## SAS
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/SAS_logo_horiz.svg/640px-SAS_logo_horiz.svg.png){fig-align="center"}
+
+## Stata
+
+![](https://upload.wikimedia.org/wikipedia/commons/7/79/Stata_logo_med_blue.png){fig-align="center"}
+
+## SPSS
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/SPSS_logo.svg/2048px-SPSS_logo.svg.png){fig-align="center"}
+
+## Excel
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png){fig-align="center"}
+
+## Minitab
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Minitab_Logo.svg/1024px-Minitab_Logo.svg.png){fig-align="center"}
+
+# R
+
+## Output
+
+```{r}
+#| eval: true
+penguins %$% lm(body_mass_g ~ flipper_length_mm) %>% summary
+```
+
+# Python
+
+## Output
+
+![](https://www.w3schools.com/datascience/img_lr_table.png){fig-align="center"}
+
+# Julia
+
+## Output
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*lL4kxWQKwz7AuqrRSNrV3Q.jpeg){fig-align="center"}
+
+# SAS
+
+## Output
+
+![](https://www.statology.org/wp-content/uploads/2021/12/simpleSAS2.jpg){fig-align="center"}
+
+# Stata
+
+## Output
+
+![](https://statistics.laerd.com/stata-tutorials/img/lr/output-linear-regression.png){fig-align="center"}
+
+# SPSS
+
+## Output
+
+![](https://i.stack.imgur.com/RLwzv.png){fig-align="center"}
+
+# Excel
+
+## Output
+
+![](https://www.statology.org/wp-content/uploads/2020/03/multipleRegExcel4.png){fig-align="center"}
+
+# Minitab
+
+## Output
+
+![](https://lsc.studysixsigma.com/wp-content/uploads/sites/6/2016/04/689.png){fig-align="center"}

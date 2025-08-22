@@ -1,0 +1,77 @@
+---
+title: "Week 6"
+date: 02-27-23
+description: This week, we will be discussing MGFs and R programming.
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console---
+---
+
+## Learning Outcomes
+
+### First Lecture
+
+-   Moment Generating Functions
+
+-   MGF Properties
+
+### Second Lecture
+
+-   R Lab Continuous Random Variables
+
+## Important Concepts
+
+### First Lecture
+
+#### Moments
+
+The $k$th moment is defined as the expectation of the random variable, raised to the $k$th power, defined as $E(X^k)$.
+
+#### Moment Generating Functions
+
+The moment generating functions is used to obtain the $k$th moment. The mgf is defined as
+
+$$
+m(c) = E(e^{tX})
+$$
+
+The $k$th moment can be obtained by taking the $k$th derivative of the mgf, with respect to $c$, and setting $c$ equal to 0:
+
+$$
+E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
+$$
+
+#### MGF Properties
+
+##### Linearity
+
+Let $X$ follow a distribution $f$, with the an MGF $M_X(t)$, the MGF of $Y=aX+b$ is given as
+
+$$
+M_Y(t) = e^{tb}M_X(at)
+$$
+
+Let $X$ and $Y$ be two random variables with MGFs $M_X(t)$ and $M_Y(t)$, respectively, and are independent. The MGF of $U=X-Y$
+
+$$
+M_U(t) = M_X(t)M_Y(-t)
+$$
+
+##### Uniqueness
+
+Let $X$ and $Y$ have the following distributions $F_X(x)$ and $F_Y(y)$ and MGFs $M_X(t)$ and $M_Y(t)$, respectively. $X$ and $Y$ have the same distribution $F_X(x)=F_Y(y)$ if and only if $M_X(t)=M_Y(t)$.
+
+## Resources
+
+### First Lecture
+
+| Slides | Videos |
+|-----------------------------------|-------------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_11.html) | [Video 001](https://youtu.be/x9Nghr4CSoo) [Video 002](https://youtu.be/0kjSiGyN2fk) |
+
+### Second Lecture
+
+| Lab                                          | Videos |
+|----------------------------------------------|--------|
+| [Lab](https://m352.inqs.info/r/r_lab_2.html) |        |

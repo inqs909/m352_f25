@@ -1,0 +1,168 @@
+---
+title: "Generalized Linear Models"
+subtitle: "Estimation"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: false
+    message: false
+    warnings: false
+    comment: "#>" 
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Estimation Procedures
+
+    -   Regression Coefficients
+
+    -   Dispersion Parameter
+
+-   Newton-Raphson Algorithm
+
+# Estimating: $\boldsymbol \beta$
+
+## Estimating $\boldsymbol\beta$
+
+To obtain the estimates of $\boldsymbol \beta$ we can use the maximum log-likelihood approach to obtain $\hat{\boldsymbol\beta}$.
+
+$$
+L(\boldsymbol \beta) =  \prod^n_{i=1}f\left(y_i|\boldsymbol X_i;\boldsymbol \beta,\phi\right)
+$$
+
+## Maximum Likelihood Approach
+
+$$
+\ell(\boldsymbol \beta) =  \sum^n_{i=1}\log\left\{f\left(y_i|\boldsymbol X_i;\boldsymbol \beta,\phi\right)\right\}
+$$
+
+## Numerical Approaches
+
+-   Newton-Rhapson Algorithm
+
+-   Fisher-Scoring Algorithm
+
+-   Nelder-Mead
+
+-   BFGS
+
+# Estimating: $\phi$
+
+## Estimating $\phi$
+
+Depending on the random variable, the dispersion parameter will need to be estimated to conduct inference procedures. There are 4 methods to estimate the dispersion parameter:
+
+-   Maximum Likelihood
+
+-   Maximum (Modified) Profile Likelihood Approach
+
+-   Mean Deviance Estimator
+
+-   Pearson Estimator
+
+## Maximum Likelihood Approach
+
+$$
+\ell(\phi) =  \sum^n_{i=1}\log\left\{f\left(y_i|\boldsymbol X_i;\boldsymbol \beta,\phi\right)\right\}
+$$
+
+## Maximum (Modified) Profile Likelihood Approach
+
+$$
+\ell_p(\phi) = \frac{p}{2}\log \phi + \sum^n_{i=1}\log\left\{f\left(y_i|\boldsymbol X_i;\hat{\boldsymbol \beta},\phi\right)\right\}
+$$
+
+## Mean Deviance Estimator
+
+$$
+\tilde \phi = \frac{D(y,\hat\mu)}{n-p}
+$$
+
+-   $D(y,\hat\mu)=2\sum^n_{i=1}\left\{t(y,y) - t(y,\mu) \right\}$
+
+-   $t(y,\mu)=y\theta-\kappa(\theta)$
+
+-   $p$: number of regression coefficients
+
+## Pearson Estimator
+
+$$
+\bar \phi = \frac{\Lambda^2}{n-p}
+$$
+
+-   $\Lambda^2=\sum^n_{i=1}\frac{y_i-\hat\mu_i}{V(\hat\mu_i)}$
+
+-   $\hat \mu_i = g^{-1}(\hat\beta_0 + \sum^n_{j=1}{X_{ij}\hat\beta_j})$
+
+-   $V(\hat\mu_i)=\frac{d^2\kappa(\hat\theta_i)}{d\theta_i^2}$
+
+# Newton-Raphson Algorithm
+
+## Numerical Algorithm
+
+In Mathematics and Statistics, numerical algorithms are used to approximate the value of different functions:
+
+-   Root Finding:
+
+    -   Newton's Method
+
+-   Derivatives
+
+    -   Secant Step-size
+
+-   Integrals
+
+    -   Reimman Sums
+
+-   Maximization
+
+    -   Newton-Raphson
+
+## Optimization
+
+Optimization is the techniques used to find the values that maximizes the a function:
+
+$$
+x_0 = \mathrm{argmax}_{x}f(x)
+$$
+
+## Newton-Raphson
+
+The Newton-Raphson algorithm is used to estimate the parameters using an iterative algorithm. Given initial estimates, it will update the estimates of the parameters using the Newton step. It will continue iterating and updating the steps until the function converges to the maximum value.
+
+## Newton-Raphson
+
+$$
+\beta_j^{(it+1)} = \beta_j^{(it)} - \frac{G_{\beta_j}^{(it)}}{H_{\beta_j}^{(it)}}
+$$
+
+-   $\beta_j^{(it)}$: current estimate of $\beta_j$
+
+-   $G_{\beta_j}^{(it)}=d\ell(\boldsymbol \beta)/d\beta_j|_{\beta_j=\beta_j^{(it)}}$
+
+-   $H_{\beta_j}^{(it)}=d^2\ell(\boldsymbol \beta)/d\beta_j^2|_{\beta_j=\beta_j^{(it)}}$
+
+-   $\beta_j^{(it+1)}$: Updated estimate of $\beta_j$
+
+# Example
+
+## Logistic Regression
+
+Let $(Y_i,X_i)_{i=1}^n$ be a data set where $Y_i\overset{iid}{\sim}Bernoulli(p)$. Find the first and second derivative for $\beta_1$, when a GLM is fitted to the model.
+
+## Poisson Regression
+
+Let $(Y_i,X_i)_{i=1}^n$ be a data set where $Y_i\overset{iid}{\sim}Pois(\lambda)$. Find the first and second derivative for $\beta_0$, when a GLM is fitted to the model.

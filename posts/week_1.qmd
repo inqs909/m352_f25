@@ -1,0 +1,145 @@
+---
+title: "Week 1"
+date: 08-24-25
+description: This week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.
+editor: source
+editor_options: 
+  chunk_output_type: console
+---
+
+## Learning Outcomes
+
+### First Lecture
+
+-   Define Population
+
+-   Define Sample
+
+-   Define Inference
+
+-   Define Association
+
+### Second Lecture
+
+-   Installing R and RStudio
+
+-   Scripts
+
+-   R Packages
+
+-   R Environment
+
+
+## Resources
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/1a)
+[Thursday Slides](https://m352.inqs.info/lectures/1b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |         |          |
+| 002     |         |          |
+
+
+## Important Concepts
+
+### First Lecture
+
+#### Population
+
+A set of all measurements of interest to the sample collector.
+
+#### Sample
+
+A sample is any subset of measurements selected from the population.
+
+#### Inference
+
+-   Parameter: a measurement describing the population
+
+-   Statistic: a measurement describing the sample
+
+#### Association
+
+An association describes the relationship between two characteristics of a population.
+
+### Second Lecture
+
+#### Accessing R & RStudio
+
+If you are on a tablet or Chromebook, you can access R & RStudio via [rstudio.cloud](https://rstudio.cloud/) for free. However, they have limited computing resources. Be mindful of your experimentation. You may also be able to use Quarto in Rstudio cloud.
+
+You can install R via their website: <https://www.r-project.org/>.
+
+You can install RStudio for free from their website: <https://www.rstudio.com/products/rstudio/download/>
+
+#### Using R
+
+R can be used as a calculator; below are a few examples:
+
+```{r}
+1+2
+3/4
+9*8
+exp(4)
+```
+
+#### R Functions
+
+R has specialized functions that can compute specific values. R functions require inputs, known as arguments, to produce a specific output.
+
+For example, the `log()` function can be used to compute the natural logarithm of a specified input:
+
+```{r}
+log(34)
+```
+
+If you want to know information about a specific function, you can use the `?` operator:
+
+```{r}
+#| eval: false
+#| echo: true
+?log
+```
+
+which will open the help tab. Notice there are 2 arguments: `x` and `base`. This means that the `log()` function can be extended to other base. To use common log[^1], specify the arguments:
+
+[^1]: $\log_{10}(x)$
+
+```{r}
+log(x=34, base=10)
+```
+
+Notice that I specified the arguments. You can also type this:
+
+```{r}
+log(34, 10)
+```
+
+which produces the same results. This is because R uses positions in the function to determine argument values; therefore, if the positions are correct, you do not need to specify the argument name.
+
+Going back to the First Lecture example, `log(34)`, we did not specify the base. This is because functions have default values for arguments. The help documentation tells us what arguments have defaults and do not need to be specified.
+
+#### Install packages
+
+You can extend the functionality of R. The [tidyverse](https://www.tidyverse.org/) package includes a popular set of R packages for data wrangling and analysis. To install tidyverse, use the `install.packages()` function[^2]:
+
+[^2]: The package name must be inputted with quotes in the function.
+
+```{r}
+#| eval: false
+install.packages('tidyverse')
+```
+
+Once you installed the R package, you will need to load with every R session using the `library()` function:
+
+```{r}
+#| eval: false
+library(tidyverse)
+```
+

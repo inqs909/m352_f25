@@ -1,0 +1,19 @@
+---
+title: "Homework 4"
+editor: source
+date: 3-3-2023
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+**Homework 4 is due 3/10/2023 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+
+1.  Find the moment-generating function of an exponential distribution.
+2.  Find the moment-generating function of $X\sim\chi^2_k$ and $f_X(x)=\frac{x^{k/2-1}\exp\{-x/2\}}{2^{k/2}\Gamma(k/2)}$ with $x>0$.
+
+3. From *Probability 4 Data Science*, Chapter 4 Problem 5
+
+4. From *Probability 4 Data Science*, Chapter 4 Problem 6

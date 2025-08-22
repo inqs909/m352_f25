@@ -1,0 +1,114 @@
+---
+title: "Generalized Linear Models"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    sc-sb-title: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: true
+    eval: false
+    message: false
+    warnings: false
+    comment: "#>" 
+
+editor: visual
+---
+
+## Learning Outcomes
+
+-   Exponential Family of Distributions
+
+-   Generalized Linear Models
+
+# Exponential Family of Distributions
+
+## Exponential Family of Distributions
+
+An exponential family of distributions are random variables that allow their probability density function to have the following form:
+
+$$
+f(y; \theta,\phi) = a(y,\phi)\exp\left\{\frac{y\theta-\kappa(\theta)}{\phi}\right\}
+$$
+
+-   $\theta$: is the canonical parameter (also a function of other parameters)
+
+-   $\kappa(\theta)$: is a known cumulant function
+
+-   $\phi>0$: dispersion parameter function
+
+-   $a(y,\phi)$: normalizing constant
+
+## Canonical Parameter
+
+The canonical parameter represents the relationship between the random variable and the $E(Y)=\mu$
+
+## Normal Distribution
+
+$$
+f(x;\mu,\sigma^2)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+## Binomial Distribution
+
+$$
+f(x;n,p)=\big(^n_x\big) p^x(1-p)^{n-x}
+$$
+
+## Poisson Distribution
+
+$$
+f(x;\lambda) = \frac{e^{-\lambda}\lambda^x}{x!} 
+$$
+
+## Common Distributions and Canonical Parameters
+
+| Random Variable   | Canonical Parameter                  |
+|-------------------|--------------------------------------|
+| Normal            | $\mu$                                |
+| Binomial          | $\log\left(\frac{\mu}{1-\mu}\right)$ |
+| Negative Binomial | $\log\left(\frac{\mu}{\mu+k}\right)$ |
+| Poisson           | $\log(\mu)$                          |
+| Gamma             | $-\frac{1}{\mu}$                     |
+| Inverse Gaussian  | $-\frac{1}{2\mu^2}$                  |
+
+# Generalized Linear Models
+
+## Generalized Linear Models
+
+A generalized linear model (GLM) is used to model the association between an outcome variable (of any data type) and a set of predictor values. We estimate a set of regression coefficients $\boldsymbol \beta$ to explain how each predictor is related to the expected value of the outcome.
+
+## Generalized Linear Models
+
+A GLM is composed of a systematic and random component.
+
+## Random Component
+
+The random component is the random variable that defines the randomness and variation of the outcome variable.
+
+## Systematic Component
+
+The systematic component is the linear model that models the association between a set of predictors and the expected value of Y:
+
+$$
+g(\mu)=\eta=\boldsymbol X_i^\mathrm T \boldsymbol \beta
+$$
+
+-   $\boldsymbol\beta$: regression coefficients
+
+-   $\boldsymbol X_i=(1, X_{i1}, \ldots, X_{ip})^\mathrm T$: design vector
+
+-   $\eta$: linear model
+
+-   $\mu=E(Y)$
+
+-   $g(\cdot)$: link function

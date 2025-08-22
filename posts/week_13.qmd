@@ -1,0 +1,29 @@
+---
+title: "Week 13"
+date: 03-27-23
+description: This week, we will discuss functions of random variables and sampling distributions.
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Learning Outcomes
+
+-   Generalized Linear Models
+
+-   Standard Errors
+
+## Resources
+
+### First Lecture
+
+| Slides                                                 | Videos                                    | Notes                                                  |
+|------------------|------------------------|------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_22.html) | [Video 002](https://youtu.be/DCNJsbGj2hk) | [Notes 002](https://m352.inqs.info/files/m_22_002.pdf) |
+
+### Second Lecture
+
+| Slides                                                 | Videos                                                                              | Notes                       |
+|------------------|------------------------|------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_23.html) | [Video 001](https://youtu.be/fJ_cun-dIZ0) [Video 002](https://youtu.be/QpwujILAdCQ) | [Notes 001](https://m352.inqs.info/files/m_23_001.pdf) [Notes 002](https://m352.inqs.info/files/m_23_002.pdf) |

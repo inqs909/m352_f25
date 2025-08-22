@@ -1,0 +1,92 @@
+---
+title: "Week 3"
+date: 02-06-23
+description: This week, we will discuss the properties of discrete random variables.
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console---
+---
+
+## Learning Outcomes
+
+### First Lecture
+
+-   Describe Discrete Distributions
+
+### Second Lecture
+
+-   Expected Values
+
+-   Variance
+
+-   Properties of Expected Values
+
+## Important Concepts
+
+### First Lecture
+
+#### Discrete Variables
+
+A random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.
+
+##### PMF
+
+The probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as $P(Y=y)$ for all values of $y$.
+
+##### CDF
+
+The cumulative distribution function provides the $P(Y\leq y)$ for a random variable $Y$.
+
+##### Commonly Used Distributions
+
+| Distribution      | Parameter(s)      | PMF $P(Y=y)$                          |
+|-------------------|-------------------|----------------------------------|
+| Bernoulli         | $p$               | $p$                                   |
+| Binomial          | $n$ and $p$       | $(^n_y)p^y(1-p)^{n-y}$                |
+| Geometric         | $p$               | $(1-p)^{y-1}p$                        |
+| Negative Binomial | $r$ and $p$       | $(^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}$    |
+| Hypergeometric    | $N$, $n$, and $r$ | $\frac{(^r_y)(^{N-r}_{n-y})}{(^N_n)}$ |
+| Poisson           | $\lambda$         | $\frac{\lambda^y}{y!} e^{-\lambda}$   |
+
+### Second Lecture
+
+#### Expected Value
+
+The *expected value* is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of a discrete random variable is $Y$ with PMF of $P(y)$ is
+
+$$
+E(Y)=\sum_y yP(y)
+$$
+
+#### Expected Value Properties
+
+Special properties of the expected value:
+
+-   $E(c)=c$, where $c$ is constant
+
+-   $E\{cg(Y)\}=cE\{g(Y)\}$
+
+-   $E\{g_1(Y)+\cdots+g_n(Y)\}=E\{g_1(Y)\}+\cdots+E\{g_n(Y)\}$
+
+#### Variance
+
+The *variance* represents the variation of a random variable. The *variance* for a random variable Y is
+
+$$
+Var(Y) = E[\{Y-E(Y)\}^2]
+$$
+
+## Resources
+
+### First Lecture
+
+| Slides | Videos |
+|-------------------------------|-----------------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_5.html) | [Video 001](https://youtu.be/YrftlgLWDLQ) [Video 002](https://youtu.be/CGxEGAyZkn8) |
+
+### Second Lecture
+
+| Slides | Videos |
+|----------------------------------------------|--------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_6.html) | [Video 001](https://youtu.be/bUFzVQ-m-d8) [Video 002](https://youtu.be/wVwNFiFFXtc) |

@@ -1,0 +1,19 @@
+{
+  "hash": "e1368a86bceebdcf1934bc637b1c5d82",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Standard Errors\"\nsubtitle: \"Linear and Generalized Linear Models\"\nformat:\n  revealjs:\n    scrollable: true\n    navigation-mode: vertical\n    controls-layout: bottom-right\n    controls-tutorial: true\n    incremental: false \n    chalkboard:\n      src: chalkboard.json\n      storage: chalkboard_pres\n      theme: whiteboard\n      chalk-width: 4\nknitr:\n  opts_chunk: \n    echo: false\n    eval: false\n    message: false\n    warnings: false\n    comment: \"#>\" \n\neditor: visual\n---\n\n\n\n## Learning Objectives\n\n-   Standard Errors\n\n    -   Linear Regression\n\n    -   GLM\n    \n-   Sampling Distributions\n\n\n# Linear Regression\n\n## Standard Errors\n\n-   Find the variance of the estimate\n\n-   Find the information matrix\n\n-   Use for Inference\n\n## Finding the Variance\n\n## Estimate for $\\sigma^2$\n\n$$\n\\hat \\sigma^2 = \\frac{1}{n-2} \\sum^n_{i=1} (Y_i-\\boldsymbol X_i^\\mathrm T\\hat{\\boldsymbol \\beta})^2\n$$\n\n## Standard Errors of $\\beta$'s\n\n$$\nSE(\\hat\\beta_0)=\\sqrt{\\frac{\\sum^n_{i=1}x_i^2\\hat\\sigma^2}{n\\sum^n_{i=1}(x_i-\\bar x)^2}}\n$$\n\n$$\nSE(\\hat\\beta_1)=\\sqrt\\frac{\\hat\\sigma^2}{\\sum^n_{i=1}(x_i-\\bar x)^2}\n$$\n\n## Standard Errors Matrix Form\n\n$$\nVar(\\hat {\\boldsymbol \\beta}) = (\\boldsymbol X ^\\mathrm T\\boldsymbol X)^{-1} \\hat \\sigma^2\n$$\n\n# Generalized Linear Models\n\n## Large Sample Theory\n\nLet $X_1,\\ldots,X_n$ be a random sample from a distribution with parameter $\\theta$. Let $\\hat \\theta$ be the MLE estimator for a parameter $\\theta$. As $n\\rightarrow\\infty$, then $\\hat \\theta$ has a normal distribution with mean $\\theta$ and variance $1/nI(\\theta)$, where\n\n$$\nI(\\theta)=E\\left[-\\frac{\\partial^2}{\\partial\\theta^2}\\log\\{f(X;\\theta)\\}\\right]\n$$\n\n# Sampling Distributions\n\n## Sampling Distributions\n\n::: columns\n::: {.column width=\"50%\"}\n### $\\phi$ known\n\n$$\n\\frac{\\hat\\beta_j - \\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim N(0,1)\n$$\n:::\n\n::: {.column width=\"50%\"}\n### $\\phi$ unknown\n\n$$\n\\frac{\\hat\\beta_j-\\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim t_{n-p^\\prime}\n$$\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,26 @@
+---
+title: "Week 8"
+date: 03-10-23
+description: Midterm this week
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console---
+---
+
+## Learning Outcomes
+
+### First Lecture
+
+-   Exam Review
+
+### Second Lecture
+
+-   Exam
+
+## Resources
+
+| Lecture | Videos |
+|----------------|--------------------------------------------------------|
+| First | [Video 001](https://youtu.be/Kx94wpTRVok) [Video 002](https://youtu.be/FJXeWQ7hb7E) |
+| Second |  |

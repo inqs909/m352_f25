@@ -1,0 +1,149 @@
+---
+subtitle: "Math 352: Probability and Statistics"
+title: "Syllabus"
+editor: source
+navbar: false
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+  typst:
+    margin:
+      x: 1cm
+      y: 1cm
+---
+
+### Course Information
+
+**Term:** Fall 2025
+
+**Instructor:** Isaac Quintanilla Salinas
+
+**Email:** isaac.qs\@csuci.edu
+
+**Office Location:** Marin Hall 2326
+
+**Office Hours:**
+
+- Tue/Thur 5-6 PM
+- Wed 2-4 PM
+
+Or by Zoom appointment.
+
+**Lecture:**
+
+- Sec 01: T/TH 10:30-11:45 AM
+- Sec 02: T/TH 3-4:45 PM
+
+
+[**Pre-Requisites**](https://math.csuci.edu/programs/course-list.htm)**:** MATH 151
+
+## Course Description
+
+Statistics is the science of reasoning from data. It is both an exciting intellectual discipline and a powerful scientific tool. Statistics is a mathematical science, in the sense that it makes use of mathematics extensively, but it is not a branch of mathematics.
+
+The practice of statistics involves collecting data, analyzing data, and drawing inferences from data. The mathematical foundations of statistical inference lie in probability, the study of randomness and uncertainty. This course introduces you to fundamental ideas and methods of probability and statistics.
+
+## Learning Outcomes
+
+1.  **Understand and apply** basic ideas and methods of **probability**, including conditional probability and random variables.
+2.  **Apply and interpret** the results of a variety of **statistical techniques**, including both descriptive and inferential methods;
+3.  **Understand** many of the **fundamental ideas of statistics**, such as variability, distribution, sampling, confidence, and significance;
+4.  **Use statistical software** to **conduct simulations** and **analyze data**;
+5.  **Communicate** your knowledge of probability and statistics effectively.
+
+## Recommended Texts
+
+[**Probability for Data Science**](https://probability4datascience.com/) and Course Materials
+
+## Required Software
+
+For this course, we will use R, RMarkdown, and RStudio. Please download and install on your computer.
+
+-   **R** is a free statistical software program that is available for download at: <https://www.r-project.org/>.
+
+-   **Quarto** is a scientific documentation system used to write scientific documentation. Quarto is freely available at: <https://quarto.org/>
+
+-   **RStudio** provides free and open source tools for your data analysis in R: <https://www.rstudio.com/>
+
+
+## Course Grading
+
+| Category         | Percentage |
+|:-----------------|:-----------|
+| Homework         | 20%        |
+| R Assignments    | 20%        |
+| In-Person Exam 1 | 15%        |
+| In-Person Exam 2 | 15%        |
+| Take-Home Exam 1 | 15%        |
+| Take-Home Exam 2 | 15%        |
+
+At the end of the quarter, course grades will be assigned according to the following scale:
+
+|         |            |        |            |         |            |         |            |       |       |
+|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
+| **A+**  | 98 -- 100  | **B+** | 87 -- \<90 | **C+**  | 77 -- \<80 | **D+**  | 67 -- \<70 |       |       |
+| **A**   | 93 -- \<98 | **B**  | 83 -- \<87 | **C**   | 73 -- \<77 | **D**   | 63 -- \<67 | **F** | \< 60 |
+| **A--** | 90 - \<93  | **B-** | 80 -- \<83 | **C--** | 70 -- \<73 | **D--** | 60 -- \<63 |       |       |
+
+### Homework
+
+Homework will be assigned on a regular basis and posted on <https://m352.inqs.info/hw.html> and CANVAS. The homework is to help you practice the concepts learned in lecture and to help you study. You must turn in your own individual homework and show your understanding of the material. At the end of the semester, the two lowest homework grades will be dropped. Late work will be accepted, but with a 25% penalty. The last day late work will be accepted is on 12/5/2025 at 11:59 PM.
+
+### R Labs
+
+The objective of the labs are to develop both your statistical and programming skills. We will work on these labs in class. The lowest R Lab will be dropped.
+
+### Exams
+
+There will be four exams this semester, two in-person exams and two take-home exams. While the exams are not considered cumulative, the material builds on each other. Developing a strong understanding of the material through out the course is important for your success. At the end of the semester, your lowest exam grade will be replaced by the median of all exam grades.
+
+This course will operate under a zero-tolerance policy. Talking during the time of the exam, sharing materials, looking at another students' exam, or not following directions given will be subject to the University's academic integrity policy.
+
+### Extra Credit
+
+There will be 4 extra credit opportunities worth a total of 10% of your overall grade. There are no make-ups for missed extra credit assignments!
+
+## Class Schedule
+
+The following outline may be subject to change. Any changes will be announced in class.
+
+| Week      | Topic                         | Assignments/Exams | Reading             |
+|-----------|-------------------------------|-------------------|---------------------|
+| 8/25      | Intro to Course/Intro to R    |                   | Handouts            |
+| 9/1       | Introduction to Probability   | HW #1             | 2.1 - 2.4           |
+| 9/8       | Discrete Random Variables     | HW #2             | 3.1 - 3.5           |
+| 9/15      | Discrete Random Variables     | Take-Home Exam #1 | 4.1 - 4.3, 4.5, 4.6 |
+| 9/22      | Continuous Random Variables   | HW #3             | 5.1 - 5.4           |
+| 9/29      | Continuous Random Variables   | HW #4             | 4.7, 5.5, 5.6, 6.1  |
+| 10/6      | Joint Distributions           | HW #5             | 5.1 - 5.4           |
+| 10/13     | Exam # 1                      |                   |                     |
+| 10/20     | Sampling Statistics           |                   | 6.3 - 6.4           |
+| 10/27     | Maximum Likelihood Estimation | HW #6             | 8.1 -  8.2          |
+| 11/3      | Regression                    | HW #7             | 7.1                 |
+| 11/10     | Regression                    | HW #8             | 7.2                 |
+| 11/17     | Standard Errors               | Take-Home Exam #2 | Handouts            |
+| 11/24     | Hypothesis Testing            | HW #9             | 9.3                 |
+| 12/1      | Confidence Intervals          | HW #10            | 9.2 - 9.4           |
+| 12/8      | Exam #2                       |                   |                     |
+
+
+### Generative Artificial Intelligence Policy
+
+The use of generative artificial intelligence (AI) is prohibited in class. This includes, but not limited to, ChatGPT, Meta AI, Google Gemini.  
+
+
+## University Policies
+
+### Academic Honesty:
+
+Please conduct yourself with honesty and integrity. Do not submit others' work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.
+
+### Disabilities:
+
+If you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations\@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: <https://www.csuci.edu/dass/students/apply-for-services.htm>. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.
+
+### Disruption
+
+1.  **If I Am Out:** I will communicate via email and will hold classes asynchronously.
+2.  **If You Are Out:** Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided.

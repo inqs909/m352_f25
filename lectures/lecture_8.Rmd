@@ -1,0 +1,30 @@
+---
+title: "Discrete Random Variables"
+author: "Isaac Quintanilla Salinas"
+date: "`r format(Sys.time(),'%m-%d-%Y')`"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+## Histograms
+
+A histogram is used to plot the frequency of values of a certain variable. For example, the `mtcars` data set contains the `mpg` variable with information on different cars' miles per gallon. If we want to get an idea of the distribution of the mile per gallon, we can visualize it using the `hist` function in R:
+
+```{r}
+hist(mtcars$mpg)
+```
+
+We can see from the plot that the majority of cars has an mpg between 15-20.
+
+## Density Plots
+
+If we are more interested in creating a smooth curve and density (relative frequency), we can use a density plot
+
+```{r}
+plot(density(mtcars$mpg))
+```
+
+## Problems

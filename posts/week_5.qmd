@@ -1,0 +1,96 @@
+---
+title: "Week 5"
+date: 02-20-23
+description: This week, we will discuss continuous random variables and their properties.
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console---
+---
+
+## Learning Outcomes
+
+### First Lecture
+
+-   Continuous Random Variables
+
+### Second Lecture
+
+-   Expected Values
+-   MGF
+
+## Important Concepts
+
+### First Lecture
+
+#### Continuous Variables
+
+A random variable $X$ is considered continuous if the $P(X=x)$ does not exist.
+
+##### CDF
+
+The cumulative distribution function of $X$ provides the $P(X\leq x)$, denoted by $F(x)$, for the domain of $X$.
+
+Properties of the CDF of $X$:
+
+1.  $F(-\infty)\equiv \lim_{y\rightarrow -\infty}F(y)=0$
+2.  $F(\infty)\equiv \lim_{y\rightarrow \infty}F(y)=1$
+3.  $F(x)$ is a nondecreaseing function
+
+##### PDF
+
+The probability density function of the random variable $X$ is given by
+
+$$
+f(x)=\frac{dF(x)}{d(x)}=F^\prime(x)
+$$
+
+wherever the derivative exists.
+
+Properties of pdfs:
+
+1.  $f(x)\geq 0$
+2.  $\int^\infty_{-\infty}f(x)dx=1$
+3.  $P(a\leq X\leq b) = P(a<X<b)=\int^b_af(x)dx$
+
+##### Commonly Used Distributions
+
+| Distribution | Parameters | PDF |
+|-----------------|-----------------|--------------------------------------|
+| Uniform | $a$ and $b$ | $\frac{1}{b-a}$ |
+| Normal | $\mu$ and $\sigma^2$ | $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$ |
+| Exponential | $\lambda$ | $\lambda e^{-\lambda x}$ |
+| Gamma | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}e^{-x/\beta}}{\beta^\alpha\Gamma(\alpha)}$ |
+| Beta | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int^1_0x^{\alpha-1}(1-x)^{\beta-1}dx}$ |
+
+### Second Lecture
+
+### Expected Value
+
+The *expected value* is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of a discrete random variable is $Y$ with PDF of $f(y)$ is
+
+$$
+E(Y)=\int_y yf(y)dy
+$$
+
+### Variance
+
+The *variance* represents the variation of a random variable. The *variance* for a random variable Y is
+
+$$
+Var(Y) = E[\{Y-E(Y)\}^2]
+$$
+
+## Resources
+
+### First Lecture
+
+| Slides | Videos |
+|-----------------------------------|-------------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_9.html) | [Video 001](https://youtu.be/4CvO3lFkV6k) [Video 002]() |
+
+### Second Lecture
+
+| Slides | Videos |
+|--------------------------------------|----------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_10.html) | [Video 001](https://youtu.be/f5UuMXl_b9g) [Video 002](https://youtu.be/zaBdczz2tJc) |

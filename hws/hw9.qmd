@@ -1,0 +1,16 @@
+---
+title: "Homework 9"
+editor: source
+date: 4-28-2023
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+Problems from *Probability 4 Data Science* Chapter 8:
+
+
+
+**Homework 9 is due 5/5/2023 at 11:59 PM. Submit your homework on Canvas as one PDF document.**

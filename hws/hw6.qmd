@@ -1,0 +1,28 @@
+---
+title: "Homework 5"
+editor: source
+description: "Assignment is due April 6, 2023 @ 11:59 PM"
+date: 3-31-2023
+draft: true
+format:
+  html: 
+    code-fold: true
+    html-math-method: katex
+---
+
+
+## Problem 1
+
+$X\sim Pois(\lambda)$, what is the moment generating function of $Y=3X+4$
+
+## Problem 2
+
+Let $X_1\sim Bin(n_1,p)$ and $X_2\sim Bin(n_2, p)$. Find the distribution function of $Y=X_1 + X_2$. Assume $X_1\perp X_2$.
+
+## Problem 3
+
+Let $X_1, \ldots, X_n\overset{iid}{\sim}Beta(\alpha,\beta)$. What is the expected value and variance of $Y_n=\sum^n_{i=1}X_i$
+
+## Problem 4
+
+Let $X_1, \ldots, X_n$ be iid with $E(X)=e^\theta$ and $Var(X)=e^{\theta²}$. What is the distribution of $\bar X$ if $n\rightarrow \infty$?

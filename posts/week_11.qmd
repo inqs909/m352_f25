@@ -1,0 +1,28 @@
+---
+title: "Week 11"
+date: 03-27-23
+description: This week, we will discuss functions of random variables and sampling distributions.
+editor: source
+draft: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Learning Outcomes
+
+-   Linear Regression
+
+## Resources
+
+### First Lecture
+
+| Slides                                                 | Videos                                                                              | Notes                                                                                                         |
+|------------------|------------------------|------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_19.html) | [Video 001](https://youtu.be/9SGkFoNTGuk) [Video 002](https://youtu.be/mAczQQ3JIjU) | [Notes 001](https://m352.inqs.info/files/m_19_001.pdf) [Notes 002](https://m352.inqs.info/files/m_19_002.pdf) |
+
+### Second Lecture
+
+| Slides                                                 | Videos                                                                              | Notes                                                                                                         |
+|------------------|------------------------|------------------------------|
+| [Slides](https://m352.inqs.info/files/lecture_20.html) | [Video 001](https://youtu.be/eVKgW_Ckhqo) [Video 002](https://youtu.be/mN7HlDWIy9I) | [Notes 001](https://m352.inqs.info/files/m_20_001.pdf) [Notes 002](https://m352.inqs.info/files/m_20_002.pdf) |
+
