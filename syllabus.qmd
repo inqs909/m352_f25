@@ -134,15 +134,22 @@ The use of generative artificial intelligence (AI) in an ethical manner is permi
 
 #### Permitted Uses
 You may use AI for:
+
 - Obtain clarification 
+
 - Brainstorming ideas, examples, outlines, and strategies
+
 - Generating questions for practice or exploration
+
 - Identifying keywords or phrasing to match professional goals
 
 #### Prohibited Uses
 You may not:
+
 - Submit AI-generated work 
+
 - Use AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work
+
 - Use AI to generate code
 
 Any AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct.
