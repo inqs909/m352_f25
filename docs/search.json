@@ -46,7 +46,7 @@
     "href": "syllabus.html#class-schedule",
     "title": "Syllabus",
     "section": "Class Schedule",
-    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\nHW #0\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nRegression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
+    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\n\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nRegression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
   },
   {
     "objectID": "syllabus.html#university-policies",
@@ -54,6 +54,48 @@
     "title": "Syllabus",
     "section": "University Policies",
     "text": "University Policies\n\nAcademic Honesty:\nPlease conduct yourself with honesty and integrity. Do not submit others’ work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials are allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.\n\n\nDisabilities:\nIf you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: https://www.csuci.edu/dass/students/apply-for-services.htm. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.\n\n\nDisruption\n\nIf I Am Out: I will communicate via email and will hold classes asynchronously.\nIf You Are Out: Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided."
+  },
+  {
+    "objectID": "r/r_lab_1.html",
+    "href": "r/r_lab_1.html",
+    "title": "RLab 1: Probability Distributions",
+    "section": "",
+    "text": "If you want to use the custom R Markdown templates for this course install the following packages:\n\ninstall.packages(\"remotes\") # Allows you to install packages from GitHub\nremotes::install_github(\"inqs909/inqstools\") # Installs my R package for the course"
+  },
+  {
+    "objectID": "r/r_lab_1.html#setup",
+    "href": "r/r_lab_1.html#setup",
+    "title": "RLab 1: Probability Distributions",
+    "section": "",
+    "text": "If you want to use the custom R Markdown templates for this course install the following packages:\n\ninstall.packages(\"remotes\") # Allows you to install packages from GitHub\nremotes::install_github(\"inqs909/inqstools\") # Installs my R package for the course"
+  },
+  {
+    "objectID": "r/r_lab_1.html#probability",
+    "href": "r/r_lab_1.html#probability",
+    "title": "RLab 1: Probability Distributions",
+    "section": "Probability",
+    "text": "Probability\nWe will discuss several R functions used for different probability distributions\n\nDistributions\nTo see what distributions R supports, use\n?Distributions\nor\nhelp(Distributions)\nfor more information. Every distribution has four different functions associated to them. The letter at the beginning of the distribution indicates the functions capabilities.\n\n\n\n\n\n\n\nLetter\nFunctionality\n\n\n\n\n“d”\nreturns the height of the probability density function\n\n\n“p”\nreturns the cummulative density function value\n\n\n“q”\nreturns the inverse cummulative density function (percentiles)\n\n\n“r”\nreturns a randomly generated number\n\n\n\n\n\nProbabilities\nR can compute the probabilities of a distribution given the correct parameters. If you need the cummulative probability, p in front of the distribution function is needed. If you need the probability for a discrete distribution, the d in front of the distribution function is needed. Below are a few examples.\nTo find \\(P(X \\leq 3 )\\) where \\(X \\sim Bin(6,0.4)\\). Here we will use the pbinom() and we set q = 3, sizw = 6 and prob = 0.4.\n\npbinom(3, 6, 0.4)\n\n[1] 0.8208\n\n\nTo find \\(P(X \\geq 7 )\\) where \\(X \\sim Pois(2.3)\\). Here we will use the ppois() and we set q = 6, lambda = 2.3, and lower.tail = F.\n\nppois(6, 2.3, F)\n\n[1] 0.009361934\n\n\nTo find \\(P(X = 10 )\\) where \\(X \\sim Geo(0.3)\\). Here we will use the dgeom() and we set x = 10 and p = 0.3.\n\ndgeom(10, .3)\n\n[1] 0.008474257\n\n\n\n\nPercentiles\nPercentiles identify the \\(x_9\\) that satisfies \\(P(X \\le x_0)=p\\), where p is the percentile.\nFinding the \\(95^{th}\\) percentile from a \\(Bin(50, 0.6)\\), we will use the qbinom(). We will set size=50, prob=0.6, and p=0.95.\n\nqbinom(.95, 50, 0.6)\n\n[1] 36\n\n\nFinding the \\(95^{th}\\) percentile from a \\(Pois(6.3)\\), we will use the qpois(). We will set lambda=6.3 and p=0.95.\n\nqpois(.95, 6.3)\n\n[1] 11\n\n\n\n\nRandom Number Generator\nR is capable of generating random numbers. For example if we want to generate a random sample of size fifty from a normal distribution with mean eight and variance three, we will use the rnorm(). If we want to generate a random sample from any distribution, use the distribution function with r in front of it.\nLet’s first generate the random sample of fifty from \\(X \\sim Bin(75, .3)\\). This is done with the rnorm() and setting n = 50, size = 75 and prob = .3.\n\nrbinom(50, 75, 0.3)\n\n [1] 24 18 23 23 27 21 24 14 26 22 30 25 26 27 19 32 20 24 23 25 25 18 19 18 24\n[26] 25 14 23 20 26 24 30 23 23 27 24 19 19 24 29 26 18 21 15 21 25 21 22 27 21\n\n\nNo let’s generate a random sample of 100 form an \\(X \\sim Geo (0.4)\\). This is done by using the rgamma() and setting n = 100 and prob = 0.4.\n\nrgeom(100, .4)\n\n  [1]  3  0  0  1  0  0  0  2  4  3  2  0  4  0  0  5  0  0  0  0  1  0  0  0  0\n [26]  1  0  2  2  3  0  0  1  0  2  1  0  0  0  1  0 12  4  3  1  0  0  1  7  0\n [51]  0  1  1  1  0  0  0  3  3  7  4  4  0  4  0  5  1  0  0  4  1  2  2  0  1\n [76]  3  0  2  0  0  5  0  1  3  1  0  1  4  3  0  0  1  1  3  4  1  6  1  1  0"
+  },
+  {
+    "objectID": "r/r_lab_1.html#histograms",
+    "href": "r/r_lab_1.html#histograms",
+    "title": "RLab 1: Probability Distributions",
+    "section": "Histograms",
+    "text": "Histograms\nHistograms are used to plot the frequencies of observed values of a random variable. This provides a rough estimate of how a distribution function will look like. Below, we will use the hist() function to plot the distribution of a random sample of 1000 generated from a \\(Bin(20, 0.3)\\):\n\nx &lt;- rbinom(1000, 20, 0.3)\nhist(x)\n\n\n\n\n\n\n\n\nLooking at the plot above, we can see that the mos common values are around 6. This is to be expected because the \\(E(X)=6\\) from the binomial distribution. Another way to roughly estimate the expected value is by taking the mean:\n\nmean(x)\n\n[1] 6.014\n\n\nNotice how close it is to the expected value. If we are interested in computing the \\(E(X^2)\\), we can roughly estimate it by squaring all the values and taking the mean of it:\n\nmean(x^2)\n\n[1] 40.318\n\n\nNow, we know that the variance of a binomial distribution is \\(np(1-p)\\) which leads the \\(Var(X)=4.2\\) with the above distribution. We can roughly estimate the variance with the rough estimates of \\(E(X^2)-E(X)^2\\):\n\nmean(x^2) - mean(x)^2\n\n[1] 4.149804\n\n\nWhile it is not exact, it can give you a rough idea."
+  },
+  {
+    "objectID": "r/r_lab_1.html#problems",
+    "href": "r/r_lab_1.html#problems",
+    "title": "RLab 1: Probability Distributions",
+    "section": "Problems",
+    "text": "Problems\nUse an RMD file to answer the following questions:\n\nFind the following probabilities:\n\n\\(X\\sim Bin(30, .35)\\); Find \\(P(2 \\le X \\le 6)\\)\n\\(X\\sim Pois(6.8)\\); Find \\(P(2 \\le X \\le 20)\\)\n\\(X\\sim Geo(0.5)\\); Find \\(P(X=4)\\)\n\\(X\\sim NegBinom(6, .8)\\); Find \\(P(3 \\le X \\le 4)\\)\n\nFind the following percentiles:\n\n\\(X\\sim Pois(31.5)\\); Find the \\(68\\)th percentile.\n\\(X\\sim Bin(71, .8)\\); Find the \\(52\\)th percentile.\n\\(X\\sim Geo(0.4)\\); Find the \\(43\\)th percentile.\n\nGenerate the 50 realizations of the following random variables: (SKIP)\n\n\\(X\\sim Multinomial(20, 0.5)\\)\n\\(X\\sim Weibull(3,2)\\)\n\\(X\\sim Laplace(2,1/2)\\)1\n\\(X\\sim LogNorm(0.5, \\sqrt 2)\\)\n\nGenerate 500 realizations of the following random variables and create a histogram:\n\n\\(X\\sim Pois(1)\\)\n\\(X \\sim Pois(2)\\)\n\\(X \\sim Pois(5)\\)\n\\(X\\sim Pois(10)\\)\n\nGenerate 5000 realizations of \\(X\\sim Pois(15)\\) and compute the following rough estimates:\n\n\\(E(X)\\)\n\\(E(X^2)\\)\n\\(Var(X)\\)\n\n\nSubmit your Lab assignment as an RMD file in Canvas on 2/24/2022 by 11:59 PM."
+  },
+  {
+    "objectID": "r/r_lab_1.html#footnotes",
+    "href": "r/r_lab_1.html#footnotes",
+    "title": "RLab 1: Probability Distributions",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nYou will need to install the VGAM R package.↩︎"
   },
   {
     "objectID": "posts/week_1.html",
@@ -1316,11 +1358,18 @@
     "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "exc/exc5.html",
+    "href": "exc/exc5.html",
+    "title": "Extra Credit 4",
+    "section": "",
+    "text": "After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.\nBooks:\n\nEmpire of AI\n\nKaren Hao\n\nThe Last Human Job\n\nAllison Pugh\n\nThe Book of Why\n\nJudea Pearl\n\nAlgorithms of Oppression\n\nSafiya Umoja Noble\n\nData Feminism\n\nCatherine D’Ignazio and Lauren Klein\n\nWeapons of Math Destruction\n\nCathy O’Niel\n\nInvisible Women : data bias in a world designed for men\n\nCaroline Criado Perez\n\nFactfulness: Ten Reasons We’re Wrong About the World… and Why Things are Better Than You Think\n\nHans Rosling\n\nArtificial Unintelligence: How Computers Misunderstand the World\n\nMerideth Broussard\n\nTechnically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech\n\nSara Wachter-Boettcher\n\nOR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+  },
+  {
     "objectID": "ec.html",
     "href": "ec.html",
     "title": "Extra Credit",
     "section": "",
-    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/1a.html#introductions",
@@ -1344,25 +1393,11 @@
     "text": "Goals for the Course\n\nIntroduction to Probability\nIntroduction to Statistics\nIntroduction to Regression"
   },
   {
-    "objectID": "lectures/1a.html#oh-traditional",
-    "href": "lectures/1a.html#oh-traditional",
+    "objectID": "lectures/1a.html#office-hours",
+    "href": "lectures/1a.html#office-hours",
     "title": "Weclome to Math 352",
-    "section": "OH: Traditional",
-    "text": "OH: Traditional\nBTE 2840 MW 5-6 PM"
-  },
-  {
-    "objectID": "lectures/1a.html#oh-casual",
-    "href": "lectures/1a.html#oh-casual",
-    "title": "Weclome to Math 352",
-    "section": "OH: Casual",
-    "text": "OH: Casual\nBell Tower Rooftop Terrace Th 1:30 - 3 PM"
-  },
-  {
-    "objectID": "lectures/1a.html#oh-r-programming",
-    "href": "lectures/1a.html#oh-r-programming",
-    "title": "Weclome to Math 352",
-    "section": "OH: R Programming",
-    "text": "OH: R Programming\nBTE 2810 F 10AM - 12PM"
+    "section": "Office Hours",
+    "text": "Office Hours\nMarin Hall 2326\nT/TH 5-6 PM\nWed 2-4 PM"
   },
   {
     "objectID": "lectures/1a.html#syllabus-1",
@@ -1372,15 +1407,85 @@
     "text": "Syllabus\nSyllabus"
   },
   {
+    "objectID": "lectures/1a.html#use-of-generative-ai-1",
+    "href": "lectures/1a.html#use-of-generative-ai-1",
+    "title": "Weclome to Math 352",
+    "section": "Use of Generative AI",
+    "text": "Use of Generative AI\nThe use of generative artificial intelligence (AI) to complete any part or all of an assignment/exam is strictly prohibited in this class. This includes, but not limited to, ChatGPT, Claude, Meta AI, and Google Gemini.\n\nYou may use AI to enhance you understanding of the material.\n\n\nYou may not upload any course material to any AI platforms such as ChatGPT, Claude, Meta AI, and Google Gemini. Exceptions are allowed for DASS-approved services."
+  },
+  {
+    "objectID": "lectures/1a.html#use-of-ai",
+    "href": "lectures/1a.html#use-of-ai",
+    "title": "Weclome to Math 352",
+    "section": "Use of AI",
+    "text": "Use of AI\nThere are consequences when you use of AI:\n\nEducational Mislearning\nTrusting AI\nStolen Work\nPrivacy Concerns\nEnvironmental Impacts\nWorking Exploitation"
+  },
+  {
+    "objectID": "lectures/1a.html#educational-mislearning",
+    "href": "lectures/1a.html#educational-mislearning",
+    "title": "Weclome to Math 352",
+    "section": "Educational Mislearning",
+    "text": "Educational Mislearning\nThe purpose of this class, and college, is for you to learn about critical thinking skills and perseverance. Using AI will only teach you how to get an answer, which may or may not be correct.\n\nYou will not develop the skills needed to problem solve a challenge. Additionally, developing grit is essential to become successful in college and life. There is no easy way out and AI is an illusion to your success in life.\n\n\nTo learn something, it requires hours of work! If not years!"
+  },
+  {
+    "objectID": "lectures/1a.html#trusting-ai",
+    "href": "lectures/1a.html#trusting-ai",
+    "title": "Weclome to Math 352",
+    "section": "Trusting AI",
+    "text": "Trusting AI\nWhen using AI, you must acknowledge its limitations:\n\nResponses provided may be incorrect\nResponses may not be fair\nCompanies may manipulate responses and/or terms of service for their benefit\nCompanies may not have your best interst in mind\n\n\nYou should always proceed with caution utilizing these tools!"
+  },
+  {
+    "objectID": "lectures/1a.html#stolen-work",
+    "href": "lectures/1a.html#stolen-work",
+    "title": "Weclome to Math 352",
+    "section": "Stolen Work",
+    "text": "Stolen Work\n\nAdditionally, all these individuals are not receiving any royalties for the work to be used in creating generative AI models.\n\n\nInside Higher Ed and The New Yorker highlight individual’s concern of their work being used to train AI models."
+  },
+  {
+    "objectID": "lectures/1a.html#privacy-concerns",
+    "href": "lectures/1a.html#privacy-concerns",
+    "title": "Weclome to Math 352",
+    "section": "Privacy Concerns",
+    "text": "Privacy Concerns\nThe use of generative AI raises concerns of what data is being harvested from us, possibly without informed consent.\n\nWhen you used any large language models, you do not know what information is being harvested from you.\n\n\nDo you want to upload your thoughts and ideas to a company that can monetize, and possibly exploit.\n\n\nDoes your Professors consent with you uploading their assignments to large language models?\n\n\nStanford provided a report highlighting the risks of our personal data use in large language models."
+  },
+  {
+    "objectID": "lectures/1a.html#environmental-impact",
+    "href": "lectures/1a.html#environmental-impact",
+    "title": "Weclome to Math 352",
+    "section": "Environmental Impact",
+    "text": "Environmental Impact\nIn order to run these large language models, companies need to use a large amounts of energy. This is because large servers are needed to both train and execute a model.\n\nThe LA Times reports the potential impact that running AI models in California.\n\n\nAdditionally, Time reports that a ChatGPT query uses ten times more energy than a Google search query, and global AI demands can consume of 1 trillion gallons of water by 2027.\n\n\nThere are also environmental justice questions about where these data centers are constructed."
+  },
+  {
+    "objectID": "lectures/1a.html#worker-exploitation",
+    "href": "lectures/1a.html#worker-exploitation",
+    "title": "Weclome to Math 352",
+    "section": "Worker Exploitation",
+    "text": "Worker Exploitation\nThe Washington Post and Time (Article 1 and Article 2) reported that AI companies utilize “digital sweatshops” to classify data points for model training.\n\nThere is a human cost from the Global South, both financially and mentally, to develop the AI models for users in the United States and Europe.\n\n\nWe must be conscious consumers and demand more from these companies to provide safe working conditions and livable wages."
+  },
+  {
+    "objectID": "lectures/1a.html#is-using-ai-bad",
+    "href": "lectures/1a.html#is-using-ai-bad",
+    "title": "Weclome to Math 352",
+    "section": "Is Using AI Bad?",
+    "text": "Is Using AI Bad?\n\nNO\n\n\nBut, we need to acknowledge the consequences of using AI!\n\n\nAnd, we need to demand companies to create and implement AI in an ethical manner!"
+  },
+  {
     "objectID": "lectures/1a.html#homework-0",
     "href": "lectures/1a.html#homework-0",
     "title": "Weclome to Math 352",
     "section": "Homework 0",
-    "text": "Homework 0\nHomework 0 is posted!\nIt is due on February 3, 2023!\nSubmit your assignment on Canvas!"
+    "text": "Homework 0\nHomework 0 is posted!"
   },
   {
     "objectID": "lectures/1a.html#plot-a-thon",
     "href": "lectures/1a.html#plot-a-thon",
+    "title": "Weclome to Math 352",
+    "section": "Plot-a-thon",
+    "text": "Plot-a-thon"
+  },
+  {
+    "objectID": "lectures/1a.html#plot-a-thon-1",
+    "href": "lectures/1a.html#plot-a-thon-1",
     "title": "Weclome to Math 352",
     "section": "Plot-a-thon",
     "text": "Plot-a-thon"
@@ -2769,6 +2874,6 @@
     "href": "r.html",
     "title": "R Labs",
     "section": "",
-    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRLab 1: Probability Distributions\n\n\n\n\n\n\n\n\nFeb 15, 2022\n\n\n\n\n\nNo matching items"
   }
 ]

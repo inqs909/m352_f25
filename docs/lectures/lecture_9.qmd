@@ -1,0 +1,121 @@
+---
+title: "Continuous Random Variables"
+format:
+  revealjs:
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Continuous Random Variables
+
+    -   Probability Density Functions
+
+    -   Cumulative Density/Distribution Function
+
+-   Common Distributions
+
+# Continuous Random Variables
+
+## Continuous Random Variable
+
+A random variable $X$ is considered continuous if the $P(X=x)$ does not exist.
+
+::: fragment
+| Distribution | Parameters           | PDF                                                                            |
+|------------------|------------------|------------------------------------|
+| Uniform      | $a$ and $b$          | $\frac{1}{b-a}$                                                                |
+| Normal       | $\mu$ and $\sigma^2$ | $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$ |
+| Exponential  | $\lambda$            | $\lambda e^{-\lambda x}$                                                       |
+| Gamma        | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}e^{-x/\beta}}{\beta^\alpha\Gamma(\alpha)}$                  |
+| Beta         | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int^1_0x^{\alpha-1}(1-x)^{\beta-1}dx}$    |
+:::
+
+## Cumulative Density Function
+
+The cumulative distribution function of $X$ provides the $P(X\leq x)$, denoted by $F(x)$, for the domain of $X$.
+
+Properties of the CDF of $X$:
+
+1.  $F(-\infty)\equiv \lim_{y\rightarrow -\infty}F(y)=0$
+2.  $F(\infty)\equiv \lim_{y\rightarrow \infty}F(y)=1$
+3.  $F(x)$ is a nondecreaseing function
+
+## Probability Density Function
+
+The probability density function of the random variable $X$ is given by
+
+$$
+f(x)=\frac{dF(x)}{d(x)}=F^\prime(x)
+$$
+
+wherever the derivative exists.
+
+Properties of pdfs:
+
+1.  $f(x)\geq 0$
+2.  $\int^\infty_{-\infty}f(x)dx=1$
+3.  $P(a\leq X\leq b) = P(a<X<b)=\int^b_af(x)dx$
+
+## PDF to CDF
+
+## Obtaining Probability
+
+# Uniform Distribution
+
+## Uniform Distribution
+
+A random variable is said to follow uniform distribution if the density function is constant between two parameters.
+
+## PDF
+
+## CDF
+
+# Exponential Distribution
+
+## Exponential Distribution
+
+An exponential distribution is used to model positive continuous random variables, commonly used for time.
+
+## PDF
+
+## CDF
+
+# Normal Distribution
+
+## Normal Distribution
+
+A random variable is said to follow a normal distribution if the the frequency of occurrence follow a Gaussian function.
+
+## PDF
+
+# Gamma Distribution
+
+## Gamma Distribution
+
+A gamma distribution is the general form of distribution for a $\chi^2$-distribution and exponential distribution.
+
+## PDF
+
+# Beta Distribution
+
+## Beta Distribution
+
+A beta distribution models a continuous random variable that only has support between the 0 and 1.
+
+## PDF

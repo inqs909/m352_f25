@@ -11,19 +11,8 @@ format:
 
 Homework 0 is due on 2/3/2023. Please try to submit the assignment as 1 PDF if possible.
 
+
 ### Problem 1
-
-Take a selfie at the different office hours locations. You will need 3 images.
-
-### Problem 2
-
-Take a selfie with another professor at CSUCI.
-
-### Problem 3
-
-Take a selfie at the Learning Resource Center (LRC). Identify any tutors that can help you with Math 352
-
-### Problem 4
 
 Set the equation to 0 and solve for $x$:
 
@@ -33,7 +22,7 @@ Set the equation to 0 and solve for $x$:
 4.  $e^{x^2-4}$
 5.  $\ln(5x) + 3$
 
-### Problem 5
+### Problem 2
 
 Complete the following derivatives:
 
@@ -47,7 +36,7 @@ Complete the following derivatives:
 
 5.  $f(x) = \ln(x)$
 
-### Problem 6
+### Problem 3
 
 Complete the following integrals:
 
@@ -57,7 +46,7 @@ Complete the following integrals:
 4.  $\int x^2e^{-x^3}dx$
 5.  $\int2x(x^2+1)^4dx$
 
-### Problem 7
+### Problem 4
 
 Evaluate the following identities[^1]:
 

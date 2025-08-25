@@ -1,31 +1,67 @@
 ---
-title: "Extra Credit 5"
+title: "Extra Credit 4"
 description: Instructions for extra credit five.
-date: 01-16-2023
+date: 08-24-2025
 editor: source
-draft: true
+draft: false
 format:
   html: 
     code-fold: true
     html-math-method: katex
 ---
 
-Write a book report on *Data Feminism* by Catherine D'Ignazio and Lauren Klein. Provide a summary of the book, an write a brief analysis in supporting or opposing the book, and a personal reaction of the book.
+After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.
 
-**Worth 3 percent points.**
+**Books:**
 
-Report guidelines
+-   Empire of AI
+    -   Karen Hao
 
--   3-4 Pages
+-   The Last Human Job
+    -   Allison Pugh
 
--   Must include a title page
+-   The Book of Why
 
--   Double Spaced
+    -   Judea Pearl
 
--   12 point font
+-   Algorithms of Oppression
 
--   Proofread your work
+    -   Safiya Umoja Noble
 
--   Submit a pdf of your work to Canvas
+-   Data Feminism
 
--   Due 5/15/2023
+    -   Catherine D'Ignazio and Lauren Klein
+
+-   Weapons of Math Destruction
+
+    -   Cathy O'Niel
+
+-   Invisible Women : data bias in a world designed for men
+
+    -   Caroline Criado Perez
+
+-   Factfulness: Ten Reasons We're Wrong About the World... and Why Things are Better Than You Think
+
+    -   Hans Rosling
+
+-   Artificial Unintelligence: How Computers Misunderstand the World
+
+    -   Merideth Broussard
+
+-   Technically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech
+
+    -   Sara Wachter-Boettcher
+
+-   **OR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)**
+
+**Video Essay Guidelines:**
+
+-   10 Minutes Long
+
+-   Use of visual aids
+
+-   Narrated by your own voice
+
+-   **Due 12/5/2025**
+
+**Worth 3 final grade percentage points.**

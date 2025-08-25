@@ -1,0 +1,125 @@
+---
+title: "Weclome to Math 352"
+subtitle: "Probability and Statistics"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: visual
+---
+
+## Introductions
+
+-   San Bernardino, CA
+
+-   CSU Monterey Bay
+
+    -   BS Biology
+
+-   San Diego State University
+
+    -   Master's in Public Health
+
+-   UC Riverside
+
+    -   PhD in Applied Statistics
+
+## Introductions
+
+::: nonincremental
+-   Name
+
+-   Year
+
+-   Major
+
+-   Fun Fact
+
+-   Career Goal
+:::
+
+## Goals for the Course
+
+-   Introduction to Probability
+
+-   Introduction to Statistics
+
+-   Introduction to Regression
+
+# Office Hours
+
+## OH: Traditional
+
+BTE 2840 MW 5-6 PM
+
+![](img/office.jpg){fig-align="center"}
+
+## OH: Casual
+
+Bell Tower Rooftop Terrace Th 1:30 - 3 PM
+
+![](img/terrace.jpg){fig-align="center"}
+
+## OH: R Programming
+
+BTE 2810 F 10AM - 12PM
+
+![](img/rp.jpg){fig-align="center"}
+
+# Syllabus
+
+## Syllabus
+
+[Syllabus](https://m352.inqs.info/syllabus.html)
+
+# Announcements
+
+## Homework 0
+
+Homework 0 is posted!
+
+It is due on February 3, 2023!
+
+Submit your assignment on Canvas!
+
+## Plot-a-thon
+
+![](img/Plot-a-Thon%202023-Register0203.png){fig-align="center"}
+
+# Lecture
+
+## Learning Objectives
+
+-   Population
+
+-   Sample
+
+-   Inference
+
+-   Associations
+
+## Population
+
+-   A set of all measurements of interest to the sample collector.
+
+## Sample
+
+-   A sample is any subset of measurements selected from the population.
+
+## Inference
+
+-   Parameter: a measurement describing the population
+
+-   Statistic: a measurement describing the sample
+
+## Associations
+
+An association describes the relationship between two characteristics of a population.

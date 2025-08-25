@@ -11,10 +11,14 @@
   },
   {
     "listing": "/ec.html",
-    "items": []
+    "items": [
+      "/exc/exc5.html"
+    ]
   },
   {
     "listing": "/r.html",
-    "items": []
+    "items": [
+      "/r/r_lab_1.html"
+    ]
   }
 ]

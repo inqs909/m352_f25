@@ -112,7 +112,7 @@ The following outline may be subject to change. Any changes will be announced in
 
 | Week      | Topic                         | Assignments/Exams | Reading             |
 |-----------|-------------------------------|-------------------|---------------------|
-| 8/25      | Intro to Course/Intro to R    | HW #0             | Handouts            |
+| 8/25      | Intro to Course/Intro to R    |                   | Handouts            |
 | 9/1       | Introduction to Probability   | HW #1             | 2.1 - 2.4           |
 | 9/8       | Discrete Random Variables     | HW #2             | 3.1 - 3.5           |
 | 9/15      | Discrete Random Variables     | Take-Home Exam #1 | 4.1 - 4.3, 4.5, 4.6 |

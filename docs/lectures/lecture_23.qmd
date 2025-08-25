@@ -1,0 +1,122 @@
+---
+title: "Standard Errors"
+subtitle: "Linear and Generalized Linear Models"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: false
+    message: false
+    warnings: false
+    comment: "#>" 
+
+editor: visual
+---
+
+```{r}
+#| include: false
+#| eval: true
+#| label: setup
+
+library(DT)
+library(tidyverse)
+library(GLMsData)
+library(broom)
+library(palmerpenguins)
+library(magrittr)
+
+x <- rnorm(50, 4)
+y <- 3 + 2 * x + rnorm(50, sd = 2)
+df <- tibble(x, y)
+
+
+
+```
+
+## Learning Objectives
+
+-   Standard Errors
+
+    -   Linear Regression
+
+    -   GLM
+    
+-   Sampling Distributions
+
+
+# Linear Regression
+
+## Standard Errors
+
+-   Find the variance of the estimate
+
+-   Find the information matrix
+
+-   Use for Inference
+
+## Finding the Variance
+
+## Estimate for $\sigma^2$
+
+$$
+\hat \sigma^2 = \frac{1}{n-2} \sum^n_{i=1} (Y_i-\boldsymbol X_i^\mathrm T\hat{\boldsymbol \beta})^2
+$$
+
+## Standard Errors of $\beta$'s
+
+$$
+SE(\hat\beta_0)=\sqrt{\frac{\sum^n_{i=1}x_i^2\hat\sigma^2}{n\sum^n_{i=1}(x_i-\bar x)^2}}
+$$
+
+$$
+SE(\hat\beta_1)=\sqrt\frac{\hat\sigma^2}{\sum^n_{i=1}(x_i-\bar x)^2}
+$$
+
+## Standard Errors Matrix Form
+
+$$
+Var(\hat {\boldsymbol \beta}) = (\boldsymbol X ^\mathrm T\boldsymbol X)^{-1} \hat \sigma^2
+$$
+
+# Generalized Linear Models
+
+## Large Sample Theory
+
+Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be the MLE estimator for a parameter $\theta$. As $n\rightarrow\infty$, then $\hat \theta$ has a normal distribution with mean $\theta$ and variance $1/nI(\theta)$, where
+
+$$
+I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
+$$
+
+# Sampling Distributions
+
+## Sampling Distributions
+
+::: columns
+::: {.column width="50%"}
+### $\phi$ known
+
+$$
+\frac{\hat\beta_j - \beta_j}{\mathrm{se}(\hat\beta_j)} \sim N(0,1)
+$$
+:::
+
+::: {.column width="50%"}
+### $\phi$ unknown
+
+$$
+\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p^\prime}
+$$
+:::
+:::

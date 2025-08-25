@@ -10,9 +10,11 @@ format:
     html-math-method: katex
 ---
 
-Write a report on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R.
 
-**Worth 2 percent points.**
+Create a video essay on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings. 
+
+
+**Worth 3 percent points.**
 
 #### Resources
 
@@ -20,18 +22,14 @@ Write a report on Monte Carlo Methods. Provide a brief history and their purpose
 
 -   https://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e
 
-#### Report Guideline
+**Video Essay Guidelines:**
 
--   3-4 Pages
+-   10 Minutes Long
 
--   Must include a title page
+-   Use of visual aids
 
--   Double Spaced
+-   Narrated by your own voice
 
--   12 point font
+-   **Due 12/5/2025**
 
--   Proofread your work
-
--   Submit a pdf of your work to Canvas
-
--   Due 5/15/2023
+**Worth 3 final grade percentage points.**

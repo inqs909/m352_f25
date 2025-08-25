@@ -83,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -317,7 +317,7 @@ window.Quarto = {
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./syllabus.html"> 
-<span class="menu-text">Math 352: Probability and Statistics</span></a>
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./hw.html"> 
@@ -377,7 +377,28 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1756018800000" data-listing-file-modified-sort="1756106348856" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<div class="thumbnail"><a href="./exc/exc5.html" class="no-external">
 
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./exc/exc5.html" class="no-external">Extra Credit 4</a>
+</h3>
+<div class="delink listing-description"><a href="./exc/exc5.html" class="no-external">
+<p>Instructions for extra credit five.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./exc/exc5.html" class="no-external">
+<div class="listing-date">
+Aug 24, 2025
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
