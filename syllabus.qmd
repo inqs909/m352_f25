@@ -159,11 +159,20 @@ Any AI-generated work will receive a 0 in the class. Severe cases will be report
 
 ## University Policies
 
-### Academic Honesty:
+### Syllabus Policies and Assistance
 
-Please conduct yourself with honesty and integrity. Do not submit others' work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials are allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.
+CSUCI’s [Syllabus Policies and Assistance Website](https://www.csuci.edu/studentsupport/syllabus.htm) provides important details about academic policies, campus expectations, and student support services that are all highly applicable to your success as a student both in and outside of the classroom. Ensure that you review this site on a regular basis to stay informed about the policies and resources that support your success, as campus resources or policies may change semester to semester.
 
-### Disabilities:
+### Academic Honesty
+
+Conduct yourself with honesty and integrity. Do not submit others' work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.
+
+### CSUCI Basic Needs
+
+Please use the link to the Basic Needs Program on the Syllabus Policies and Assistance website (<go.csuci.edu/syllabuspolicies>) for information on emergency food, housing accommodations, toiletries, and connections to critical resources. 
+
+
+### CSUCI Disability Statement
 
 If you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations\@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: <https://www.csuci.edu/dass/students/apply-for-services.htm>. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.
 
@@ -171,3 +180,4 @@ If you are a student with a disability requesting reasonable accommodations in t
 
 1.  **If I Am Out:** I will communicate via email and will hold classes asynchronously.
 2.  **If You Are Out:** Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided.
+

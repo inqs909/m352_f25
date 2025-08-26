@@ -34,8 +34,7 @@ editor_options:
 
 ### Lecture
 
-[Tuesday Slides](https://m352.inqs.info/lectures/1a)
-[Thursday Slides](https://m352.inqs.info/lectures/1b)
+[Tuesday Slides](https://m352.inqs.info/lectures/1a) | [Thursday Slides](https://m352.inqs.info/lectures/1b)
 
 
 ### Videos
