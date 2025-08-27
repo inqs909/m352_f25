@@ -9,7 +9,7 @@ format:
     html-math-method: katex
 ---
 
-Homework 0 is due on 2/3/2023. Please try to submit the assignment as 1 PDF if possible.
+If you plan to submit this assignment, please try to submit the assignment as 1 PDF if possible.
 
 
 ### Problem 1
