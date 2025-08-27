@@ -1,8 +1,8 @@
 ---
 title: "Homework 0"
 editor: source
-date: 01-23-2023
-draft: true
+date: 08-24-2025
+draft: false
 format:
   html: 
     code-fold: true
