@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R/RStudio"
+title: "Introduction to Probability"
 format:
   revealjs:
     scrollable: true
@@ -15,106 +15,166 @@ format:
 editor: source
 ---
 
-## R Programming
+## Learning Objectives
 
-R is a statistical programming package that allows you to conduct different types of analysis.
+-   Define sample space and experiment
 
-[R](https://www.r-project.org/)
+-   Define probabilities
 
-## RStudio
+-   Define random variable and distribution function
 
-A piece of software that organizes how you conduct statistical analysis in R.
+# Sample Space and Experiments
 
-[RStudio](https://posit.co/downloads/)
+## Experiments and Outcomes
 
-## Posit Cloud
+- A **random experiment** is a process with uncertain results but well-defined possible outcomes.  
 
-A web version of RStudio.
+## Examples
 
-[Posit Cloud](https://posit.cloud/login)
-
-## R Packages
-
--   Tidyverse
+- Tossing a coin → outcomes: {Heads, Tails}  
+- Rolling a die → outcomes: {1, 2, 3, 4, 5, 6}  
+- Drawing a card → outcomes: {all 52 cards in a deck}
 
 
 
-## R as a calculator
+## Sample Space
 
-R can evaluate different expressions in the console tab.
+- The **sample space** (denoted $S$) is the set of all possible outcomes of an experiment.  
 
-Try the following:
 
-1.  $4(4+2)/34$
-2.  $6^3$
-3.  $3-1$
-4.  $4+4/3+45(32*34-54)$
-5.  
 
-## R Functions
+## Examples
 
-R functions performs tasks to specific data values.
+- Coin toss: $S = \{H, T\}$ 
+- Die roll: $S = \{1, 2, 3, 4, 5, 6\}$  
+- Two coin tosses: $S = \{HH, HT, TH, TT\}$
 
-Evaluate the following values in R:
 
-1.  $\sqrt{3}$
-2.  $e^3$
-3.  $\ln(53)$
-4.  $\log(324)$
-5.  $\sin(3)$
-6.  $\sin(3\pi)$
+## Events
 
-## Types of Data
+- An **event** is any subset of the sample space.  
 
--   Numeric
+**Examples:**  
+- Event A: "Die shows an even number"  
+  $A = \{2,4,6\}$  
 
--   Character
+- Event B: "At least one Head in two tosses"  
+  $B = \{HH, HT, TH\}$
 
--   Logical
 
--   Missing
+## Certain and Impossible Events
 
-Evaluate the following code:
+- **Certain event:** The sample space itself $S$  (probability = 1)
 
-```{r}
-#| eval: false
+- **Impossible event:** The empty set $\varnothing$ (probability = 0)
 
-is.numeric(1)
-is.numeric("1")
-is.numeric(T)
-is.numeric(NA)
 
-```
+## Event Operations
 
-## Types of Objects
+Since events are subsets of the sample space, we can use set theory:
 
-In R, an object contains a set of data. The most common types are `vectors` and `matrix`.
+- **Union:** $A \cup B$ → either A or B occurs  
+- **Intersection:** $A \cap B$ → both A and B occur  
+- **Complement:** $A^c$ → event A does not occur
 
-Run this code and print out the objects in the console:
 
-```{r}
-x <- 3:34
-y <- matrix(1:20, nrow = 4)
+# Basic Probability Theory
 
-```
+## Probability Axioms
 
-## Data Frames
+For any event $A$:
 
-Data frames can be thought of as R's version of a data set.
+1. $0\leq \Pr(A) \leq 1$
 
-Play around with mtcars:
+2. $\Pr(S) = 1$ where $S$ is the sample space.
 
-```{r}
-mtcars
-```
+## Complement Rule
 
-## Lists
+The complement of $A$ (denoted $A^c$) is "not $A$".  
 
-List can be thought as an extended vector, but each element is a different R object.
+$$\Pr(A^c) = 1 - \Pr(A)$$
 
-Try playing with this R object:
+## Example  
 
-```{r}
-list_one <- list(mtcars, rep(0, 4),
-                 diag(rep(1, 3)))
-```
+If the probability of rain is 0.3,  
+then the probability of *no rain* is:  
+
+
+## Addition Rule
+
+For any two events $A$ and $B$:  
+
+$$\Pr(A \cup B) = \Pr(A) + \Pr(B) - \Pr(A \cap B)$$
+
+## Disjoint Events (mutually exclusive)  
+If $A$ and $B$ cannot happen together,  
+
+$$ \Pr(A \cap B) = 0 $$  
+
+Then:  
+
+$$ \Pr(A \cup B) = \Pr(A) + \Pr(B) $$
+
+
+## Multiplication Rule
+
+For any two events $A$ and $B$:  
+
+$$ \Pr(A \cap B) = \Pr(A \mid B)\Pr(B) $$
+
+or equivalently,  
+
+$$ \Pr(A \cap B) = \Pr(B \mid A)\Pr(A) $$
+
+## Conditional Probability
+
+The probability of \(A\) given that \(B\) occurred:  
+
+$$ \Pr(A \mid B) = \frac{\Pr(A \cap B)}{\Pr(B)}, \quad \Pr(B) > 0 $$
+
+## Example
+If 30% of students play soccer, 20% play basketball,  
+and 10% play both:  
+
+
+## Summary
+
+- **Complement Rule:**  
+  $$ \Pr(A^c) = 1 - \Pr(A) $$  
+
+- **Addition Rule:**  
+  $$ \Pr(A \cup B) = \Pr(A) + \Pr(B) - \Pr(A \cap B) $$  
+
+- **Multiplication Rule:**  
+  $$ \Pr(A \cap B) = \Pr(A \mid B)\Pr(B) $$  
+
+- **Conditional Probability:**  
+  $$ \Pr(A \mid B) = \frac{\Pr(A \cap B)}{\Pr(B)} $$  
+
+# Example
+
+## Example
+
+Suppose we want to understand the efficacy of a test for a certain disease. Consider the following table:
+
+|             |     | Disease | Presence | Total |
+|-------------|-----|---------|----------|-------|
+|             |     | Yes     | No       |       |
+| Test Result | Yes | 42      | 6        |       |
+|             | No  | 17      | 35       |       |
+|             |     |         |          | 100   |
+|             |     |         |          |       |
+
+## Example
+
+::: nonincremental
+-   Find the probability that an individual has a disease
+
+-   Find the probability that an individual tests negative for a disease
+
+-   Find the probability that and tests positive for a disease or they don't have the disease
+
+-   Find the probability that the test gives an accurate result
+
+-   Find the probability that the test gives and inaccurate result
+:::

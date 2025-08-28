@@ -123,7 +123,7 @@ The following outline may be subject to change. Any changes will be announced in
 | 10/20     | Sampling Statistics           |                   | 6.3 - 6.4           |
 | 10/27     | Maximum Likelihood Estimation | HW #6             | 8.1 -  8.2          |
 | 11/3      | Regression                    | HW #7             | 7.1                 |
-| 11/10     | Regression                    | HW #8             | 7.2                 |
+| 11/10     | Holiday/Regression            | HW #8             | 7.2                 |
 | 11/17     | Standard Errors               | Take-Home Exam #2 | Handouts            |
 | 11/24     | Hypothesis Testing            | HW #9             | 9.3                 |
 | 12/1      | Confidence Intervals          | HW #10            | 9.2 - 9.4           |

@@ -152,7 +152,7 @@
 </section>
 <section id="disjoint-events-1" class="slide level2">
 <h2>Disjoint Events</h2>
-<p>Two events <strong>A</strong> and <strong>B</strong> are considered disjoint if <span class="math inline">\(P(A\cap B)=0\)</span>. In general terms, only one event can occur, not both.</p>
+<p>Two events <strong>A</strong> and <strong>B</strong> are considered disjoint if <span class="math inline">\(\Pr(A\cap B)=0\)</span>. In general terms, only one event can occur, not both.</p>
 </section>
 <section id="diagram" class="slide level2">
 <h2>Diagram</h2>
@@ -164,9 +164,9 @@
 </section>
 <section id="conditional-probability-1" class="slide level2">
 <h2>Conditional Probability</h2>
-<p>Let there be 2 events <strong>A</strong> and <strong>B</strong>. Given that <strong>B</strong> has occurred, what is the probability that <strong>A</strong> occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as <span class="math inline">\(P(A|B)\)</span>, the probability of <strong>A</strong> given <strong>B</strong> has occurred.</p>
+<p>Let there be 2 events <strong>A</strong> and <strong>B</strong>. Given that <strong>B</strong> has occurred, what is the probability that <strong>A</strong> occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as <span class="math inline">\(\Pr(A|B)\)</span>, the probability of <strong>A</strong> given <strong>B</strong> has occurred.</p>
 <p><span class="math display">\[
-P(A|B)=\frac{P(A\cap B)}{P(B)}
+\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
 \]</span></p>
 </section>
 <section id="diagram-1" class="slide level2">
@@ -215,7 +215,7 @@ P(A|B)=\frac{P(A\cap B)}{P(B)}
 </section>
 <section id="independent-events-1" class="slide level2">
 <h2>Independent Events</h2>
-<p>Events <strong>A</strong> and <strong>B</strong> are considered independent if <span class="math inline">\(P(A\cap B)=P(A)P(B)\)</span>. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.</p>
+<p>Events <strong>A</strong> and <strong>B</strong> are considered independent if <span class="math inline">\(\Pr(A\cap B)=\Pr(A)\Pr(B)\)</span>. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.</p>
 </section>
 <section id="example-1" class="slide level2">
 <h2>Example</h2>
@@ -255,11 +255,11 @@ P(A|B)=\frac{P(A\cap B)}{P(B)}
 <h2>Law of Total Probability</h2>
 <p>The law of total probability allows you to compute the probability of an event <strong>A</strong> given that the sets {<span class="math inline">\(B_1\)</span>, … , <span class="math inline">\(B_n\)</span>} partitions event <strong>A</strong>. The law of total probability is given as</p>
 <p><span class="math display">\[
-P(A)= \sum^n_{i=1}P(A\cap B_i)
+\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
 \]</span></p>
 <div class="fragment">
 <p><span class="math display">\[
-P(A)=\sum^n_{i=1}P(A|B_i)P(B_i)
+\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
 \]</span></p>
 </div>
 </section>
@@ -279,7 +279,7 @@ P(A)=\sum^n_{i=1}P(A|B_i)P(B_i)
 <h2>Baye’s Theorem</h2>
 <p>Baye’s theorem computes the probability of an event <span class="math inline">\(B_i\)</span> given event <strong>A</strong></p>
 <p><span class="math display">\[
-P(B_i|A) = \frac{P(A\cap B_i)}{P(A)}=\frac{P(A|B_i)P(B_i)}{\sum^n_{i=1}P(A|B_i)P(B_i)}
+\Pr(B_i|A) = \frac{\Pr(A\cap B_i)}{\Pr(A)}=\frac{\Pr(A|B_i)\Pr(B_i)}{\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)}
 \]</span></p>
 </section>
 <section id="example-3" class="slide level2">

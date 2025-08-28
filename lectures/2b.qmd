@@ -31,7 +31,7 @@ editor: source
 
 ## Disjoint Events
 
-Two events **A** and **B** are considered disjoint if $P(A\cap B)=0$. In general terms, only one event can occur, not both.
+Two events **A** and **B** are considered disjoint if $\Pr(A\cap B)=0$. In general terms, only one event can occur, not both.
 
 ## Diagram
 
@@ -39,10 +39,10 @@ Two events **A** and **B** are considered disjoint if $P(A\cap B)=0$. In general
 
 ## Conditional Probability
 
-Let there be 2 events **A** and **B**. Given that **B** has occurred, what is the probability that **A** occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as $P(A|B)$, the probability of **A** given **B** has occurred.
+Let there be 2 events **A** and **B**. Given that **B** has occurred, what is the probability that **A** occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as $\Pr(A|B)$, the probability of **A** given **B** has occurred.
 
 $$
-P(A|B)=\frac{P(A\cap B)}{P(B)}
+\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
 $$
 
 ## Diagram
@@ -70,7 +70,7 @@ $$
 
 ## Independent Events
 
-Events **A** and **B** are considered independent if $P(A\cap B)=P(A)P(B)$. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.
+Events **A** and **B** are considered independent if $\Pr(A\cap B)=\Pr(A)\Pr(B)$. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.
 
 ## Example
 
@@ -87,12 +87,12 @@ Events **A** and **B** are considered independent if $P(A\cap B)=P(A)P(B)$. In o
 The law of total probability allows you to compute the probability of an event **A** given that the sets {$B_1$, ... , $B_n$} partitions event **A**. The law of total probability is given as
 
 $$
-P(A)= \sum^n_{i=1}P(A\cap B_i)
+\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
 $$
 
 ::: fragment
 $$
-P(A)=\sum^n_{i=1}P(A|B_i)P(B_i)
+\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
 $$
 :::
 
@@ -109,7 +109,7 @@ The probability of an individual having a disease, given that they test positive
 Baye's theorem computes the probability of an event $B_i$ given event **A**
 
 $$
-P(B_i|A) = \frac{P(A\cap B_i)}{P(A)}=\frac{P(A|B_i)P(B_i)}{\sum^n_{i=1}P(A|B_i)P(B_i)}
+\Pr(B_i|A) = \frac{\Pr(A\cap B_i)}{\Pr(A)}=\frac{\Pr(A|B_i)\Pr(B_i)}{\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)}
 $$
 
 ## Example

@@ -46,7 +46,7 @@
     "href": "syllabus.html#class-schedule",
     "title": "Syllabus",
     "section": "Class Schedule",
-    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\n\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nRegression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
+    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\n\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nHoliday/Regression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
   },
   {
     "objectID": "syllabus.html#university-policies",
@@ -1187,7 +1187,7 @@
     "href": "lectures/2b.html#disjoint-events-1",
     "title": "Introduction to Probability",
     "section": "Disjoint Events",
-    "text": "Disjoint Events\nTwo events A and B are considered disjoint if \\(P(A\\cap B)=0\\). In general terms, only one event can occur, not both."
+    "text": "Disjoint Events\nTwo events A and B are considered disjoint if \\(\\Pr(A\\cap B)=0\\). In general terms, only one event can occur, not both."
   },
   {
     "objectID": "lectures/2b.html#diagram",
@@ -1201,7 +1201,7 @@
     "href": "lectures/2b.html#conditional-probability-1",
     "title": "Introduction to Probability",
     "section": "Conditional Probability",
-    "text": "Conditional Probability\nLet there be 2 events A and B. Given that B has occurred, what is the probability that A occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as \\(P(A|B)\\), the probability of A given B has occurred.\n\\[\nP(A|B)=\\frac{P(A\\cap B)}{P(B)}\n\\]"
+    "text": "Conditional Probability\nLet there be 2 events A and B. Given that B has occurred, what is the probability that A occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as \\(\\Pr(A|B)\\), the probability of A given B has occurred.\n\\[\n\\Pr(A|B)=\\frac{\\Pr(A\\cap B)}\\Pr(B)}\n\\]"
   },
   {
     "objectID": "lectures/2b.html#diagram-1",
@@ -1229,7 +1229,7 @@
     "href": "lectures/2b.html#independent-events-1",
     "title": "Introduction to Probability",
     "section": "Independent Events",
-    "text": "Independent Events\nEvents A and B are considered independent if \\(P(A\\cap B)=P(A)P(B)\\). In other words, The occurrence of one event will not have an effect on the occurrence of the other event."
+    "text": "Independent Events\nEvents A and B are considered independent if \\(\\Pr(A\\cap B)=\\Pr(A)\\Pr(B)\\). In other words, The occurrence of one event will not have an effect on the occurrence of the other event."
   },
   {
     "objectID": "lectures/2b.html#example-1",
@@ -1243,7 +1243,7 @@
     "href": "lectures/2b.html#law-of-total-probability-1",
     "title": "Introduction to Probability",
     "section": "Law of Total Probability",
-    "text": "Law of Total Probability\nThe law of total probability allows you to compute the probability of an event A given that the sets {\\(B_1\\), … , \\(B_n\\)} partitions event A. The law of total probability is given as\n\\[\nP(A)= \\sum^n_{i=1}P(A\\cap B_i)\n\\]\n\n\\[\nP(A)=\\sum^n_{i=1}P(A|B_i)P(B_i)\n\\]"
+    "text": "Law of Total Probability\nThe law of total probability allows you to compute the probability of an event A given that the sets {\\(B_1\\), … , \\(B_n\\)} partitions event A. The law of total probability is given as\n\\[\n\\Pr(A)= \\sum^n_{i=1}\\Pr(A\\cap B_i)\n\\]\n\n\\[\n\\Pr(A)=\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)\n\\]"
   },
   {
     "objectID": "lectures/2b.html#diagrams",
@@ -1264,7 +1264,7 @@
     "href": "lectures/2b.html#bayes-theorem-1",
     "title": "Introduction to Probability",
     "section": "Baye’s Theorem",
-    "text": "Baye’s Theorem\nBaye’s theorem computes the probability of an event \\(B_i\\) given event A\n\\[\nP(B_i|A) = \\frac{P(A\\cap B_i)}{P(A)}=\\frac{P(A|B_i)P(B_i)}{\\sum^n_{i=1}P(A|B_i)P(B_i)}\n\\]"
+    "text": "Baye’s Theorem\nBaye’s theorem computes the probability of an event \\(B_i\\) given event A\n\\[\n\\Pr(B_i|A) = \\frac{\\Pr(A\\cap B_i)}{\\Pr(A)}=\\frac{\\Pr(A|B_i)\\Pr(B_i)}{\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)}\n\\]"
   },
   {
     "objectID": "lectures/2b.html#example-3",
@@ -1274,74 +1274,137 @@
     "text": "Example\nThe probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?"
   },
   {
-    "objectID": "lectures/1b.html#r-programming",
-    "href": "lectures/1b.html#r-programming",
-    "title": "Introduction to R/RStudio",
-    "section": "R Programming",
-    "text": "R Programming\nR is a statistical programming package that allows you to conduct different types of analysis.\nR"
+    "objectID": "lectures/1b.html#learning-objectives",
+    "href": "lectures/1b.html#learning-objectives",
+    "title": "Introduction to Probability",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nDefine sample space and experiment\nDefine probabilities\nDefine random variable and distribution function"
   },
   {
-    "objectID": "lectures/1b.html#rstudio",
-    "href": "lectures/1b.html#rstudio",
-    "title": "Introduction to R/RStudio",
-    "section": "RStudio",
-    "text": "RStudio\nA piece of software that organizes how you conduct statistical analysis in R.\nRStudio"
+    "objectID": "lectures/1b.html#experiments-and-outcomes",
+    "href": "lectures/1b.html#experiments-and-outcomes",
+    "title": "Introduction to Probability",
+    "section": "Experiments and Outcomes",
+    "text": "Experiments and Outcomes\n\nA random experiment is a process with uncertain results but well-defined possible outcomes."
   },
   {
-    "objectID": "lectures/1b.html#posit-cloud",
-    "href": "lectures/1b.html#posit-cloud",
-    "title": "Introduction to R/RStudio",
-    "section": "Posit Cloud",
-    "text": "Posit Cloud\nA web version of RStudio.\nPosit Cloud"
+    "objectID": "lectures/1b.html#examples",
+    "href": "lectures/1b.html#examples",
+    "title": "Introduction to Probability",
+    "section": "Examples",
+    "text": "Examples\n\nTossing a coin → outcomes: {Heads, Tails}\n\nRolling a die → outcomes: {1, 2, 3, 4, 5, 6}\n\nDrawing a card → outcomes: {all 52 cards in a deck}"
   },
   {
-    "objectID": "lectures/1b.html#r-packages",
-    "href": "lectures/1b.html#r-packages",
-    "title": "Introduction to R/RStudio",
-    "section": "R Packages",
-    "text": "R Packages\n\nTidyverse"
+    "objectID": "lectures/1b.html#sample-space",
+    "href": "lectures/1b.html#sample-space",
+    "title": "Introduction to Probability",
+    "section": "Sample Space",
+    "text": "Sample Space\n\nThe sample space (denoted \\(S\\)) is the set of all possible outcomes of an experiment."
   },
   {
-    "objectID": "lectures/1b.html#r-as-a-calculator",
-    "href": "lectures/1b.html#r-as-a-calculator",
-    "title": "Introduction to R/RStudio",
-    "section": "R as a calculator",
-    "text": "R as a calculator\nR can evaluate different expressions in the console tab.\nTry the following:\n\n\\(4(4+2)/34\\)\n\\(6^3\\)\n\\(3-1\\)\n\\(4+4/3+45(32*34-54)\\)"
+    "objectID": "lectures/1b.html#examples-1",
+    "href": "lectures/1b.html#examples-1",
+    "title": "Introduction to Probability",
+    "section": "Examples",
+    "text": "Examples\n\nCoin toss: \\(S = \\{H, T\\}\\)\nDie roll: \\(S = \\{1, 2, 3, 4, 5, 6\\}\\)\n\nTwo coin tosses: \\(S = \\{HH, HT, TH, TT\\}\\)"
   },
   {
-    "objectID": "lectures/1b.html#r-functions",
-    "href": "lectures/1b.html#r-functions",
-    "title": "Introduction to R/RStudio",
-    "section": "R Functions",
-    "text": "R Functions\nR functions performs tasks to specific data values.\nEvaluate the following values in R:\n\n\\(\\sqrt{3}\\)\n\\(e^3\\)\n\\(\\ln(53)\\)\n\\(\\log(324)\\)\n\\(\\sin(3)\\)\n\\(\\sin(3\\pi)\\)"
+    "objectID": "lectures/1b.html#events",
+    "href": "lectures/1b.html#events",
+    "title": "Introduction to Probability",
+    "section": "Events",
+    "text": "Events\n\nAn event is any subset of the sample space.\n\nExamples:\n- Event A: “Die shows an even number”\n\\(A = \\{2,4,6\\}\\)\n\nEvent B: “At least one Head in two tosses”\n\\(B = \\{HH, HT, TH\\}\\)"
   },
   {
-    "objectID": "lectures/1b.html#types-of-data",
-    "href": "lectures/1b.html#types-of-data",
-    "title": "Introduction to R/RStudio",
-    "section": "Types of Data",
-    "text": "Types of Data\n\nNumeric\nCharacter\nLogical\nMissing\n\nEvaluate the following code:"
+    "objectID": "lectures/1b.html#certain-and-impossible-events",
+    "href": "lectures/1b.html#certain-and-impossible-events",
+    "title": "Introduction to Probability",
+    "section": "Certain and Impossible Events",
+    "text": "Certain and Impossible Events\n\nCertain event: The sample space itself \\(S\\) (probability = 1)\nImpossible event: The empty set \\(\\varnothing\\) (probability = 0)"
   },
   {
-    "objectID": "lectures/1b.html#types-of-objects",
-    "href": "lectures/1b.html#types-of-objects",
-    "title": "Introduction to R/RStudio",
-    "section": "Types of Objects",
-    "text": "Types of Objects\nIn R, an object contains a set of data. The most common types are vectors and matrix.\nRun this code and print out the objects in the console:"
+    "objectID": "lectures/1b.html#event-operations",
+    "href": "lectures/1b.html#event-operations",
+    "title": "Introduction to Probability",
+    "section": "Event Operations",
+    "text": "Event Operations\nSince events are subsets of the sample space, we can use set theory:\n\nUnion: \\(A \\cup B\\) → either A or B occurs\n\nIntersection: \\(A \\cap B\\) → both A and B occur\n\nComplement: \\(A^c\\) → event A does not occur"
   },
   {
-    "objectID": "lectures/1b.html#data-frames",
-    "href": "lectures/1b.html#data-frames",
-    "title": "Introduction to R/RStudio",
-    "section": "Data Frames",
-    "text": "Data Frames\nData frames can be thought of as R’s version of a data set.\nPlay around with mtcars:\n\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
+    "objectID": "lectures/1b.html#probability-axioms",
+    "href": "lectures/1b.html#probability-axioms",
+    "title": "Introduction to Probability",
+    "section": "Probability Axioms",
+    "text": "Probability Axioms\nFor any event \\(A\\):\n\n\\(0\\leq \\Pr(A) \\leq 1\\)\n\\(\\Pr(S) = 1\\) where \\(S\\) is the sample space."
   },
   {
-    "objectID": "lectures/1b.html#lists",
-    "href": "lectures/1b.html#lists",
-    "title": "Introduction to R/RStudio",
-    "section": "Lists",
-    "text": "Lists\nList can be thought as an extended vector, but each element is a different R object.\nTry playing with this R object:"
+    "objectID": "lectures/1b.html#complement-rule",
+    "href": "lectures/1b.html#complement-rule",
+    "title": "Introduction to Probability",
+    "section": "Complement Rule",
+    "text": "Complement Rule\nThe complement of \\(A\\) (denoted \\(A^c\\)) is “not \\(A\\)”.\n\\[\\Pr(A^c) = 1 - \\Pr(A)\\]"
+  },
+  {
+    "objectID": "lectures/1b.html#example",
+    "href": "lectures/1b.html#example",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nIf the probability of rain is 0.3,\nthen the probability of no rain is:"
+  },
+  {
+    "objectID": "lectures/1b.html#addition-rule",
+    "href": "lectures/1b.html#addition-rule",
+    "title": "Introduction to Probability",
+    "section": "Addition Rule",
+    "text": "Addition Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)\\]"
+  },
+  {
+    "objectID": "lectures/1b.html#disjoint-events-mutually-exclusive",
+    "href": "lectures/1b.html#disjoint-events-mutually-exclusive",
+    "title": "Introduction to Probability",
+    "section": "Disjoint Events (mutually exclusive)",
+    "text": "Disjoint Events (mutually exclusive)\nIf \\(A\\) and \\(B\\) cannot happen together,\n\\[ \\Pr(A \\cap B) = 0 \\]\nThen:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#multiplication-rule",
+    "href": "lectures/1b.html#multiplication-rule",
+    "title": "Introduction to Probability",
+    "section": "Multiplication Rule",
+    "text": "Multiplication Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nor equivalently,\n\\[ \\Pr(A \\cap B) = \\Pr(B \\mid A)\\Pr(A) \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#conditional-probability",
+    "href": "lectures/1b.html#conditional-probability",
+    "title": "Introduction to Probability",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\nThe probability of (A) given that (B) occurred:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}, \\quad \\Pr(B) &gt; 0 \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#example-1",
+    "href": "lectures/1b.html#example-1",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nIf 30% of students play soccer, 20% play basketball,\nand 10% play both:"
+  },
+  {
+    "objectID": "lectures/1b.html#summary",
+    "href": "lectures/1b.html#summary",
+    "title": "Introduction to Probability",
+    "section": "Summary",
+    "text": "Summary\n\nComplement Rule:\n\\[ \\Pr(A^c) = 1 - \\Pr(A) \\]\nAddition Rule:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) \\]\nMultiplication Rule:\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nConditional Probability:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#example-3",
+    "href": "lectures/1b.html#example-3",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nSuppose we want to understand the efficacy of a test for a certain disease. Consider the following table:\n\n\n\n\n\nDisease\nPresence\nTotal\n\n\n\n\n\n\nYes\nNo\n\n\n\nTest Result\nYes\n42\n6\n\n\n\n\nNo\n17\n35\n\n\n\n\n\n\n\n100"
+  },
+  {
+    "objectID": "lectures/1b.html#example-4",
+    "href": "lectures/1b.html#example-4",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability that and tests positive for a disease or they don’t have the disease\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
   },
   {
     "objectID": "index.html",
@@ -1540,95 +1603,74 @@
     "text": "Associations\nAn association describes the relationship between two characteristics of a population."
   },
   {
-    "objectID": "lectures/2a.html#learning-objectives",
-    "href": "lectures/2a.html#learning-objectives",
-    "title": "Introduction to Probability",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDefine sample space and experiment\nDefine probabilities\nDefine random variable and distribution function"
+    "objectID": "lectures/1c.html#r-programming",
+    "href": "lectures/1c.html#r-programming",
+    "title": "Introduction to R/RStudio",
+    "section": "R Programming",
+    "text": "R Programming\nR is a statistical programming package that allows you to conduct different types of analysis.\nR"
   },
   {
-    "objectID": "lectures/2a.html#sample-space",
-    "href": "lectures/2a.html#sample-space",
-    "title": "Introduction to Probability",
-    "section": "Sample Space",
-    "text": "Sample Space"
+    "objectID": "lectures/1c.html#rstudio",
+    "href": "lectures/1c.html#rstudio",
+    "title": "Introduction to R/RStudio",
+    "section": "RStudio",
+    "text": "RStudio\nA piece of software that organizes how you conduct statistical analysis in R.\nRStudio"
   },
   {
-    "objectID": "lectures/2a.html#event",
-    "href": "lectures/2a.html#event",
-    "title": "Introduction to Probability",
-    "section": "Event",
-    "text": "Event\n\\(S=\\{a_1,a_2,a_3,a_4, a_5\\}\\)"
+    "objectID": "lectures/1c.html#posit-cloud",
+    "href": "lectures/1c.html#posit-cloud",
+    "title": "Introduction to R/RStudio",
+    "section": "Posit Cloud",
+    "text": "Posit Cloud\nA web version of RStudio.\nPosit Cloud"
   },
   {
-    "objectID": "lectures/2a.html#set-rules",
-    "href": "lectures/2a.html#set-rules",
-    "title": "Introduction to Probability",
-    "section": "Set Rules",
-    "text": "Set Rules\n\\(S=\\{a_1,a_2,a_3,a_4, a_5\\}\\)"
+    "objectID": "lectures/1c.html#r-packages",
+    "href": "lectures/1c.html#r-packages",
+    "title": "Introduction to R/RStudio",
+    "section": "R Packages",
+    "text": "R Packages\n\nTidyverse"
   },
   {
-    "objectID": "lectures/2a.html#set-rules-1",
-    "href": "lectures/2a.html#set-rules-1",
-    "title": "Introduction to Probability",
-    "section": "Set Rules",
-    "text": "Set Rules\n\\(S=\\{a_1,a_2,a_3,a_4, a_5\\}\\)"
+    "objectID": "lectures/1c.html#r-as-a-calculator",
+    "href": "lectures/1c.html#r-as-a-calculator",
+    "title": "Introduction to R/RStudio",
+    "section": "R as a calculator",
+    "text": "R as a calculator\nR can evaluate different expressions in the console tab.\nTry the following:\n\n\\(4(4+2)/34\\)\n\\(6^3\\)\n\\(3-1\\)\n\\(4+4/3+45(32*34-54)\\)"
   },
   {
-    "objectID": "lectures/2a.html#enumerating-outcomes",
-    "href": "lectures/2a.html#enumerating-outcomes",
-    "title": "Introduction to Probability",
-    "section": "Enumerating outcomes",
-    "text": "Enumerating outcomes\n\\(S=\\{a_1,a_2,a_3,a_4, a_5\\}\\)"
+    "objectID": "lectures/1c.html#r-functions",
+    "href": "lectures/1c.html#r-functions",
+    "title": "Introduction to R/RStudio",
+    "section": "R Functions",
+    "text": "R Functions\nR functions performs tasks to specific data values.\nEvaluate the following values in R:\n\n\\(\\sqrt{3}\\)\n\\(e^3\\)\n\\(\\ln(53)\\)\n\\(\\log(324)\\)\n\\(\\sin(3)\\)\n\\(\\sin(3\\pi)\\)"
   },
   {
-    "objectID": "lectures/2a.html#probability-rules",
-    "href": "lectures/2a.html#probability-rules",
-    "title": "Introduction to Probability",
-    "section": "Probability Rules",
-    "text": "Probability Rules"
+    "objectID": "lectures/1c.html#types-of-data",
+    "href": "lectures/1c.html#types-of-data",
+    "title": "Introduction to R/RStudio",
+    "section": "Types of Data",
+    "text": "Types of Data\n\nNumeric\nCharacter\nLogical\nMissing\n\nEvaluate the following code:"
   },
   {
-    "objectID": "lectures/2a.html#probability-rules-1",
-    "href": "lectures/2a.html#probability-rules-1",
-    "title": "Introduction to Probability",
-    "section": "Probability Rules",
-    "text": "Probability Rules"
+    "objectID": "lectures/1c.html#types-of-objects",
+    "href": "lectures/1c.html#types-of-objects",
+    "title": "Introduction to R/RStudio",
+    "section": "Types of Objects",
+    "text": "Types of Objects\nIn R, an object contains a set of data. The most common types are vectors and matrix.\nRun this code and print out the objects in the console:"
   },
   {
-    "objectID": "lectures/2a.html#random-variable-1",
-    "href": "lectures/2a.html#random-variable-1",
-    "title": "Introduction to Probability",
-    "section": "Random Variable",
-    "text": "Random Variable"
+    "objectID": "lectures/1c.html#data-frames",
+    "href": "lectures/1c.html#data-frames",
+    "title": "Introduction to R/RStudio",
+    "section": "Data Frames",
+    "text": "Data Frames\nData frames can be thought of as R’s version of a data set.\nPlay around with mtcars:\n\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
   },
   {
-    "objectID": "lectures/2a.html#probability-mass-function",
-    "href": "lectures/2a.html#probability-mass-function",
-    "title": "Introduction to Probability",
-    "section": "Probability Mass Function",
-    "text": "Probability Mass Function"
-  },
-  {
-    "objectID": "lectures/2a.html#cumulative-density-function",
-    "href": "lectures/2a.html#cumulative-density-function",
-    "title": "Introduction to Probability",
-    "section": "Cumulative Density Function",
-    "text": "Cumulative Density Function"
-  },
-  {
-    "objectID": "lectures/2a.html#example-1",
-    "href": "lectures/2a.html#example-1",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nSuppose we want to understand the efficacy of a test for a certain disease. Consider the following table:\n\n\n\n\n\nDisease\nPresence\nTotal\n\n\n\n\n\n\nYes\nNo\n\n\n\nTest Result\nYes\n42\n6\n\n\n\n\nNo\n17\n35\n\n\n\n\n\n\n\n100"
-  },
-  {
-    "objectID": "lectures/2a.html#example-2",
-    "href": "lectures/2a.html#example-2",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability that and tests positive for a disease or they don’t have the disease\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
+    "objectID": "lectures/1c.html#lists",
+    "href": "lectures/1c.html#lists",
+    "title": "Introduction to R/RStudio",
+    "section": "Lists",
+    "text": "Lists\nList can be thought as an extended vector, but each element is a different R object.\nTry playing with this R object:"
   },
   {
     "objectID": "lectures/lecture_1.html#introductions",
