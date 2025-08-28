@@ -172,7 +172,7 @@ Suppose we want to understand the efficacy of a test for a certain disease. Cons
 
 -   Find the probability that an individual tests negative for a disease
 
--   Find the probability that and tests positive for a disease or they don't have the disease
+-   Find the probability for someone who has the disease, given that they test positive.
 
 -   Find the probability that the test gives an accurate result
 

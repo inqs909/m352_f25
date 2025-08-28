@@ -1404,7 +1404,7 @@
     "href": "lectures/1b.html#example-4",
     "title": "Introduction to Probability",
     "section": "Example",
-    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability that and tests positive for a disease or they don’t have the disease\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
+    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability for someone who has the disease, given that they test positive.\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
   },
   {
     "objectID": "index.html",
