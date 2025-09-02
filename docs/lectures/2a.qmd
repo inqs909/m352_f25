@@ -96,7 +96,7 @@ $$
 $$
 \Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
 $$
-
+:::
 
 ## Diagrams
 
