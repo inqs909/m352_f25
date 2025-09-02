@@ -1,8 +1,8 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/ec.html",
     "items": [
-      "/posts/week_1.html"
+      "/exc/exc5.html"
     ]
   },
   {
@@ -12,9 +12,10 @@
     ]
   },
   {
-    "listing": "/ec.html",
+    "listing": "/index.html",
     "items": [
-      "/exc/exc5.html"
+      "/posts/week_1.html",
+      "/posts/week_2.html"
     ]
   },
   {

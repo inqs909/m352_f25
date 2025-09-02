@@ -1,0 +1,170 @@
+---
+title: "Introduction to Probability"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: source
+---
+
+## Learning Outcomes
+
+-   Describe disjoint events
+
+-   Describe a conditional probability
+
+-   Define independent events
+
+-   Law of Total Probability
+
+-   Baye's Theorem
+
+# Disjoint Events
+
+## Disjoint Events
+
+Two events **A** and **B** are considered disjoint if $\Pr(A\cap B)=0$. In general terms, only one event can occur, not both.
+
+
+# Conditional Probability
+
+## Conditional Probability
+
+Let there be 2 events **A** and **B**. Given that **B** has occurred, what is the probability that **A** occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as $\Pr(A|B)$, the probability of **A** given **B** has occurred.
+
+$$
+\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
+$$
+
+
+
+## Example 1: Drawing Cards
+
+We have a standard deck of 52 cards.  
+Let’s find the probability of drawing an **ace**, given that the card is a **spade**.
+
+
+## Example 2: Rolling Dice
+
+Two fair dice are rolled.  
+Find the probability that the sum is **10**, given that the first die shows a **6**.
+
+
+## Example 3: Medical Test
+
+A certain disease affects 1% of the population.  
+A test correctly identifies the disease 95% of the time, but has a 5% false-positive rate.  
+Find the probability that someone has the disease given a **positive test result**.
+
+## Example 4: Eye Glasses
+
+|               |                  |     |
+|---------------|------------------|-----|
+|               | Uses Eye Glasses |     |
+| Needs Glasses | Yes              | No  |
+| Yes           | 44               | 14  |
+| No            | 2                | 40  |
+
+-   Find the probability of needing glasses
+
+-   Find the probability of not using glasses
+
+-   Find the probability of not using glasses and needing glasses
+
+-   Find the probability of not using glasses, given they need glasses
+
+
+# Independent Events
+
+## Independent Events
+
+Events **A** and **B** are considered independent if $\Pr(A\cap B)=\Pr(A)\Pr(B)$. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.
+
+## Example 1: Eye Glasses
+
+|               | Uses Eye Glasses |     |
+|---------------|------------------|-----|
+| Needs Glasses | Yes              | No  |
+| Yes           | 44               | 14  |
+| No            | 2                | 40  |
+
+## Example 2: Drawing with Replacement
+
+A jar contains 5 red balls and 3 blue balls (8 total).  
+We draw **two balls with replacement**.
+
+## Example 3: Drawing without Replacement
+
+A jar contains 5 red balls and 3 blue balls (8 total).  
+We draw **two balls with replacement**.
+
+
+# Law of Total Probability
+
+## Law of Total Probability
+
+The law of total probability allows you to compute the probability of an event **A** given that the sets {$B_1$, ... , $B_n$} partitions event **A**. The law of total probability is given as
+
+$$
+\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
+$$
+
+::: fragment
+$$
+\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
+$$
+:::
+
+## Diagrams
+
+## Example 1: Weather and Rain Forecast
+
+Suppose the weather forecast is either **Sunny (S)** or **Cloudy (C)**.
+
+- $ P(S) = 0.7 $, $ P(C) = 0.3 $  
+- Probability of rain given sunny: $ P(R \mid S) = 0.1 $  
+- Probability of rain given cloudy: $ P(R \mid C) = 0.5 $  
+
+What is the probability of rain?
+
+
+## Example 2: Disease
+
+The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?
+
+# Baye's Theorem
+
+## Baye's Theorem
+
+Baye's theorem computes the probability of an event $B_i$ given event **A**
+
+$$
+\Pr(B_i|A) = \frac{\Pr(A\cap B_i)}{\Pr(A)}=\frac{\Pr(A|B_i)\Pr(B_i)}{\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)}
+$$
+
+## Example 1: Factory Machines
+
+A factory has three machines producing items:
+
+- Machine A produces 40% of items, with a defect rate of 2%.  
+- Machine B produces 35% of items, with a defect rate of 3%.  
+- Machine C produces 25% of items, with a defect rate of 5%.  
+
+If an item is defective, what is the probability it came from Machine C?
+
+
+## Example 2: Email Spam Filtering
+
+Suppose 80% of emails are legitimate, 20% are spam. A keyword appears in 60% of spam emails but in only 5% of legitimate emails.  If an email contains the keyword, what is the probability it is spam?
+
+## Example 3: Disease
+
+The probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?

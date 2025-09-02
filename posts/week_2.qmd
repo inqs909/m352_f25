@@ -2,8 +2,8 @@
 title: "Week 2"
 date: 01-30-23
 description: This week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.
-editor: visual
-draft: true
+editor: source
+draft: false
 editor_options: 
   chunk_output_type: console
 ---
@@ -11,14 +11,6 @@ editor_options:
 ## Learning Outcomes
 
 ### First Lecture
-
--   Define sample space and events
-
--   Define probability and rules
-
--   Define random variable, probability mass function, and cumulative density function
-
-### Second Lecture
 
 -   Describe disjoint events
 
@@ -30,9 +22,24 @@ editor_options:
 
 -   Baye's Theorem
 
-## Important Concepts
+### Second Lecture
 
-### First Lecture
+-   Define Random Variables
+
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/2a) | [Thursday Slides](https://m352.inqs.info/lectures/2b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |         |          |
+| 002     |         |          |
+
+## Important Concepts
 
 #### Experiment
 
@@ -104,16 +111,3 @@ $$
 P(B_i|A) = \frac{P(A\cap B_i)}{P(A)}=\frac{P(A|B_i)P(B_i)}{\sum^n_{i=1}P(A|B_i)P(B_i)}
 $$
 
-## Resources
-
-### First Lecture
-
-| Slides | Videos |
-|------------------------------------------|------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_3.html) | [Video 001](https://youtu.be/l3wtEHRBUZY) [Video 002](https://youtu.be/hGpYKEdy-ns) |
-
-### Second Lecture
-
-| Slides | Videos |
-|----------------------------------------|--------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_4.html) | [Video 001](https://youtu.be/4ar7P9bm6_Y) [Video 002](https://youtu.be/yo0jy90_Lvc) |
