@@ -163,7 +163,7 @@
 <h2>Conditional Probability</h2>
 <p>Let there be 2 events <strong>A</strong> and <strong>B</strong>. Given that <strong>B</strong> has occurred, what is the probability that <strong>A</strong> occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as <span class="math inline">\(\Pr(A|B)\)</span>, the probability of <strong>A</strong> given <strong>B</strong> has occurred.</p>
 <p><span class="math display">\[
-\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
+\Pr(A|B)=\frac{\Pr(A\cap B)}{\Pr(B)}
 \]</span></p>
 </section>
 <section id="example-1-drawing-cards" class="slide level2">
@@ -216,6 +216,39 @@ Find the probability that someone has the disease given a <strong>positive test 
 </ul>
 </section></section>
 <section>
+<section id="law-of-total-probability" class="title-slide slide level1 center">
+<h1>Law of Total Probability</h1>
+
+</section>
+<section id="law-of-total-probability-1" class="slide level2">
+<h2>Law of Total Probability</h2>
+<p>The law of total probability allows you to compute the probability of an event <strong>A</strong> given that the sets {<span class="math inline">\(B_1\)</span>, … , <span class="math inline">\(B_n\)</span>} partitions event <strong>A</strong>. The law of total probability is given as</p>
+<p><span class="math display">\[
+\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
+\]</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
+\]</span></p>
+<section id="diagrams" class="slide level2">
+<h2>Diagrams</h2>
+</section>
+<section id="example-1-weather-and-rain-forecast" class="slide level2">
+<h2>Example 1: Weather and Rain Forecast</h2>
+<p>Suppose the weather forecast is either <strong>Sunny (S)</strong> or <strong>Cloudy (C)</strong>.</p>
+<ul>
+<li><span class="math inline">\(P(S) = 0.7\)</span>, <span class="math inline">\(P(C) = 0.3\)</span><br>
+</li>
+<li>Probability of rain given sunny: <span class="math inline">\(P(R \mid S) = 0.1\)</span><br>
+</li>
+<li>Probability of rain given cloudy: <span class="math inline">\(P(R \mid C) = 0.5\)</span></li>
+</ul>
+<p>What is the probability of rain?</p>
+</section>
+<section id="example-2-disease" class="slide level2">
+<h2>Example 2: Disease</h2>
+<p>The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?</p>
+</section>
 <section id="independent-events" class="title-slide slide level1 center">
 <h1>Independent Events</h1>
 
@@ -262,44 +295,8 @@ We draw <strong>two balls with replacement</strong>.</p>
 <h2>Example 3: Drawing without Replacement</h2>
 <p>A jar contains 5 red balls and 3 blue balls (8 total).<br>
 We draw <strong>two balls with replacement</strong>.</p>
-</section></section>
-<section>
-<section id="law-of-total-probability" class="title-slide slide level1 center">
-<h1>Law of Total Probability</h1>
+</section>
 
-</section>
-<section id="law-of-total-probability-1" class="slide level2">
-<h2>Law of Total Probability</h2>
-<p>The law of total probability allows you to compute the probability of an event <strong>A</strong> given that the sets {<span class="math inline">\(B_1\)</span>, … , <span class="math inline">\(B_n\)</span>} partitions event <strong>A</strong>. The law of total probability is given as</p>
-<p><span class="math display">\[
-\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
-\]</span></p>
-<div class="fragment">
-<p><span class="math display">\[
-\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
-\]</span></p>
-</div>
-</section>
-<section id="diagrams" class="slide level2">
-<h2>Diagrams</h2>
-</section>
-<section id="example-1-weather-and-rain-forecast" class="slide level2">
-<h2>Example 1: Weather and Rain Forecast</h2>
-<p>Suppose the weather forecast is either <strong>Sunny (S)</strong> or <strong>Cloudy (C)</strong>.</p>
-<ul>
-<li>$ P(S) = 0.7 $, $ P(C) = 0.3 $<br>
-</li>
-<li>Probability of rain given sunny: $ P(R S) = 0.1 $<br>
-</li>
-<li>Probability of rain given cloudy: $ P(R C) = 0.5 $</li>
-</ul>
-<p>What is the probability of rain?</p>
-</section>
-<section id="example-2-disease" class="slide level2">
-<h2>Example 2: Disease</h2>
-<p>The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?</p>
-</section></section>
-<section>
 <section id="bayes-theorem" class="title-slide slide level1 center">
 <h1>Baye’s Theorem</h1>
 
@@ -332,6 +329,9 @@ We draw <strong>two balls with replacement</strong>.</p>
 <p>The probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?</p>
 
 
+</section>
+
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
