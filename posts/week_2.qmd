@@ -1,6 +1,6 @@
 ---
 title: "Week 2"
-date: 01-30-23
+date: 09-01-25
 description: This week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.
 editor: source
 draft: false
