@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Probability"
+title: "Random Variables"
 format:
   revealjs:
     scrollable: true
@@ -15,103 +15,226 @@ format:
 editor: source
 ---
 
-## Learning Outcomes
 
--   Describe disjoint events
+# Probabilty Spaces
 
--   Describe a conditional probability
 
--   Define independent events
+## Motivation & Intuition
 
--   Law of Total Probability
+- Probability starts with **experiments**:
+  - Rolling a die 
+  - Tossing a coin 
+  - Measuring temperature 
+- Outcomes may be descriptive ("heads") or numeric (3).
+- To **analyze mathematically**, we assign numbers to outcomes.  
 
--   Baye's Theorem
+This leads to **random variables**.
 
-# Disjoint Events
 
-## Disjoint Events
+## Probability Space (The Foundation)
 
-Two events **A** and **B** are considered disjoint if $\Pr(A\cap B)=0$. In general terms, only one event can occur, not both.
-
-## Diagram
-
-# Conditional Probability
-
-## Conditional Probability
-
-Let there be 2 events **A** and **B**. Given that **B** has occurred, what is the probability that **A** occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as $\Pr(A|B)$, the probability of **A** given **B** has occurred.
+A probability space is a triple:
 
 $$
-\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
+(\Omega, \mathcal{F}, P)
 $$
 
-## Diagram
+1. **Sample Space ($\Omega$)**  
+   All possible outcomes.  
 
-## Example
+2. **Sigma-Algebra ($\mathcal{F}$)**  
+   Collection of events (subsets of $\Omega$) closed under complements and unions.
 
-|               |                  |     |
-|---------------|------------------|-----|
-|               | Uses Eye Glasses |     |
-| Needs Glasses | Yes              | No  |
-| Yes           | 44               | 14  |
-| No            | 2                | 40  |
+3. **Probability Measure ($P$)**  
+   Assigns probabilities to events.  
 
--   Find the probability of needing glasses
 
--   Find the probability of not using glasses
 
--   Find the probability of not using glasses and needing glasses
+## Sample Space ($\Omega$)
 
--   Find the probability of not using glasses, given they need glasses
+- The set of **all possible outcomes** of a random experiment.
+- Each element of $\Omega$ is an **elementary outcome**.
 
-## Work
+## Examples
 
-# Independent Events
+- Coin toss: $\Omega = \{H, T\}$
+- Die roll: $\Omega = \{1,2,3,4,5,6\}$
+- Two coins: $\Omega = \{HH, HT, TH, TT\}$
+- Height of a student: $\Omega = [100,220]$ cm
 
-## Independent Events
 
-Events **A** and **B** are considered independent if $\Pr(A\cap B)=\Pr(A)\Pr(B)$. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.
 
-## Example
+## Sigma-Algebra ($\mathcal{F}$)
 
-|               | Uses Eye Glasses |     |
-|---------------|------------------|-----|
-| Needs Glasses | Yes              | No  |
-| Yes           | 44               | 14  |
-| No            | 2                | 40  |
+- A **collection of subsets of $\Omega$** (called **events**) with special properties.
 
-# Law of Total Probability
+**Requirements:**
 
-## Law of Total Probability
+1. $\Omega \in \mathcal{F}$
 
-The law of total probability allows you to compute the probability of an event **A** given that the sets {$B_1$, ... , $B_n$} partitions event **A**. The law of total probability is given as
+2. If $A \in \mathcal{F}$, then $A^\mathrm{C} \in \mathcal{F}$
 
-$$
-\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
-$$
+3. If $A_1, A_2, \dots \in \mathcal{F}$, then $\bigcup_{i=1}^\infty A_i \in \mathcal{F}$ and $\bigcap_{i=1}^\infty A_i \in \mathcal{F}$
 
-::: fragment
-$$
-\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
-$$
-:::
 
-## Diagrams
 
-## Example
 
-The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?
+## Borel Sigma-Field
 
-# Baye's Theorem
+- When $\Omega = \mathbb{R}$ (or an interval), we need a **sigma-algebra** of subsets to define probabilities.
 
-## Baye's Theorem
+- Not every subset of $\mathbb{R}$ is “nice” (some are too pathological).
 
-Baye's theorem computes the probability of an event $B_i$ given event **A**
+- The **Borel sigma-field** provides a rigorous and practical choice.
+
+
+## Definition
+
+- The **Borel sigma-field** on $\mathbb{R}$, denoted $\mathcal{B}$, is the smallest $\sigma$-algebra based on semi-closed intervals:
 
 $$
-\Pr(B_i|A) = \frac{\Pr(A\cap B_i)}{\Pr(A)}=\frac{\Pr(A|B_i)\Pr(B_i)}{\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)}
+(\infty, b] = \{x: -\infty < x \leq \infty \}
 $$
 
-## Example
 
-The probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?
+## $\mathcal{B}$ Contain
+
+-  $(a,b)$
+-  $[a,b]$
+- $[a,b)$ and $(a,b]$
+- closed under complement
+- closed under unions
+- closed under intersection
+
+
+
+## Probability Measure ($P$)
+
+- A function $P: \mathcal{F} \to [0,1]$ that assigns probabilities.
+
+## Axioms 
+
+1. Non-negativity: $P(A) \geq 0$
+
+2. Normalization: $P(\Omega)=1$
+
+3. Countable additivity:  
+   If $A_1, A_2, \dots$ are disjoint,  
+   $$
+   P\Big(\bigcup_{i=1}^\infty A_i\Big) = \sum_{i=1}^\infty P(A_i)
+   $$
+
+
+
+## Summary
+
+- **Sample space ($\Omega$):** all possible outcomes  
+- **Sigma-algebra ($\mathcal{F}$):** collection of “allowable” events  
+- **Probability measure ($P$):** assigns probabilities consistently  
+
+Together: **Probability Space = $(\Omega, \mathcal{F}, P)$**
+
+
+# Random Variables
+
+## Random Variables
+
+- A **random variable** is a measurable function:
+
+$$
+X: \Omega \to \mathbb{R}
+$$
+
+- For any $a \in \mathbb{R}$,  
+  $\{ \omega \in \Omega : X(\omega) \leq a \} \in \mathcal{F}$.
+
+
+## Types of Random Variables
+
+1. **Discrete**  
+   - Countable values  
+   - Example: Die roll, number of heads in 3 tosses
+
+2. **Continuous**  
+   - Any value in an interval  
+   - Example: Height, time, weight
+
+
+## Distribution Function
+
+For a random variable $X$, the **cumulative distribution function (CDF)** is:
+
+$$
+F_X(x) = P(X \leq x), \quad x \in \mathbb{R}
+$$
+
+**Interpretation:**  
+$F_X(x)$ gives the probability that $X$ takes a value **less than or equal to $x$**.
+
+---
+
+## Properties of a Distribution Function
+
+- $F_X(x)$ is **non-decreasing**.
+- $\lim_{x \to -\infty} F_X(x) = 0$
+- $\lim_{x \to +\infty} F_X(x) = 1$
+- $F_X$ is **right-continuous**:
+  $$
+  \lim_{t \downarrow x} F_X(t) = F_X(x)
+  $$
+
+## Distributions
+
+- **Discrete:** Probability Mass Function (PMF)  
+$$
+P(X=x) = p(x)
+$$
+
+
+## Distributions (cont.)
+
+- **Continuous:** Probability Density Function (PDF)  
+$$
+P(a \leq X \leq b) = \int_a^b f(x)\,dx
+$$
+
+
+
+## Expectation & Variance
+
+- **Expectation (Mean):**  
+  - Discrete:  
+    $$
+    E[X] = \sum_x x \, p(x)
+    $$
+  - Continuous:  
+    $$
+    E[X] = \int_{-\infty}^{\infty} x f(x)\,dx
+    $$
+
+- **Variance:**  
+$$
+\text{Var}(X) = E[(X - E[X])^2]
+$$
+
+
+## Expected Value (Mean)
+
+- The **long-run average** value of a random variable.  
+- Think: if we repeated the experiment many times, what would the average outcome be?
+
+## Variance (Spread of Values)
+
+- Measures **how spread out** the values of $X$ are around the mean.  
+- High variance = outcomes vary a lot.  
+- Low variance = outcomes are close to the mean.
+
+
+## Common Random Variables
+
+- **Bernoulli:** Success (1) or failure (0), prob. $p$  
+- **Binomial:** #successes in $n$ Bernoulli trials  
+- **Poisson:** #events in fixed time, rate $\lambda$  
+- **Normal (Gaussian):** Bell curve  
+- **Uniform:** Equal chance in an interval  
+

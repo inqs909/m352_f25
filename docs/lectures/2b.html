@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
-  <title>MATH 352 – Introduction to Probability</title>
+  <title>MATH 352 – Random Variables</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,162 +129,255 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Introduction to Probability</h1>
+  <h1 class="title">Random Variables</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="learning-outcomes" class="slide level2">
-<h2>Learning Outcomes</h2>
+<section>
+<section id="probabilty-spaces" class="title-slide slide level1 center">
+<h1>Probabilty Spaces</h1>
+
+</section>
+<section id="motivation-intuition" class="slide level2">
+<h2>Motivation &amp; Intuition</h2>
 <ul>
-<li><p>Describe disjoint events</p></li>
-<li><p>Describe a conditional probability</p></li>
-<li><p>Define independent events</p></li>
-<li><p>Law of Total Probability</p></li>
-<li><p>Baye’s Theorem</p></li>
+<li>Probability starts with <strong>experiments</strong>:
+<ul>
+<li>Rolling a die</li>
+<li>Tossing a coin</li>
+<li>Measuring temperature</li>
+</ul></li>
+<li>Outcomes may be descriptive (“heads”) or numeric (3).</li>
+<li>To <strong>analyze mathematically</strong>, we assign numbers to outcomes.</li>
+</ul>
+<p>This leads to <strong>random variables</strong>.</p>
+</section>
+<section id="probability-space-the-foundation" class="slide level2 scrollable">
+<h2>Probability Space (The Foundation)</h2>
+<p>A probability space is a triple:</p>
+<p><span class="math display">\[
+(\Omega, \mathcal{F}, P)
+\]</span></p>
+<ol type="1">
+<li><p><strong>Sample Space (<span class="math inline">\(\Omega\)</span>)</strong><br>
+All possible outcomes.</p></li>
+<li><p><strong>Sigma-Algebra (<span class="math inline">\(\mathcal{F}\)</span>)</strong><br>
+Collection of events (subsets of <span class="math inline">\(\Omega\)</span>) closed under complements and unions.</p></li>
+<li><p><strong>Probability Measure (<span class="math inline">\(P\)</span>)</strong><br>
+Assigns probabilities to events.</p></li>
+</ol>
+</section>
+<section id="sample-space-omega" class="slide level2">
+<h2>Sample Space (<span class="math inline">\(\Omega\)</span>)</h2>
+<ul>
+<li>The set of <strong>all possible outcomes</strong> of a random experiment.</li>
+<li>Each element of <span class="math inline">\(\Omega\)</span> is an <strong>elementary outcome</strong>.</li>
 </ul>
 </section>
-<section>
-<section id="disjoint-events" class="title-slide slide level1 center">
-<h1>Disjoint Events</h1>
-
-</section>
-<section id="disjoint-events-1" class="slide level2">
-<h2>Disjoint Events</h2>
-<p>Two events <strong>A</strong> and <strong>B</strong> are considered disjoint if <span class="math inline">\(\Pr(A\cap B)=0\)</span>. In general terms, only one event can occur, not both.</p>
-</section>
-<section id="diagram" class="slide level2">
-<h2>Diagram</h2>
-</section></section>
-<section>
-<section id="conditional-probability" class="title-slide slide level1 center">
-<h1>Conditional Probability</h1>
-
-</section>
-<section id="conditional-probability-1" class="slide level2">
-<h2>Conditional Probability</h2>
-<p>Let there be 2 events <strong>A</strong> and <strong>B</strong>. Given that <strong>B</strong> has occurred, what is the probability that <strong>A</strong> occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as <span class="math inline">\(\Pr(A|B)\)</span>, the probability of <strong>A</strong> given <strong>B</strong> has occurred.</p>
-<p><span class="math display">\[
-\Pr(A|B)=\frac{\Pr(A\cap B)}\Pr(B)}
-\]</span></p>
-</section>
-<section id="diagram-1" class="slide level2">
-<h2>Diagram</h2>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<table class="caption-top">
-<tbody>
-<tr class="odd">
-<td></td>
-<td>Uses Eye Glasses</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Needs Glasses</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>Yes</td>
-<td>44</td>
-<td>14</td>
-</tr>
-<tr class="even">
-<td>No</td>
-<td>2</td>
-<td>40</td>
-</tr>
-</tbody>
-</table>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
 <ul>
-<li><p>Find the probability of needing glasses</p></li>
-<li><p>Find the probability of not using glasses</p></li>
-<li><p>Find the probability of not using glasses and needing glasses</p></li>
-<li><p>Find the probability of not using glasses, given they need glasses</p></li>
+<li>Coin toss: <span class="math inline">\(\Omega = \{H, T\}\)</span></li>
+<li>Die roll: <span class="math inline">\(\Omega = \{1,2,3,4,5,6\}\)</span></li>
+<li>Two coins: <span class="math inline">\(\Omega = \{HH, HT, TH, TT\}\)</span></li>
+<li>Height of a student: <span class="math inline">\(\Omega = [100,220]\)</span> cm</li>
 </ul>
 </section>
-<section id="work" class="slide level2">
-<h2>Work</h2>
-</section></section>
-<section>
-<section id="independent-events" class="title-slide slide level1 center">
-<h1>Independent Events</h1>
-
+<section id="sigma-algebra-mathcalf" class="slide level2 scrollable">
+<h2>Sigma-Algebra (<span class="math inline">\(\mathcal{F}\)</span>)</h2>
+<ul>
+<li>A <strong>collection of subsets of <span class="math inline">\(\Omega\)</span></strong> (called <strong>events</strong>) with special properties.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ol type="1">
+<li><p><span class="math inline">\(\Omega \in \mathcal{F}\)</span></p></li>
+<li><p>If <span class="math inline">\(A \in \mathcal{F}\)</span>, then <span class="math inline">\(A^\mathrm{C} \in \mathcal{F}\)</span></p></li>
+<li><p>If <span class="math inline">\(A_1, A_2, \dots \in \mathcal{F}\)</span>, then <span class="math inline">\(\bigcup_{i=1}^\infty A_i \in \mathcal{F}\)</span> and <span class="math inline">\(\bigcap_{i=1}^\infty A_i \in \mathcal{F}\)</span></p></li>
+</ol>
 </section>
-<section id="independent-events-1" class="slide level2">
-<h2>Independent Events</h2>
-<p>Events <strong>A</strong> and <strong>B</strong> are considered independent if <span class="math inline">\(\Pr(A\cap B)=\Pr(A)\Pr(B)\)</span>. In other words, The occurrence of one event will not have an effect on the occurrence of the other event.</p>
+<section id="borel-sigma-field" class="slide level2">
+<h2>Borel Sigma-Field</h2>
+<ul>
+<li><p>When <span class="math inline">\(\Omega = \mathbb{R}\)</span> (or an interval), we need a <strong>sigma-algebra</strong> of subsets to define probabilities.</p></li>
+<li><p>Not every subset of <span class="math inline">\(\mathbb{R}\)</span> is “nice” (some are too pathological).</p></li>
+<li><p>The <strong>Borel sigma-field</strong> provides a rigorous and practical choice.</p></li>
+</ul>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th></th>
-<th>Uses Eye Glasses</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Needs Glasses</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Yes</td>
-<td>44</td>
-<td>14</td>
-</tr>
-<tr class="odd">
-<td>No</td>
-<td>2</td>
-<td>40</td>
-</tr>
-</tbody>
-</table>
-</section></section>
-<section>
-<section id="law-of-total-probability" class="title-slide slide level1 center">
-<h1>Law of Total Probability</h1>
-
-</section>
-<section id="law-of-total-probability-1" class="slide level2">
-<h2>Law of Total Probability</h2>
-<p>The law of total probability allows you to compute the probability of an event <strong>A</strong> given that the sets {<span class="math inline">\(B_1\)</span>, … , <span class="math inline">\(B_n\)</span>} partitions event <strong>A</strong>. The law of total probability is given as</p>
+<section id="definition" class="slide level2">
+<h2>Definition</h2>
+<ul>
+<li>The <strong>Borel sigma-field</strong> on <span class="math inline">\(\mathbb{R}\)</span>, denoted <span class="math inline">\(\mathcal{B}\)</span>, is the smallest <span class="math inline">\(\sigma\)</span>-algebra based on semi-closed intervals:</li>
+</ul>
 <p><span class="math display">\[
-\Pr(A)= \sum^n_{i=1}\Pr(A\cap B_i)
-\]</span></p>
-<div class="fragment">
-<p><span class="math display">\[
-\Pr(A)=\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)
-\]</span></p>
-</div>
-</section>
-<section id="diagrams" class="slide level2">
-<h2>Diagrams</h2>
-</section>
-<section id="example-2" class="slide level2">
-<h2>Example</h2>
-<p>The probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?</p>
-</section></section>
-<section>
-<section id="bayes-theorem" class="title-slide slide level1 center">
-<h1>Baye’s Theorem</h1>
-
-</section>
-<section id="bayes-theorem-1" class="slide level2">
-<h2>Baye’s Theorem</h2>
-<p>Baye’s theorem computes the probability of an event <span class="math inline">\(B_i\)</span> given event <strong>A</strong></p>
-<p><span class="math display">\[
-\Pr(B_i|A) = \frac{\Pr(A\cap B_i)}{\Pr(A)}=\frac{\Pr(A|B_i)\Pr(B_i)}{\sum^n_{i=1}\Pr(A|B_i)\Pr(B_i)}
+(\infty, b] = \{x: -\infty &lt; x \leq \infty \}
 \]</span></p>
 </section>
-<section id="example-3" class="slide level2">
-<h2>Example</h2>
-<p>The probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?</p>
+<section id="mathcalb-contain" class="slide level2">
+<h2><span class="math inline">\(\mathcal{B}\)</span> Contain</h2>
+<ul>
+<li><span class="math inline">\((a,b)\)</span></li>
+<li><span class="math inline">\([a,b]\)</span></li>
+<li><span class="math inline">\([a,b)\)</span> and <span class="math inline">\((a,b]\)</span></li>
+<li>closed under complement</li>
+<li>closed under unions</li>
+<li>closed under intersection</li>
+</ul>
+</section>
+<section id="probability-measure-p" class="slide level2">
+<h2>Probability Measure (<span class="math inline">\(P\)</span>)</h2>
+<ul>
+<li>A function <span class="math inline">\(P: \mathcal{F} \to [0,1]\)</span> that assigns probabilities.</li>
+</ul>
+</section>
+<section id="axioms" class="slide level2 scrollable">
+<h2>Axioms</h2>
+<ol type="1">
+<li><p>Non-negativity: <span class="math inline">\(P(A) \geq 0\)</span></p></li>
+<li><p>Normalization: <span class="math inline">\(P(\Omega)=1\)</span></p></li>
+<li><p>Countable additivity:<br>
+If <span class="math inline">\(A_1, A_2, \dots\)</span> are disjoint,<br>
+<span class="math display">\[
+P\Big(\bigcup_{i=1}^\infty A_i\Big) = \sum_{i=1}^\infty P(A_i)
+\]</span></p></li>
+</ol>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li><strong>Sample space (<span class="math inline">\(\Omega\)</span>):</strong> all possible outcomes<br>
+</li>
+<li><strong>Sigma-algebra (<span class="math inline">\(\mathcal{F}\)</span>):</strong> collection of “allowable” events<br>
+</li>
+<li><strong>Probability measure (<span class="math inline">\(P\)</span>):</strong> assigns probabilities consistently</li>
+</ul>
+<p>Together: <strong>Probability Space = <span class="math inline">\((\Omega, \mathcal{F}, P)\)</span></strong></p>
+</section></section>
+<section>
+<section id="random-variables" class="title-slide slide level1 center">
+<h1>Random Variables</h1>
+
+</section>
+<section id="random-variables-1" class="slide level2">
+<h2>Random Variables</h2>
+<ul>
+<li>A <strong>random variable</strong> is a measurable function:</li>
+</ul>
+<p><span class="math display">\[
+X: \Omega \to \mathbb{R}
+\]</span></p>
+<ul>
+<li>For any <span class="math inline">\(a \in \mathbb{R}\)</span>,<br>
+<span class="math inline">\(\{ \omega \in \Omega : X(\omega) \leq a \} \in \mathcal{F}\)</span>.</li>
+</ul>
+</section>
+<section id="types-of-random-variables" class="slide level2 scrollable">
+<h2>Types of Random Variables</h2>
+<ol type="1">
+<li><strong>Discrete</strong>
+<ul>
+<li>Countable values<br>
+</li>
+<li>Example: Die roll, number of heads in 3 tosses</li>
+</ul></li>
+<li><strong>Continuous</strong>
+<ul>
+<li>Any value in an interval<br>
+</li>
+<li>Example: Height, time, weight</li>
+</ul></li>
+</ol>
+</section>
+<section id="distribution-function" class="slide level2">
+<h2>Distribution Function</h2>
+<p>For a random variable <span class="math inline">\(X\)</span>, the <strong>cumulative distribution function (CDF)</strong> is:</p>
+<p><span class="math display">\[
+F_X(x) = P(X \leq x), \quad x \in \mathbb{R}
+\]</span></p>
+<p><strong>Interpretation:</strong><br>
+<span class="math inline">\(F_X(x)\)</span> gives the probability that <span class="math inline">\(X\)</span> takes a value <strong>less than or equal to <span class="math inline">\(x\)</span></strong>.</p>
+</section>
+<section id="properties-of-a-distribution-function" class="slide level2">
+<h2>Properties of a Distribution Function</h2>
+<ul>
+<li><span class="math inline">\(F_X(x)\)</span> is <strong>non-decreasing</strong>.</li>
+<li><span class="math inline">\(\lim_{x \to -\infty} F_X(x) = 0\)</span></li>
+<li><span class="math inline">\(\lim_{x \to +\infty} F_X(x) = 1\)</span></li>
+<li><span class="math inline">\(F_X\)</span> is <strong>right-continuous</strong>: <span class="math display">\[
+\lim_{t \downarrow x} F_X(t) = F_X(x)
+\]</span></li>
+</ul>
+</section>
+<section id="distributions" class="slide level2">
+<h2>Distributions</h2>
+<ul>
+<li><strong>Discrete:</strong> Probability Mass Function (PMF)<br>
+<span class="math display">\[
+P(X=x) = p(x)
+\]</span></li>
+</ul>
+</section>
+<section id="distributions-cont." class="slide level2">
+<h2>Distributions (cont.)</h2>
+<ul>
+<li><strong>Continuous:</strong> Probability Density Function (PDF)<br>
+<span class="math display">\[
+P(a \leq X \leq b) = \int_a^b f(x)\,dx
+\]</span></li>
+</ul>
+</section>
+<section id="expectation-variance" class="slide level2">
+<h2>Expectation &amp; Variance</h2>
+<ul>
+<li><strong>Expectation (Mean):</strong>
+<ul>
+<li>Discrete:<br>
+<span class="math display">\[
+E[X] = \sum_x x \, p(x)
+\]</span></li>
+<li>Continuous:<br>
+<span class="math display">\[
+E[X] = \int_{-\infty}^{\infty} x f(x)\,dx
+\]</span></li>
+</ul></li>
+<li><strong>Variance:</strong><br>
+<span class="math display">\[
+\text{Var}(X) = E[(X - E[X])^2]
+\]</span></li>
+</ul>
+</section>
+<section id="expected-value-mean" class="slide level2">
+<h2>Expected Value (Mean)</h2>
+<ul>
+<li>The <strong>long-run average</strong> value of a random variable.<br>
+</li>
+<li>Think: if we repeated the experiment many times, what would the average outcome be?</li>
+</ul>
+</section>
+<section id="variance-spread-of-values" class="slide level2">
+<h2>Variance (Spread of Values)</h2>
+<ul>
+<li>Measures <strong>how spread out</strong> the values of <span class="math inline">\(X\)</span> are around the mean.<br>
+</li>
+<li>High variance = outcomes vary a lot.<br>
+</li>
+<li>Low variance = outcomes are close to the mean.</li>
+</ul>
+</section>
+<section id="common-random-variables" class="slide level2">
+<h2>Common Random Variables</h2>
+<ul>
+<li><strong>Bernoulli:</strong> Success (1) or failure (0), prob. <span class="math inline">\(p\)</span><br>
+</li>
+<li><strong>Binomial:</strong> #successes in <span class="math inline">\(n\)</span> Bernoulli trials<br>
+</li>
+<li><strong>Poisson:</strong> #events in fixed time, rate <span class="math inline">\(\lambda\)</span><br>
+</li>
+<li><strong>Normal (Gaussian):</strong> Bell curve<br>
+</li>
+<li><strong>Uniform:</strong> Equal chance in an interval</li>
+</ul>
 
 
 </section></section>

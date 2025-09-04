@@ -1176,102 +1176,151 @@
     "text": "Variance\n\\(X\\sim\\chi^2_k\\)\n\\(x&gt;0\\)\n\\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\)"
   },
   {
-    "objectID": "lectures/2b.html#learning-outcomes",
-    "href": "lectures/2b.html#learning-outcomes",
-    "title": "Introduction to Probability",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nDescribe disjoint events\nDescribe a conditional probability\nDefine independent events\nLaw of Total Probability\nBaye’s Theorem"
+    "objectID": "lectures/2b.html#motivation-intuition",
+    "href": "lectures/2b.html#motivation-intuition",
+    "title": "Random Variables",
+    "section": "Motivation & Intuition",
+    "text": "Motivation & Intuition\n\nProbability starts with experiments:\n\nRolling a die\nTossing a coin\nMeasuring temperature\n\nOutcomes may be descriptive (“heads”) or numeric (3).\nTo analyze mathematically, we assign numbers to outcomes.\n\nThis leads to random variables."
   },
   {
-    "objectID": "lectures/2b.html#disjoint-events-1",
-    "href": "lectures/2b.html#disjoint-events-1",
-    "title": "Introduction to Probability",
-    "section": "Disjoint Events",
-    "text": "Disjoint Events\nTwo events A and B are considered disjoint if \\(\\Pr(A\\cap B)=0\\). In general terms, only one event can occur, not both."
+    "objectID": "lectures/2b.html#probability-space-the-foundation",
+    "href": "lectures/2b.html#probability-space-the-foundation",
+    "title": "Random Variables",
+    "section": "Probability Space (The Foundation)",
+    "text": "Probability Space (The Foundation)\nA probability space is a triple:\n\\[\n(\\Omega, \\mathcal{F}, P)\n\\]\n\nSample Space (\\(\\Omega\\))\nAll possible outcomes.\nSigma-Algebra (\\(\\mathcal{F}\\))\nCollection of events (subsets of \\(\\Omega\\)) closed under complements and unions.\nProbability Measure (\\(P\\))\nAssigns probabilities to events."
   },
   {
-    "objectID": "lectures/2b.html#diagram",
-    "href": "lectures/2b.html#diagram",
-    "title": "Introduction to Probability",
-    "section": "Diagram",
-    "text": "Diagram"
+    "objectID": "lectures/2b.html#sample-space-omega",
+    "href": "lectures/2b.html#sample-space-omega",
+    "title": "Random Variables",
+    "section": "Sample Space (\\(\\Omega\\))",
+    "text": "Sample Space (\\(\\Omega\\))\n\nThe set of all possible outcomes of a random experiment.\nEach element of \\(\\Omega\\) is an elementary outcome."
   },
   {
-    "objectID": "lectures/2b.html#conditional-probability-1",
-    "href": "lectures/2b.html#conditional-probability-1",
-    "title": "Introduction to Probability",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\nLet there be 2 events A and B. Given that B has occurred, what is the probability that A occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as \\(\\Pr(A|B)\\), the probability of A given B has occurred.\n\\[\n\\Pr(A|B)=\\frac{\\Pr(A\\cap B)}\\Pr(B)}\n\\]"
+    "objectID": "lectures/2b.html#examples",
+    "href": "lectures/2b.html#examples",
+    "title": "Random Variables",
+    "section": "Examples",
+    "text": "Examples\n\nCoin toss: \\(\\Omega = \\{H, T\\}\\)\nDie roll: \\(\\Omega = \\{1,2,3,4,5,6\\}\\)\nTwo coins: \\(\\Omega = \\{HH, HT, TH, TT\\}\\)\nHeight of a student: \\(\\Omega = [100,220]\\) cm"
   },
   {
-    "objectID": "lectures/2b.html#diagram-1",
-    "href": "lectures/2b.html#diagram-1",
-    "title": "Introduction to Probability",
-    "section": "Diagram",
-    "text": "Diagram"
+    "objectID": "lectures/2b.html#sigma-algebra-mathcalf",
+    "href": "lectures/2b.html#sigma-algebra-mathcalf",
+    "title": "Random Variables",
+    "section": "Sigma-Algebra (\\(\\mathcal{F}\\))",
+    "text": "Sigma-Algebra (\\(\\mathcal{F}\\))\n\nA collection of subsets of \\(\\Omega\\) (called events) with special properties.\n\nRequirements:\n\n\\(\\Omega \\in \\mathcal{F}\\)\nIf \\(A \\in \\mathcal{F}\\), then \\(A^\\mathrm{C} \\in \\mathcal{F}\\)\nIf \\(A_1, A_2, \\dots \\in \\mathcal{F}\\), then \\(\\bigcup_{i=1}^\\infty A_i \\in \\mathcal{F}\\) and \\(\\bigcap_{i=1}^\\infty A_i \\in \\mathcal{F}\\)"
   },
   {
-    "objectID": "lectures/2b.html#example",
-    "href": "lectures/2b.html#example",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\n\n\n\n\nUses Eye Glasses\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40\n\n\n\n\nFind the probability of needing glasses\nFind the probability of not using glasses\nFind the probability of not using glasses and needing glasses\nFind the probability of not using glasses, given they need glasses"
+    "objectID": "lectures/2b.html#borel-sigma-field",
+    "href": "lectures/2b.html#borel-sigma-field",
+    "title": "Random Variables",
+    "section": "Borel Sigma-Field",
+    "text": "Borel Sigma-Field\n\nWhen \\(\\Omega = \\mathbb{R}\\) (or an interval), we need a sigma-algebra of subsets to define probabilities.\nNot every subset of \\(\\mathbb{R}\\) is “nice” (some are too pathological).\nThe Borel sigma-field provides a rigorous and practical choice."
   },
   {
-    "objectID": "lectures/2b.html#work",
-    "href": "lectures/2b.html#work",
-    "title": "Introduction to Probability",
-    "section": "Work",
-    "text": "Work"
+    "objectID": "lectures/2b.html#definition",
+    "href": "lectures/2b.html#definition",
+    "title": "Random Variables",
+    "section": "Definition",
+    "text": "Definition\n\nThe Borel sigma-field on \\(\\mathbb{R}\\), denoted \\(\\mathcal{B}\\), is the smallest \\(\\sigma\\)-algebra based on semi-closed intervals:\n\n\\[\n(\\infty, b] = \\{x: -\\infty &lt; x \\leq \\infty \\}\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#independent-events-1",
-    "href": "lectures/2b.html#independent-events-1",
-    "title": "Introduction to Probability",
-    "section": "Independent Events",
-    "text": "Independent Events\nEvents A and B are considered independent if \\(\\Pr(A\\cap B)=\\Pr(A)\\Pr(B)\\). In other words, The occurrence of one event will not have an effect on the occurrence of the other event."
+    "objectID": "lectures/2b.html#mathcalb-contain",
+    "href": "lectures/2b.html#mathcalb-contain",
+    "title": "Random Variables",
+    "section": "\\(\\mathcal{B}\\) Contain",
+    "text": "\\(\\mathcal{B}\\) Contain\n\n\\((a,b)\\)\n\\([a,b]\\)\n\\([a,b)\\) and \\((a,b]\\)\nclosed under complement\nclosed under unions\nclosed under intersection"
   },
   {
-    "objectID": "lectures/2b.html#example-1",
-    "href": "lectures/2b.html#example-1",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\n\n\n\n\nUses Eye Glasses\n\n\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40"
+    "objectID": "lectures/2b.html#probability-measure-p",
+    "href": "lectures/2b.html#probability-measure-p",
+    "title": "Random Variables",
+    "section": "Probability Measure (\\(P\\))",
+    "text": "Probability Measure (\\(P\\))\n\nA function \\(P: \\mathcal{F} \\to [0,1]\\) that assigns probabilities."
   },
   {
-    "objectID": "lectures/2b.html#law-of-total-probability-1",
-    "href": "lectures/2b.html#law-of-total-probability-1",
-    "title": "Introduction to Probability",
-    "section": "Law of Total Probability",
-    "text": "Law of Total Probability\nThe law of total probability allows you to compute the probability of an event A given that the sets {\\(B_1\\), … , \\(B_n\\)} partitions event A. The law of total probability is given as\n\\[\n\\Pr(A)= \\sum^n_{i=1}\\Pr(A\\cap B_i)\n\\]\n\n\\[\n\\Pr(A)=\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)\n\\]"
+    "objectID": "lectures/2b.html#axioms",
+    "href": "lectures/2b.html#axioms",
+    "title": "Random Variables",
+    "section": "Axioms",
+    "text": "Axioms\n\nNon-negativity: \\(P(A) \\geq 0\\)\nNormalization: \\(P(\\Omega)=1\\)\nCountable additivity:\nIf \\(A_1, A_2, \\dots\\) are disjoint,\n\\[\nP\\Big(\\bigcup_{i=1}^\\infty A_i\\Big) = \\sum_{i=1}^\\infty P(A_i)\n\\]"
   },
   {
-    "objectID": "lectures/2b.html#diagrams",
-    "href": "lectures/2b.html#diagrams",
-    "title": "Introduction to Probability",
-    "section": "Diagrams",
-    "text": "Diagrams"
+    "objectID": "lectures/2b.html#summary",
+    "href": "lectures/2b.html#summary",
+    "title": "Random Variables",
+    "section": "Summary",
+    "text": "Summary\n\nSample space (\\(\\Omega\\)): all possible outcomes\n\nSigma-algebra (\\(\\mathcal{F}\\)): collection of “allowable” events\n\nProbability measure (\\(P\\)): assigns probabilities consistently\n\nTogether: Probability Space = \\((\\Omega, \\mathcal{F}, P)\\)"
   },
   {
-    "objectID": "lectures/2b.html#example-2",
-    "href": "lectures/2b.html#example-2",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nThe probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?"
+    "objectID": "lectures/2b.html#random-variables-1",
+    "href": "lectures/2b.html#random-variables-1",
+    "title": "Random Variables",
+    "section": "Random Variables",
+    "text": "Random Variables\n\nA random variable is a measurable function:\n\n\\[\nX: \\Omega \\to \\mathbb{R}\n\\]\n\nFor any \\(a \\in \\mathbb{R}\\),\n\\(\\{ \\omega \\in \\Omega : X(\\omega) \\leq a \\} \\in \\mathcal{F}\\)."
   },
   {
-    "objectID": "lectures/2b.html#bayes-theorem-1",
-    "href": "lectures/2b.html#bayes-theorem-1",
-    "title": "Introduction to Probability",
-    "section": "Baye’s Theorem",
-    "text": "Baye’s Theorem\nBaye’s theorem computes the probability of an event \\(B_i\\) given event A\n\\[\n\\Pr(B_i|A) = \\frac{\\Pr(A\\cap B_i)}{\\Pr(A)}=\\frac{\\Pr(A|B_i)\\Pr(B_i)}{\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)}\n\\]"
+    "objectID": "lectures/2b.html#types-of-random-variables",
+    "href": "lectures/2b.html#types-of-random-variables",
+    "title": "Random Variables",
+    "section": "Types of Random Variables",
+    "text": "Types of Random Variables\n\nDiscrete\n\nCountable values\n\nExample: Die roll, number of heads in 3 tosses\n\nContinuous\n\nAny value in an interval\n\nExample: Height, time, weight"
   },
   {
-    "objectID": "lectures/2b.html#example-3",
-    "href": "lectures/2b.html#example-3",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nThe probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?"
+    "objectID": "lectures/2b.html#distribution-function",
+    "href": "lectures/2b.html#distribution-function",
+    "title": "Random Variables",
+    "section": "Distribution Function",
+    "text": "Distribution Function\nFor a random variable \\(X\\), the cumulative distribution function (CDF) is:\n\\[\nF_X(x) = P(X \\leq x), \\quad x \\in \\mathbb{R}\n\\]\nInterpretation:\n\\(F_X(x)\\) gives the probability that \\(X\\) takes a value less than or equal to \\(x\\)."
+  },
+  {
+    "objectID": "lectures/2b.html#properties-of-a-distribution-function",
+    "href": "lectures/2b.html#properties-of-a-distribution-function",
+    "title": "Random Variables",
+    "section": "Properties of a Distribution Function",
+    "text": "Properties of a Distribution Function\n\n\\(F_X(x)\\) is non-decreasing.\n\\(\\lim_{x \\to -\\infty} F_X(x) = 0\\)\n\\(\\lim_{x \\to +\\infty} F_X(x) = 1\\)\n\\(F_X\\) is right-continuous: \\[\n\\lim_{t \\downarrow x} F_X(t) = F_X(x)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#distributions",
+    "href": "lectures/2b.html#distributions",
+    "title": "Random Variables",
+    "section": "Distributions",
+    "text": "Distributions\n\nDiscrete: Probability Mass Function (PMF)\n\\[\nP(X=x) = p(x)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#distributions-cont.",
+    "href": "lectures/2b.html#distributions-cont.",
+    "title": "Random Variables",
+    "section": "Distributions (cont.)",
+    "text": "Distributions (cont.)\n\nContinuous: Probability Density Function (PDF)\n\\[\nP(a \\leq X \\leq b) = \\int_a^b f(x)\\,dx\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#expectation-variance",
+    "href": "lectures/2b.html#expectation-variance",
+    "title": "Random Variables",
+    "section": "Expectation & Variance",
+    "text": "Expectation & Variance\n\nExpectation (Mean):\n\nDiscrete:\n\\[\nE[X] = \\sum_x x \\, p(x)\n\\]\nContinuous:\n\\[\nE[X] = \\int_{-\\infty}^{\\infty} x f(x)\\,dx\n\\]\n\nVariance:\n\\[\n\\text{Var}(X) = E[(X - E[X])^2]\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#expected-value-mean",
+    "href": "lectures/2b.html#expected-value-mean",
+    "title": "Random Variables",
+    "section": "Expected Value (Mean)",
+    "text": "Expected Value (Mean)\n\nThe long-run average value of a random variable.\n\nThink: if we repeated the experiment many times, what would the average outcome be?"
+  },
+  {
+    "objectID": "lectures/2b.html#variance-spread-of-values",
+    "href": "lectures/2b.html#variance-spread-of-values",
+    "title": "Random Variables",
+    "section": "Variance (Spread of Values)",
+    "text": "Variance (Spread of Values)\n\nMeasures how spread out the values of \\(X\\) are around the mean.\n\nHigh variance = outcomes vary a lot.\n\nLow variance = outcomes are close to the mean."
+  },
+  {
+    "objectID": "lectures/2b.html#common-random-variables",
+    "href": "lectures/2b.html#common-random-variables",
+    "title": "Random Variables",
+    "section": "Common Random Variables",
+    "text": "Common Random Variables\n\nBernoulli: Success (1) or failure (0), prob. \\(p\\)\n\nBinomial: #successes in \\(n\\) Bernoulli trials\n\nPoisson: #events in fixed time, rate \\(\\lambda\\)\n\nNormal (Gaussian): Bell curve\n\nUniform: Equal chance in an interval"
   },
   {
     "objectID": "lectures/1c.html#r-programming",
