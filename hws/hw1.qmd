@@ -1,8 +1,8 @@
 ---
 title: "Homework 1"
 editor: source
-date: 2-3-2023
-draft: true
+date: 9-3-2025
+draft: false
 format:
   html: 
     code-fold: true
@@ -13,4 +13,4 @@ Problems from *Probability 4 Data Science* Chapter 2:
 
 Exercises 1, 6 (11 is 22; ignore F), 8, 9
 
-**Homework 1 is due 2/10/2023 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+**Homework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
