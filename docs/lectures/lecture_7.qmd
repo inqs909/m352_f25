@@ -56,7 +56,6 @@ $$
 E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
 $$
 
-
 # Binomial Distribution
 
 ## MGF

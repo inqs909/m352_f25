@@ -37,13 +37,13 @@ knitr::opts_chunk$set(echo = T)
 A random variable $X$ is considered continuous if the $P(X=x)$ does not exist.
 
 ::: fragment
-| Distribution | Parameters           | PDF                                                                            |
-|------------------|------------------|------------------------------------|
-| Uniform      | $a$ and $b$          | $\frac{1}{b-a}$                                                                |
-| Normal       | $\mu$ and $\sigma^2$ | $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$ |
-| Exponential  | $\lambda$            | $\lambda e^{-\lambda x}$                                                       |
-| Gamma        | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}e^{-x/\beta}}{\beta^\alpha\Gamma(\alpha)}$                  |
-| Beta         | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int^1_0x^{\alpha-1}(1-x)^{\beta-1}dx}$    |
+| Distribution | Parameters | PDF |
+|-------------------|-------------------|----------------------------------|
+| Uniform | $a$ and $b$ | $\frac{1}{b-a}$ |
+| Normal | $\mu$ and $\sigma^2$ | $\frac{1}{\sqrt{2\pi\sigma^2}}\exp\left\{-\frac{(x-\mu)^2}{2\sigma^2}\right\}$ |
+| Exponential | $\lambda$ | $\lambda e^{-\lambda x}$ |
+| Gamma | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}e^{-x/\beta}}{\beta^\alpha\Gamma(\alpha)}$ |
+| Beta | $\alpha$ and $\beta$ | $\frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int^1_0x^{\alpha-1}(1-x)^{\beta-1}dx}$ |
 :::
 
 ## Cumulative Density Function
