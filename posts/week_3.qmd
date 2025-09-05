@@ -1,9 +1,9 @@
 ---
 title: "Week 3"
-date: 02-06-23
+date: 09-06-25
 description: This week, we will discuss the properties of discrete random variables.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console---
 ---
@@ -21,6 +21,20 @@ editor_options:
 -   Variance
 
 -   Properties of Expected Values
+
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/3a) | [Thursday Slides](https://m352.inqs.info/lectures/3b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  [Video]()       |  [Video]()   |
+| 002     |    [Video]()     |     [Video]()   |
+
 
 ## Important Concepts
 
@@ -77,16 +91,3 @@ $$
 Var(Y) = E[\{Y-E(Y)\}^2]
 $$
 
-## Resources
-
-### First Lecture
-
-| Slides | Videos |
-|-------------------------------|-----------------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_5.html) | [Video 001](https://youtu.be/YrftlgLWDLQ) [Video 002](https://youtu.be/CGxEGAyZkn8) |
-
-### Second Lecture
-
-| Slides | Videos |
-|----------------------------------------------|--------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_6.html) | [Video 001](https://youtu.be/bUFzVQ-m-d8) [Video 002](https://youtu.be/wVwNFiFFXtc) |
