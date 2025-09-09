@@ -1999,7 +1999,14 @@
     "href": "lectures/3a.html#binomial-distribution-1",
     "title": "Discrete Random Variables",
     "section": "Binomial Distribution",
-    "text": "Binomial Distribution\nFor a given sample, the number of success is represent with a binomial distribution. Binary outcomes are represented with either a Bernoulli of binomial distribution. For a binomial experiment, the following must be satisfied:\n\n\nThere is a fixed \\(n\\) trials\nThe there are two outcomes for each trial\nThe probability of success (\\(p\\)) is constant for each trial\nThe trials are independent of each other"
+    "text": "Binomial Distribution\nFor a given sample, the number of successes represents a binomial distribution. Binary outcomes are represented with with a Bernoulli experiment. The sum of Bernoulli experiments represents the binomial distribution."
+  },
+  {
+    "objectID": "lectures/3a.html#binomial-distribution-2",
+    "href": "lectures/3a.html#binomial-distribution-2",
+    "title": "Discrete Random Variables",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nFor a binomial experiment, the following must be satisfied:\n\n\nThere is a fixed \\(n\\) trials\nThe there are two outcomes for each trial\nThe probability of success (\\(p\\)) is constant for each trial\nThe trials are independent of each other"
   },
   {
     "objectID": "lectures/3a.html#pmf",

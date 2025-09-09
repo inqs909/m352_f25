@@ -58,9 +58,15 @@ A Bernoulli distribution is probability of having a success out of two outcomes.
 
 # Binomial Distribution
 
+
 ## Binomial Distribution
 
-For a given sample, the number of success is represent with a binomial distribution. Binary outcomes are represented with either a Bernoulli of binomial distribution. For a binomial experiment, the following must be satisfied:
+For a given sample, the number of successes represents a binomial distribution. Binary outcomes are represented with with a Bernoulli experiment. The sum of Bernoulli experiments represents the binomial distribution. 
+
+
+## Binomial Distribution
+
+For a binomial experiment, the following must be satisfied:
 
 ::: fragment
 -   There is a fixed $n$ trials
