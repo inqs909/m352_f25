@@ -3,7 +3,7 @@ title: "Extra Credit 1"
 description: Instructions for extra credit one.
 date: 08-24-2025
 editor: source
-draft: true
+draft: false
 format:
   html: 
     code-fold: true

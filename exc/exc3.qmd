@@ -1,9 +1,9 @@
 ---
-title: "Extra Credit 3"
+title: "Extra Credit 2"
 description: Instructions for extra credit three.
 date: 08-24-2025
 editor: source
-draft: true
+draft: false
 format:
   html: 
     code-fold: true
