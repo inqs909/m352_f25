@@ -16,14 +16,19 @@ Exercises 4 (ignore c)
 
 ## Problem 2
 
-Show that the variance of a binomial distribution is $np(1-p)$
+Problems from *Probability 4 Data Science* Chapter 3:
+Exercises 5 
 
 ## Problem 3
 
-Show that the variance of a poisson distribution is $\lambda$.
+Problems from *Probability 4 Data Science* Chapter 3:
+Exercises 8
+
+
+
 
 ## Problem 4
 
 Show that the expected value of a geometric distribution is $\frac{1}{p}$.
 
-**Homework 2 is due 2/17/2023 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+**Homework 2 is due 2/17/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
