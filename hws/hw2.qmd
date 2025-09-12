@@ -1,8 +1,8 @@
 ---
 title: "Homework 2"
 editor: source
-date: 2-10-2023
-draft: true
+date: 9-12-2023
+draft: false
 format:
   html: 
     code-fold: true
@@ -11,24 +11,27 @@ format:
 
 ## Problem 1
 
-Problems from *Probability 4 Data Science* Chapter 3:
+Problem from *Probability 4 Data Science* Chapter 3:
 Exercises 4 (ignore c)
 
 ## Problem 2
 
-Problems from *Probability 4 Data Science* Chapter 3:
+Problem from *Probability 4 Data Science* Chapter 3:
 Exercises 5 
 
 ## Problem 3
 
-Problems from *Probability 4 Data Science* Chapter 3:
+Problem from *Probability 4 Data Science* Chapter 3:
 Exercises 8
-
-
 
 
 ## Problem 4
 
-Show that the expected value of a geometric distribution is $\frac{1}{p}$.
+Problem from *Probability 4 Data Science* Chapter 3:
+Exercises 13
 
-**Homework 2 is due 2/17/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document.**
+## Problem 5
+
+Show that the variance of a geometric distribution is $\frac{1-p}{p^2}$.
+
+**Homework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document.**

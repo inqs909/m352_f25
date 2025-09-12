@@ -1705,7 +1705,7 @@
     "href": "hw.html",
     "title": "Homework",
     "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw1.html",
@@ -1713,6 +1713,48 @@
     "title": "Homework 1",
     "section": "",
     "text": "Problems from Probability 4 Data Science Chapter 2:\nExercises 1, 6 (11 is 22; ignore F), 8, 9\nHomework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
+  },
+  {
+    "objectID": "hws/hw2.html",
+    "href": "hws/hw2.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-1",
+    "href": "hws/hw2.html#problem-1",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-2",
+    "href": "hws/hw2.html#problem-2",
+    "title": "Homework 2",
+    "section": "Problem 2",
+    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 3: Exercises 5"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-3",
+    "href": "hws/hw2.html#problem-3",
+    "title": "Homework 2",
+    "section": "Problem 3",
+    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 3: Exercises 8"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-4",
+    "href": "hws/hw2.html#problem-4",
+    "title": "Homework 2",
+    "section": "Problem 4",
+    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 3: Exercises 13"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-5",
+    "href": "hws/hw2.html#problem-5",
+    "title": "Homework 2",
+    "section": "Problem 5",
+    "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
   },
   {
     "objectID": "index.html",
