@@ -1,9 +1,9 @@
 ---
 title: "Week 4"
-date: 02-10-23
+date: 09-12-25
 description: This week, we will discuss Expected Values and Moment Generating Function.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console---
 ---
@@ -20,6 +20,21 @@ editor_options:
 
 -   Expected Values
 -   MGF
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/4a) | [Thursday Slides](https://m352.inqs.info/lectures/4b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  [Video]()       |  [Video]()   |
+| 002     |    [Video]()     |     [Video]()   |
+
+
+
 
 ## Important Concepts
 
@@ -43,16 +58,3 @@ $$
 E(X^k)=\frac{d^km(t)}{dt}\Bigg|_{t=0}
 $$
 
-## Resources
-
-### First Lecture
-
-| Slides | Videos |
-|-------------------------------|-----------------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_7.html) | [Video 001](https://youtu.be/NRAOBXUgGRw) [Video 002](https://youtu.be/vNVpMtqgSXw) |
-
-### Second Lecture
-
-| Lab | Videos |
-|--------------------------------------------|----------------------------|
-| [Lab](https://m352.inqs.info/r/r_lab_1.html) | [Video 001](https://youtu.be/acMxhoW301A) [Video 002]() |
