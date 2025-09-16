@@ -1197,298 +1197,606 @@
     "text": "Variance\n\\(X\\sim\\chi^2_k\\)\n\\(x&gt;0\\)\n\\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\)"
   },
   {
-    "objectID": "lectures/3b.html#learning-outcomes",
-    "href": "lectures/3b.html#learning-outcomes",
-    "title": "Discrete Random Variable",
+    "objectID": "lectures/4a.html#learning-outcomes",
+    "href": "lectures/4a.html#learning-outcomes",
+    "title": "Moment Generating Functions",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nExpected Values\nVariances\nProperties of Expected Values"
+    "text": "Learning Outcomes\n\nMoments\nMoment Generating Functions\nProperties"
   },
   {
-    "objectID": "lectures/3b.html#expected-value",
-    "href": "lectures/3b.html#expected-value",
-    "title": "Discrete Random Variable",
-    "section": "Expected Value",
-    "text": "Expected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of \\(Y\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\nwhere \\(P(y)\\) is the PMF of \\(Y\\)."
+    "objectID": "lectures/4a.html#moments",
+    "href": "lectures/4a.html#moments",
+    "title": "Moment Generating Functions",
+    "section": "Moments",
+    "text": "Moments\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of \\(Y\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\nwhere \\(P(y)\\) is the PMF of \\(Y\\)."
   },
   {
-    "objectID": "lectures/3b.html#expected-value-1",
-    "href": "lectures/3b.html#expected-value-1",
-    "title": "Discrete Random Variable",
-    "section": "Expected Value",
-    "text": "Expected Value\nThe expected value of a function of a random variable \\(Y\\) is provided as\n\\[\nE\\{g(Y)\\} = \\sum_y g(y)P(y)\n\\]"
+    "objectID": "lectures/4a.html#moment-generating-functions",
+    "href": "lectures/4a.html#moment-generating-functions",
+    "title": "Moment Generating Functions",
+    "section": "Moment Generating Functions",
+    "text": "Moment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(c) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(c\\), and setting \\(c\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(c)}{dc}\\Bigg|_{c=0}\n\\]"
   },
   {
-    "objectID": "lectures/3b.html#variance",
-    "href": "lectures/3b.html#variance",
-    "title": "Discrete Random Variable",
-    "section": "Variance",
-    "text": "Variance\nThe variance is the expected squared difference between the random variable and expected value.\n\\[\nVar(Y)= E[\\{Y-E(Y)\\}^2]=\\sum_y\\{y-E(Y)\\}^2P(y)\n\\]\n\\[\nVar(Y) = E(Y^2) - E(Y)^2\n\\]"
+    "objectID": "lectures/4a.html#mgf",
+    "href": "lectures/4a.html#mgf",
+    "title": "Moment Generating Functions",
+    "section": "MGF",
+    "text": "MGF"
   },
   {
-    "objectID": "lectures/3b.html#expected-value-2",
-    "href": "lectures/3b.html#expected-value-2",
-    "title": "Discrete Random Variable",
-    "section": "Expected Value",
-    "text": "Expected Value"
+    "objectID": "lectures/4a.html#ey2",
+    "href": "lectures/4a.html#ey2",
+    "title": "Moment Generating Functions",
+    "section": "\\(E(Y^2)\\)",
+    "text": "\\(E(Y^2)\\)"
   },
   {
-    "objectID": "lectures/3b.html#variance-1",
-    "href": "lectures/3b.html#variance-1",
-    "title": "Discrete Random Variable",
-    "section": "Variance",
-    "text": "Variance"
+    "objectID": "lectures/4a.html#mgf-1",
+    "href": "lectures/4a.html#mgf-1",
+    "title": "Moment Generating Functions",
+    "section": "MGF",
+    "text": "MGF"
   },
   {
-    "objectID": "lectures/3b.html#expected-value-3",
-    "href": "lectures/3b.html#expected-value-3",
-    "title": "Discrete Random Variable",
-    "section": "Expected Value",
-    "text": "Expected Value"
+    "objectID": "lectures/4a.html#ey3",
+    "href": "lectures/4a.html#ey3",
+    "title": "Moment Generating Functions",
+    "section": "\\(E(Y^3)\\)",
+    "text": "\\(E(Y^3)\\)"
   },
   {
-    "objectID": "lectures/3b.html#variance-2",
-    "href": "lectures/3b.html#variance-2",
-    "title": "Discrete Random Variable",
-    "section": "Variance",
-    "text": "Variance"
+    "objectID": "lectures/4a.html#mgf-2",
+    "href": "lectures/4a.html#mgf-2",
+    "title": "Moment Generating Functions",
+    "section": "MGF",
+    "text": "MGF"
   },
   {
-    "objectID": "lectures/3b.html#expected-value-4",
-    "href": "lectures/3b.html#expected-value-4",
-    "title": "Discrete Random Variable",
-    "section": "Expected Value",
-    "text": "Expected Value"
+    "objectID": "lectures/4a.html#ey",
+    "href": "lectures/4a.html#ey",
+    "title": "Moment Generating Functions",
+    "section": "\\(E(Y)\\)",
+    "text": "\\(E(Y)\\)"
   },
   {
-    "objectID": "lectures/3b.html#variance-3",
-    "href": "lectures/3b.html#variance-3",
-    "title": "Discrete Random Variable",
-    "section": "Variance",
-    "text": "Variance"
-  },
-  {
-    "objectID": "lectures/3b.html#properties",
-    "href": "lectures/3b.html#properties",
-    "title": "Discrete Random Variable",
+    "objectID": "lectures/4a.html#properties",
+    "href": "lectures/4a.html#properties",
+    "title": "Moment Generating Functions",
     "section": "Properties",
     "text": "Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(Y)\\}=cE\\{g(Y)\\}\\)\n\\(E\\{g_1(Y)+\\cdots+g_n(Y)\\}=E\\{g_1(Y)\\}+\\cdots+E\\{g_n(Y)\\}\\)"
   },
   {
-    "objectID": "lectures/2b.html#motivation-intuition",
-    "href": "lectures/2b.html#motivation-intuition",
-    "title": "Random Variables",
-    "section": "Motivation & Intuition",
-    "text": "Motivation & Intuition\n\nProbability starts with experiments:\n\nRolling a die\nTossing a coin\nMeasuring temperature\n\nOutcomes may be descriptive (“heads”) or numeric (3).\nTo analyze mathematically, we assign numbers to outcomes.\n\nThis leads to random variables."
+    "objectID": "lectures/3a.html#learning-outcomes",
+    "href": "lectures/3a.html#learning-outcomes",
+    "title": "Discrete Random Variables",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDiscrete Random Variables\n\nObtain Probabilities"
   },
   {
-    "objectID": "lectures/2b.html#probability-space-the-foundation",
-    "href": "lectures/2b.html#probability-space-the-foundation",
-    "title": "Random Variables",
-    "section": "Probability Space (The Foundation)",
-    "text": "Probability Space (The Foundation)\nA probability space is a triple:\n\\[\n(\\Omega, \\mathcal{F}, P)\n\\]\n\nSample Space (\\(\\Omega\\))\nAll possible outcomes.\nSigma-Algebra (\\(\\mathcal{F}\\))\nCollection of events (subsets of \\(\\Omega\\)) closed under complements and unions.\nProbability Measure (\\(P\\))\nAssigns probabilities to events."
+    "objectID": "lectures/3a.html#discrete-random-variables-1",
+    "href": "lectures/3a.html#discrete-random-variables-1",
+    "title": "Discrete Random Variables",
+    "section": "Discrete Random Variables",
+    "text": "Discrete Random Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.\n\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p^y(1-p)^{1-y}\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-y}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)"
   },
   {
-    "objectID": "lectures/2b.html#sample-space-omega",
-    "href": "lectures/2b.html#sample-space-omega",
-    "title": "Random Variables",
-    "section": "Sample Space (\\(\\Omega\\))",
-    "text": "Sample Space (\\(\\Omega\\))\n\nThe set of all possible outcomes of a random experiment.\nEach element of \\(\\Omega\\) is an elementary outcome."
+    "objectID": "lectures/3a.html#probability-mass-function",
+    "href": "lectures/3a.html#probability-mass-function",
+    "title": "Discrete Random Variables",
+    "section": "Probability Mass Function",
+    "text": "Probability Mass Function\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\)."
   },
   {
-    "objectID": "lectures/2b.html#examples",
-    "href": "lectures/2b.html#examples",
-    "title": "Random Variables",
+    "objectID": "lectures/3a.html#cumulative-density-function",
+    "href": "lectures/3a.html#cumulative-density-function",
+    "title": "Discrete Random Variables",
+    "section": "Cumulative Density Function",
+    "text": "Cumulative Density Function\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\)."
+  },
+  {
+    "objectID": "lectures/3a.html#bernoulli-distribution-1",
+    "href": "lectures/3a.html#bernoulli-distribution-1",
+    "title": "Discrete Random Variables",
+    "section": "Bernoulli Distribution",
+    "text": "Bernoulli Distribution\nA Bernoulli distribution is probability of having a success out of two outcomes. In essence, a coin flip with probability of success \\(p\\)."
+  },
+  {
+    "objectID": "lectures/3a.html#binomial-distribution-1",
+    "href": "lectures/3a.html#binomial-distribution-1",
+    "title": "Discrete Random Variables",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nFor a given sample, the number of successes represents a binomial distribution. Binary outcomes are represented with with a Bernoulli experiment. The sum of Bernoulli experiments represents the binomial distribution."
+  },
+  {
+    "objectID": "lectures/3a.html#binomial-distribution-2",
+    "href": "lectures/3a.html#binomial-distribution-2",
+    "title": "Discrete Random Variables",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nFor a binomial experiment, the following must be satisfied:\n\n\nThere is a fixed \\(n\\) trials\nThe there are two outcomes for each trial\nThe probability of success (\\(p\\)) is constant for each trial\nThe trials are independent of each other"
+  },
+  {
+    "objectID": "lectures/3a.html#pmf",
+    "href": "lectures/3a.html#pmf",
+    "title": "Discrete Random Variables",
+    "section": "PMF",
+    "text": "PMF"
+  },
+  {
+    "objectID": "lectures/3a.html#example",
+    "href": "lectures/3a.html#example",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nThe probability of a planted seed to germinate is 0.3. An arborist decides to plant 8 seeds in the community. What is the probability that 3 to 5 seeds will germinate?"
+  },
+  {
+    "objectID": "lectures/3a.html#example-1",
+    "href": "lectures/3a.html#example-1",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nThe probability of a planted seed to germinate is 0.6. An arborist decides to plant 8 seeds in the community. What is the probability that at least 1 seed germinates?"
+  },
+  {
+    "objectID": "lectures/3a.html#example-2",
+    "href": "lectures/3a.html#example-2",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nThe probability of a planted seed to germinate is 0.8. An arborist decides to plant 6 seeds in the community. What is the probability that an even number of seed will germinate?"
+  },
+  {
+    "objectID": "lectures/3a.html#poisson-distribution-1",
+    "href": "lectures/3a.html#poisson-distribution-1",
+    "title": "Discrete Random Variables",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nThe poisson distribution describes an experiment that measures that occurrence of an event at specific point and/or time period."
+  },
+  {
+    "objectID": "lectures/3a.html#pmf-1",
+    "href": "lectures/3a.html#pmf-1",
+    "title": "Discrete Random Variables",
+    "section": "PMF",
+    "text": "PMF"
+  },
+  {
+    "objectID": "lectures/3a.html#example-3",
+    "href": "lectures/3a.html#example-3",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nThe number of industrial accidents at a particular manufacturing plant is found to be an average of 1 accident per month. In the previous month, there were 3 accidents. What is the probability of observing 3 or more accidents in a given month?"
+  },
+  {
+    "objectID": "lectures/3a.html#example-4",
+    "href": "lectures/3a.html#example-4",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nThe number of industrial accidents at a particular manufacturing plant is found to be an average of 8 accidents per year. What is the probability of observing 15 or more accidents in a given year?"
+  },
+  {
+    "objectID": "lectures/3a.html#geometric-distribution-1",
+    "href": "lectures/3a.html#geometric-distribution-1",
+    "title": "Discrete Random Variables",
+    "section": "Geometric Distribution",
+    "text": "Geometric Distribution\nA geometric distribution models the number of Bernoulli trials until the first success (or failure)."
+  },
+  {
+    "objectID": "lectures/3a.html#pmf-2",
+    "href": "lectures/3a.html#pmf-2",
+    "title": "Discrete Random Variables",
+    "section": "PMF",
+    "text": "PMF"
+  },
+  {
+    "objectID": "lectures/3a.html#example-5",
+    "href": "lectures/3a.html#example-5",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nSuppose 30% of the applicants for a certain industrial job possess the necessary skills. What is the probability that the first applicant with the necessary skills is found on the 5th interview."
+  },
+  {
+    "objectID": "lectures/3a.html#negative-binomial-distribution-1",
+    "href": "lectures/3a.html#negative-binomial-distribution-1",
+    "title": "Discrete Random Variables",
+    "section": "Negative Binomial Distribution",
+    "text": "Negative Binomial Distribution\nA negative binomial distribution models the number of successful Bernoulli trials until the \\(r\\)th failure."
+  },
+  {
+    "objectID": "lectures/3a.html#pmf-3",
+    "href": "lectures/3a.html#pmf-3",
+    "title": "Discrete Random Variables",
+    "section": "PMF",
+    "text": "PMF"
+  },
+  {
+    "objectID": "lectures/3a.html#example-6",
+    "href": "lectures/3a.html#example-6",
+    "title": "Discrete Random Variables",
+    "section": "Example",
+    "text": "Example\nTen percent of engines manufactured on an assembly line are defective. If engines are randomly selected one at a time and tested, what is the probability that third nondefective engine is found on the 4th trial."
+  },
+  {
+    "objectID": "lectures/2a.html#learning-outcomes",
+    "href": "lectures/2a.html#learning-outcomes",
+    "title": "Introduction to Probability",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nDescribe disjoint events\nDescribe a conditional probability\nDefine independent events\nLaw of Total Probability\nBaye’s Theorem"
+  },
+  {
+    "objectID": "lectures/2a.html#disjoint-events-1",
+    "href": "lectures/2a.html#disjoint-events-1",
+    "title": "Introduction to Probability",
+    "section": "Disjoint Events",
+    "text": "Disjoint Events\nTwo events A and B are considered disjoint if \\(\\Pr(A\\cap B)=0\\). In general terms, only one event can occur, not both."
+  },
+  {
+    "objectID": "lectures/2a.html#conditional-probability-1",
+    "href": "lectures/2a.html#conditional-probability-1",
+    "title": "Introduction to Probability",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\nLet there be 2 events A and B. Given that B has occurred, what is the probability that A occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as \\(\\Pr(A|B)\\), the probability of A given B has occurred.\n\\[\n\\Pr(A|B)=\\frac{\\Pr(A\\cap B)}{\\Pr(B)}\n\\]"
+  },
+  {
+    "objectID": "lectures/2a.html#example-1-drawing-cards",
+    "href": "lectures/2a.html#example-1-drawing-cards",
+    "title": "Introduction to Probability",
+    "section": "Example 1: Drawing Cards",
+    "text": "Example 1: Drawing Cards\nWe have a standard deck of 52 cards.\nLet’s find the probability of drawing an ace, given that the card is a spade."
+  },
+  {
+    "objectID": "lectures/2a.html#example-2-rolling-dice",
+    "href": "lectures/2a.html#example-2-rolling-dice",
+    "title": "Introduction to Probability",
+    "section": "Example 2: Rolling Dice",
+    "text": "Example 2: Rolling Dice\nTwo fair dice are rolled.\nFind the probability that the sum is 10, given that the first die shows a 6."
+  },
+  {
+    "objectID": "lectures/2a.html#example-3-medical-test",
+    "href": "lectures/2a.html#example-3-medical-test",
+    "title": "Introduction to Probability",
+    "section": "Example 3: Medical Test",
+    "text": "Example 3: Medical Test\nA certain disease affects 1% of the population.\nA test correctly identifies the disease 95% of the time, but has a 5% false-positive rate.\nFind the probability that someone has the disease given a positive test result."
+  },
+  {
+    "objectID": "lectures/2a.html#example-4-eye-glasses",
+    "href": "lectures/2a.html#example-4-eye-glasses",
+    "title": "Introduction to Probability",
+    "section": "Example 4: Eye Glasses",
+    "text": "Example 4: Eye Glasses\n\n\n\n\nUses Eye Glasses\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40\n\n\n\n\nFind the probability of needing glasses\nFind the probability of not using glasses\nFind the probability of not using glasses and needing glasses\nFind the probability of not using glasses, given they need glasses"
+  },
+  {
+    "objectID": "lectures/2a.html#law-of-total-probability-1",
+    "href": "lectures/2a.html#law-of-total-probability-1",
+    "title": "Introduction to Probability",
+    "section": "Law of Total Probability",
+    "text": "Law of Total Probability\nThe law of total probability allows you to compute the probability of an event A given that the sets {\\(B_1\\), … , \\(B_n\\)} partitions event A. The law of total probability is given as\n\\[\n\\Pr(A)= \\sum^n_{i=1}\\Pr(A\\cap B_i)\n\\]\n\n\\[\n\\Pr(A)=\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)\n\\]"
+  },
+  {
+    "objectID": "lectures/2a.html#diagrams",
+    "href": "lectures/2a.html#diagrams",
+    "title": "Introduction to Probability",
+    "section": "Diagrams",
+    "text": "Diagrams"
+  },
+  {
+    "objectID": "lectures/2a.html#example-1-weather-and-rain-forecast",
+    "href": "lectures/2a.html#example-1-weather-and-rain-forecast",
+    "title": "Introduction to Probability",
+    "section": "Example 1: Weather and Rain Forecast",
+    "text": "Example 1: Weather and Rain Forecast\nSuppose the weather forecast is either Sunny (S) or Cloudy (C).\n\n\\(P(S) = 0.7\\), \\(P(C) = 0.3\\)\n\nProbability of rain given sunny: \\(P(R \\mid S) = 0.1\\)\n\nProbability of rain given cloudy: \\(P(R \\mid C) = 0.5\\)\n\nWhat is the probability of rain?"
+  },
+  {
+    "objectID": "lectures/2a.html#example-2-disease",
+    "href": "lectures/2a.html#example-2-disease",
+    "title": "Introduction to Probability",
+    "section": "Example 2: Disease",
+    "text": "Example 2: Disease\nThe probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?"
+  },
+  {
+    "objectID": "lectures/2a.html#independent-events-1",
+    "href": "lectures/2a.html#independent-events-1",
+    "title": "Introduction to Probability",
+    "section": "Independent Events",
+    "text": "Independent Events\nEvents A and B are considered independent if \\(\\Pr(A\\cap B)=\\Pr(A)\\Pr(B)\\). In other words, The occurrence of one event will not have an effect on the occurrence of the other event."
+  },
+  {
+    "objectID": "lectures/2a.html#example-1-eye-glasses",
+    "href": "lectures/2a.html#example-1-eye-glasses",
+    "title": "Introduction to Probability",
+    "section": "Example 1: Eye Glasses",
+    "text": "Example 1: Eye Glasses\n\n\n\n\nUses Eye Glasses\n\n\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40"
+  },
+  {
+    "objectID": "lectures/2a.html#example-2-drawing-with-replacement",
+    "href": "lectures/2a.html#example-2-drawing-with-replacement",
+    "title": "Introduction to Probability",
+    "section": "Example 2: Drawing with Replacement",
+    "text": "Example 2: Drawing with Replacement\nA jar contains 5 red balls and 3 blue balls (8 total).\nWe draw two balls with replacement."
+  },
+  {
+    "objectID": "lectures/2a.html#example-3-drawing-without-replacement",
+    "href": "lectures/2a.html#example-3-drawing-without-replacement",
+    "title": "Introduction to Probability",
+    "section": "Example 3: Drawing without Replacement",
+    "text": "Example 3: Drawing without Replacement\nA jar contains 5 red balls and 3 blue balls (8 total).\nWe draw two balls with replacement."
+  },
+  {
+    "objectID": "lectures/2a.html#bayes-theorem-1",
+    "href": "lectures/2a.html#bayes-theorem-1",
+    "title": "Introduction to Probability",
+    "section": "Baye’s Theorem",
+    "text": "Baye’s Theorem\nBaye’s theorem computes the probability of an event \\(B_i\\) given event A\n\\[\n\\Pr(B_i|A) = \\frac{\\Pr(A\\cap B_i)}{\\Pr(A)}=\\frac{\\Pr(A|B_i)\\Pr(B_i)}{\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)}\n\\]"
+  },
+  {
+    "objectID": "lectures/2a.html#example-1-factory-machines",
+    "href": "lectures/2a.html#example-1-factory-machines",
+    "title": "Introduction to Probability",
+    "section": "Example 1: Factory Machines",
+    "text": "Example 1: Factory Machines\nA factory has three machines producing items:\n\nMachine A produces 40% of items, with a defect rate of 2%.\n\nMachine B produces 35% of items, with a defect rate of 3%.\n\nMachine C produces 25% of items, with a defect rate of 5%.\n\nIf an item is defective, what is the probability it came from Machine C?"
+  },
+  {
+    "objectID": "lectures/2a.html#example-2-email-spam-filtering",
+    "href": "lectures/2a.html#example-2-email-spam-filtering",
+    "title": "Introduction to Probability",
+    "section": "Example 2: Email Spam Filtering",
+    "text": "Example 2: Email Spam Filtering\nSuppose 80% of emails are legitimate, 20% are spam. A keyword appears in 60% of spam emails but in only 5% of legitimate emails. If an email contains the keyword, what is the probability it is spam?"
+  },
+  {
+    "objectID": "lectures/2a.html#example-3-disease",
+    "href": "lectures/2a.html#example-3-disease",
+    "title": "Introduction to Probability",
+    "section": "Example 3: Disease",
+    "text": "Example 3: Disease\nThe probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?"
+  },
+  {
+    "objectID": "lectures/1b.html#learning-objectives",
+    "href": "lectures/1b.html#learning-objectives",
+    "title": "Introduction to Probability",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nDefine sample space and experiment\nDefine probabilities\nDefine random variable and distribution function"
+  },
+  {
+    "objectID": "lectures/1b.html#experiments-and-outcomes",
+    "href": "lectures/1b.html#experiments-and-outcomes",
+    "title": "Introduction to Probability",
+    "section": "Experiments and Outcomes",
+    "text": "Experiments and Outcomes\n\nA random experiment is a process with uncertain results but well-defined possible outcomes."
+  },
+  {
+    "objectID": "lectures/1b.html#examples",
+    "href": "lectures/1b.html#examples",
+    "title": "Introduction to Probability",
     "section": "Examples",
-    "text": "Examples\n\nCoin toss: \\(\\Omega = \\{H, T\\}\\)\nDie roll: \\(\\Omega = \\{1,2,3,4,5,6\\}\\)\nTwo coins: \\(\\Omega = \\{HH, HT, TH, TT\\}\\)\nHeight of a student: \\(\\Omega = [100,220]\\) cm"
+    "text": "Examples\n\nTossing a coin → outcomes: {Heads, Tails}\n\nRolling a die → outcomes: {1, 2, 3, 4, 5, 6}\n\nDrawing a card → outcomes: {all 52 cards in a deck}"
   },
   {
-    "objectID": "lectures/2b.html#sigma-algebra-mathcalf",
-    "href": "lectures/2b.html#sigma-algebra-mathcalf",
-    "title": "Random Variables",
-    "section": "Sigma-Algebra (\\(\\mathcal{F}\\))",
-    "text": "Sigma-Algebra (\\(\\mathcal{F}\\))\n\nA collection of subsets of \\(\\Omega\\) (called events) with special properties.\n\nRequirements:\n\n\\(\\Omega \\in \\mathcal{F}\\)\nIf \\(A \\in \\mathcal{F}\\), then \\(A^\\mathrm{C} \\in \\mathcal{F}\\)\nIf \\(A_1, A_2, \\dots \\in \\mathcal{F}\\), then \\(\\bigcup_{i=1}^\\infty A_i \\in \\mathcal{F}\\) and \\(\\bigcap_{i=1}^\\infty A_i \\in \\mathcal{F}\\)"
+    "objectID": "lectures/1b.html#sample-space",
+    "href": "lectures/1b.html#sample-space",
+    "title": "Introduction to Probability",
+    "section": "Sample Space",
+    "text": "Sample Space\n\nThe sample space (denoted \\(S\\)) is the set of all possible outcomes of an experiment."
   },
   {
-    "objectID": "lectures/2b.html#borel-sigma-field",
-    "href": "lectures/2b.html#borel-sigma-field",
-    "title": "Random Variables",
-    "section": "Borel Sigma-Field",
-    "text": "Borel Sigma-Field\n\nWhen \\(\\Omega = \\mathbb{R}\\) (or an interval), we need a sigma-algebra of subsets to define probabilities.\nNot every subset of \\(\\mathbb{R}\\) is “nice” (some are too pathological).\nThe Borel sigma-field provides a rigorous and practical choice."
+    "objectID": "lectures/1b.html#examples-1",
+    "href": "lectures/1b.html#examples-1",
+    "title": "Introduction to Probability",
+    "section": "Examples",
+    "text": "Examples\n\nCoin toss: \\(S = \\{H, T\\}\\)\nDie roll: \\(S = \\{1, 2, 3, 4, 5, 6\\}\\)\n\nTwo coin tosses: \\(S = \\{HH, HT, TH, TT\\}\\)"
   },
   {
-    "objectID": "lectures/2b.html#definition",
-    "href": "lectures/2b.html#definition",
-    "title": "Random Variables",
-    "section": "Definition",
-    "text": "Definition\n\nThe Borel sigma-field on \\(\\mathbb{R}\\), denoted \\(\\mathcal{B}\\), is the smallest \\(\\sigma\\)-algebra based on semi-closed intervals:\n\n\\[\n(\\infty, b] = \\{x: -\\infty &lt; x \\leq \\infty \\}\n\\]"
+    "objectID": "lectures/1b.html#events",
+    "href": "lectures/1b.html#events",
+    "title": "Introduction to Probability",
+    "section": "Events",
+    "text": "Events\n\nAn event is any subset of the sample space.\n\nExamples:\n- Event A: “Die shows an even number”\n\\(A = \\{2,4,6\\}\\)\n\nEvent B: “At least one Head in two tosses”\n\\(B = \\{HH, HT, TH\\}\\)"
   },
   {
-    "objectID": "lectures/2b.html#mathcalb-contain",
-    "href": "lectures/2b.html#mathcalb-contain",
-    "title": "Random Variables",
-    "section": "\\(\\mathcal{B}\\) Contain",
-    "text": "\\(\\mathcal{B}\\) Contain\n\n\\((a,b)\\)\n\\([a,b]\\)\n\\([a,b)\\) and \\((a,b]\\)\nclosed under complement\nclosed under unions\nclosed under intersection"
+    "objectID": "lectures/1b.html#certain-and-impossible-events",
+    "href": "lectures/1b.html#certain-and-impossible-events",
+    "title": "Introduction to Probability",
+    "section": "Certain and Impossible Events",
+    "text": "Certain and Impossible Events\n\nCertain event: The sample space itself \\(S\\) (probability = 1)\nImpossible event: The empty set \\(\\varnothing\\) (probability = 0)"
   },
   {
-    "objectID": "lectures/2b.html#probability-measure-p",
-    "href": "lectures/2b.html#probability-measure-p",
-    "title": "Random Variables",
-    "section": "Probability Measure (\\(P\\))",
-    "text": "Probability Measure (\\(P\\))\n\nA function \\(P: \\mathcal{F} \\to [0,1]\\) that assigns probabilities."
+    "objectID": "lectures/1b.html#event-operations",
+    "href": "lectures/1b.html#event-operations",
+    "title": "Introduction to Probability",
+    "section": "Event Operations",
+    "text": "Event Operations\nSince events are subsets of the sample space, we can use set theory:\n\nUnion: \\(A \\cup B\\) → either A or B occurs\n\nIntersection: \\(A \\cap B\\) → both A and B occur\n\nComplement: \\(A^c\\) → event A does not occur"
   },
   {
-    "objectID": "lectures/2b.html#axioms",
-    "href": "lectures/2b.html#axioms",
-    "title": "Random Variables",
-    "section": "Axioms",
-    "text": "Axioms\n\nNon-negativity: \\(P(A) \\geq 0\\)\nNormalization: \\(P(\\Omega)=1\\)\nCountable additivity:\nIf \\(A_1, A_2, \\dots\\) are disjoint,\n\\[\nP\\Big(\\bigcup_{i=1}^\\infty A_i\\Big) = \\sum_{i=1}^\\infty P(A_i)\n\\]"
+    "objectID": "lectures/1b.html#probability-axioms",
+    "href": "lectures/1b.html#probability-axioms",
+    "title": "Introduction to Probability",
+    "section": "Probability Axioms",
+    "text": "Probability Axioms\nFor any event \\(A\\):\n\n\\(0\\leq \\Pr(A) \\leq 1\\)\n\\(\\Pr(S) = 1\\) where \\(S\\) is the sample space."
   },
   {
-    "objectID": "lectures/2b.html#summary",
-    "href": "lectures/2b.html#summary",
-    "title": "Random Variables",
+    "objectID": "lectures/1b.html#complement-rule",
+    "href": "lectures/1b.html#complement-rule",
+    "title": "Introduction to Probability",
+    "section": "Complement Rule",
+    "text": "Complement Rule\nThe complement of \\(A\\) (denoted \\(A^c\\)) is “not \\(A\\)”.\n\\[\\Pr(A^c) = 1 - \\Pr(A)\\]"
+  },
+  {
+    "objectID": "lectures/1b.html#example",
+    "href": "lectures/1b.html#example",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nIf the probability of rain is 0.3,\nthen the probability of no rain is:"
+  },
+  {
+    "objectID": "lectures/1b.html#addition-rule",
+    "href": "lectures/1b.html#addition-rule",
+    "title": "Introduction to Probability",
+    "section": "Addition Rule",
+    "text": "Addition Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)\\]"
+  },
+  {
+    "objectID": "lectures/1b.html#disjoint-events-mutually-exclusive",
+    "href": "lectures/1b.html#disjoint-events-mutually-exclusive",
+    "title": "Introduction to Probability",
+    "section": "Disjoint Events (mutually exclusive)",
+    "text": "Disjoint Events (mutually exclusive)\nIf \\(A\\) and \\(B\\) cannot happen together,\n\\[ \\Pr(A \\cap B) = 0 \\]\nThen:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#multiplication-rule",
+    "href": "lectures/1b.html#multiplication-rule",
+    "title": "Introduction to Probability",
+    "section": "Multiplication Rule",
+    "text": "Multiplication Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nor equivalently,\n\\[ \\Pr(A \\cap B) = \\Pr(B \\mid A)\\Pr(A) \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#conditional-probability",
+    "href": "lectures/1b.html#conditional-probability",
+    "title": "Introduction to Probability",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\nThe probability of (A) given that (B) occurred:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}, \\quad \\Pr(B) &gt; 0 \\]"
+  },
+  {
+    "objectID": "lectures/1b.html#example-1",
+    "href": "lectures/1b.html#example-1",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nIf 30% of students play soccer, 20% play basketball,\nand 10% play both:"
+  },
+  {
+    "objectID": "lectures/1b.html#summary",
+    "href": "lectures/1b.html#summary",
+    "title": "Introduction to Probability",
     "section": "Summary",
-    "text": "Summary\n\nSample space (\\(\\Omega\\)): all possible outcomes\n\nSigma-algebra (\\(\\mathcal{F}\\)): collection of “allowable” events\n\nProbability measure (\\(P\\)): assigns probabilities consistently\n\nTogether: Probability Space = \\((\\Omega, \\mathcal{F}, P)\\)"
+    "text": "Summary\n\nComplement Rule:\n\\[ \\Pr(A^c) = 1 - \\Pr(A) \\]\nAddition Rule:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) \\]\nMultiplication Rule:\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nConditional Probability:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} \\]"
   },
   {
-    "objectID": "lectures/2b.html#random-variables-1",
-    "href": "lectures/2b.html#random-variables-1",
-    "title": "Random Variables",
-    "section": "Random Variables",
-    "text": "Random Variables\n\nA random variable is a measurable function:\n\n\\[\nX: \\Omega \\to \\mathbb{R}\n\\]\n\nFor any \\(a \\in \\mathbb{R}\\),\n\\(\\{ \\omega \\in \\Omega : X(\\omega) \\leq a \\} \\in \\mathcal{F}\\)."
+    "objectID": "lectures/1b.html#example-3",
+    "href": "lectures/1b.html#example-3",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\nSuppose we want to understand the efficacy of a test for a certain disease. Consider the following table:\n\n\n\n\n\nDisease\nPresence\nTotal\n\n\n\n\n\n\nYes\nNo\n\n\n\nTest Result\nYes\n42\n6\n\n\n\n\nNo\n17\n35\n\n\n\n\n\n\n\n100"
   },
   {
-    "objectID": "lectures/2b.html#types-of-random-variables",
-    "href": "lectures/2b.html#types-of-random-variables",
-    "title": "Random Variables",
-    "section": "Types of Random Variables",
-    "text": "Types of Random Variables\n\nDiscrete\n\nCountable values\n\nExample: Die roll, number of heads in 3 tosses\n\nContinuous\n\nAny value in an interval\n\nExample: Height, time, weight"
+    "objectID": "lectures/1b.html#example-4",
+    "href": "lectures/1b.html#example-4",
+    "title": "Introduction to Probability",
+    "section": "Example",
+    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability for someone who has the disease, given that they test positive.\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
   },
   {
-    "objectID": "lectures/2b.html#distribution-function",
-    "href": "lectures/2b.html#distribution-function",
-    "title": "Random Variables",
-    "section": "Distribution Function",
-    "text": "Distribution Function\nFor a random variable \\(X\\), the cumulative distribution function (CDF) is:\n\\[\nF_X(x) = P(X \\leq x), \\quad x \\in \\mathbb{R}\n\\]\nInterpretation:\n\\(F_X(x)\\) gives the probability that \\(X\\) takes a value less than or equal to \\(x\\)."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Probability and Statistics!",
+    "section": "",
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "lectures/2b.html#properties-of-a-distribution-function",
-    "href": "lectures/2b.html#properties-of-a-distribution-function",
-    "title": "Random Variables",
-    "section": "Properties of a Distribution Function",
-    "text": "Properties of a Distribution Function\n\n\\(F_X(x)\\) is non-decreasing.\n\\(\\lim_{x \\to -\\infty} F_X(x) = 0\\)\n\\(\\lim_{x \\to +\\infty} F_X(x) = 1\\)\n\\(F_X\\) is right-continuous: \\[\n\\lim_{t \\downarrow x} F_X(t) = F_X(x)\n\\]"
+    "objectID": "hws/hw2.html",
+    "href": "hws/hw2.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
   },
   {
-    "objectID": "lectures/2b.html#distributions",
-    "href": "lectures/2b.html#distributions",
-    "title": "Random Variables",
-    "section": "Distributions",
-    "text": "Distributions\n\nDiscrete: Probability Mass Function (PMF)\n\\[\nP(X=x) = p(x)\n\\]"
+    "objectID": "hws/hw2.html#problem-1",
+    "href": "hws/hw2.html#problem-1",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
   },
   {
-    "objectID": "lectures/2b.html#distributions-cont.",
-    "href": "lectures/2b.html#distributions-cont.",
-    "title": "Random Variables",
-    "section": "Distributions (cont.)",
-    "text": "Distributions (cont.)\n\nContinuous: Probability Density Function (PDF)\n\\[\nP(a \\leq X \\leq b) = \\int_a^b f(x)\\,dx\n\\]"
+    "objectID": "hws/hw2.html#problem-2",
+    "href": "hws/hw2.html#problem-2",
+    "title": "Homework 2",
+    "section": "Problem 2",
+    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 3: Exercises 5"
   },
   {
-    "objectID": "lectures/2b.html#expectation-variance",
-    "href": "lectures/2b.html#expectation-variance",
-    "title": "Random Variables",
-    "section": "Expectation & Variance",
-    "text": "Expectation & Variance\n\nExpectation (Mean):\n\nDiscrete:\n\\[\nE[X] = \\sum_x x \\, p(x)\n\\]\nContinuous:\n\\[\nE[X] = \\int_{-\\infty}^{\\infty} x f(x)\\,dx\n\\]\n\nVariance:\n\\[\n\\text{Var}(X) = E[(X - E[X])^2]\n\\]"
+    "objectID": "hws/hw2.html#problem-3",
+    "href": "hws/hw2.html#problem-3",
+    "title": "Homework 2",
+    "section": "Problem 3",
+    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 3: Exercises 8"
   },
   {
-    "objectID": "lectures/2b.html#expected-value-mean",
-    "href": "lectures/2b.html#expected-value-mean",
-    "title": "Random Variables",
-    "section": "Expected Value (Mean)",
-    "text": "Expected Value (Mean)\n\nThe long-run average value of a random variable.\n\nThink: if we repeated the experiment many times, what would the average outcome be?"
+    "objectID": "hws/hw2.html#problem-4",
+    "href": "hws/hw2.html#problem-4",
+    "title": "Homework 2",
+    "section": "Problem 4",
+    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 3: Exercises 13"
   },
   {
-    "objectID": "lectures/2b.html#variance-spread-of-values",
-    "href": "lectures/2b.html#variance-spread-of-values",
-    "title": "Random Variables",
-    "section": "Variance (Spread of Values)",
-    "text": "Variance (Spread of Values)\n\nMeasures how spread out the values of \\(X\\) are around the mean.\n\nHigh variance = outcomes vary a lot.\n\nLow variance = outcomes are close to the mean."
+    "objectID": "hws/hw2.html#problem-5",
+    "href": "hws/hw2.html#problem-5",
+    "title": "Homework 2",
+    "section": "Problem 5",
+    "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
   },
   {
-    "objectID": "lectures/2b.html#common-random-variables",
-    "href": "lectures/2b.html#common-random-variables",
-    "title": "Random Variables",
-    "section": "Common Random Variables",
-    "text": "Common Random Variables\n\nBernoulli: Success (1) or failure (0), prob. \\(p\\)\n\nBinomial: #successes in \\(n\\) Bernoulli trials\n\nPoisson: #events in fixed time, rate \\(\\lambda\\)\n\nNormal (Gaussian): Bell curve\n\nUniform: Equal chance in an interval"
+    "objectID": "hws/hw1.html",
+    "href": "hws/hw1.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "Problems from Probability 4 Data Science Chapter 2:\nExercises 1, 6 (11 is 22; ignore F), 8, 9\nHomework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
   },
   {
-    "objectID": "lectures/1c.html#r-programming",
-    "href": "lectures/1c.html#r-programming",
-    "title": "Introduction to R/RStudio",
-    "section": "R Programming",
-    "text": "R Programming\nR is a statistical programming package that allows you to conduct different types of analysis.\nR"
+    "objectID": "hw.html",
+    "href": "hw.html",
+    "title": "Homework",
+    "section": "",
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "lectures/1c.html#rstudio",
-    "href": "lectures/1c.html#rstudio",
-    "title": "Introduction to R/RStudio",
-    "section": "RStudio",
-    "text": "RStudio\nA piece of software that organizes how you conduct statistical analysis in R.\nRStudio"
+    "objectID": "exc/exc5.html",
+    "href": "exc/exc5.html",
+    "title": "Extra Credit 4",
+    "section": "",
+    "text": "After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.\nBooks:\n\nEmpire of AI\n\nKaren Hao\n\nThe Last Human Job\n\nAllison Pugh\n\nThe Book of Why\n\nJudea Pearl\n\nAlgorithms of Oppression\n\nSafiya Umoja Noble\n\nData Feminism\n\nCatherine D’Ignazio and Lauren Klein\n\nWeapons of Math Destruction\n\nCathy O’Niel\n\nInvisible Women : data bias in a world designed for men\n\nCaroline Criado Perez\n\nFactfulness: Ten Reasons We’re Wrong About the World… and Why Things are Better Than You Think\n\nHans Rosling\n\nArtificial Unintelligence: How Computers Misunderstand the World\n\nMerideth Broussard\n\nTechnically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech\n\nSara Wachter-Boettcher\n\nOR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
   },
   {
-    "objectID": "lectures/1c.html#posit-cloud",
-    "href": "lectures/1c.html#posit-cloud",
-    "title": "Introduction to R/RStudio",
-    "section": "Posit Cloud",
-    "text": "Posit Cloud\nA web version of RStudio.\nPosit Cloud"
+    "objectID": "exc/exc3.html",
+    "href": "exc/exc3.html",
+    "title": "Extra Credit 2",
+    "section": "",
+    "text": "Create a video essay on Survival Analysis. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Survival Analysis in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394262/\nhttps://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_survival/BS704_Survival_print.html\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
   },
   {
-    "objectID": "lectures/1c.html#r-packages",
-    "href": "lectures/1c.html#r-packages",
-    "title": "Introduction to R/RStudio",
-    "section": "R Packages",
-    "text": "R Packages\n\nTidyverse"
+    "objectID": "exc/exc1.html",
+    "href": "exc/exc1.html",
+    "title": "Extra Credit 1",
+    "section": "",
+    "text": "Write a 2-page report practices related to self care. As you move on through college and your future careers, it is important to practice self care. For this extra credit assignments, write about what are some practices you will do to for your well being.\nWorth 1 percent points.\nReport guidelines\n\n2-3 Pages\nDouble Spaced\n12 point font\nDue 9/21/2025"
   },
   {
-    "objectID": "lectures/1c.html#r-as-a-calculator",
-    "href": "lectures/1c.html#r-as-a-calculator",
-    "title": "Introduction to R/RStudio",
-    "section": "R as a calculator",
-    "text": "R as a calculator\nR can evaluate different expressions in the console tab.\nTry the following:\n\n\\(4(4+2)/34\\)\n\\(6^3\\)\n\\(3-1\\)\n\\(4+4/3+45(32*34-54)\\)"
+    "objectID": "ec.html",
+    "href": "ec.html",
+    "title": "Extra Credit",
+    "section": "",
+    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit two.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "lectures/1c.html#r-functions",
-    "href": "lectures/1c.html#r-functions",
-    "title": "Introduction to R/RStudio",
-    "section": "R Functions",
-    "text": "R Functions\nR functions performs tasks to specific data values.\nEvaluate the following values in R:\n\n\\(\\sqrt{3}\\)\n\\(e^3\\)\n\\(\\ln(53)\\)\n\\(\\log(324)\\)\n\\(\\sin(3)\\)\n\\(\\sin(3\\pi)\\)"
+    "objectID": "exc/exc2.html",
+    "href": "exc/exc2.html",
+    "title": "Extra Credit 2",
+    "section": "",
+    "text": "Write a 2 page report on non academic related activities you will be do for Spring Break. Make sure to highlight activities that will benefit your well being. If you written the wellness report, you can write an update on that and if there is any changes you want to do.\nWorth 1 percent points.\nReport guidelines\n\nMax 2 Pages\nDouble Spaced\n12 point font\nDue 3/17/2023"
   },
   {
-    "objectID": "lectures/1c.html#types-of-data",
-    "href": "lectures/1c.html#types-of-data",
-    "title": "Introduction to R/RStudio",
-    "section": "Types of Data",
-    "text": "Types of Data\n\nNumeric\nCharacter\nLogical\nMissing\n\nEvaluate the following code:"
+    "objectID": "exc/exc4.html",
+    "href": "exc/exc4.html",
+    "title": "Extra Credit 3",
+    "section": "",
+    "text": "Create a video essay on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://towardsdatascience.com/an-overview-of-monte-carlo-methods-675384eb1694\nhttps://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
   },
   {
-    "objectID": "lectures/1c.html#types-of-objects",
-    "href": "lectures/1c.html#types-of-objects",
-    "title": "Introduction to R/RStudio",
-    "section": "Types of Objects",
-    "text": "Types of Objects\nIn R, an object contains a set of data. The most common types are vectors and matrix.\nRun this code and print out the objects in the console:"
+    "objectID": "hws/hw0.html",
+    "href": "hws/hw0.html",
+    "title": "Homework 0",
+    "section": "",
+    "text": "If you plan to submit this assignment, please try to submit the assignment as 1 PDF if possible."
   },
   {
-    "objectID": "lectures/1c.html#data-frames",
-    "href": "lectures/1c.html#data-frames",
-    "title": "Introduction to R/RStudio",
-    "section": "Data Frames",
-    "text": "Data Frames\nData frames can be thought of as R’s version of a data set.\nPlay around with mtcars:\n\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
-  },
-  {
-    "objectID": "lectures/1c.html#lists",
-    "href": "lectures/1c.html#lists",
-    "title": "Introduction to R/RStudio",
-    "section": "Lists",
-    "text": "Lists\nList can be thought as an extended vector, but each element is a different R object.\nTry playing with this R object:"
+    "objectID": "hws/hw0.html#footnotes",
+    "href": "hws/hw0.html#footnotes",
+    "title": "Homework 0",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nEither convert to summation notation or evaluate the summation.↩︎"
   },
   {
     "objectID": "lectures/1a.html#introductions",
@@ -1645,536 +1953,298 @@
     "text": "Associations\nAn association describes the relationship between two characteristics of a population."
   },
   {
-    "objectID": "hws/hw0.html",
-    "href": "hws/hw0.html",
-    "title": "Homework 0",
-    "section": "",
-    "text": "If you plan to submit this assignment, please try to submit the assignment as 1 PDF if possible."
+    "objectID": "lectures/1c.html#r-programming",
+    "href": "lectures/1c.html#r-programming",
+    "title": "Introduction to R/RStudio",
+    "section": "R Programming",
+    "text": "R Programming\nR is a statistical programming package that allows you to conduct different types of analysis.\nR"
   },
   {
-    "objectID": "hws/hw0.html#footnotes",
-    "href": "hws/hw0.html#footnotes",
-    "title": "Homework 0",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nEither convert to summation notation or evaluate the summation.↩︎"
+    "objectID": "lectures/1c.html#rstudio",
+    "href": "lectures/1c.html#rstudio",
+    "title": "Introduction to R/RStudio",
+    "section": "RStudio",
+    "text": "RStudio\nA piece of software that organizes how you conduct statistical analysis in R.\nRStudio"
   },
   {
-    "objectID": "exc/exc4.html",
-    "href": "exc/exc4.html",
-    "title": "Extra Credit 3",
-    "section": "",
-    "text": "Create a video essay on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://towardsdatascience.com/an-overview-of-monte-carlo-methods-675384eb1694\nhttps://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+    "objectID": "lectures/1c.html#posit-cloud",
+    "href": "lectures/1c.html#posit-cloud",
+    "title": "Introduction to R/RStudio",
+    "section": "Posit Cloud",
+    "text": "Posit Cloud\nA web version of RStudio.\nPosit Cloud"
   },
   {
-    "objectID": "exc/exc2.html",
-    "href": "exc/exc2.html",
-    "title": "Extra Credit 2",
-    "section": "",
-    "text": "Write a 2 page report on non academic related activities you will be do for Spring Break. Make sure to highlight activities that will benefit your well being. If you written the wellness report, you can write an update on that and if there is any changes you want to do.\nWorth 1 percent points.\nReport guidelines\n\nMax 2 Pages\nDouble Spaced\n12 point font\nDue 3/17/2023"
+    "objectID": "lectures/1c.html#r-packages",
+    "href": "lectures/1c.html#r-packages",
+    "title": "Introduction to R/RStudio",
+    "section": "R Packages",
+    "text": "R Packages\n\nTidyverse"
   },
   {
-    "objectID": "ec.html",
-    "href": "ec.html",
-    "title": "Extra Credit",
-    "section": "",
-    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit two.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "objectID": "lectures/1c.html#r-as-a-calculator",
+    "href": "lectures/1c.html#r-as-a-calculator",
+    "title": "Introduction to R/RStudio",
+    "section": "R as a calculator",
+    "text": "R as a calculator\nR can evaluate different expressions in the console tab.\nTry the following:\n\n\\(4(4+2)/34\\)\n\\(6^3\\)\n\\(3-1\\)\n\\(4+4/3+45(32*34-54)\\)"
   },
   {
-    "objectID": "exc/exc1.html",
-    "href": "exc/exc1.html",
-    "title": "Extra Credit 1",
-    "section": "",
-    "text": "Write a 2-page report practices related to self care. As you move on through college and your future careers, it is important to practice self care. For this extra credit assignments, write about what are some practices you will do to for your well being.\nWorth 1 percent points.\nReport guidelines\n\n2-3 Pages\nDouble Spaced\n12 point font\nDue 9/21/2025"
+    "objectID": "lectures/1c.html#r-functions",
+    "href": "lectures/1c.html#r-functions",
+    "title": "Introduction to R/RStudio",
+    "section": "R Functions",
+    "text": "R Functions\nR functions performs tasks to specific data values.\nEvaluate the following values in R:\n\n\\(\\sqrt{3}\\)\n\\(e^3\\)\n\\(\\ln(53)\\)\n\\(\\log(324)\\)\n\\(\\sin(3)\\)\n\\(\\sin(3\\pi)\\)"
   },
   {
-    "objectID": "exc/exc3.html",
-    "href": "exc/exc3.html",
-    "title": "Extra Credit 2",
-    "section": "",
-    "text": "Create a video essay on Survival Analysis. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Survival Analysis in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394262/\nhttps://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_survival/BS704_Survival_print.html\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+    "objectID": "lectures/1c.html#types-of-data",
+    "href": "lectures/1c.html#types-of-data",
+    "title": "Introduction to R/RStudio",
+    "section": "Types of Data",
+    "text": "Types of Data\n\nNumeric\nCharacter\nLogical\nMissing\n\nEvaluate the following code:"
   },
   {
-    "objectID": "exc/exc5.html",
-    "href": "exc/exc5.html",
-    "title": "Extra Credit 4",
-    "section": "",
-    "text": "After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.\nBooks:\n\nEmpire of AI\n\nKaren Hao\n\nThe Last Human Job\n\nAllison Pugh\n\nThe Book of Why\n\nJudea Pearl\n\nAlgorithms of Oppression\n\nSafiya Umoja Noble\n\nData Feminism\n\nCatherine D’Ignazio and Lauren Klein\n\nWeapons of Math Destruction\n\nCathy O’Niel\n\nInvisible Women : data bias in a world designed for men\n\nCaroline Criado Perez\n\nFactfulness: Ten Reasons We’re Wrong About the World… and Why Things are Better Than You Think\n\nHans Rosling\n\nArtificial Unintelligence: How Computers Misunderstand the World\n\nMerideth Broussard\n\nTechnically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech\n\nSara Wachter-Boettcher\n\nOR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+    "objectID": "lectures/1c.html#types-of-objects",
+    "href": "lectures/1c.html#types-of-objects",
+    "title": "Introduction to R/RStudio",
+    "section": "Types of Objects",
+    "text": "Types of Objects\nIn R, an object contains a set of data. The most common types are vectors and matrix.\nRun this code and print out the objects in the console:"
   },
   {
-    "objectID": "hw.html",
-    "href": "hw.html",
-    "title": "Homework",
-    "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
+    "objectID": "lectures/1c.html#data-frames",
+    "href": "lectures/1c.html#data-frames",
+    "title": "Introduction to R/RStudio",
+    "section": "Data Frames",
+    "text": "Data Frames\nData frames can be thought of as R’s version of a data set.\nPlay around with mtcars:\n\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2"
   },
   {
-    "objectID": "hws/hw1.html",
-    "href": "hws/hw1.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "Problems from Probability 4 Data Science Chapter 2:\nExercises 1, 6 (11 is 22; ignore F), 8, 9\nHomework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
+    "objectID": "lectures/1c.html#lists",
+    "href": "lectures/1c.html#lists",
+    "title": "Introduction to R/RStudio",
+    "section": "Lists",
+    "text": "Lists\nList can be thought as an extended vector, but each element is a different R object.\nTry playing with this R object:"
   },
   {
-    "objectID": "hws/hw2.html",
-    "href": "hws/hw2.html",
-    "title": "Homework 2",
-    "section": "",
-    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+    "objectID": "lectures/2b.html#motivation-intuition",
+    "href": "lectures/2b.html#motivation-intuition",
+    "title": "Random Variables",
+    "section": "Motivation & Intuition",
+    "text": "Motivation & Intuition\n\nProbability starts with experiments:\n\nRolling a die\nTossing a coin\nMeasuring temperature\n\nOutcomes may be descriptive (“heads”) or numeric (3).\nTo analyze mathematically, we assign numbers to outcomes.\n\nThis leads to random variables."
   },
   {
-    "objectID": "hws/hw2.html#problem-1",
-    "href": "hws/hw2.html#problem-1",
-    "title": "Homework 2",
-    "section": "",
-    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+    "objectID": "lectures/2b.html#probability-space-the-foundation",
+    "href": "lectures/2b.html#probability-space-the-foundation",
+    "title": "Random Variables",
+    "section": "Probability Space (The Foundation)",
+    "text": "Probability Space (The Foundation)\nA probability space is a triple:\n\\[\n(\\Omega, \\mathcal{F}, P)\n\\]\n\nSample Space (\\(\\Omega\\))\nAll possible outcomes.\nSigma-Algebra (\\(\\mathcal{F}\\))\nCollection of events (subsets of \\(\\Omega\\)) closed under complements and unions.\nProbability Measure (\\(P\\))\nAssigns probabilities to events."
   },
   {
-    "objectID": "hws/hw2.html#problem-2",
-    "href": "hws/hw2.html#problem-2",
-    "title": "Homework 2",
-    "section": "Problem 2",
-    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 3: Exercises 5"
+    "objectID": "lectures/2b.html#sample-space-omega",
+    "href": "lectures/2b.html#sample-space-omega",
+    "title": "Random Variables",
+    "section": "Sample Space (\\(\\Omega\\))",
+    "text": "Sample Space (\\(\\Omega\\))\n\nThe set of all possible outcomes of a random experiment.\nEach element of \\(\\Omega\\) is an elementary outcome."
   },
   {
-    "objectID": "hws/hw2.html#problem-3",
-    "href": "hws/hw2.html#problem-3",
-    "title": "Homework 2",
-    "section": "Problem 3",
-    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 3: Exercises 8"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-4",
-    "href": "hws/hw2.html#problem-4",
-    "title": "Homework 2",
-    "section": "Problem 4",
-    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 3: Exercises 13"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-5",
-    "href": "hws/hw2.html#problem-5",
-    "title": "Homework 2",
-    "section": "Problem 5",
-    "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to Probability and Statistics!",
-    "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lectures/1b.html#learning-objectives",
-    "href": "lectures/1b.html#learning-objectives",
-    "title": "Introduction to Probability",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nDefine sample space and experiment\nDefine probabilities\nDefine random variable and distribution function"
-  },
-  {
-    "objectID": "lectures/1b.html#experiments-and-outcomes",
-    "href": "lectures/1b.html#experiments-and-outcomes",
-    "title": "Introduction to Probability",
-    "section": "Experiments and Outcomes",
-    "text": "Experiments and Outcomes\n\nA random experiment is a process with uncertain results but well-defined possible outcomes."
-  },
-  {
-    "objectID": "lectures/1b.html#examples",
-    "href": "lectures/1b.html#examples",
-    "title": "Introduction to Probability",
+    "objectID": "lectures/2b.html#examples",
+    "href": "lectures/2b.html#examples",
+    "title": "Random Variables",
     "section": "Examples",
-    "text": "Examples\n\nTossing a coin → outcomes: {Heads, Tails}\n\nRolling a die → outcomes: {1, 2, 3, 4, 5, 6}\n\nDrawing a card → outcomes: {all 52 cards in a deck}"
+    "text": "Examples\n\nCoin toss: \\(\\Omega = \\{H, T\\}\\)\nDie roll: \\(\\Omega = \\{1,2,3,4,5,6\\}\\)\nTwo coins: \\(\\Omega = \\{HH, HT, TH, TT\\}\\)\nHeight of a student: \\(\\Omega = [100,220]\\) cm"
   },
   {
-    "objectID": "lectures/1b.html#sample-space",
-    "href": "lectures/1b.html#sample-space",
-    "title": "Introduction to Probability",
-    "section": "Sample Space",
-    "text": "Sample Space\n\nThe sample space (denoted \\(S\\)) is the set of all possible outcomes of an experiment."
+    "objectID": "lectures/2b.html#sigma-algebra-mathcalf",
+    "href": "lectures/2b.html#sigma-algebra-mathcalf",
+    "title": "Random Variables",
+    "section": "Sigma-Algebra (\\(\\mathcal{F}\\))",
+    "text": "Sigma-Algebra (\\(\\mathcal{F}\\))\n\nA collection of subsets of \\(\\Omega\\) (called events) with special properties.\n\nRequirements:\n\n\\(\\Omega \\in \\mathcal{F}\\)\nIf \\(A \\in \\mathcal{F}\\), then \\(A^\\mathrm{C} \\in \\mathcal{F}\\)\nIf \\(A_1, A_2, \\dots \\in \\mathcal{F}\\), then \\(\\bigcup_{i=1}^\\infty A_i \\in \\mathcal{F}\\) and \\(\\bigcap_{i=1}^\\infty A_i \\in \\mathcal{F}\\)"
   },
   {
-    "objectID": "lectures/1b.html#examples-1",
-    "href": "lectures/1b.html#examples-1",
-    "title": "Introduction to Probability",
-    "section": "Examples",
-    "text": "Examples\n\nCoin toss: \\(S = \\{H, T\\}\\)\nDie roll: \\(S = \\{1, 2, 3, 4, 5, 6\\}\\)\n\nTwo coin tosses: \\(S = \\{HH, HT, TH, TT\\}\\)"
+    "objectID": "lectures/2b.html#borel-sigma-field",
+    "href": "lectures/2b.html#borel-sigma-field",
+    "title": "Random Variables",
+    "section": "Borel Sigma-Field",
+    "text": "Borel Sigma-Field\n\nWhen \\(\\Omega = \\mathbb{R}\\) (or an interval), we need a sigma-algebra of subsets to define probabilities.\nNot every subset of \\(\\mathbb{R}\\) is “nice” (some are too pathological).\nThe Borel sigma-field provides a rigorous and practical choice."
   },
   {
-    "objectID": "lectures/1b.html#events",
-    "href": "lectures/1b.html#events",
-    "title": "Introduction to Probability",
-    "section": "Events",
-    "text": "Events\n\nAn event is any subset of the sample space.\n\nExamples:\n- Event A: “Die shows an even number”\n\\(A = \\{2,4,6\\}\\)\n\nEvent B: “At least one Head in two tosses”\n\\(B = \\{HH, HT, TH\\}\\)"
+    "objectID": "lectures/2b.html#definition",
+    "href": "lectures/2b.html#definition",
+    "title": "Random Variables",
+    "section": "Definition",
+    "text": "Definition\n\nThe Borel sigma-field on \\(\\mathbb{R}\\), denoted \\(\\mathcal{B}\\), is the smallest \\(\\sigma\\)-algebra based on semi-closed intervals:\n\n\\[\n(\\infty, b] = \\{x: -\\infty &lt; x \\leq \\infty \\}\n\\]"
   },
   {
-    "objectID": "lectures/1b.html#certain-and-impossible-events",
-    "href": "lectures/1b.html#certain-and-impossible-events",
-    "title": "Introduction to Probability",
-    "section": "Certain and Impossible Events",
-    "text": "Certain and Impossible Events\n\nCertain event: The sample space itself \\(S\\) (probability = 1)\nImpossible event: The empty set \\(\\varnothing\\) (probability = 0)"
+    "objectID": "lectures/2b.html#mathcalb-contain",
+    "href": "lectures/2b.html#mathcalb-contain",
+    "title": "Random Variables",
+    "section": "\\(\\mathcal{B}\\) Contain",
+    "text": "\\(\\mathcal{B}\\) Contain\n\n\\((a,b)\\)\n\\([a,b]\\)\n\\([a,b)\\) and \\((a,b]\\)\nclosed under complement\nclosed under unions\nclosed under intersection"
   },
   {
-    "objectID": "lectures/1b.html#event-operations",
-    "href": "lectures/1b.html#event-operations",
-    "title": "Introduction to Probability",
-    "section": "Event Operations",
-    "text": "Event Operations\nSince events are subsets of the sample space, we can use set theory:\n\nUnion: \\(A \\cup B\\) → either A or B occurs\n\nIntersection: \\(A \\cap B\\) → both A and B occur\n\nComplement: \\(A^c\\) → event A does not occur"
+    "objectID": "lectures/2b.html#probability-measure-p",
+    "href": "lectures/2b.html#probability-measure-p",
+    "title": "Random Variables",
+    "section": "Probability Measure (\\(P\\))",
+    "text": "Probability Measure (\\(P\\))\n\nA function \\(P: \\mathcal{F} \\to [0,1]\\) that assigns probabilities."
   },
   {
-    "objectID": "lectures/1b.html#probability-axioms",
-    "href": "lectures/1b.html#probability-axioms",
-    "title": "Introduction to Probability",
-    "section": "Probability Axioms",
-    "text": "Probability Axioms\nFor any event \\(A\\):\n\n\\(0\\leq \\Pr(A) \\leq 1\\)\n\\(\\Pr(S) = 1\\) where \\(S\\) is the sample space."
+    "objectID": "lectures/2b.html#axioms",
+    "href": "lectures/2b.html#axioms",
+    "title": "Random Variables",
+    "section": "Axioms",
+    "text": "Axioms\n\nNon-negativity: \\(P(A) \\geq 0\\)\nNormalization: \\(P(\\Omega)=1\\)\nCountable additivity:\nIf \\(A_1, A_2, \\dots\\) are disjoint,\n\\[\nP\\Big(\\bigcup_{i=1}^\\infty A_i\\Big) = \\sum_{i=1}^\\infty P(A_i)\n\\]"
   },
   {
-    "objectID": "lectures/1b.html#complement-rule",
-    "href": "lectures/1b.html#complement-rule",
-    "title": "Introduction to Probability",
-    "section": "Complement Rule",
-    "text": "Complement Rule\nThe complement of \\(A\\) (denoted \\(A^c\\)) is “not \\(A\\)”.\n\\[\\Pr(A^c) = 1 - \\Pr(A)\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#example",
-    "href": "lectures/1b.html#example",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nIf the probability of rain is 0.3,\nthen the probability of no rain is:"
-  },
-  {
-    "objectID": "lectures/1b.html#addition-rule",
-    "href": "lectures/1b.html#addition-rule",
-    "title": "Introduction to Probability",
-    "section": "Addition Rule",
-    "text": "Addition Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)\\]"
-  },
-  {
-    "objectID": "lectures/1b.html#disjoint-events-mutually-exclusive",
-    "href": "lectures/1b.html#disjoint-events-mutually-exclusive",
-    "title": "Introduction to Probability",
-    "section": "Disjoint Events (mutually exclusive)",
-    "text": "Disjoint Events (mutually exclusive)\nIf \\(A\\) and \\(B\\) cannot happen together,\n\\[ \\Pr(A \\cap B) = 0 \\]\nThen:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) \\]"
-  },
-  {
-    "objectID": "lectures/1b.html#multiplication-rule",
-    "href": "lectures/1b.html#multiplication-rule",
-    "title": "Introduction to Probability",
-    "section": "Multiplication Rule",
-    "text": "Multiplication Rule\nFor any two events \\(A\\) and \\(B\\):\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nor equivalently,\n\\[ \\Pr(A \\cap B) = \\Pr(B \\mid A)\\Pr(A) \\]"
-  },
-  {
-    "objectID": "lectures/1b.html#conditional-probability",
-    "href": "lectures/1b.html#conditional-probability",
-    "title": "Introduction to Probability",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\nThe probability of (A) given that (B) occurred:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}, \\quad \\Pr(B) &gt; 0 \\]"
-  },
-  {
-    "objectID": "lectures/1b.html#example-1",
-    "href": "lectures/1b.html#example-1",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nIf 30% of students play soccer, 20% play basketball,\nand 10% play both:"
-  },
-  {
-    "objectID": "lectures/1b.html#summary",
-    "href": "lectures/1b.html#summary",
-    "title": "Introduction to Probability",
+    "objectID": "lectures/2b.html#summary",
+    "href": "lectures/2b.html#summary",
+    "title": "Random Variables",
     "section": "Summary",
-    "text": "Summary\n\nComplement Rule:\n\\[ \\Pr(A^c) = 1 - \\Pr(A) \\]\nAddition Rule:\n\\[ \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) \\]\nMultiplication Rule:\n\\[ \\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) \\]\nConditional Probability:\n\\[ \\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} \\]"
+    "text": "Summary\n\nSample space (\\(\\Omega\\)): all possible outcomes\n\nSigma-algebra (\\(\\mathcal{F}\\)): collection of “allowable” events\n\nProbability measure (\\(P\\)): assigns probabilities consistently\n\nTogether: Probability Space = \\((\\Omega, \\mathcal{F}, P)\\)"
   },
   {
-    "objectID": "lectures/1b.html#example-3",
-    "href": "lectures/1b.html#example-3",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\nSuppose we want to understand the efficacy of a test for a certain disease. Consider the following table:\n\n\n\n\n\nDisease\nPresence\nTotal\n\n\n\n\n\n\nYes\nNo\n\n\n\nTest Result\nYes\n42\n6\n\n\n\n\nNo\n17\n35\n\n\n\n\n\n\n\n100"
+    "objectID": "lectures/2b.html#random-variables-1",
+    "href": "lectures/2b.html#random-variables-1",
+    "title": "Random Variables",
+    "section": "Random Variables",
+    "text": "Random Variables\n\nA random variable is a measurable function:\n\n\\[\nX: \\Omega \\to \\mathbb{R}\n\\]\n\nFor any \\(a \\in \\mathbb{R}\\),\n\\(\\{ \\omega \\in \\Omega : X(\\omega) \\leq a \\} \\in \\mathcal{F}\\)."
   },
   {
-    "objectID": "lectures/1b.html#example-4",
-    "href": "lectures/1b.html#example-4",
-    "title": "Introduction to Probability",
-    "section": "Example",
-    "text": "Example\n\nFind the probability that an individual has a disease\nFind the probability that an individual tests negative for a disease\nFind the probability for someone who has the disease, given that they test positive.\nFind the probability that the test gives an accurate result\nFind the probability that the test gives and inaccurate result"
+    "objectID": "lectures/2b.html#types-of-random-variables",
+    "href": "lectures/2b.html#types-of-random-variables",
+    "title": "Random Variables",
+    "section": "Types of Random Variables",
+    "text": "Types of Random Variables\n\nDiscrete\n\nCountable values\n\nExample: Die roll, number of heads in 3 tosses\n\nContinuous\n\nAny value in an interval\n\nExample: Height, time, weight"
   },
   {
-    "objectID": "lectures/2a.html#learning-outcomes",
-    "href": "lectures/2a.html#learning-outcomes",
-    "title": "Introduction to Probability",
+    "objectID": "lectures/2b.html#distribution-function",
+    "href": "lectures/2b.html#distribution-function",
+    "title": "Random Variables",
+    "section": "Distribution Function",
+    "text": "Distribution Function\nFor a random variable \\(X\\), the cumulative distribution function (CDF) is:\n\\[\nF_X(x) = P(X \\leq x), \\quad x \\in \\mathbb{R}\n\\]\nInterpretation:\n\\(F_X(x)\\) gives the probability that \\(X\\) takes a value less than or equal to \\(x\\)."
+  },
+  {
+    "objectID": "lectures/2b.html#properties-of-a-distribution-function",
+    "href": "lectures/2b.html#properties-of-a-distribution-function",
+    "title": "Random Variables",
+    "section": "Properties of a Distribution Function",
+    "text": "Properties of a Distribution Function\n\n\\(F_X(x)\\) is non-decreasing.\n\\(\\lim_{x \\to -\\infty} F_X(x) = 0\\)\n\\(\\lim_{x \\to +\\infty} F_X(x) = 1\\)\n\\(F_X\\) is right-continuous: \\[\n\\lim_{t \\downarrow x} F_X(t) = F_X(x)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#distributions",
+    "href": "lectures/2b.html#distributions",
+    "title": "Random Variables",
+    "section": "Distributions",
+    "text": "Distributions\n\nDiscrete: Probability Mass Function (PMF)\n\\[\nP(X=x) = p(x)\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#distributions-cont.",
+    "href": "lectures/2b.html#distributions-cont.",
+    "title": "Random Variables",
+    "section": "Distributions (cont.)",
+    "text": "Distributions (cont.)\n\nContinuous: Probability Density Function (PDF)\n\\[\nP(a \\leq X \\leq b) = \\int_a^b f(x)\\,dx\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#expectation-variance",
+    "href": "lectures/2b.html#expectation-variance",
+    "title": "Random Variables",
+    "section": "Expectation & Variance",
+    "text": "Expectation & Variance\n\nExpectation (Mean):\n\nDiscrete:\n\\[\nE[X] = \\sum_x x \\, p(x)\n\\]\nContinuous:\n\\[\nE[X] = \\int_{-\\infty}^{\\infty} x f(x)\\,dx\n\\]\n\nVariance:\n\\[\n\\text{Var}(X) = E[(X - E[X])^2]\n\\]"
+  },
+  {
+    "objectID": "lectures/2b.html#expected-value-mean",
+    "href": "lectures/2b.html#expected-value-mean",
+    "title": "Random Variables",
+    "section": "Expected Value (Mean)",
+    "text": "Expected Value (Mean)\n\nThe long-run average value of a random variable.\n\nThink: if we repeated the experiment many times, what would the average outcome be?"
+  },
+  {
+    "objectID": "lectures/2b.html#variance-spread-of-values",
+    "href": "lectures/2b.html#variance-spread-of-values",
+    "title": "Random Variables",
+    "section": "Variance (Spread of Values)",
+    "text": "Variance (Spread of Values)\n\nMeasures how spread out the values of \\(X\\) are around the mean.\n\nHigh variance = outcomes vary a lot.\n\nLow variance = outcomes are close to the mean."
+  },
+  {
+    "objectID": "lectures/2b.html#common-random-variables",
+    "href": "lectures/2b.html#common-random-variables",
+    "title": "Random Variables",
+    "section": "Common Random Variables",
+    "text": "Common Random Variables\n\nBernoulli: Success (1) or failure (0), prob. \\(p\\)\n\nBinomial: #successes in \\(n\\) Bernoulli trials\n\nPoisson: #events in fixed time, rate \\(\\lambda\\)\n\nNormal (Gaussian): Bell curve\n\nUniform: Equal chance in an interval"
+  },
+  {
+    "objectID": "lectures/3b.html#learning-outcomes",
+    "href": "lectures/3b.html#learning-outcomes",
+    "title": "Discrete Random Variable",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nDescribe disjoint events\nDescribe a conditional probability\nDefine independent events\nLaw of Total Probability\nBaye’s Theorem"
+    "text": "Learning Outcomes\n\nExpected Values\nVariances\nProperties of Expected Values"
   },
   {
-    "objectID": "lectures/2a.html#disjoint-events-1",
-    "href": "lectures/2a.html#disjoint-events-1",
-    "title": "Introduction to Probability",
-    "section": "Disjoint Events",
-    "text": "Disjoint Events\nTwo events A and B are considered disjoint if \\(\\Pr(A\\cap B)=0\\). In general terms, only one event can occur, not both."
+    "objectID": "lectures/3b.html#expected-value",
+    "href": "lectures/3b.html#expected-value",
+    "title": "Discrete Random Variable",
+    "section": "Expected Value",
+    "text": "Expected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of \\(Y\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\nwhere \\(P(y)\\) is the PMF of \\(Y\\)."
   },
   {
-    "objectID": "lectures/2a.html#conditional-probability-1",
-    "href": "lectures/2a.html#conditional-probability-1",
-    "title": "Introduction to Probability",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\nLet there be 2 events A and B. Given that B has occurred, what is the probability that A occurs? The conditional probability requires there to be at least 2 events and one event must have occurred. Additionally, the events cannot be disjoint. Conditional probabilities are denoted as \\(\\Pr(A|B)\\), the probability of A given B has occurred.\n\\[\n\\Pr(A|B)=\\frac{\\Pr(A\\cap B)}{\\Pr(B)}\n\\]"
+    "objectID": "lectures/3b.html#expected-value-1",
+    "href": "lectures/3b.html#expected-value-1",
+    "title": "Discrete Random Variable",
+    "section": "Expected Value",
+    "text": "Expected Value\nThe expected value of a function of a random variable \\(Y\\) is provided as\n\\[\nE\\{g(Y)\\} = \\sum_y g(y)P(y)\n\\]"
   },
   {
-    "objectID": "lectures/2a.html#example-1-drawing-cards",
-    "href": "lectures/2a.html#example-1-drawing-cards",
-    "title": "Introduction to Probability",
-    "section": "Example 1: Drawing Cards",
-    "text": "Example 1: Drawing Cards\nWe have a standard deck of 52 cards.\nLet’s find the probability of drawing an ace, given that the card is a spade."
+    "objectID": "lectures/3b.html#variance",
+    "href": "lectures/3b.html#variance",
+    "title": "Discrete Random Variable",
+    "section": "Variance",
+    "text": "Variance\nThe variance is the expected squared difference between the random variable and expected value.\n\\[\nVar(Y)= E[\\{Y-E(Y)\\}^2]=\\sum_y\\{y-E(Y)\\}^2P(y)\n\\]\n\\[\nVar(Y) = E(Y^2) - E(Y)^2\n\\]"
   },
   {
-    "objectID": "lectures/2a.html#example-2-rolling-dice",
-    "href": "lectures/2a.html#example-2-rolling-dice",
-    "title": "Introduction to Probability",
-    "section": "Example 2: Rolling Dice",
-    "text": "Example 2: Rolling Dice\nTwo fair dice are rolled.\nFind the probability that the sum is 10, given that the first die shows a 6."
+    "objectID": "lectures/3b.html#expected-value-2",
+    "href": "lectures/3b.html#expected-value-2",
+    "title": "Discrete Random Variable",
+    "section": "Expected Value",
+    "text": "Expected Value"
   },
   {
-    "objectID": "lectures/2a.html#example-3-medical-test",
-    "href": "lectures/2a.html#example-3-medical-test",
-    "title": "Introduction to Probability",
-    "section": "Example 3: Medical Test",
-    "text": "Example 3: Medical Test\nA certain disease affects 1% of the population.\nA test correctly identifies the disease 95% of the time, but has a 5% false-positive rate.\nFind the probability that someone has the disease given a positive test result."
+    "objectID": "lectures/3b.html#variance-1",
+    "href": "lectures/3b.html#variance-1",
+    "title": "Discrete Random Variable",
+    "section": "Variance",
+    "text": "Variance"
   },
   {
-    "objectID": "lectures/2a.html#example-4-eye-glasses",
-    "href": "lectures/2a.html#example-4-eye-glasses",
-    "title": "Introduction to Probability",
-    "section": "Example 4: Eye Glasses",
-    "text": "Example 4: Eye Glasses\n\n\n\n\nUses Eye Glasses\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40\n\n\n\n\nFind the probability of needing glasses\nFind the probability of not using glasses\nFind the probability of not using glasses and needing glasses\nFind the probability of not using glasses, given they need glasses"
+    "objectID": "lectures/3b.html#expected-value-3",
+    "href": "lectures/3b.html#expected-value-3",
+    "title": "Discrete Random Variable",
+    "section": "Expected Value",
+    "text": "Expected Value"
   },
   {
-    "objectID": "lectures/2a.html#law-of-total-probability-1",
-    "href": "lectures/2a.html#law-of-total-probability-1",
-    "title": "Introduction to Probability",
-    "section": "Law of Total Probability",
-    "text": "Law of Total Probability\nThe law of total probability allows you to compute the probability of an event A given that the sets {\\(B_1\\), … , \\(B_n\\)} partitions event A. The law of total probability is given as\n\\[\n\\Pr(A)= \\sum^n_{i=1}\\Pr(A\\cap B_i)\n\\]\n\n\\[\n\\Pr(A)=\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)\n\\]"
+    "objectID": "lectures/3b.html#variance-2",
+    "href": "lectures/3b.html#variance-2",
+    "title": "Discrete Random Variable",
+    "section": "Variance",
+    "text": "Variance"
   },
   {
-    "objectID": "lectures/2a.html#diagrams",
-    "href": "lectures/2a.html#diagrams",
-    "title": "Introduction to Probability",
-    "section": "Diagrams",
-    "text": "Diagrams"
+    "objectID": "lectures/3b.html#expected-value-4",
+    "href": "lectures/3b.html#expected-value-4",
+    "title": "Discrete Random Variable",
+    "section": "Expected Value",
+    "text": "Expected Value"
   },
   {
-    "objectID": "lectures/2a.html#example-1-weather-and-rain-forecast",
-    "href": "lectures/2a.html#example-1-weather-and-rain-forecast",
-    "title": "Introduction to Probability",
-    "section": "Example 1: Weather and Rain Forecast",
-    "text": "Example 1: Weather and Rain Forecast\nSuppose the weather forecast is either Sunny (S) or Cloudy (C).\n\n\\(P(S) = 0.7\\), \\(P(C) = 0.3\\)\n\nProbability of rain given sunny: \\(P(R \\mid S) = 0.1\\)\n\nProbability of rain given cloudy: \\(P(R \\mid C) = 0.5\\)\n\nWhat is the probability of rain?"
+    "objectID": "lectures/3b.html#variance-3",
+    "href": "lectures/3b.html#variance-3",
+    "title": "Discrete Random Variable",
+    "section": "Variance",
+    "text": "Variance"
   },
   {
-    "objectID": "lectures/2a.html#example-2-disease",
-    "href": "lectures/2a.html#example-2-disease",
-    "title": "Introduction to Probability",
-    "section": "Example 2: Disease",
-    "text": "Example 2: Disease\nThe probability of an individual having a disease, given that they test positive for the disease, is 0.82. The probability of an individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the prevalence of a disease (probability of having a disease)?"
-  },
-  {
-    "objectID": "lectures/2a.html#independent-events-1",
-    "href": "lectures/2a.html#independent-events-1",
-    "title": "Introduction to Probability",
-    "section": "Independent Events",
-    "text": "Independent Events\nEvents A and B are considered independent if \\(\\Pr(A\\cap B)=\\Pr(A)\\Pr(B)\\). In other words, The occurrence of one event will not have an effect on the occurrence of the other event."
-  },
-  {
-    "objectID": "lectures/2a.html#example-1-eye-glasses",
-    "href": "lectures/2a.html#example-1-eye-glasses",
-    "title": "Introduction to Probability",
-    "section": "Example 1: Eye Glasses",
-    "text": "Example 1: Eye Glasses\n\n\n\n\nUses Eye Glasses\n\n\n\n\n\nNeeds Glasses\nYes\nNo\n\n\nYes\n44\n14\n\n\nNo\n2\n40"
-  },
-  {
-    "objectID": "lectures/2a.html#example-2-drawing-with-replacement",
-    "href": "lectures/2a.html#example-2-drawing-with-replacement",
-    "title": "Introduction to Probability",
-    "section": "Example 2: Drawing with Replacement",
-    "text": "Example 2: Drawing with Replacement\nA jar contains 5 red balls and 3 blue balls (8 total).\nWe draw two balls with replacement."
-  },
-  {
-    "objectID": "lectures/2a.html#example-3-drawing-without-replacement",
-    "href": "lectures/2a.html#example-3-drawing-without-replacement",
-    "title": "Introduction to Probability",
-    "section": "Example 3: Drawing without Replacement",
-    "text": "Example 3: Drawing without Replacement\nA jar contains 5 red balls and 3 blue balls (8 total).\nWe draw two balls with replacement."
-  },
-  {
-    "objectID": "lectures/2a.html#bayes-theorem-1",
-    "href": "lectures/2a.html#bayes-theorem-1",
-    "title": "Introduction to Probability",
-    "section": "Baye’s Theorem",
-    "text": "Baye’s Theorem\nBaye’s theorem computes the probability of an event \\(B_i\\) given event A\n\\[\n\\Pr(B_i|A) = \\frac{\\Pr(A\\cap B_i)}{\\Pr(A)}=\\frac{\\Pr(A|B_i)\\Pr(B_i)}{\\sum^n_{i=1}\\Pr(A|B_i)\\Pr(B_i)}\n\\]"
-  },
-  {
-    "objectID": "lectures/2a.html#example-1-factory-machines",
-    "href": "lectures/2a.html#example-1-factory-machines",
-    "title": "Introduction to Probability",
-    "section": "Example 1: Factory Machines",
-    "text": "Example 1: Factory Machines\nA factory has three machines producing items:\n\nMachine A produces 40% of items, with a defect rate of 2%.\n\nMachine B produces 35% of items, with a defect rate of 3%.\n\nMachine C produces 25% of items, with a defect rate of 5%.\n\nIf an item is defective, what is the probability it came from Machine C?"
-  },
-  {
-    "objectID": "lectures/2a.html#example-2-email-spam-filtering",
-    "href": "lectures/2a.html#example-2-email-spam-filtering",
-    "title": "Introduction to Probability",
-    "section": "Example 2: Email Spam Filtering",
-    "text": "Example 2: Email Spam Filtering\nSuppose 80% of emails are legitimate, 20% are spam. A keyword appears in 60% of spam emails but in only 5% of legitimate emails. If an email contains the keyword, what is the probability it is spam?"
-  },
-  {
-    "objectID": "lectures/2a.html#example-3-disease",
-    "href": "lectures/2a.html#example-3-disease",
-    "title": "Introduction to Probability",
-    "section": "Example 3: Disease",
-    "text": "Example 3: Disease\nThe probability of an having a disease, given that they test positive for the disease, is 0.82. The probability of and individual having a disease, given they tested negative, is 0.14. The probability of testing positive is 0.6. What is the probability of resulting in a false negative?"
-  },
-  {
-    "objectID": "lectures/3a.html#learning-outcomes",
-    "href": "lectures/3a.html#learning-outcomes",
-    "title": "Discrete Random Variables",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nDiscrete Random Variables\n\nObtain Probabilities"
-  },
-  {
-    "objectID": "lectures/3a.html#discrete-random-variables-1",
-    "href": "lectures/3a.html#discrete-random-variables-1",
-    "title": "Discrete Random Variables",
-    "section": "Discrete Random Variables",
-    "text": "Discrete Random Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.\n\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p^y(1-p)^{1-y}\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-y}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)"
-  },
-  {
-    "objectID": "lectures/3a.html#probability-mass-function",
-    "href": "lectures/3a.html#probability-mass-function",
-    "title": "Discrete Random Variables",
-    "section": "Probability Mass Function",
-    "text": "Probability Mass Function\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\)."
-  },
-  {
-    "objectID": "lectures/3a.html#cumulative-density-function",
-    "href": "lectures/3a.html#cumulative-density-function",
-    "title": "Discrete Random Variables",
-    "section": "Cumulative Density Function",
-    "text": "Cumulative Density Function\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\)."
-  },
-  {
-    "objectID": "lectures/3a.html#bernoulli-distribution-1",
-    "href": "lectures/3a.html#bernoulli-distribution-1",
-    "title": "Discrete Random Variables",
-    "section": "Bernoulli Distribution",
-    "text": "Bernoulli Distribution\nA Bernoulli distribution is probability of having a success out of two outcomes. In essence, a coin flip with probability of success \\(p\\)."
-  },
-  {
-    "objectID": "lectures/3a.html#binomial-distribution-1",
-    "href": "lectures/3a.html#binomial-distribution-1",
-    "title": "Discrete Random Variables",
-    "section": "Binomial Distribution",
-    "text": "Binomial Distribution\nFor a given sample, the number of successes represents a binomial distribution. Binary outcomes are represented with with a Bernoulli experiment. The sum of Bernoulli experiments represents the binomial distribution."
-  },
-  {
-    "objectID": "lectures/3a.html#binomial-distribution-2",
-    "href": "lectures/3a.html#binomial-distribution-2",
-    "title": "Discrete Random Variables",
-    "section": "Binomial Distribution",
-    "text": "Binomial Distribution\nFor a binomial experiment, the following must be satisfied:\n\n\nThere is a fixed \\(n\\) trials\nThe there are two outcomes for each trial\nThe probability of success (\\(p\\)) is constant for each trial\nThe trials are independent of each other"
-  },
-  {
-    "objectID": "lectures/3a.html#pmf",
-    "href": "lectures/3a.html#pmf",
-    "title": "Discrete Random Variables",
-    "section": "PMF",
-    "text": "PMF"
-  },
-  {
-    "objectID": "lectures/3a.html#example",
-    "href": "lectures/3a.html#example",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nThe probability of a planted seed to germinate is 0.3. An arborist decides to plant 8 seeds in the community. What is the probability that 3 to 5 seeds will germinate?"
-  },
-  {
-    "objectID": "lectures/3a.html#example-1",
-    "href": "lectures/3a.html#example-1",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nThe probability of a planted seed to germinate is 0.6. An arborist decides to plant 8 seeds in the community. What is the probability that at least 1 seed germinates?"
-  },
-  {
-    "objectID": "lectures/3a.html#example-2",
-    "href": "lectures/3a.html#example-2",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nThe probability of a planted seed to germinate is 0.8. An arborist decides to plant 6 seeds in the community. What is the probability that an even number of seed will germinate?"
-  },
-  {
-    "objectID": "lectures/3a.html#poisson-distribution-1",
-    "href": "lectures/3a.html#poisson-distribution-1",
-    "title": "Discrete Random Variables",
-    "section": "Poisson Distribution",
-    "text": "Poisson Distribution\nThe poisson distribution describes an experiment that measures that occurrence of an event at specific point and/or time period."
-  },
-  {
-    "objectID": "lectures/3a.html#pmf-1",
-    "href": "lectures/3a.html#pmf-1",
-    "title": "Discrete Random Variables",
-    "section": "PMF",
-    "text": "PMF"
-  },
-  {
-    "objectID": "lectures/3a.html#example-3",
-    "href": "lectures/3a.html#example-3",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nThe number of industrial accidents at a particular manufacturing plant is found to be an average of 1 accident per month. In the previous month, there were 3 accidents. What is the probability of observing 3 or more accidents in a given month?"
-  },
-  {
-    "objectID": "lectures/3a.html#example-4",
-    "href": "lectures/3a.html#example-4",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nThe number of industrial accidents at a particular manufacturing plant is found to be an average of 8 accidents per year. What is the probability of observing 15 or more accidents in a given year?"
-  },
-  {
-    "objectID": "lectures/3a.html#geometric-distribution-1",
-    "href": "lectures/3a.html#geometric-distribution-1",
-    "title": "Discrete Random Variables",
-    "section": "Geometric Distribution",
-    "text": "Geometric Distribution\nA geometric distribution models the number of Bernoulli trials until the first success (or failure)."
-  },
-  {
-    "objectID": "lectures/3a.html#pmf-2",
-    "href": "lectures/3a.html#pmf-2",
-    "title": "Discrete Random Variables",
-    "section": "PMF",
-    "text": "PMF"
-  },
-  {
-    "objectID": "lectures/3a.html#example-5",
-    "href": "lectures/3a.html#example-5",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nSuppose 30% of the applicants for a certain industrial job possess the necessary skills. What is the probability that the first applicant with the necessary skills is found on the 5th interview."
-  },
-  {
-    "objectID": "lectures/3a.html#negative-binomial-distribution-1",
-    "href": "lectures/3a.html#negative-binomial-distribution-1",
-    "title": "Discrete Random Variables",
-    "section": "Negative Binomial Distribution",
-    "text": "Negative Binomial Distribution\nA negative binomial distribution models the number of successful Bernoulli trials until the \\(r\\)th failure."
-  },
-  {
-    "objectID": "lectures/3a.html#pmf-3",
-    "href": "lectures/3a.html#pmf-3",
-    "title": "Discrete Random Variables",
-    "section": "PMF",
-    "text": "PMF"
-  },
-  {
-    "objectID": "lectures/3a.html#example-6",
-    "href": "lectures/3a.html#example-6",
-    "title": "Discrete Random Variables",
-    "section": "Example",
-    "text": "Example\nTen percent of engines manufactured on an assembly line are defective. If engines are randomly selected one at a time and tested, what is the probability that third nondefective engine is found on the 4th trial."
+    "objectID": "lectures/3b.html#properties",
+    "href": "lectures/3b.html#properties",
+    "title": "Discrete Random Variable",
+    "section": "Properties",
+    "text": "Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(Y)\\}=cE\\{g(Y)\\}\\)\n\\(E\\{g_1(Y)+\\cdots+g_n(Y)\\}=E\\{g_1(Y)\\}+\\cdots+E\\{g_n(Y)\\}\\)"
   },
   {
     "objectID": "lectures/lecture_1.html#introductions",

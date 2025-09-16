@@ -1,0 +1,83 @@
+---
+title: "Moment Generating Functions"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      storage: chalkboard_pres
+      theme: whiteboard
+      chalk-width: 4
+editor: source
+---
+
+```{r}
+#| include: false
+
+knitr::opts_chunk$set(echo = T)
+
+```
+
+## Learning Outcomes
+
+-   Moments
+
+-   Moment Generating Functions
+
+-   Properties
+
+# Moments and Moment Generating Functions
+
+## Moments
+
+The *expected value* is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of $Y$ is
+
+$$
+E(Y)=\sum_y yP(y)
+$$
+
+where $P(y)$ is the PMF of $Y$.
+
+## Moment Generating Functions
+
+The moment generating functions is used to obtain the $k$th moment. The mgf is defined as
+
+$$
+m(c) = E(e^{tX})
+$$
+
+The $k$th moment can be obtained by taking the $k$th derivative of the mgf, with respect to $c$, and setting $c$ equal to 0:
+
+$$
+E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
+$$
+
+# Binomial Distribution
+
+## MGF
+
+## $E(Y^2)$
+
+# Poisson Distribution
+
+## MGF
+
+## $E(Y^3)$
+
+# Geometric Distribution
+
+## MGF
+
+## $E(Y)$
+
+# Expected Value Properties
+
+## Properties
+
+1.  $E(c)=c$, where $c$ is constant
+2.  $E\{cg(Y)\}=cE\{g(Y)\}$
+3.  $E\{g_1(Y)+\cdots+g_n(Y)\}=E\{g_1(Y)\}+\cdots+E\{g_n(Y)\}$
