@@ -1204,18 +1204,25 @@
     "text": "Learning Outcomes\n\nMoments\nMoment Generating Functions\nProperties"
   },
   {
+    "objectID": "lectures/4a.html#expected-values",
+    "href": "lectures/4a.html#expected-values",
+    "title": "Moment Generating Functions",
+    "section": "Expected Values",
+    "text": "Expected Values\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of \\(Y\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\nwhere \\(P(y)\\) is the PMF of \\(Y\\)."
+  },
+  {
     "objectID": "lectures/4a.html#moments",
     "href": "lectures/4a.html#moments",
     "title": "Moment Generating Functions",
     "section": "Moments",
-    "text": "Moments\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of \\(Y\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\nwhere \\(P(y)\\) is the PMF of \\(Y\\)."
+    "text": "Moments\nMoments are numerical measures that describe the shape and characteristics of a random variable’s probability distribution.\n\nThe \\(k\\)th moment is described as\n\\[\nE(X^k)\n\\]"
   },
   {
     "objectID": "lectures/4a.html#moment-generating-functions",
     "href": "lectures/4a.html#moment-generating-functions",
     "title": "Moment Generating Functions",
     "section": "Moment Generating Functions",
-    "text": "Moment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(c) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(c\\), and setting \\(c\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(c)}{dc}\\Bigg|_{c=0}\n\\]"
+    "text": "Moment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(t) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(t\\), and setting \\(t\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(t)}{dt^k}\\Bigg|_{c=0}\n\\]"
   },
   {
     "objectID": "lectures/4a.html#mgf",
@@ -1244,20 +1251,6 @@
     "title": "Moment Generating Functions",
     "section": "\\(E(Y^3)\\)",
     "text": "\\(E(Y^3)\\)"
-  },
-  {
-    "objectID": "lectures/4a.html#mgf-2",
-    "href": "lectures/4a.html#mgf-2",
-    "title": "Moment Generating Functions",
-    "section": "MGF",
-    "text": "MGF"
-  },
-  {
-    "objectID": "lectures/4a.html#ey",
-    "href": "lectures/4a.html#ey",
-    "title": "Moment Generating Functions",
-    "section": "\\(E(Y)\\)",
-    "text": "\\(E(Y)\\)"
   },
   {
     "objectID": "lectures/4a.html#properties",

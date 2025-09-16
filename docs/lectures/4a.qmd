@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = T)
 
 # Moments and Moment Generating Functions
 
-## Moments
+## Expected Values
 
 The *expected value* is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of $Y$ is
 
@@ -42,18 +42,32 @@ $$
 
 where $P(y)$ is the PMF of $Y$.
 
+## Moments
+
+Moments are numerical measures that describe the shape and characteristics of a random variable’s probability distribution.
+
+::: fragment
+The $k$th moment is described as
+
+$$
+E(X^k)
+$$
+
+
+:::
+
 ## Moment Generating Functions
 
 The moment generating functions is used to obtain the $k$th moment. The mgf is defined as
 
 $$
-m(c) = E(e^{tX})
+m(t) = E(e^{tX})
 $$
 
-The $k$th moment can be obtained by taking the $k$th derivative of the mgf, with respect to $c$, and setting $c$ equal to 0:
+The $k$th moment can be obtained by taking the $k$th derivative of the mgf, with respect to $t$, and setting $t$ equal to 0:
 
 $$
-E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
+E(X^k)=\frac{d^km(t)}{dt^k}\Bigg|_{c=0}
 $$
 
 # Binomial Distribution
@@ -68,11 +82,6 @@ $$
 
 ## $E(Y^3)$
 
-# Geometric Distribution
-
-## MGF
-
-## $E(Y)$
 
 # Expected Value Properties
 

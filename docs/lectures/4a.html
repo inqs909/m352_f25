@@ -148,23 +148,33 @@
 <h1>Moments and Moment Generating Functions</h1>
 
 </section>
-<section id="moments" class="slide level2">
-<h2>Moments</h2>
+<section id="expected-values" class="slide level2">
+<h2>Expected Values</h2>
 <p>The <em>expected value</em> is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of <span class="math inline">\(Y\)</span> is</p>
 <p><span class="math display">\[
 E(Y)=\sum_y yP(y)
 \]</span></p>
 <p>where <span class="math inline">\(P(y)\)</span> is the PMF of <span class="math inline">\(Y\)</span>.</p>
 </section>
+<section id="moments" class="slide level2">
+<h2>Moments</h2>
+<p>Moments are numerical measures that describe the shape and characteristics of a random variable’s probability distribution.</p>
+<div class="fragment">
+<p>The <span class="math inline">\(k\)</span>th moment is described as</p>
+<p><span class="math display">\[
+E(X^k)
+\]</span></p>
+</div>
+</section>
 <section id="moment-generating-functions" class="slide level2">
 <h2>Moment Generating Functions</h2>
 <p>The moment generating functions is used to obtain the <span class="math inline">\(k\)</span>th moment. The mgf is defined as</p>
 <p><span class="math display">\[
-m(c) = E(e^{tX})
+m(t) = E(e^{tX})
 \]</span></p>
-<p>The <span class="math inline">\(k\)</span>th moment can be obtained by taking the <span class="math inline">\(k\)</span>th derivative of the mgf, with respect to <span class="math inline">\(c\)</span>, and setting <span class="math inline">\(c\)</span> equal to 0:</p>
+<p>The <span class="math inline">\(k\)</span>th moment can be obtained by taking the <span class="math inline">\(k\)</span>th derivative of the mgf, with respect to <span class="math inline">\(t\)</span>, and setting <span class="math inline">\(t\)</span> equal to 0:</p>
 <p><span class="math display">\[
-E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
+E(X^k)=\frac{d^km(t)}{dt^k}\Bigg|_{c=0}
 \]</span></p>
 </section></section>
 <section>
@@ -188,17 +198,6 @@ E(X^k)=\frac{d^km(c)}{dc}\Bigg|_{c=0}
 </section>
 <section id="ey3" class="slide level2">
 <h2><span class="math inline">\(E(Y^3)\)</span></h2>
-</section></section>
-<section>
-<section id="geometric-distribution" class="title-slide slide level1 center">
-<h1>Geometric Distribution</h1>
-
-</section>
-<section id="mgf-2" class="slide level2">
-<h2>MGF</h2>
-</section>
-<section id="ey" class="slide level2">
-<h2><span class="math inline">\(E(Y)\)</span></h2>
 </section></section>
 <section>
 <section id="expected-value-properties" class="title-slide slide level1 center">
