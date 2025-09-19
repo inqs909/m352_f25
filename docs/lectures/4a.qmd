@@ -80,7 +80,7 @@ $$
 
 ## MGF
 
-## $E(Y^3)$
+## $E(Y^2)$
 
 
 # Expected Value Properties
