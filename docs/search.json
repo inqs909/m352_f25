@@ -56,48 +56,6 @@
     "text": "University Policies\n\nSyllabus Policies and Assistance\nCSUCI’s Syllabus Policies and Assistance Website provides important details about academic policies, campus expectations, and student support services that are all highly applicable to your success as a student both in and outside of the classroom. Ensure that you review this site on a regular basis to stay informed about the policies and resources that support your success, as campus resources or policies may change semester to semester.\n\n\nAcademic Honesty\nConduct yourself with honesty and integrity. Do not submit others’ work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.\n\n\nCSUCI Basic Needs\nPlease use the link to the Basic Needs Program on the Syllabus Policies and Assistance website (&lt;go.csuci.edu/syllabuspolicies&gt;) for information on emergency food, housing accommodations, toiletries, and connections to critical resources.\n\n\nCSUCI Disability Statement\nIf you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: https://www.csuci.edu/dass/students/apply-for-services.htm. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.\n\n\nDisruption\n\nIf I Am Out: I will communicate via email and will hold classes asynchronously.\nIf You Are Out: Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided."
   },
   {
-    "objectID": "r/r_lab_1.html",
-    "href": "r/r_lab_1.html",
-    "title": "RLab 1: Probability Distributions",
-    "section": "",
-    "text": "If you want to use the custom R Markdown templates for this course install the following packages:\n\ninstall.packages(\"remotes\") # Allows you to install packages from GitHub\nremotes::install_github(\"inqs909/inqstools\") # Installs my R package for the course"
-  },
-  {
-    "objectID": "r/r_lab_1.html#setup",
-    "href": "r/r_lab_1.html#setup",
-    "title": "RLab 1: Probability Distributions",
-    "section": "",
-    "text": "If you want to use the custom R Markdown templates for this course install the following packages:\n\ninstall.packages(\"remotes\") # Allows you to install packages from GitHub\nremotes::install_github(\"inqs909/inqstools\") # Installs my R package for the course"
-  },
-  {
-    "objectID": "r/r_lab_1.html#probability",
-    "href": "r/r_lab_1.html#probability",
-    "title": "RLab 1: Probability Distributions",
-    "section": "Probability",
-    "text": "Probability\nWe will discuss several R functions used for different probability distributions\n\nDistributions\nTo see what distributions R supports, use\n?Distributions\nor\nhelp(Distributions)\nfor more information. Every distribution has four different functions associated to them. The letter at the beginning of the distribution indicates the functions capabilities.\n\n\n\n\n\n\n\nLetter\nFunctionality\n\n\n\n\n“d”\nreturns the height of the probability density function\n\n\n“p”\nreturns the cummulative density function value\n\n\n“q”\nreturns the inverse cummulative density function (percentiles)\n\n\n“r”\nreturns a randomly generated number\n\n\n\n\n\nProbabilities\nR can compute the probabilities of a distribution given the correct parameters. If you need the cummulative probability, p in front of the distribution function is needed. If you need the probability for a discrete distribution, the d in front of the distribution function is needed. Below are a few examples.\nTo find \\(P(X \\leq 3 )\\) where \\(X \\sim Bin(6,0.4)\\). Here we will use the pbinom() and we set q = 3, sizw = 6 and prob = 0.4.\n\npbinom(3, 6, 0.4)\n\n[1] 0.8208\n\n\nTo find \\(P(X \\geq 7 )\\) where \\(X \\sim Pois(2.3)\\). Here we will use the ppois() and we set q = 6, lambda = 2.3, and lower.tail = F.\n\nppois(6, 2.3, F)\n\n[1] 0.009361934\n\n\nTo find \\(P(X = 10 )\\) where \\(X \\sim Geo(0.3)\\). Here we will use the dgeom() and we set x = 10 and p = 0.3.\n\ndgeom(10, .3)\n\n[1] 0.008474257\n\n\n\n\nPercentiles\nPercentiles identify the \\(x_9\\) that satisfies \\(P(X \\le x_0)=p\\), where p is the percentile.\nFinding the \\(95^{th}\\) percentile from a \\(Bin(50, 0.6)\\), we will use the qbinom(). We will set size=50, prob=0.6, and p=0.95.\n\nqbinom(.95, 50, 0.6)\n\n[1] 36\n\n\nFinding the \\(95^{th}\\) percentile from a \\(Pois(6.3)\\), we will use the qpois(). We will set lambda=6.3 and p=0.95.\n\nqpois(.95, 6.3)\n\n[1] 11\n\n\n\n\nRandom Number Generator\nR is capable of generating random numbers. For example if we want to generate a random sample of size fifty from a normal distribution with mean eight and variance three, we will use the rnorm(). If we want to generate a random sample from any distribution, use the distribution function with r in front of it.\nLet’s first generate the random sample of fifty from \\(X \\sim Bin(75, .3)\\). This is done with the rnorm() and setting n = 50, size = 75 and prob = .3.\n\nrbinom(50, 75, 0.3)\n\n [1] 24 18 23 23 27 21 24 14 26 22 30 25 26 27 19 32 20 24 23 25 25 18 19 18 24\n[26] 25 14 23 20 26 24 30 23 23 27 24 19 19 24 29 26 18 21 15 21 25 21 22 27 21\n\n\nNo let’s generate a random sample of 100 form an \\(X \\sim Geo (0.4)\\). This is done by using the rgamma() and setting n = 100 and prob = 0.4.\n\nrgeom(100, .4)\n\n  [1]  3  0  0  1  0  0  0  2  4  3  2  0  4  0  0  5  0  0  0  0  1  0  0  0  0\n [26]  1  0  2  2  3  0  0  1  0  2  1  0  0  0  1  0 12  4  3  1  0  0  1  7  0\n [51]  0  1  1  1  0  0  0  3  3  7  4  4  0  4  0  5  1  0  0  4  1  2  2  0  1\n [76]  3  0  2  0  0  5  0  1  3  1  0  1  4  3  0  0  1  1  3  4  1  6  1  1  0"
-  },
-  {
-    "objectID": "r/r_lab_1.html#histograms",
-    "href": "r/r_lab_1.html#histograms",
-    "title": "RLab 1: Probability Distributions",
-    "section": "Histograms",
-    "text": "Histograms\nHistograms are used to plot the frequencies of observed values of a random variable. This provides a rough estimate of how a distribution function will look like. Below, we will use the hist() function to plot the distribution of a random sample of 1000 generated from a \\(Bin(20, 0.3)\\):\n\nx &lt;- rbinom(1000, 20, 0.3)\nhist(x)\n\n\n\n\n\n\n\n\nLooking at the plot above, we can see that the mos common values are around 6. This is to be expected because the \\(E(X)=6\\) from the binomial distribution. Another way to roughly estimate the expected value is by taking the mean:\n\nmean(x)\n\n[1] 6.014\n\n\nNotice how close it is to the expected value. If we are interested in computing the \\(E(X^2)\\), we can roughly estimate it by squaring all the values and taking the mean of it:\n\nmean(x^2)\n\n[1] 40.318\n\n\nNow, we know that the variance of a binomial distribution is \\(np(1-p)\\) which leads the \\(Var(X)=4.2\\) with the above distribution. We can roughly estimate the variance with the rough estimates of \\(E(X^2)-E(X)^2\\):\n\nmean(x^2) - mean(x)^2\n\n[1] 4.149804\n\n\nWhile it is not exact, it can give you a rough idea."
-  },
-  {
-    "objectID": "r/r_lab_1.html#problems",
-    "href": "r/r_lab_1.html#problems",
-    "title": "RLab 1: Probability Distributions",
-    "section": "Problems",
-    "text": "Problems\nUse an RMD file to answer the following questions:\n\nFind the following probabilities:\n\n\\(X\\sim Bin(30, .35)\\); Find \\(P(2 \\le X \\le 6)\\)\n\\(X\\sim Pois(6.8)\\); Find \\(P(2 \\le X \\le 20)\\)\n\\(X\\sim Geo(0.5)\\); Find \\(P(X=4)\\)\n\\(X\\sim NegBinom(6, .8)\\); Find \\(P(3 \\le X \\le 4)\\)\n\nFind the following percentiles:\n\n\\(X\\sim Pois(31.5)\\); Find the \\(68\\)th percentile.\n\\(X\\sim Bin(71, .8)\\); Find the \\(52\\)th percentile.\n\\(X\\sim Geo(0.4)\\); Find the \\(43\\)th percentile.\n\nGenerate the 50 realizations of the following random variables: (SKIP)\n\n\\(X\\sim Multinomial(20, 0.5)\\)\n\\(X\\sim Weibull(3,2)\\)\n\\(X\\sim Laplace(2,1/2)\\)1\n\\(X\\sim LogNorm(0.5, \\sqrt 2)\\)\n\nGenerate 500 realizations of the following random variables and create a histogram:\n\n\\(X\\sim Pois(1)\\)\n\\(X \\sim Pois(2)\\)\n\\(X \\sim Pois(5)\\)\n\\(X\\sim Pois(10)\\)\n\nGenerate 5000 realizations of \\(X\\sim Pois(15)\\) and compute the following rough estimates:\n\n\\(E(X)\\)\n\\(E(X^2)\\)\n\\(Var(X)\\)\n\n\nSubmit your Lab assignment as an RMD file in Canvas on 2/24/2022 by 11:59 PM."
-  },
-  {
-    "objectID": "r/r_lab_1.html#footnotes",
-    "href": "r/r_lab_1.html#footnotes",
-    "title": "RLab 1: Probability Distributions",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nYou will need to install the VGAM R package.↩︎"
-  },
-  {
     "objectID": "posts/week_3.html",
     "href": "posts/week_3.html",
     "title": "Week 3",
@@ -3546,6 +3504,6 @@
     "href": "r.html",
     "title": "R Labs",
     "section": "",
-    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRLab 1: Probability Distributions\n\n\n\n\n\n\n\n\nFeb 15, 2022\n\n\n\n\n\nNo matching items"
+    "text": "Below are the R Labs for the course. Make sure you complete and submit your QMD file by the deadline on Canvas.\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

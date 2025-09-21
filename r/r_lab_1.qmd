@@ -2,7 +2,7 @@
 title: "RLab 1: Probability Distributions"
 editor: source
 date: 02-15-2022
-draft: false
+draft: true
 ---
 
 ## Setup

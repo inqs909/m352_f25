@@ -17,7 +17,6 @@ website:
     right:
       - syllabus.qmd
       - hw.qmd
-      - r.qmd
       - ec.qmd
 
 execute:
