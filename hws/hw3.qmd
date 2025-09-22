@@ -1,38 +1,36 @@
 ---
 title: "Homework 3"
 editor: source
-date: 2-25-2023
-description: Due 3/3/23 at 11:59 PM
-
-draft: true
+date: 09-28-2025
+draft: false
 format:
   html: 
     code-fold: true
     html-math-method: katex
 ---
 
+Submit the assignment as one PDF file. Due October 5th, 2025 at 11:59 PM.
+
 ## Problem 1
 
-Let the random variable $X$ follow an exponential distribution with $\lambda=1.5$. Find the probability of $X$ being in between 1 and 2? The pdf of an exponential distribution:
-
-$$
-    f_X(x) = \left\{\begin{array}{cc}
-    \lambda e^{-x\lambda} & x>0\\
-    0 & \mathrm{otherwise}
-    \end{array}\right.
-$$
+Problem from *Probability 4 Data Science* Chapter 4:
+Exercises 2
 
 ## Problem 2
 
-Find the expected value and variance of an exponential distribution.
+Problem from *Probability 4 Data Science* Chapter 4:
+Exercises 3
 
 ## Problem 3
 
-Find the variance of a random variable $X$ that follows a beta distribution.
+Problem from *Probability 4 Data Science* Chapter 4:
+Exercises 4
 
-$$
-    f_X(x) = \left\{\begin{array}{cc}
-    \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1} & 0 \le X \le 1 \\
-    0 & \mathrm{otherwise}
-    \end{array}\right.
-$$
+## Problem 4
+
+Problem from *Probability 4 Data Science* Chapter 4:
+Exercises 5
+
+## Problem 5
+
+Show that the Expected Value of a $\mathrm{Beta}(\alpha, \beta)$ random variable is $\frac{\alpha}{\alpha + \beta}$

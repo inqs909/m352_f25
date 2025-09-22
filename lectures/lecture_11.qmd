@@ -44,7 +44,6 @@ $$
 E(X^k)=\frac{d^km(t)}{dt}\Bigg|_{t=0}
 $$
 
-
 ## MGF Properties: Linearity
 
 Let $X$ follow a distribution $f$, with the an MGF $M_X(t)$, the MGF of $Y=aX+b$ is given as
@@ -56,7 +55,6 @@ $$
 ## MGF Properties: Uniqueness
 
 Let $X$ and $Y$ have the following distributions $F_X(x)$ and $F_Y(y)$ and MGFs $M_X(t)$ and $M_Y(t)$, respectively. $X$ and $Y$ have the same distribution $F_X(x)=F_Y(y)$ if and only if $M_X(t)=M_Y(t)$.
-
 
 ## Uniform Distribution MGF
 
@@ -89,4 +87,3 @@ $X\sim\chi^2_k$
 $x>0$
 
 $f_X(x)=\frac{x^{k/2-1}\exp\{-x/2\}}{2^{k/2}\Gamma(k/2)}$
-

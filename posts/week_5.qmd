@@ -1,9 +1,9 @@
 ---
 title: "Week 5"
-date: 02-20-23
+date: 09-21-25
 description: This week, we will discuss continuous random variables and their properties.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console---
 ---
@@ -18,6 +18,18 @@ editor_options:
 
 -   Expected Values
 -   MGF
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/5a) | [Thursday Slides](https://m352.inqs.info/lectures/5b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  [Video]()       |  [Video]()   |
+| 002     |    [Video]()     |     [Video]()   |
 
 ## Important Concepts
 
@@ -80,17 +92,3 @@ The *variance* represents the variation of a random variable. The *variance* for
 $$
 Var(Y) = E[\{Y-E(Y)\}^2]
 $$
-
-## Resources
-
-### First Lecture
-
-| Slides | Videos |
-|-----------------------------------|-------------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_9.html) | [Video 001](https://youtu.be/4CvO3lFkV6k) [Video 002]() |
-
-### Second Lecture
-
-| Slides | Videos |
-|--------------------------------------|----------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_10.html) | [Video 001](https://youtu.be/f5UuMXl_b9g) [Video 002](https://youtu.be/zaBdczz2tJc) |

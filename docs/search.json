@@ -56,6 +56,27 @@
     "text": "University Policies\n\nSyllabus Policies and Assistance\nCSUCI’s Syllabus Policies and Assistance Website provides important details about academic policies, campus expectations, and student support services that are all highly applicable to your success as a student both in and outside of the classroom. Ensure that you review this site on a regular basis to stay informed about the policies and resources that support your success, as campus resources or policies may change semester to semester.\n\n\nAcademic Honesty\nConduct yourself with honesty and integrity. Do not submit others’ work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.\n\n\nCSUCI Basic Needs\nPlease use the link to the Basic Needs Program on the Syllabus Policies and Assistance website (&lt;go.csuci.edu/syllabuspolicies&gt;) for information on emergency food, housing accommodations, toiletries, and connections to critical resources.\n\n\nCSUCI Disability Statement\nIf you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: https://www.csuci.edu/dass/students/apply-for-services.htm. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.\n\n\nDisruption\n\nIf I Am Out: I will communicate via email and will hold classes asynchronously.\nIf You Are Out: Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided."
   },
   {
+    "objectID": "posts/week_5.html",
+    "href": "posts/week_5.html",
+    "title": "Week 5",
+    "section": "",
+    "text": "Continuous Random Variables\n\n\n\n\n\nExpected Values\nMGF\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
+  },
+  {
+    "objectID": "posts/week_5.html#learning-outcomes",
+    "href": "posts/week_5.html#learning-outcomes",
+    "title": "Week 5",
+    "section": "",
+    "text": "Continuous Random Variables\n\n\n\n\n\nExpected Values\nMGF\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
+  },
+  {
+    "objectID": "posts/week_5.html#important-concepts",
+    "href": "posts/week_5.html#important-concepts",
+    "title": "Week 5",
+    "section": "Important Concepts",
+    "text": "Important Concepts\n\nFirst Lecture\n\nContinuous Variables\nA random variable \\(X\\) is considered continuous if the \\(P(X=x)\\) does not exist.\n\nCDF\nThe cumulative distribution function of \\(X\\) provides the \\(P(X\\leq x)\\), denoted by \\(F(x)\\), for the domain of \\(X\\).\nProperties of the CDF of \\(X\\):\n\n\\(F(-\\infty)\\equiv \\lim_{y\\rightarrow -\\infty}F(y)=0\\)\n\\(F(\\infty)\\equiv \\lim_{y\\rightarrow \\infty}F(y)=1\\)\n\\(F(x)\\) is a nondecreaseing function\n\n\n\nPDF\nThe probability density function of the random variable \\(X\\) is given by\n\\[\nf(x)=\\frac{dF(x)}{d(x)}=F^\\prime(x)\n\\]\nwherever the derivative exists.\nProperties of pdfs:\n\n\\(f(x)\\geq 0\\)\n\\(\\int^\\infty_{-\\infty}f(x)dx=1\\)\n\\(P(a\\leq X\\leq b) = P(a&lt;X&lt;b)=\\int^b_af(x)dx\\)\n\n\n\nCommonly Used Distributions\n\n\n\n\n\n\n\n\nDistribution\nParameters\nPDF\n\n\n\n\nUniform\n\\(a\\) and \\(b\\)\n\\(\\frac{1}{b-a}\\)\n\n\nNormal\n\\(\\mu\\) and \\(\\sigma^2\\)\n\\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\\)\n\n\nExponential\n\\(\\lambda\\)\n\\(\\lambda e^{-\\lambda x}\\)\n\n\nGamma\n\\(\\alpha\\) and \\(\\beta\\)\n\\(\\frac{x^{\\alpha-1}e^{-x/\\beta}}{\\beta^\\alpha\\Gamma(\\alpha)}\\)\n\n\nBeta\n\\(\\alpha\\) and \\(\\beta\\)\n\\(\\frac{x^{\\alpha-1}(1-x)^{\\beta-1}}{\\int^1_0x^{\\alpha-1}(1-x)^{\\beta-1}dx}\\)\n\n\n\n\n\n\n\nSecond Lecture\n\n\nExpected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of a discrete random variable is \\(Y\\) with PDF of \\(f(y)\\) is\n\\[\nE(Y)=\\int_y yf(y)dy\n\\]\n\n\nVariance\nThe variance represents the variation of a random variable. The variance for a random variable Y is\n\\[\nVar(Y) = E[\\{Y-E(Y)\\}^2]\n\\]"
+  },
+  {
     "objectID": "posts/week_3.html",
     "href": "posts/week_3.html",
     "title": "Week 3",
@@ -1155,6 +1176,97 @@
     "text": "Variance\n\\(X\\sim\\chi^2_k\\)\n\\(x&gt;0\\)\n\\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\)"
   },
   {
+    "objectID": "lectures/5b.html#learning-outcomes",
+    "href": "lectures/5b.html#learning-outcomes",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nExpectations\nVariance\nProperties"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value",
+    "href": "lectures/5b.html#expected-value",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\nThe expected value for a continuous distribution is defined as\n\\[\nE(X)=\\int x f(x)dx\n\\]\nThe expectation of a function \\(g(X)\\) is defined as\n\\[\nE\\{g(X)\\}=\\int g(x)f(x)dx\n\\]"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value-properties",
+    "href": "lectures/5b.html#expected-value-properties",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value Properties",
+    "text": "Expected Value Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(X)\\}=cE\\{g(X)\\}\\)\n\\(E\\{g_1(X)+g_2(X)+\\cdots+g_n(X)\\}=E\\{g_1(X)\\}+E\\{g_2(X)\\}+\\cdots+E\\{g_n(X)\\}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#variance",
+    "href": "lectures/5b.html#variance",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance",
+    "text": "Variance\nThe variance of continuous variable is defined as\n\\[\nVar(X) =  E[\\{X-E(X)\\}^2] = \\int \\{X-E(X)\\}^2 f(x)dx\n\\]"
+  },
+  {
+    "objectID": "lectures/5b.html#variance-properties",
+    "href": "lectures/5b.html#variance-properties",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance Properties",
+    "text": "Variance Properties\n\\(Y=aX+b\\)\n\n\\(Var(Y) = Var(aX+b) = Var(aX) + Var(b) = a^2Var(X)\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value-1",
+    "href": "lectures/5b.html#expected-value-1",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\n\\(X\\sim\\mathrm{U(a,b)}\\)\n\\(a&lt;x&lt;b\\)\n\\(f_X(x) = \\frac{1}{b-a}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#variance-1",
+    "href": "lectures/5b.html#variance-1",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance",
+    "text": "Variance\n\\(X\\sim\\mathrm{U(a,b)}\\)\n\\(a&lt;x&lt;b\\)\n\\(f_X(x) = \\frac{1}{b-a}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value-2",
+    "href": "lectures/5b.html#expected-value-2",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\n\\(X\\sim\\mathrm{N}(\\mu, \\sigma^2)\\)\n\\(-\\infty &lt; x &lt; \\infty\\)\n\\(f_X(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#variance-2",
+    "href": "lectures/5b.html#variance-2",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance",
+    "text": "Variance\n\\(X\\sim\\mathrm{N}(\\mu, \\sigma^2)\\)\n\\(-\\infty &lt; x &lt; \\infty\\)\n\\(f_X(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value-3",
+    "href": "lectures/5b.html#expected-value-3",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\n\\(X\\sim\\mathrm{Beta}(\\alpha, \\beta)\\)\n\\(0&lt;x&lt;1\\)\n\\(f_X(x)=\\frac{\\Gamma(\\alpha+\\beta)}{\\Gamma(\\alpha)\\Gamma(\\beta)}x^{\\alpha-1}(1-x)^{\\beta-1}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#variance-3",
+    "href": "lectures/5b.html#variance-3",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance",
+    "text": "Variance\n\\(X\\sim\\mathrm{Beta}(\\alpha, \\beta)\\)\n\\(0&lt;x&lt;1\\)\n\\(f_X(x)=\\frac{\\Gamma(\\alpha+\\beta)}{\\Gamma(\\alpha)\\Gamma(\\beta)}x^{\\alpha-1}(1-x)^{\\beta-1}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#expected-value-4",
+    "href": "lectures/5b.html#expected-value-4",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Expected Value",
+    "text": "Expected Value\n\\(X\\sim\\chi^2_k\\)\n\\(x&gt;0\\)\n\\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\)"
+  },
+  {
+    "objectID": "lectures/5b.html#variance-4",
+    "href": "lectures/5b.html#variance-4",
+    "title": "Expected Value of Continuous Random Variables",
+    "section": "Variance",
+    "text": "Variance\n\\(X\\sim\\chi^2_k\\)\n\\(x&gt;0\\)\n\\(f_X(x)=\\frac{x^{k/2-1}\\exp\\{-x/2\\}}{2^{k/2}\\Gamma(k/2)}\\)"
+  },
+  {
     "objectID": "lectures/4a.html#learning-outcomes",
     "href": "lectures/4a.html#learning-outcomes",
     "title": "Moment Generating Functions",
@@ -1635,7 +1747,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw2.html",
@@ -1691,7 +1803,7 @@
     "href": "hw.html",
     "title": "Homework",
     "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exc/exc5.html",
@@ -1748,6 +1860,48 @@
     "title": "Homework 0",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nEither convert to summation notation or evaluate the summation.↩︎"
+  },
+  {
+    "objectID": "hws/hw3.html",
+    "href": "hws/hw3.html",
+    "title": "Homework 3",
+    "section": "",
+    "text": "Submit the assignment as one PDF file. Due October 5th, 2025 at 11:59 PM."
+  },
+  {
+    "objectID": "hws/hw3.html#problem-1",
+    "href": "hws/hw3.html#problem-1",
+    "title": "Homework 3",
+    "section": "Problem 1",
+    "text": "Problem 1\nProblem from Probability 4 Data Science Chapter 4: Exercises 2"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-2",
+    "href": "hws/hw3.html#problem-2",
+    "title": "Homework 3",
+    "section": "Problem 2",
+    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 4: Exercises 3"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-3",
+    "href": "hws/hw3.html#problem-3",
+    "title": "Homework 3",
+    "section": "Problem 3",
+    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 4: Exercises 4"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-4",
+    "href": "hws/hw3.html#problem-4",
+    "title": "Homework 3",
+    "section": "Problem 4",
+    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 4: Exercises 5"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-5",
+    "href": "hws/hw3.html#problem-5",
+    "title": "Homework 3",
+    "section": "Problem 5",
+    "text": "Problem 5\nShow that the Expected Value of a \\mathrm{Beta}(\\alpha, \\beta) random variable is \\frac{\\alpha}{\\alpha + \\beta}"
   },
   {
     "objectID": "lectures/1a.html#introductions",
@@ -2196,6 +2350,167 @@
     "title": "Discrete Random Variable",
     "section": "Properties",
     "text": "Properties\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(Y)\\}=cE\\{g(Y)\\}\\)\n\\(E\\{g_1(Y)+\\cdots+g_n(Y)\\}=E\\{g_1(Y)\\}+\\cdots+E\\{g_n(Y)\\}\\)"
+  },
+  {
+    "objectID": "lectures/5a.html#learning-outcomes",
+    "href": "lectures/5a.html#learning-outcomes",
+    "title": "Continuous Random Variables",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nContinuous Random Variables\n\nProbability Density Functions\nCumulative Density/Distribution Function\n\nCommon Distributions"
+  },
+  {
+    "objectID": "lectures/5a.html#continuous-random-variable",
+    "href": "lectures/5a.html#continuous-random-variable",
+    "title": "Continuous Random Variables",
+    "section": "Continuous Random Variable",
+    "text": "Continuous Random Variable\nA random variable \\(X\\) is considered continuous if the \\(P(X=x)\\) does not exist.\n\n\n\n\n\n\n\n\n\nDistribution\nParameters\nPDF\n\n\n\n\nUniform\n\\(a\\) and \\(b\\)\n\\(\\frac{1}{b-a}\\)\n\n\nNormal\n\\(\\mu\\) and \\(\\sigma^2\\)\n\\(\\frac{1}{\\sqrt{2\\pi\\sigma^2}}\\exp\\left\\{-\\frac{(x-\\mu)^2}{2\\sigma^2}\\right\\}\\)\n\n\nExponential\n\\(\\lambda\\)\n\\(\\lambda e^{-\\lambda x}\\)\n\n\nGamma\n\\(\\alpha\\) and \\(\\beta\\)\n\\(\\frac{x^{\\alpha-1}e^{-x/\\beta}}{\\beta^\\alpha\\Gamma(\\alpha)}\\)\n\n\nBeta\n\\(\\alpha\\) and \\(\\beta\\)\n\\(\\frac{x^{\\alpha-1}(1-x)^{\\beta-1}}{\\int^1_0x^{\\alpha-1}(1-x)^{\\beta-1}dx}\\)"
+  },
+  {
+    "objectID": "lectures/5a.html#cumulative-density-function",
+    "href": "lectures/5a.html#cumulative-density-function",
+    "title": "Continuous Random Variables",
+    "section": "Cumulative Density Function",
+    "text": "Cumulative Density Function\nThe cumulative distribution function of \\(X\\) provides the \\(P(X\\leq x)\\), denoted by \\(F(x)\\), for the domain of \\(X\\).\nProperties of the CDF of \\(X\\):\n\n\\(F(-\\infty)\\equiv \\lim_{y\\rightarrow -\\infty}F(y)=0\\)\n\\(F(\\infty)\\equiv \\lim_{y\\rightarrow \\infty}F(y)=1\\)\n\\(F(x)\\) is a nondecreaseing function"
+  },
+  {
+    "objectID": "lectures/5a.html#probability-density-function",
+    "href": "lectures/5a.html#probability-density-function",
+    "title": "Continuous Random Variables",
+    "section": "Probability Density Function",
+    "text": "Probability Density Function\nThe probability density function of the random variable \\(X\\) is given by\n\\[\nf(x)=\\frac{dF(x)}{d(x)}=F^\\prime(x)\n\\]\nwherever the derivative exists.\nProperties of pdfs:\n\n\\(f(x)\\geq 0\\)\n\\(\\int^\\infty_{-\\infty}f(x)dx=1\\)\n\\(P(a\\leq X\\leq b) = P(a&lt;X&lt;b)=\\int^b_af(x)dx\\)"
+  },
+  {
+    "objectID": "lectures/5a.html#pdf-to-cdf",
+    "href": "lectures/5a.html#pdf-to-cdf",
+    "title": "Continuous Random Variables",
+    "section": "PDF to CDF",
+    "text": "PDF to CDF\n\\[\nF(x) = P(X \\leq x) = \\int_{-\\infty}^x f(t)\\,dt\n\\]"
+  },
+  {
+    "objectID": "lectures/5a.html#obtaining-probability",
+    "href": "lectures/5a.html#obtaining-probability",
+    "title": "Continuous Random Variables",
+    "section": "Obtaining Probability",
+    "text": "Obtaining Probability\n\\[\n$P(a\\leq X\\leq b) = P(a&lt;X&lt;b)=\\int^b_af(x)dx$\n\\]"
+  },
+  {
+    "objectID": "lectures/5a.html#uniform-distribution-1",
+    "href": "lectures/5a.html#uniform-distribution-1",
+    "title": "Continuous Random Variables",
+    "section": "Uniform Distribution",
+    "text": "Uniform Distribution\nA random variable is said to follow uniform distribution if the density function is constant between two parameters."
+  },
+  {
+    "objectID": "lectures/5a.html#pdf",
+    "href": "lectures/5a.html#pdf",
+    "title": "Continuous Random Variables",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "lectures/5a.html#cdf",
+    "href": "lectures/5a.html#cdf",
+    "title": "Continuous Random Variables",
+    "section": "CDF",
+    "text": "CDF"
+  },
+  {
+    "objectID": "lectures/5a.html#density-function",
+    "href": "lectures/5a.html#density-function",
+    "title": "Continuous Random Variables",
+    "section": "Density Function",
+    "text": "Density Function"
+  },
+  {
+    "objectID": "lectures/5a.html#exponential-distribution-1",
+    "href": "lectures/5a.html#exponential-distribution-1",
+    "title": "Continuous Random Variables",
+    "section": "Exponential Distribution",
+    "text": "Exponential Distribution\nAn exponential distribution is used to model positive continuous random variables, commonly used for time."
+  },
+  {
+    "objectID": "lectures/5a.html#pdf-1",
+    "href": "lectures/5a.html#pdf-1",
+    "title": "Continuous Random Variables",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "lectures/5a.html#cdf-1",
+    "href": "lectures/5a.html#cdf-1",
+    "title": "Continuous Random Variables",
+    "section": "CDF",
+    "text": "CDF"
+  },
+  {
+    "objectID": "lectures/5a.html#density-function-1",
+    "href": "lectures/5a.html#density-function-1",
+    "title": "Continuous Random Variables",
+    "section": "Density Function",
+    "text": "Density Function"
+  },
+  {
+    "objectID": "lectures/5a.html#normal-distribution-1",
+    "href": "lectures/5a.html#normal-distribution-1",
+    "title": "Continuous Random Variables",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nA random variable is said to follow a normal distribution if the the frequency of occurrence follow a Gaussian function."
+  },
+  {
+    "objectID": "lectures/5a.html#pdf-2",
+    "href": "lectures/5a.html#pdf-2",
+    "title": "Continuous Random Variables",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "lectures/5a.html#density-function-2",
+    "href": "lectures/5a.html#density-function-2",
+    "title": "Continuous Random Variables",
+    "section": "Density Function",
+    "text": "Density Function"
+  },
+  {
+    "objectID": "lectures/5a.html#gamma-distribution-1",
+    "href": "lectures/5a.html#gamma-distribution-1",
+    "title": "Continuous Random Variables",
+    "section": "Gamma Distribution",
+    "text": "Gamma Distribution\nA gamma distribution is the general form of distribution for a \\(\\chi^2\\)-distribution and exponential distribution."
+  },
+  {
+    "objectID": "lectures/5a.html#pdf-3",
+    "href": "lectures/5a.html#pdf-3",
+    "title": "Continuous Random Variables",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "lectures/5a.html#density-function-3",
+    "href": "lectures/5a.html#density-function-3",
+    "title": "Continuous Random Variables",
+    "section": "Density Function",
+    "text": "Density Function"
+  },
+  {
+    "objectID": "lectures/5a.html#beta-distribution-1",
+    "href": "lectures/5a.html#beta-distribution-1",
+    "title": "Continuous Random Variables",
+    "section": "Beta Distribution",
+    "text": "Beta Distribution\nA beta distribution models a continuous random variable that only has support between the 0 and 1."
+  },
+  {
+    "objectID": "lectures/5a.html#pdf-4",
+    "href": "lectures/5a.html#pdf-4",
+    "title": "Continuous Random Variables",
+    "section": "PDF",
+    "text": "PDF"
+  },
+  {
+    "objectID": "lectures/5a.html#density-function-4",
+    "href": "lectures/5a.html#density-function-4",
+    "title": "Continuous Random Variables",
+    "section": "Density Function",
+    "text": "Density Function"
   },
   {
     "objectID": "lectures/lecture_1.html#introductions",
