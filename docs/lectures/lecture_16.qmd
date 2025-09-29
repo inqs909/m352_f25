@@ -1,5 +1,5 @@
 ---
-title: "Covaraince and Sampling Distributions"
+title: "Sampling Distributions"
 format:
   revealjs:
     scrollable: true
@@ -11,7 +11,7 @@ format:
       src: chalkboard.json
       theme: whiteboard
       chalk-width: 4
-editor: visual
+editor: source
 ---
 
 ```{r}

@@ -4,6 +4,7 @@ format:
   live-revealjs:
     navigation-mode: vertical
     controls-layout: bottom-right
+    scrollable: true
     controls-tutorial: true
     incremental: false 
     chalkboard:

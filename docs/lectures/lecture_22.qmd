@@ -20,7 +20,7 @@ knitr:
     message: false
     warnings: false
     comment: "#>" 
-editor: visual
+editor: source
 ---
 
 ## Learning Outcomes

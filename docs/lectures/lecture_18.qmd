@@ -12,7 +12,7 @@ format:
       storage: "chalkboard_pres"
       theme: whiteboard
       chalk-width: 4
-editor: visual
+editor: source
 ---
 
 ```{r}

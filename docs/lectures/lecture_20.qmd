@@ -20,7 +20,7 @@ knitr:
     warnings: false
     comment: "#>" 
 
-editor: visual
+editor: source
 ---
 
 ```{r}

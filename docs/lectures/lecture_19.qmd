@@ -12,7 +12,7 @@ format:
       storage: "chalkboard_pres"
       theme: whiteboard
       chalk-width: 4
-editor: visual
+editor: source
 ---
 
 ```{r}
@@ -25,13 +25,13 @@ library(tidyverse)
 
 ## Learning Outcomes
 
-- Scatter Plot
+-   Scatter Plot
 
-- Linear Regression
+-   Linear Regression
 
-- Ordinary Least Squares
+-   Ordinary Least Squares
 
-- Unbiasedness
+-   Unbiasedness
 
 # Scatter Plot
 
@@ -43,12 +43,11 @@ ggplot(penguins, aes(y = flipper_length_mm, x = body_mass_g)) +
 ```
 
 ## Scatter Plot
+
 ```{r}
 ggplot(sample_n(penguins,10), aes(y = flipper_length_mm, x = body_mass_g)) +
   geom_point() + theme_bw()
 ```
-
-
 
 # Linear Regression
 
@@ -64,19 +63,19 @@ $$
 Y = \beta_0 + \beta_1 X + \epsilon
 $$
 
-- $\beta_0$: Intercept term
+-   $\beta_0$: Intercept term
 
-- $\beta_1$: Slope term
+-   $\beta_1$: Slope term
 
-- $\epsilon\sim N(0,\sigma^2)$ 
+-   $\epsilon\sim N(0,\sigma^2)$
 
-
-## Fitting a Line 
+## Fitting a Line
 
 ```{r}
 ggplot(penguins, aes(y = flipper_length_mm, x = body_mass_g)) + geom_point() + geom_smooth(method = "lm") +
   theme_bw() + annotate("text", label = "y=136.7+0.015x", x=3250, y=230, size = 10)
 ```
+
 ## Interpretation
 
 $$
@@ -103,11 +102,9 @@ $$
 
 $$
 \hat\beta_0 = \bar y - \hat\beta_1\bar x
-$$
-$$
+$$ $$
 \hat\beta_1 = \frac{\sum^n_{i=1}(y_i-\bar y)(x_i-\bar x)}{\sum^n_{i=1}(x_i-\bar x)^2}
-$$
-$$
+$$ $$
 \hat\sigma^2 = \frac{1}{n-2}\sum^n_{i=1}(y_i-\hat y_i)^2
 $$
 
@@ -117,6 +114,6 @@ $$
 
 Both $\beta_0$ and $\beta_1$ are unbiased estimators.
 
-##  $E(\beta_0)$
+## $E(\beta_0)$
 
-##  $E(\beta_1)$
+## $E(\beta_1)$

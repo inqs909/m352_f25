@@ -1,5 +1,6 @@
 ---
-title: "Expected Value of Continuous Random Variables"
+title: "Expected Values"
+subtitle: "Continuous Random Variables"
 format:
   revealjs:
     navigation-mode: vertical
@@ -63,7 +64,13 @@ $$
 $Y=aX+b$
 
 ::: fragment
-$Var(Y) = Var(aX+b) = Var(aX) + Var(b) = a^2Var(X)$
+$$
+\begin{array}{lll}
+\mathrm{Var}(Y) & = & Var(aX+b) \\
+ & = & Var(aX) + Var(b) \\
+ & = & a^2Var(X)
+\end{array}
+$$
 :::
 
 # Uniform Distribution

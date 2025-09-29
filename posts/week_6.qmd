@@ -1,7 +1,7 @@
 ---
 title: "Week 6"
-date: 02-27-23
-description: This week, we will be discussing MGFs and R programming.
+date: 09-29-25
+description: This week, we will be discussing MGFs.
 editor: source
 draft: true
 editor_options: 
@@ -19,6 +19,18 @@ editor_options:
 ### Second Lecture
 
 -   R Lab Continuous Random Variables
+
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/6a) | [Thursday Slides](https://m352.inqs.info/lectures/6b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  [Video]()       |  [Video]()   |
+| 002     |    [Video]()     |     [Video]()   |
 
 ## Important Concepts
 
@@ -62,16 +74,3 @@ $$
 
 Let $X$ and $Y$ have the following distributions $F_X(x)$ and $F_Y(y)$ and MGFs $M_X(t)$ and $M_Y(t)$, respectively. $X$ and $Y$ have the same distribution $F_X(x)=F_Y(y)$ if and only if $M_X(t)=M_Y(t)$.
 
-## Resources
-
-### First Lecture
-
-| Slides | Videos |
-|-----------------------------------|-------------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_11.html) | [Video 001](https://youtu.be/x9Nghr4CSoo) [Video 002](https://youtu.be/0kjSiGyN2fk) |
-
-### Second Lecture
-
-| Lab                                          | Videos |
-|----------------------------------------------|--------|
-| [Lab](https://m352.inqs.info/r/r_lab_2.html) |        |
