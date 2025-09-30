@@ -2475,7 +2475,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw2.html",
@@ -2559,14 +2559,7 @@
     "href": "ec.html",
     "title": "Extra Credit",
     "section": "",
-    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit two.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "exc/exc2.html",
-    "href": "exc/exc2.html",
-    "title": "Extra Credit 2",
-    "section": "",
-    "text": "Write a 2 page report on non academic related activities you will be do for Spring Break. Make sure to highlight activities that will benefit your well being. If you written the wellness report, you can write an update on that and if there is any changes you want to do.\nWorth 1 percent points.\nReport guidelines\n\nMax 2 Pages\nDouble Spaced\n12 point font\nDue 3/17/2023"
+    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "exc/exc4.html",
@@ -5059,6 +5052,27 @@
     "title": "Week 4",
     "section": "Important Concepts",
     "text": "Important Concepts\n\nFirst Lecture\n\nMoments\nThe \\(k\\)th moment is defined as the expectation of the random variable, raised to the \\(k\\)th power, defined as \\(E(X^k)\\).\n\n\nMoment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(t) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(t\\), and setting \\(t\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(t)}{dt}\\Bigg|_{t=0}\n\\]"
+  },
+  {
+    "objectID": "posts/week_6.html",
+    "href": "posts/week_6.html",
+    "title": "Week 6",
+    "section": "",
+    "text": "Moment Generating Functions\nMGF Properties\n\n\n\n\n\nR Lab Continuous Random Variables\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
+  },
+  {
+    "objectID": "posts/week_6.html#learning-outcomes",
+    "href": "posts/week_6.html#learning-outcomes",
+    "title": "Week 6",
+    "section": "",
+    "text": "Moment Generating Functions\nMGF Properties\n\n\n\n\n\nR Lab Continuous Random Variables\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
+  },
+  {
+    "objectID": "posts/week_6.html#important-concepts",
+    "href": "posts/week_6.html#important-concepts",
+    "title": "Week 6",
+    "section": "Important Concepts",
+    "text": "Important Concepts\n\nFirst Lecture\n\nMoments\nThe \\(k\\)th moment is defined as the expectation of the random variable, raised to the \\(k\\)th power, defined as \\(E(X^k)\\).\n\n\nMoment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(c) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(c\\), and setting \\(c\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(c)}{dc}\\Bigg|_{c=0}\n\\]\n\n\nMGF Properties\n\nLinearity\nLet \\(X\\) follow a distribution \\(f\\), with the an MGF \\(M_X(t)\\), the MGF of \\(Y=aX+b\\) is given as\n\\[\nM_Y(t) = e^{tb}M_X(at)\n\\]\nLet \\(X\\) and \\(Y\\) be two random variables with MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively, and are independent. The MGF of \\(U=X-Y\\)\n\\[\nM_U(t) = M_X(t)M_Y(-t)\n\\]\n\n\nUniqueness\nLet \\(X\\) and \\(Y\\) have the following distributions \\(F_X(x)\\) and \\(F_Y(y)\\) and MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively. \\(X\\) and \\(Y\\) have the same distribution \\(F_X(x)=F_Y(y)\\) if and only if \\(M_X(t)=M_Y(t)\\)."
   },
   {
     "objectID": "r.html",

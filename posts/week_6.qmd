@@ -3,7 +3,7 @@ title: "Week 6"
 date: 09-29-25
 description: This week, we will be discussing MGFs.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console---
 ---
