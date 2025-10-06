@@ -78,7 +78,7 @@ $$
 1. Non-negativity: $f_{X,Y}(x,y) \ge 0$ everywhere.  
 2. Normalization:  
    $$
-   \iint_{-\infty}^\infty f_{X,Y}(x,y)\,dx\,dy = 1.
+   \int_{-\infty}^\infty\int_{-\infty}^\infty f_{X,Y}(x,y)\,dx\,dy = 1.
    $$
 
 
