@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
-  <title>MATH 352 – Joint Distribution Functions</title>
+  <title>MATH 352 – Functions of Random Variables</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -128,7 +128,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Joint Distribution Functions</h1>
+  <h1 class="title">Functions of Random Variables</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -137,256 +137,13 @@
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
 <ul>
-<li><p>Joint Distributions</p></li>
-<li><p>Marginal Distributions</p></li>
-<li><p>Conditional Distributions</p></li>
-<li><p>Independence</p></li>
-<li><p>Expectations</p></li>
 <li><p>Covariance</p></li>
+<li><p>Functions of Random Variables</p></li>
+<li><p>Finding PDFs using the distribution function</p></li>
+<li><p>Finding the PDF of a function of random variables</p></li>
+<li><p>Using Moment Generating Functions</p></li>
 </ul>
 </section>
-<section>
-<section id="joint-distributions" class="title-slide slide level1 center">
-<h1>Joint Distributions</h1>
-
-</section>
-<section id="partial-derivatives" class="slide level2">
-<h2>Partial Derivatives</h2>
-<p>For a function <span class="math inline">\(f(x,y)\)</span>, the partial derivative with respect to <span class="math inline">\(x\)</span> is taken by differentiating <span class="math inline">\(f(x,y)\)</span> with respect to <span class="math inline">\(x\)</span> while treating <span class="math inline">\(y\)</span> as a constant. For example:</p>
-<p><span class="math inline">\(f(x,y) = x^2 + \ln(y)\)</span></p>
-</section>
-<section id="multiple-integration" class="slide level2">
-<h2>Multiple Integration</h2>
-<p>Multiple integration is when you integrate a multivariate function by multiple variables. This is done by integrating the function by an individual variable at a time. For example:</p>
-<p><span class="math inline">\(f(x,y)=x^2 + y^2\)</span> which can be integrated as:</p>
-</section>
-<section id="joint-distributions-1" class="slide level2">
-<h2>Joint Distributions</h2>
-<p>A joint distribution is a process where more than one random variable is generated; for example, collecting biomedical data, such as multiple biomarkers, are considered to follow a joint distribution. In mathematical terms, instead of dealing with a random variable, we are dealing with a random vector. Observing a particular random vector will have a probability attached to it.</p>
-</section>
-<section id="bivariate-discrete-distributions" class="slide level2">
-<h2>Bivariate Discrete Distributions</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, the joint distribution function of <span class="math inline">\((X_1, X_2)\)</span> is defined as</p>
-<p><span class="math display">\[
-p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
-\]</span></p>
-<p>The properties of a bivariate discrete distribution are</p>
-<ul>
-<li><p><span class="math inline">\(p_{X_1,X_2}(x_1,x_2)\ge 0\)</span> for all <span class="math inline">\(x_1,\ x_2\)</span></p></li>
-<li><p><span class="math inline">\(\sum_{x_1}\sum_{x2}p(x_1,x_2)=1\)</span></p></li>
-</ul>
-</section>
-<section id="bivariate-continuous-distribution" class="slide level2">
-<h2>Bivariate Continuous Distribution</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, the joint distribution function of <span class="math inline">\((X_1, X_2)\)</span> is defined as</p>
-<p><span class="math display">\[
-F_{X_1,X_2}(x_1, x_2) = P(X_1\le x_1, X_2 \le x_2).
-\]</span></p>
-<p>The properties of a bivariate continuous distribution are</p>
-<ul>
-<li><p><span class="math inline">\(f_{X_1,X_2}(x_1,x_2)=\frac{\partial^2F(x_1,x_2)}{\partial x_1\partial x_2}\)</span></p></li>
-<li><p><span class="math inline">\(f_{X_1,X_2}(x_1, x_2)\ge 0\)</span></p></li>
-<li><p><span class="math inline">\(\int_{x_1}\int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2dx_1=1\)</span></p></li>
-</ul>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<p><span class="math display">\[
-f(x,y) \left\{\begin{array}{cc}
-3x &amp; 0\le y\le x\le 1\\
-0 &amp; \mathrm{otherwise}
-\end{array}\right.
-\]</span></p>
-<p>Find <span class="math inline">\(P(0\le X\le 0.5,0.25\le Y)\)</span></p>
-</section></section>
-<section>
-<section id="marginal-density-function" class="title-slide slide level1 center">
-<h1>Marginal Density Function</h1>
-
-</section>
-<section id="marginal-density-functions" class="slide level2">
-<h2>Marginal Density Functions</h2>
-<p>A Marginal Density Function is density function of one random variable from a random vector.</p>
-</section>
-<section id="marginal-discrete-probability-mass-function" class="slide level2">
-<h2>Marginal Discrete Probability Mass Function</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint distribution function of</p>
-<p><span class="math display">\[
-p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
-\]</span></p>
-<p>The marginal distribution of <span class="math inline">\(X_1\)</span> is defined as</p>
-<p><span class="math display">\[
-p_{X_1}(x_1) = \sum_{x_2}p_{X_1,X_2}(x_1,x_2)
-\]</span></p>
-</section>
-<section id="marginal-continuous-density-function" class="slide level2">
-<h2>Marginal Continuous Density Function</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The marginal distribution of <span class="math inline">\(X_1\)</span> is defined as</p>
-<p><span class="math display">\[
-f_{X_1}(x_1) = \int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2
-\]</span></p>
-</section>
-<section id="example-1" class="slide level2">
-<h2>Example</h2>
-<p><span class="math display">\[
-f_{X,Y}(x,y) \left\{\begin{array}{cc}
-2x &amp; 0\le y \le 1;\ 0 \le x\le 1\\
-0 &amp; \mathrm{otherwise}
-\end{array}\right.
-\]</span></p>
-<p>Find <span class="math inline">\(f_X(x)\)</span></p>
-</section></section>
-<section>
-<section id="conditional-distributions" class="title-slide slide level1 center">
-<h1>Conditional Distributions</h1>
-
-</section>
-<section id="conditional-distributions-1" class="slide level2">
-<h2>Conditional Distributions</h2>
-<p>A conditional distribution provides the probability of a random variable, given that it was conditioned on the value of a second random variable.</p>
-</section>
-<section id="discrete-conditional-distributions" class="slide level2">
-<h2>Discrete Conditional Distributions</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint distribution function of</p>
-<p><span class="math display">\[
-p_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).
-\]</span></p>
-<p>The conditional distribution of <span class="math inline">\(X_1|X_2=x_2\)</span> is defined as</p>
-<p><span class="math display">\[
-p_{X_1|X_2}(x_1) = \frac{p_{X_1,X_2}(x_1,x_2)}{p_{X_2}(x_2)}
-\]</span></p>
-</section>
-<section id="continuous-conditional-distributions" class="slide level2">
-<h2>Continuous Conditional Distributions</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. The conditional distribution of <span class="math inline">\(X_1|X_2=_2\)</span> is defined as</p>
-<p><span class="math display">\[
-f_{X_1|X_2}(x_1) = \frac{f_{X_1,X_2}(x_1,x_2)}{f_{X_2}(x_2)}
-\]</span></p>
-</section>
-<section id="example-2" class="slide level2">
-<h2>Example</h2>
-<p>Let the joint density function of <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be defined as</p>
-<p><span class="math display">\[
-f_{X_1,X_2}(x_1,x_2)=\left\{\begin{array}{cc}
-30x_1x_2² &amp; x_1 -1 \le x_2 \le 1-x_1; 0\le x_1\le 1\\
-0 &amp; \mathrm{elsewhere}
-\end{array}\right.
-\]</span></p>
-<p>Find the conditional density function of <span class="math inline">\(X_2|X_1=x_1\)</span>.</p>
-</section></section>
-<section>
-<section id="independence" class="title-slide slide level1 center">
-<h1>Independence</h1>
-
-</section>
-<section id="independent-random-variables" class="slide level2">
-<h2>Independent Random Variables</h2>
-<p>Random variables are considered independent of each other if the probability of one variable does not affect the probability of another variable.</p>
-</section>
-<section id="discrete-independent-random-variables" class="slide level2">
-<h2>Discrete Independent Random Variables</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 discrete random variables, with a joint density function of <span class="math inline">\(p_{X_1,X_2}(x_1,x_2)\)</span>. <span class="math inline">\(X_1\)</span> is independent of <span class="math inline">\(X_2\)</span> if and only if</p>
-<p><span class="math display">\[
-p_{X_1,X_2}(x_1,x_2) = p_{X_1}(x_1)p_{X_2}(x_2)
-\]</span></p>
-</section>
-<section id="continuous-independent-random-variables" class="slide level2">
-<h2>Continuous Independent Random Variables</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be 2 continuous random variables, with a joint density function of <span class="math inline">\(f_{X_1,X_2}(x_1,x_2)\)</span>. <span class="math inline">\(X_1\)</span> is independent of <span class="math inline">\(X_2\)</span> if and only if</p>
-<p><span class="math display">\[
-f_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)
-\]</span></p>
-</section>
-<section id="matrix-algebra" class="slide level2">
-<h2>Matrix Algebra</h2>
-<p><span class="math display">\[
-A = \left(\begin{array}{cc}
-a_1 &amp; 0\\
-0 &amp; a_2
-\end{array}\right)
-\]</span></p>
-<p><span class="math display">\[
-\det(A) = a_1a_2
-\]</span></p>
-<p><span class="math display">\[
-A^{-1}=\left(\begin{array}{cc}
-1/a_1 &amp; 0 \\
-0 &amp; 1/a_2
-\end{array}\right)
-\]</span></p>
-</section>
-<section id="example-3" class="slide level2">
-<h2>Example</h2>
-<p><span class="math display">\[
-\left(\begin{array}{c}
-X\\
-Y
-\end{array}\right)\sim N \left\{
-\left(\begin{array}{c}
-\mu_x\\
-\mu_y
-\end{array}\right),\left(\begin{array}{cc}
-\sigma_x^2 &amp; 0\\
-0 &amp; \sigma_y^2
-\end{array}\right)
-\right\}
-\]</span></p>
-<p>Show that <span class="math inline">\(X\perp Y\)</span>.</p>
-<p><span class="math display">\[
-f_{X,Y}(x,y)=\det(2\pi\Sigma)^{-1/2}\exp\left\{-\frac{1}{2}(\boldsymbol{w}-\boldsymbol\mu)^T\Sigma^{-1}(\boldsymbol w-\boldsymbol\mu)\right\}
-\]</span></p>
-<p>where <span class="math inline">\(\Sigma=\left(\begin{array}{cc}\sigma_y^2 &amp; 0\\0 &amp; \sigma_y^2\end{array}\right)\)</span>, <span class="math inline">\(\boldsymbol \mu = \left(\begin{array}{cc}\mu_x\\ \mu_y \end{array}\right)\)</span>, and <span class="math inline">\(\boldsymbol w = \left(\begin{array}{cc} x\\ y \end{array}\right)\)</span></p>
-</section></section>
-<section>
-<section id="expectations" class="title-slide slide level1 center">
-<h1>Expectations</h1>
-
-</section>
-<section id="expectations-1" class="slide level2">
-<h2>Expectations</h2>
-<p>Let <span class="math inline">\(X_1, X_2, \ldots,X_n\)</span> be a set of random variables, the expectation of a function <span class="math inline">\(g(X_1,\ldots, X_n)\)</span> is defined as</p>
-<p><span class="math display">\[
-E\{g(X_1,\ldots, X_n)\} = \sum_{x_1\in X_1}\cdots\sum_{x_n\in X_n}g(X_1,\ldots, X_n)p(x_1,\ldots,x_n)
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-E\{g(\boldsymbol X)\} = \int_{x_1\in X_1}\cdots\int_{x_n\in X_n}g(\boldsymbol X)f(\boldsymbol X)dx_n \cdots dx_1
-\]</span></p>
-<ul>
-<li><span class="math inline">\(\boldsymbol X = (X_1,\cdots, X_n)\)</span></li>
-</ul>
-</section>
-<section id="expected-value-and-variance-of-linear-functions" class="slide level2">
-<h2>Expected Value and Variance of Linear Functions</h2>
-<p>Let <span class="math inline">\(X_1,\ldots,X_n\)</span> and <span class="math inline">\(Y_1,\ldots,Y_m\)</span> be random variables with <span class="math inline">\(E(X_i)=\mu_i\)</span> and <span class="math inline">\(E(Y_j)=\tau_j\)</span>. Furthermore, let <span class="math inline">\(U = \sum^n_{i=1}a_iX_i\)</span> and <span class="math inline">\(V=\sum^m_{j=1}b_jY_j\)</span> where <span class="math inline">\(\{a_i\}^n_{i=1}\)</span> and <span class="math inline">\(\{b_j\}_{j=1}^m\)</span> are constants. We have the following properties:</p>
-<ul>
-<li><p><span class="math inline">\(E(U)=\sum_{i=1}^na_i\mu_i\)</span></p></li>
-<li><p><span class="math inline">\(Var(U)=\sum^n_{i=1}a_i^2Var(X_i)+2\underset{i&lt;j}{\sum\sum}a_ia_jCov(X_i,X_j)\)</span></p></li>
-<li><p><span class="math inline">\(Cov(U,V)=\sum^n_{i=1}\sum^m_{j=1}Cov(X_i,Y_j)\)</span></p></li>
-</ul>
-</section>
-<section id="conditional-expectations" class="slide level2">
-<h2>Conditional Expectations</h2>
-<p>Let <span class="math inline">\(X_1\)</span> and <span class="math inline">\(X_2\)</span> be two random variables, the conditional expectation of <span class="math inline">\(g(X_1)\)</span>, given <span class="math inline">\(X_2=x_2\)</span>, is defined as</p>
-<p><span class="math display">\[
-E\{g(X_1)|X_2=x_2\}=\sum_{x_1}g(x_1)p(x_1|x_2)
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-E\{g(X_1)|X_2=x_2\}=\int_{x_1}g(x_1)f(x_1|x_2)dx_1.
-\]</span></p>
-</section>
-<section id="conditional-expectations-1" class="slide level2">
-<h2>Conditional Expectations</h2>
-<p>Furthermore,</p>
-<p><span class="math display">\[
-E(X_1)=E_{X_2}\{E_{X_1|X_2}(X_1|X_2)\}
-\]</span></p>
-<p>and</p>
-<p><span class="math display">\[
-Var(X_1) = E_{X_2}\{Var_{X_1|X_2}(X_1|X_2)\} + Var_{X_2}\{E_{X_1|X_2}(X_1|X_2)\}
-\]</span></p>
-</section></section>
 <section>
 <section id="covariance" class="title-slide slide level1 center">
 <h1>Covariance</h1>
@@ -412,6 +169,94 @@ Cov(X_1,X_2)=0
 <p><span class="math display">\[
 \rho = Cor(X_1,X_2) = \frac{Cov(X_1,X_2)}{\sqrt{Var(X_1)Var(X_2)}}
 \]</span></p>
+</section></section>
+<section>
+<section id="function-of-random-variables" class="title-slide slide level1 center">
+<h1>Function of Random Variables</h1>
+
+</section>
+<section id="function-of-random-variables-1" class="slide level2">
+<h2>Function of Random Variables</h2>
+<p>If <span class="math inline">\(X\)</span> is a random variable with a known distribution and <span class="math inline">\(Y = g(X)\)</span> is a function of <span class="math inline">\(X\)</span>,<br>
+then <span class="math inline">\(Y\)</span> is also a random variable.</p>
+<div class="fragment">
+<p>We can obtain the distribution of <span class="math inline">\(Y\)</span> to obtain statistical properties.amp</p>
+</div>
+</section></section>
+<section>
+<section id="obtaining-the-pdfs" class="title-slide slide level1 center">
+<h1>Obtaining the PDFs</h1>
+
+</section>
+<section id="using-the-distribution-function" class="slide level2">
+<h2>Using the Distribution Function</h2>
+<p>Let there be a random variable <span class="math inline">\(X\)</span> with a known distribution function <span class="math inline">\(F_X(x)\)</span>, the density function for the random variable <span class="math inline">\(Y=g(X)\)</span> can be found with the following steps</p>
+<div class="fragment">
+<ol type="1">
+<li>Find the region of <span class="math inline">\(Y\)</span> in the space of <span class="math inline">\(X\)</span>, find <span class="math inline">\(g^{-1}(y)\)</span></li>
+<li>Find the region of <span class="math inline">\(Y\le y\)</span></li>
+<li>Find <span class="math inline">\(F_Y(y)=P(Y\le y)\)</span> using the probability density function of <span class="math inline">\(X\)</span> over region <span class="math inline">\(Y\le y\)</span></li>
+<li>Find <span class="math inline">\(f_Y(y)\)</span> by differentiating <span class="math inline">\(F_Y(y)\)</span></li>
+</ol>
+</div>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example 1</h2>
+<p>Let <span class="math inline">\(X\)</span> have the following probability density function:</p>
+<p><span class="math display">\[
+f_X(x)=\left\{\begin{array}{cc}
+2x &amp; 0\le x \le 1 \\
+0 &amp; \mathrm{otherwise}
+\end{array}
+\right.
+\]</span></p>
+<p>Find the probability density function of <span class="math inline">\(Y=3X-1\)</span>?</p>
+</section>
+<section id="using-the-pdf" class="slide level2">
+<h2>Using the PDF</h2>
+<p>Let there be a random variable <span class="math inline">\(X\)</span> with a known distribution function <span class="math inline">\(F_X(x)\)</span>, if the random variable <span class="math inline">\(Y=g(X)\)</span> is either increasing or decreasing, than the probability density function can be found as</p>
+<p><span class="math display">\[
+f_Y(y) = f_X\{g^{-1}(y)\}\left|\frac{dg^{-1}(y)}{dy}\right|
+\]</span></p>
+</section>
+<section id="example-2" class="slide level2">
+<h2>Example 2</h2>
+<p>Let <span class="math inline">\(X\)</span> have the following probability density function:</p>
+<p><span class="math display">\[
+f_X(x)=\left\{\begin{array}{cc}
+\frac{3}{2}x^2 + x &amp; 0\le y \le 1 \\
+0 &amp; \mathrm{otherwise}
+\end{array}
+\right.
+\]</span></p>
+<p>Find the probability density function of <span class="math inline">\(Y=5-(X/2)\)</span>?</p>
+</section>
+<section id="mgf-properties-linearity" class="slide level2">
+<h2>MGF Properties: Linearity</h2>
+<p>Let <span class="math inline">\(X\)</span> follow a distribution <span class="math inline">\(f\)</span>, with the an MGF <span class="math inline">\(M_X(t)\)</span>, the MGF of <span class="math inline">\(Y=aX+b\)</span> is given as</p>
+<p><span class="math display">\[
+M_Y(t) = e^{tb}M_X(at)
+\]</span></p>
+</section>
+<section id="mgf-properties-uniqueness" class="slide level2">
+<h2>MGF Properties: Uniqueness</h2>
+<p>Let <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have the following distributions <span class="math inline">\(F_X(x)\)</span> and <span class="math inline">\(F_Y(y)\)</span> and MGFs <span class="math inline">\(M_X(t)\)</span> and <span class="math inline">\(M_Y(t)\)</span>, respectively. <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> have the same distribution <span class="math inline">\(F_X(x)=F_Y(y)\)</span> if and only if <span class="math inline">\(M_X(t)=M_Y(t)\)</span>.</p>
+</section>
+<section id="using-the-mgf" class="slide level2">
+<h2>Using the MGF</h2>
+<p>Using the uniqueness property of Moment Generating Functions, for a random variable <span class="math inline">\(X\)</span> with a known distribution function <span class="math inline">\(F_X(x)\)</span> and random variable <span class="math inline">\(Y=g(X)\)</span>, the distribution of <span class="math inline">\(Y\)</span> can be found by:</p>
+<ol type="1">
+<li>Find the moment generating function of <span class="math inline">\(Y\)</span>, <span class="math inline">\(M_Y(t)\)</span>.</li>
+<li>Compare <span class="math inline">\(M_Y(t)\)</span>, with known moment generating functions. If <span class="math inline">\(M_Y(t)=M_V(t)\)</span>, for all values <span class="math inline">\(t\)</span>, them <span class="math inline">\(Y\)</span> and <span class="math inline">\(V\)</span> have identical distributions.</li>
+</ol>
+</section>
+<section id="example-3" class="slide level2">
+<h2>Example 3</h2>
+<p>Let <span class="math inline">\(X\)</span> follow a normal distribution with mean <span class="math inline">\(\mu\)</span> and variance <span class="math inline">\(\sigma^2\)</span>. Find the distribution of <span class="math inline">\(Z=\frac{X-\mu}{\sigma}\)</span>.</p>
+</section>
+<section id="example-4" class="slide level2">
+<h2>Example 4</h2>
+<p>Let <span class="math inline">\(Z\)</span> follow a standard normal distribution with mean <span class="math inline">\(0\)</span> and variance <span class="math inline">\(1\)</span>. Find the distribution of <span class="math inline">\(Y=Z^2\)</span></p>
 
 
 </section></section>

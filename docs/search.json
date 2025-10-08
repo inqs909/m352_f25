@@ -46,7 +46,7 @@
     "href": "syllabus.html#class-schedule",
     "title": "Syllabus",
     "section": "Class Schedule",
-    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\n\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\nHW #4\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\nHW #5\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #6\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #7\n7.1\n\n\n11/10\nHoliday/Regression\nHW #8\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #9\n9.3\n\n\n12/1\nConfidence Intervals\nHW #10\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
+    "text": "Class Schedule\nThe following outline may be subject to change. Any changes will be announced in class.\n\n\n\n\n\n\n\n\n\nWeek\nTopic\nAssignments/Exams\nReading\n\n\n\n\n8/25\nIntro to Course/Intro to R\n\nHandouts\n\n\n9/1\nIntroduction to Probability\nHW #1\n2.1 - 2.4\n\n\n9/8\nDiscrete Random Variables\nHW #2\n3.1 - 3.5\n\n\n9/15\nDiscrete Random Variables\nTake-Home Exam #1\n4.1 - 4.3, 4.5, 4.6\n\n\n9/22\nContinuous Random Variables\nHW #3\n5.1 - 5.4\n\n\n9/29\nContinuous Random Variables\n\n4.7, 5.5, 5.6, 6.1\n\n\n10/6\nJoint Distributions\n\n5.1 - 5.4\n\n\n10/13\nExam # 1/Sampling Statistics\n\n\n\n\n10/20\nSampling Statistics\n\n6.3 - 6.4\n\n\n10/27\nMaximum Likelihood Estimation\nHW #4\n8.1 - 8.2\n\n\n11/3\nRegression\nHW #5\n7.1\n\n\n11/10\nHoliday/Regression\nHW #6\n7.2\n\n\n11/17\nStandard Errors\nTake-Home Exam #2\nHandouts\n\n\n11/24\nHypothesis Testing\nHW #7\n9.3\n\n\n12/1\nConfidence Intervals\nHW #8\n9.2 - 9.4\n\n\n12/8\nExam #2\n\n\n\n\n\n\nGenerative Artificial Intelligence Policy\nThe use of generative artificial intelligence (AI) in an ethical manner is permitted for this course.\n\nPermitted Uses\nYou may use AI for:\n\nObtain clarification\nBrainstorming ideas, examples, outlines, and strategies\nGenerating questions for practice or exploration\nIdentifying keywords or phrasing to match professional goals\n\n\n\nProhibited Uses\nYou may not:\n\nSubmit AI-generated work\nUse AI to complete assignments, quizzes, exams, or other assessments meant to reflect only your own work\nUse AI to generate code\n\nAny AI-generated work will receive a 0 in the class. Severe cases will be reported to Academic Misconduct."
   },
   {
     "objectID": "syllabus.html#university-policies",
@@ -1211,34 +1211,6 @@
     "text": "Learning Outcomes\n\nCovariance\nStatistics and Inference\nSampling Distributions\nCentral Limit Theorem"
   },
   {
-    "objectID": "lectures/9a.html#covariance-1",
-    "href": "lectures/9a.html#covariance-1",
-    "title": "Sampling Distributions",
-    "section": "Covariance",
-    "text": "Covariance\nThe covariance measures the average dependence between multiple random variables. Let \\(W=(^X_Y)\\) be a random vector. The variance of \\(W\\) is defined as\n\\[\nVar(W) = \\left(\\begin{array}{cc}\n\\sigma^2_X & \\sigma_{XY} \\\\\n\\sigma_{XY} & \\sigma^2_{Y}\n\\end{array}\\right)\n\\]"
-  },
-  {
-    "objectID": "lectures/9a.html#covariance-2",
-    "href": "lectures/9a.html#covariance-2",
-    "title": "Sampling Distributions",
-    "section": "Covariance",
-    "text": "Covariance\nLet \\(X_1\\) and \\(X_2\\) be 2 random variables with mean \\(\\mu_1\\) and \\(\\mu_2\\), respectively. The covariance of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\begin{eqnarray*}\nCov(X_1,X_2) & = & E\\{(X_1-\\mu_1)(X_2-\\mu_2)\\}\\\\\n& =& E(X_1X_2)-\\mu_1\\mu_2\n\\end{eqnarray*}\n\\]\nIf \\(X_1\\) and \\(X_2\\) are independent random variables, then\n\\[\nCov(X_1,X_2)=0\n\\]"
-  },
-  {
-    "objectID": "lectures/9a.html#correlation",
-    "href": "lectures/9a.html#correlation",
-    "title": "Sampling Distributions",
-    "section": "Correlation",
-    "text": "Correlation\nThe correlation of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\rho = Cor(X_1,X_2) = \\frac{Cov(X_1,X_2)}{\\sqrt{Var(X_1)Var(X_2)}}\n\\]"
-  },
-  {
-    "objectID": "lectures/9a.html#mgf-property-independence",
-    "href": "lectures/9a.html#mgf-property-independence",
-    "title": "Sampling Distributions",
-    "section": "MGF Property: Independence",
-    "text": "MGF Property: Independence\nLet \\(X\\) and \\(Y\\) be independent random variables. Let \\(Z = X+Y\\), the MGF of Z is\n\\[\nM_Z(t) = M_X(t)M_Y(t)\n\\]"
-  },
-  {
     "objectID": "lectures/9a.html#sample",
     "href": "lectures/9a.html#sample",
     "title": "Sampling Distributions",
@@ -1332,184 +1304,93 @@
   {
     "objectID": "lectures/7b.html#learning-outcomes",
     "href": "lectures/7b.html#learning-outcomes",
-    "title": "Joint Distribution Functions",
+    "title": "Functions of Random Variables",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nJoint Distributions\nMarginal Distributions\nConditional Distributions\nIndependence\nExpectations\nCovariance"
-  },
-  {
-    "objectID": "lectures/7b.html#partial-derivatives",
-    "href": "lectures/7b.html#partial-derivatives",
-    "title": "Joint Distribution Functions",
-    "section": "Partial Derivatives",
-    "text": "Partial Derivatives\nFor a function \\(f(x,y)\\), the partial derivative with respect to \\(x\\) is taken by differentiating \\(f(x,y)\\) with respect to \\(x\\) while treating \\(y\\) as a constant. For example:\n\\(f(x,y) = x^2 + \\ln(y)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#multiple-integration",
-    "href": "lectures/7b.html#multiple-integration",
-    "title": "Joint Distribution Functions",
-    "section": "Multiple Integration",
-    "text": "Multiple Integration\nMultiple integration is when you integrate a multivariate function by multiple variables. This is done by integrating the function by an individual variable at a time. For example:\n\\(f(x,y)=x^2 + y^2\\) which can be integrated as:"
-  },
-  {
-    "objectID": "lectures/7b.html#joint-distributions-1",
-    "href": "lectures/7b.html#joint-distributions-1",
-    "title": "Joint Distribution Functions",
-    "section": "Joint Distributions",
-    "text": "Joint Distributions\nA joint distribution is a process where more than one random variable is generated; for example, collecting biomedical data, such as multiple biomarkers, are considered to follow a joint distribution. In mathematical terms, instead of dealing with a random variable, we are dealing with a random vector. Observing a particular random vector will have a probability attached to it."
-  },
-  {
-    "objectID": "lectures/7b.html#bivariate-discrete-distributions",
-    "href": "lectures/7b.html#bivariate-discrete-distributions",
-    "title": "Joint Distribution Functions",
-    "section": "Bivariate Discrete Distributions",
-    "text": "Bivariate Discrete Distributions\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, the joint distribution function of \\((X_1, X_2)\\) is defined as\n\\[\np_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).\n\\]\nThe properties of a bivariate discrete distribution are\n\n\\(p_{X_1,X_2}(x_1,x_2)\\ge 0\\) for all \\(x_1,\\ x_2\\)\n\\(\\sum_{x_1}\\sum_{x2}p(x_1,x_2)=1\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#bivariate-continuous-distribution",
-    "href": "lectures/7b.html#bivariate-continuous-distribution",
-    "title": "Joint Distribution Functions",
-    "section": "Bivariate Continuous Distribution",
-    "text": "Bivariate Continuous Distribution\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, the joint distribution function of \\((X_1, X_2)\\) is defined as\n\\[\nF_{X_1,X_2}(x_1, x_2) = P(X_1\\le x_1, X_2 \\le x_2).\n\\]\nThe properties of a bivariate continuous distribution are\n\n\\(f_{X_1,X_2}(x_1,x_2)=\\frac{\\partial^2F(x_1,x_2)}{\\partial x_1\\partial x_2}\\)\n\\(f_{X_1,X_2}(x_1, x_2)\\ge 0\\)\n\\(\\int_{x_1}\\int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2dx_1=1\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#example",
-    "href": "lectures/7b.html#example",
-    "title": "Joint Distribution Functions",
-    "section": "Example",
-    "text": "Example\n\\[\nf(x,y) \\left\\{\\begin{array}{cc}\n3x & 0\\le y\\le x\\le 1\\\\\n0 & \\mathrm{otherwise}\n\\end{array}\\right.\n\\]\nFind \\(P(0\\le X\\le 0.5,0.25\\le Y)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#marginal-density-functions",
-    "href": "lectures/7b.html#marginal-density-functions",
-    "title": "Joint Distribution Functions",
-    "section": "Marginal Density Functions",
-    "text": "Marginal Density Functions\nA Marginal Density Function is density function of one random variable from a random vector."
-  },
-  {
-    "objectID": "lectures/7b.html#marginal-discrete-probability-mass-function",
-    "href": "lectures/7b.html#marginal-discrete-probability-mass-function",
-    "title": "Joint Distribution Functions",
-    "section": "Marginal Discrete Probability Mass Function",
-    "text": "Marginal Discrete Probability Mass Function\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, with a joint distribution function of\n\\[\np_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).\n\\]\nThe marginal distribution of \\(X_1\\) is defined as\n\\[\np_{X_1}(x_1) = \\sum_{x_2}p_{X_1,X_2}(x_1,x_2)\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#marginal-continuous-density-function",
-    "href": "lectures/7b.html#marginal-continuous-density-function",
-    "title": "Joint Distribution Functions",
-    "section": "Marginal Continuous Density Function",
-    "text": "Marginal Continuous Density Function\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, with a joint density function of \\(f_{X_1,X_2}(x_1,x_2)\\). The marginal distribution of \\(X_1\\) is defined as\n\\[\nf_{X_1}(x_1) = \\int_{x_2}f_{X_1,X_2}(x_1,x_2)dx_2\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#example-1",
-    "href": "lectures/7b.html#example-1",
-    "title": "Joint Distribution Functions",
-    "section": "Example",
-    "text": "Example\n\\[\nf_{X,Y}(x,y) \\left\\{\\begin{array}{cc}\n2x & 0\\le y \\le 1;\\ 0 \\le x\\le 1\\\\\n0 & \\mathrm{otherwise}\n\\end{array}\\right.\n\\]\nFind \\(f_X(x)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#conditional-distributions-1",
-    "href": "lectures/7b.html#conditional-distributions-1",
-    "title": "Joint Distribution Functions",
-    "section": "Conditional Distributions",
-    "text": "Conditional Distributions\nA conditional distribution provides the probability of a random variable, given that it was conditioned on the value of a second random variable."
-  },
-  {
-    "objectID": "lectures/7b.html#discrete-conditional-distributions",
-    "href": "lectures/7b.html#discrete-conditional-distributions",
-    "title": "Joint Distribution Functions",
-    "section": "Discrete Conditional Distributions",
-    "text": "Discrete Conditional Distributions\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, with a joint distribution function of\n\\[\np_{X_1,X_2}(x_1, x_2) = P(X_1=x_1, X_2 = x_2).\n\\]\nThe conditional distribution of \\(X_1|X_2=x_2\\) is defined as\n\\[\np_{X_1|X_2}(x_1) = \\frac{p_{X_1,X_2}(x_1,x_2)}{p_{X_2}(x_2)}\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#continuous-conditional-distributions",
-    "href": "lectures/7b.html#continuous-conditional-distributions",
-    "title": "Joint Distribution Functions",
-    "section": "Continuous Conditional Distributions",
-    "text": "Continuous Conditional Distributions\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, with a joint density function of \\(f_{X_1,X_2}(x_1,x_2)\\). The conditional distribution of \\(X_1|X_2=_2\\) is defined as\n\\[\nf_{X_1|X_2}(x_1) = \\frac{f_{X_1,X_2}(x_1,x_2)}{f_{X_2}(x_2)}\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#example-2",
-    "href": "lectures/7b.html#example-2",
-    "title": "Joint Distribution Functions",
-    "section": "Example",
-    "text": "Example\nLet the joint density function of \\(X_1\\) and \\(X_2\\) be defined as\n\\[\nf_{X_1,X_2}(x_1,x_2)=\\left\\{\\begin{array}{cc}\n30x_1x_2² & x_1 -1 \\le x_2 \\le 1-x_1; 0\\le x_1\\le 1\\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\\right.\n\\]\nFind the conditional density function of \\(X_2|X_1=x_1\\)."
-  },
-  {
-    "objectID": "lectures/7b.html#independent-random-variables",
-    "href": "lectures/7b.html#independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Independent Random Variables",
-    "text": "Independent Random Variables\nRandom variables are considered independent of each other if the probability of one variable does not affect the probability of another variable."
-  },
-  {
-    "objectID": "lectures/7b.html#discrete-independent-random-variables",
-    "href": "lectures/7b.html#discrete-independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Discrete Independent Random Variables",
-    "text": "Discrete Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 discrete random variables, with a joint density function of \\(p_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\np_{X_1,X_2}(x_1,x_2) = p_{X_1}(x_1)p_{X_2}(x_2)\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#continuous-independent-random-variables",
-    "href": "lectures/7b.html#continuous-independent-random-variables",
-    "title": "Joint Distribution Functions",
-    "section": "Continuous Independent Random Variables",
-    "text": "Continuous Independent Random Variables\nLet \\(X_1\\) and \\(X_2\\) be 2 continuous random variables, with a joint density function of \\(f_{X_1,X_2}(x_1,x_2)\\). \\(X_1\\) is independent of \\(X_2\\) if and only if\n\\[\nf_{X_1,X_2}(x_1,x_2) = f_{X_1}(x_1)f_{X_2}(x_2)\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#matrix-algebra",
-    "href": "lectures/7b.html#matrix-algebra",
-    "title": "Joint Distribution Functions",
-    "section": "Matrix Algebra",
-    "text": "Matrix Algebra\n\\[\nA = \\left(\\begin{array}{cc}\na_1 & 0\\\\\n0 & a_2\n\\end{array}\\right)\n\\]\n\\[\n\\det(A) = a_1a_2\n\\]\n\\[\nA^{-1}=\\left(\\begin{array}{cc}\n1/a_1 & 0 \\\\\n0 & 1/a_2\n\\end{array}\\right)\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#example-3",
-    "href": "lectures/7b.html#example-3",
-    "title": "Joint Distribution Functions",
-    "section": "Example",
-    "text": "Example\n\\[\n\\left(\\begin{array}{c}\nX\\\\\nY\n\\end{array}\\right)\\sim N \\left\\{\n\\left(\\begin{array}{c}\n\\mu_x\\\\\n\\mu_y\n\\end{array}\\right),\\left(\\begin{array}{cc}\n\\sigma_x^2 & 0\\\\\n0 & \\sigma_y^2\n\\end{array}\\right)\n\\right\\}\n\\]\nShow that \\(X\\perp Y\\).\n\\[\nf_{X,Y}(x,y)=\\det(2\\pi\\Sigma)^{-1/2}\\exp\\left\\{-\\frac{1}{2}(\\boldsymbol{w}-\\boldsymbol\\mu)^T\\Sigma^{-1}(\\boldsymbol w-\\boldsymbol\\mu)\\right\\}\n\\]\nwhere \\(\\Sigma=\\left(\\begin{array}{cc}\\sigma_y^2 & 0\\\\0 & \\sigma_y^2\\end{array}\\right)\\), \\(\\boldsymbol \\mu = \\left(\\begin{array}{cc}\\mu_x\\\\ \\mu_y \\end{array}\\right)\\), and \\(\\boldsymbol w = \\left(\\begin{array}{cc} x\\\\ y \\end{array}\\right)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#expectations-1",
-    "href": "lectures/7b.html#expectations-1",
-    "title": "Joint Distribution Functions",
-    "section": "Expectations",
-    "text": "Expectations\nLet \\(X_1, X_2, \\ldots,X_n\\) be a set of random variables, the expectation of a function \\(g(X_1,\\ldots, X_n)\\) is defined as\n\\[\nE\\{g(X_1,\\ldots, X_n)\\} = \\sum_{x_1\\in X_1}\\cdots\\sum_{x_n\\in X_n}g(X_1,\\ldots, X_n)p(x_1,\\ldots,x_n)\n\\]\nor\n\\[\nE\\{g(\\boldsymbol X)\\} = \\int_{x_1\\in X_1}\\cdots\\int_{x_n\\in X_n}g(\\boldsymbol X)f(\\boldsymbol X)dx_n \\cdots dx_1\n\\]\n\n\\(\\boldsymbol X = (X_1,\\cdots, X_n)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#expected-value-and-variance-of-linear-functions",
-    "href": "lectures/7b.html#expected-value-and-variance-of-linear-functions",
-    "title": "Joint Distribution Functions",
-    "section": "Expected Value and Variance of Linear Functions",
-    "text": "Expected Value and Variance of Linear Functions\nLet \\(X_1,\\ldots,X_n\\) and \\(Y_1,\\ldots,Y_m\\) be random variables with \\(E(X_i)=\\mu_i\\) and \\(E(Y_j)=\\tau_j\\). Furthermore, let \\(U = \\sum^n_{i=1}a_iX_i\\) and \\(V=\\sum^m_{j=1}b_jY_j\\) where \\(\\{a_i\\}^n_{i=1}\\) and \\(\\{b_j\\}_{j=1}^m\\) are constants. We have the following properties:\n\n\\(E(U)=\\sum_{i=1}^na_i\\mu_i\\)\n\\(Var(U)=\\sum^n_{i=1}a_i^2Var(X_i)+2\\underset{i&lt;j}{\\sum\\sum}a_ia_jCov(X_i,X_j)\\)\n\\(Cov(U,V)=\\sum^n_{i=1}\\sum^m_{j=1}Cov(X_i,Y_j)\\)"
-  },
-  {
-    "objectID": "lectures/7b.html#conditional-expectations",
-    "href": "lectures/7b.html#conditional-expectations",
-    "title": "Joint Distribution Functions",
-    "section": "Conditional Expectations",
-    "text": "Conditional Expectations\nLet \\(X_1\\) and \\(X_2\\) be two random variables, the conditional expectation of \\(g(X_1)\\), given \\(X_2=x_2\\), is defined as\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\sum_{x_1}g(x_1)p(x_1|x_2)\n\\]\nor\n\\[\nE\\{g(X_1)|X_2=x_2\\}=\\int_{x_1}g(x_1)f(x_1|x_2)dx_1.\n\\]"
-  },
-  {
-    "objectID": "lectures/7b.html#conditional-expectations-1",
-    "href": "lectures/7b.html#conditional-expectations-1",
-    "title": "Joint Distribution Functions",
-    "section": "Conditional Expectations",
-    "text": "Conditional Expectations\nFurthermore,\n\\[\nE(X_1)=E_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]\nand\n\\[\nVar(X_1) = E_{X_2}\\{Var_{X_1|X_2}(X_1|X_2)\\} + Var_{X_2}\\{E_{X_1|X_2}(X_1|X_2)\\}\n\\]"
+    "text": "Learning Outcomes\n\nCovariance\nFunctions of Random Variables\nFinding PDFs using the distribution function\nFinding the PDF of a function of random variables\nUsing Moment Generating Functions"
   },
   {
     "objectID": "lectures/7b.html#covariance-1",
     "href": "lectures/7b.html#covariance-1",
-    "title": "Joint Distribution Functions",
+    "title": "Functions of Random Variables",
     "section": "Covariance",
     "text": "Covariance\nLet \\(X_1\\) and \\(X_2\\) be 2 random variables with mean \\(E(X_1)=\\mu_1\\) and \\(E(X_2)=\\mu_2\\), respectively. The covariance of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\begin{eqnarray*}\nCov(X_1,X_2) & = & E\\{(X_1-\\mu_1)(X_2-\\mu_2)\\}\\\\\n& =& E(X_1X_2)-\\mu_1\\mu_2\n\\end{eqnarray*}\n\\]\nIf \\(X_1\\) and \\(X_2\\) are independent random variables, then\n\\[\nCov(X_1,X_2)=0\n\\]"
   },
   {
     "objectID": "lectures/7b.html#correlation",
     "href": "lectures/7b.html#correlation",
-    "title": "Joint Distribution Functions",
+    "title": "Functions of Random Variables",
     "section": "Correlation",
     "text": "Correlation\nThe correlation of \\(X_1\\) and \\(X_2\\) is defined as\n\\[\n\\rho = Cor(X_1,X_2) = \\frac{Cov(X_1,X_2)}{\\sqrt{Var(X_1)Var(X_2)}}\n\\]"
+  },
+  {
+    "objectID": "lectures/7b.html#function-of-random-variables-1",
+    "href": "lectures/7b.html#function-of-random-variables-1",
+    "title": "Functions of Random Variables",
+    "section": "Function of Random Variables",
+    "text": "Function of Random Variables\nIf \\(X\\) is a random variable with a known distribution and \\(Y = g(X)\\) is a function of \\(X\\),\nthen \\(Y\\) is also a random variable.\n\nWe can obtain the distribution of \\(Y\\) to obtain statistical properties.amp"
+  },
+  {
+    "objectID": "lectures/7b.html#using-the-distribution-function",
+    "href": "lectures/7b.html#using-the-distribution-function",
+    "title": "Functions of Random Variables",
+    "section": "Using the Distribution Function",
+    "text": "Using the Distribution Function\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), the density function for the random variable \\(Y=g(X)\\) can be found with the following steps\n\n\nFind the region of \\(Y\\) in the space of \\(X\\), find \\(g^{-1}(y)\\)\nFind the region of \\(Y\\le y\\)\nFind \\(F_Y(y)=P(Y\\le y)\\) using the probability density function of \\(X\\) over region \\(Y\\le y\\)\nFind \\(f_Y(y)\\) by differentiating \\(F_Y(y)\\)"
+  },
+  {
+    "objectID": "lectures/7b.html#example-1",
+    "href": "lectures/7b.html#example-1",
+    "title": "Functions of Random Variables",
+    "section": "Example 1",
+    "text": "Example 1\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n2x & 0\\le x \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=3X-1\\)?"
+  },
+  {
+    "objectID": "lectures/7b.html#using-the-pdf",
+    "href": "lectures/7b.html#using-the-pdf",
+    "title": "Functions of Random Variables",
+    "section": "Using the PDF",
+    "text": "Using the PDF\nLet there be a random variable \\(X\\) with a known distribution function \\(F_X(x)\\), if the random variable \\(Y=g(X)\\) is either increasing or decreasing, than the probability density function can be found as\n\\[\nf_Y(y) = f_X\\{g^{-1}(y)\\}\\left|\\frac{dg^{-1}(y)}{dy}\\right|\n\\]"
+  },
+  {
+    "objectID": "lectures/7b.html#example-2",
+    "href": "lectures/7b.html#example-2",
+    "title": "Functions of Random Variables",
+    "section": "Example 2",
+    "text": "Example 2\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n\\frac{3}{2}x^2 + x & 0\\le y \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=5-(X/2)\\)?"
+  },
+  {
+    "objectID": "lectures/7b.html#mgf-properties-linearity",
+    "href": "lectures/7b.html#mgf-properties-linearity",
+    "title": "Functions of Random Variables",
+    "section": "MGF Properties: Linearity",
+    "text": "MGF Properties: Linearity\nLet \\(X\\) follow a distribution \\(f\\), with the an MGF \\(M_X(t)\\), the MGF of \\(Y=aX+b\\) is given as\n\\[\nM_Y(t) = e^{tb}M_X(at)\n\\]"
+  },
+  {
+    "objectID": "lectures/7b.html#mgf-properties-uniqueness",
+    "href": "lectures/7b.html#mgf-properties-uniqueness",
+    "title": "Functions of Random Variables",
+    "section": "MGF Properties: Uniqueness",
+    "text": "MGF Properties: Uniqueness\nLet \\(X\\) and \\(Y\\) have the following distributions \\(F_X(x)\\) and \\(F_Y(y)\\) and MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively. \\(X\\) and \\(Y\\) have the same distribution \\(F_X(x)=F_Y(y)\\) if and only if \\(M_X(t)=M_Y(t)\\)."
+  },
+  {
+    "objectID": "lectures/7b.html#using-the-mgf",
+    "href": "lectures/7b.html#using-the-mgf",
+    "title": "Functions of Random Variables",
+    "section": "Using the MGF",
+    "text": "Using the MGF\nUsing the uniqueness property of Moment Generating Functions, for a random variable \\(X\\) with a known distribution function \\(F_X(x)\\) and random variable \\(Y=g(X)\\), the distribution of \\(Y\\) can be found by:\n\nFind the moment generating function of \\(Y\\), \\(M_Y(t)\\).\nCompare \\(M_Y(t)\\), with known moment generating functions. If \\(M_Y(t)=M_V(t)\\), for all values \\(t\\), them \\(Y\\) and \\(V\\) have identical distributions."
+  },
+  {
+    "objectID": "lectures/7b.html#example-3",
+    "href": "lectures/7b.html#example-3",
+    "title": "Functions of Random Variables",
+    "section": "Example 3",
+    "text": "Example 3\nLet \\(X\\) follow a normal distribution with mean \\(\\mu\\) and variance \\(\\sigma^2\\). Find the distribution of \\(Z=\\frac{X-\\mu}{\\sigma}\\)."
+  },
+  {
+    "objectID": "lectures/7b.html#example-4",
+    "href": "lectures/7b.html#example-4",
+    "title": "Functions of Random Variables",
+    "section": "Example 4",
+    "text": "Example 4\nLet \\(Z\\) follow a standard normal distribution with mean \\(0\\) and variance \\(1\\). Find the distribution of \\(Y=Z^2\\)"
   },
   {
     "objectID": "lectures/6a.html#learning-outcomes",

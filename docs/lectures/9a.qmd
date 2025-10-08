@@ -31,51 +31,7 @@ knitr::opts_chunk$set(echo = T)
 
 -   Central Limit Theorem
 
-# Covariance
 
-## Covariance
-
-The covariance measures the average dependence between multiple random variables. Let $W=(^X_Y)$ be a random vector. The variance of $W$ is defined as
-
-$$
-Var(W) = \left(\begin{array}{cc}
-\sigma^2_X & \sigma_{XY} \\
-\sigma_{XY} & \sigma^2_{Y}
-\end{array}\right)
-$$
-
-## Covariance
-
-Let $X_1$ and $X_2$ be 2 random variables with mean $\mu_1$ and $\mu_2$, respectively. The covariance of $X_1$ and $X_2$ is defined as
-
-$$
-\begin{eqnarray*}
-Cov(X_1,X_2) & = & E\{(X_1-\mu_1)(X_2-\mu_2)\}\\
- & =& E(X_1X_2)-\mu_1\mu_2
-\end{eqnarray*}
-$$
-
-If $X_1$ and $X_2$ are independent random variables, then
-
-$$
-Cov(X_1,X_2)=0
-$$
-
-## Correlation
-
-The correlation of $X_1$ and $X_2$ is defined as
-
-$$
-\rho = Cor(X_1,X_2) = \frac{Cov(X_1,X_2)}{\sqrt{Var(X_1)Var(X_2)}}
-$$
-
-## MGF Property: Independence
-
-Let $X$ and $Y$ be independent random variables. Let $Z = X+Y$, the MGF of Z is
-
-$$
-M_Z(t) = M_X(t)M_Y(t)
-$$
 
 # Statistics and Inference
 
