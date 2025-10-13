@@ -60,14 +60,14 @@
     "href": "posts/week_7.html",
     "title": "Week 7",
     "section": "",
-    "text": "Marginal Distributions\nConditional Density Functions\nIndependence\nExpected Value\nCovariance\n\n\n\n\n\nSampling Distributions\nCentral Limit Theorem\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
+    "text": "Marginal Distributions\nConditional Density Functions\nIndependence\nExpected Value\nCovariance\n\n\n\n\n\nSampling Distributions\nCentral Limit Theorem\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
   },
   {
     "objectID": "posts/week_7.html#learning-outcomes",
     "href": "posts/week_7.html#learning-outcomes",
     "title": "Week 7",
     "section": "",
-    "text": "Marginal Distributions\nConditional Density Functions\nIndependence\nExpected Value\nCovariance\n\n\n\n\n\nSampling Distributions\nCentral Limit Theorem\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
+    "text": "Marginal Distributions\nConditional Density Functions\nIndependence\nExpected Value\nCovariance\n\n\n\n\n\nSampling Distributions\nCentral Limit Theorem\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
   },
   {
     "objectID": "posts/week_7.html#important-concepts",
@@ -1355,7 +1355,7 @@
     "href": "lectures/7b.html#example-2",
     "title": "Functions of Random Variables",
     "section": "Example 2",
-    "text": "Example 2\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n\\frac{3}{2}x^2 + x & 0\\le y \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=5-(X/2)\\)?"
+    "text": "Example 2\nLet \\(X\\) have the following probability density function:\n\\[\nf_X(x)=\\left\\{\\begin{array}{cc}\n\\frac{3}{2}x^2 + x & 0\\le x \\le 1 \\\\\n0 & \\mathrm{otherwise}\n\\end{array}\n\\right.\n\\]\nFind the probability density function of \\(Y=5-(X/2)\\)?"
   },
   {
     "objectID": "lectures/7b.html#mgf-properties-linearity",
@@ -2384,7 +2384,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw2.html",
@@ -4982,6 +4982,20 @@
     "title": "Week 6",
     "section": "Important Concepts",
     "text": "Important Concepts\n\nFirst Lecture\n\nMoments\nThe \\(k\\)th moment is defined as the expectation of the random variable, raised to the \\(k\\)th power, defined as \\(E(X^k)\\).\n\n\nMoment Generating Functions\nThe moment generating functions is used to obtain the \\(k\\)th moment. The mgf is defined as\n\\[\nm(c) = E(e^{tX})\n\\]\nThe \\(k\\)th moment can be obtained by taking the \\(k\\)th derivative of the mgf, with respect to \\(c\\), and setting \\(c\\) equal to 0:\n\\[\nE(X^k)=\\frac{d^km(c)}{dc}\\Bigg|_{c=0}\n\\]\n\n\nMGF Properties\n\nLinearity\nLet \\(X\\) follow a distribution \\(f\\), with the an MGF \\(M_X(t)\\), the MGF of \\(Y=aX+b\\) is given as\n\\[\nM_Y(t) = e^{tb}M_X(at)\n\\]\nLet \\(X\\) and \\(Y\\) be two random variables with MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively, and are independent. The MGF of \\(U=X-Y\\)\n\\[\nM_U(t) = M_X(t)M_Y(-t)\n\\]\n\n\nUniqueness\nLet \\(X\\) and \\(Y\\) have the following distributions \\(F_X(x)\\) and \\(F_Y(y)\\) and MGFs \\(M_X(t)\\) and \\(M_Y(t)\\), respectively. \\(X\\) and \\(Y\\) have the same distribution \\(F_X(x)=F_Y(y)\\) if and only if \\(M_X(t)=M_Y(t)\\)."
+  },
+  {
+    "objectID": "posts/week_8.html",
+    "href": "posts/week_8.html",
+    "title": "Week 8",
+    "section": "",
+    "text": "Sampling Statistics\n\n\n\n\n\nExam\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+  },
+  {
+    "objectID": "posts/week_8.html#learning-outcomes",
+    "href": "posts/week_8.html#learning-outcomes",
+    "title": "Week 8",
+    "section": "",
+    "text": "Sampling Statistics\n\n\n\n\n\nExam\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
   },
   {
     "objectID": "r.html",

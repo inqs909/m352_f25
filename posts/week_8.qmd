@@ -1,9 +1,9 @@
 ---
 title: "Week 8"
-date: 03-10-23
+date: 10-12-25
 description: Midterm this week
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console---
 ---
@@ -12,15 +12,20 @@ editor_options:
 
 ### First Lecture
 
--   Exam Review
+-   Sampling Statistics
 
 ### Second Lecture
 
 -   Exam
 
-## Resources
+### Lecture
 
-| Lecture | Videos |
-|----------------|--------------------------------------------------------|
-| First | [Video 001](https://youtu.be/Kx94wpTRVok) [Video 002](https://youtu.be/FJXeWQ7hb7E) |
-| Second |  |
+[Tuesday Slides](https://m352.inqs.info/lectures/7a) | [Thursday Slides](https://m352.inqs.info/lectures/7b)
+
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  |          |
+| 002     |  |          |

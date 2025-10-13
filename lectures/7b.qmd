@@ -115,7 +115,7 @@ Let $X$ have the following probability density function:
 
 $$
 f_X(x)=\left\{\begin{array}{cc}
-\frac{3}{2}x^2 + x & 0\le y \le 1 \\
+\frac{3}{2}x^2 + x & 0\le x \le 1 \\
 0 & \mathrm{otherwise}
 \end{array}
 \right.

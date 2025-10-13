@@ -37,8 +37,8 @@ editor_options:
 
 | Section | Tuesday | Thursday | 
 |---------|---------|----------|
-| 001     | [Video](https://youtu.be/G9geJXJ5eas) |          |
-| 002     | [Video](https://youtu.be/Tcu-4jCGdig) |          |
+| 001     | [Video](https://youtu.be/G9geJXJ5eas) |   [Video](https://youtu.be/PSKVuqDkJqU)   |
+| 002     | [Video](https://youtu.be/Tcu-4jCGdig) |  [Video](https://youtu.be/V1gI6QEbQ2c)       |
 
 
 ## Important Concepts
