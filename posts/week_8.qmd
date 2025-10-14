@@ -20,9 +20,7 @@ editor_options:
 
 ### Lecture
 
-[Tuesday Slides](https://m352.inqs.info/lectures/7a) | [Thursday Slides](https://m352.inqs.info/lectures/7b)
-
-
+[Tuesday Slides](https://m352.inqs.info/lectures/8a)
 ### Videos
 
 | Section | Tuesday | Thursday | 

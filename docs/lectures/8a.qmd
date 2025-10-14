@@ -1,0 +1,239 @@
+---
+title: "Sampling Distributions"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    slide-number: true
+    incremental: false 
+    chalkboard:
+      src: chalkboard.json
+      theme: whiteboard
+      chalk-width: 4
+editor: source
+---
+
+## Introduction
+
+- **Goal:** Understand how sample statistics (like means or proportions) vary from sample to sample and how we can model this variability.  
+- **Why it matters:** The concept of sampling distributions underlies statistical inference — including confidence intervals and hypothesis testing.
+
+
+## Population vs. Sample
+
+
+## Population vs. Sample
+
+| Concept | Population | Sample |
+|----------|-------------|---------|
+| Description | Entire group of interest | Subset of the population |
+| Mean | $\mu$ | $\bar{x}$ |
+| Variance | $\sigma^2$ | $s^2$ |
+| Proportion | $p$ | $\hat{p}$ |
+
+## Population vs. Sample
+
+- **Parameter (Greek letters):** Describes the population (usually unknown).  
+- **Statistic (Roman letters):** Describes the sample (used for inference).
+
+## Random Sample
+
+Let $X_1, X_2, \ldots, X_n$ come from distribution function $f_X(x; \theta)$, if the following conditions are met:
+
+1. All random variables are independent of each other
+2. All random variables come from identical distributions
+
+Then the random variables $X_1, X_2, \ldots, X_n$ are said to independent and identically distributed (iid) and a random sample.
+
+## Joint Distribution
+
+If $X_1, X_2, \ldots, X_n$ are iid of $f_{X}(x; \theta)$, then
+
+$$
+f_{X_1, X_2, \ldots, X_n}(x_1, x_2, \ldots, x_n) = \prod^n_{i=1}f_{X_i}(x_i)
+$$
+
+
+
+## What Are Statistics?
+
+A **statistic** is a numerical value that describes a characteristic of a **sample**, ($\theta$).
+
+For MATH 352:  
+> A statistic is any function of the sample data that does not depend on unknown population parameters.
+
+Statistic Examples:
+
+- Sample mean: $\bar{x} = \frac{1}{n}\sum x_i$
+- Sample variance: $s^2 = \frac{1}{n-1}\sum (x_i - \bar{x})^2$
+- Sample proportion: $\hat{p} = \frac{x}{n}$
+
+
+## Statistics vs. Parameters
+
+| Type | Symbol | Description |
+|------|---------|-------------|
+| **Population Mean** | $\mu$ | True average |
+| **Sample Mean** | $\bar{x}$ | Average from a sample |
+| **Population Variance** | $\sigma^2$ | True variance |
+| **Sample Variance** | $s^2$ | Variance from sample data |
+| **Population Proportion** | $p$ | True proportion |
+| **Sample Proportion** | $\hat{p}$ | Observed proportion |
+
+
+## Types of Statistics
+
+### Descriptive Statistics
+- Summarize or describe data.
+- Examples: mean, median, mode, standard deviation, histograms.
+
+### Inferential Statistics
+- Use samples to make generalizations about populations.
+- Examples: confidence intervals, hypothesis tests, regression.
+
+
+## Properties of a Good Statistic
+
+| Property | Meaning |
+|-----------|----------|
+| **Unbiasedness** | $E[\hat{\theta}] = \theta$ |
+| **Consistency** | $\hat{\theta_n} \to \theta$ as $n \to \infty$ |
+| **Efficiency** | Smallest variance among unbiased estimators |
+| **Sufficiency** | Uses all information in the data about $\theta$ |
+
+Example: $\bar{X}$ is an unbiased and consistent estimator of $\mu$.
+
+
+
+## Sampling Distributions
+
+A **sampling distribution** is the **probability distribution** of a sample statistic (like $\bar{X}$) based on all possible random samples of a given size $n$.
+
+- Each sample yields a different statistic.
+- The distribution of these statistics forms the **sampling distribution**.
+
+## Sampling Distribution of the Mean
+
+If:
+- Population mean = $\mu$
+- Population standard deviation = $\sigma$
+- Sample size = $n$
+
+Then:
+- Mean of $\bar{X}$: $\mu_{\bar{X}} = \mu$
+- Standard deviation (standard error): $\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$
+
+
+
+## Convergence Concepts
+
+The idea of convergence concepts is to undertand how the statistics behave as $n \rightarrow \infty$. As the sample size gets large, statistics generally behave as known distribution functions.
+
+There are 3 types of distributions:
+
+1. Convergence almost surely
+2. Convergence in probability
+3. Convergence in distribution
+
+## Convergence almost surely
+
+$X_1, X_2, \ldots, X_n$ converges almost surely to a random variable $X$ if, for every $\epsilon > 0$,
+
+$$
+P(\lim_{n\rightarrow \infty} |X_n - X| < \epsilon ) = 1
+$$
+
+## Convergence in probability
+
+$X_1, X_2, \ldots, X_n$ converges in a probability to a random variable $X$ if, for every $\epsilon > 0$,
+
+$$
+\lim_{n\rightarrow \infty}  P(|X_n - X| < \epsilon ) = 1
+$$
+
+
+## Convergence in distribution
+
+$X_1, X_2, \ldots, X_n$ converges in distribution to a random variable $X$ if, 
+
+$$
+\lim_{n\rightarrow \infty}  F_{X_n}(x_n) = F_{X}(x)
+$$
+
+
+## The Law of Large Numbers (LLN)
+
+As the sample size $n$ increases, the sample mean $\bar{X}$ tends to get closer to the population mean $\mu$.
+
+## The Law of Large Numbers 
+
+$$
+\bar{X}_n = \frac{1}{n}\sum_{i=1}^n X_i \to \mu \text{ as } n \to \infty
+$$
+
+- Randomness averages out over many trials.
+- The sample mean stabilizes around the true mean.
+
+
+## Two Versions of LLN
+
+| Version | Type of Convergence | Description |
+|----------|--------------------|--------------|
+| **Weak Law** | In probability | $\bar{X}_n$ becomes *probably close* to $\mu$ |
+| **Strong Law** | Almost surely | $\bar{X}_n$ converges to $\mu$ with probability 1 |
+
+Mathematically:
+$$
+\lim_{n \to \infty} P(|\bar{X}_n - \mu| < \varepsilon) = 1
+$$
+
+
+## LLN Intuition: Coin Flip Example
+
+- Flip a fair coin ($p = 0.5$).
+- If you flip 10 times → maybe 7 heads.
+- If you flip 1,000 times → about 500 heads.
+- As $n$ grows, $\hat{p} \to p$.
+
+> The Law of Large Numbers says that with enough data, sample proportions and means approximate population values.
+
+
+
+## Central Limit Theorem (CLT)
+
+Let $X_1, X_2, \ldots, X_n$ be a sequence of iid random variables whose $E(X_i) = \mu < \infty$ and $Var(X_i) = \sigma^2 < \infty$. For $\bar X_n = \frac{1}{n} \sum^n_{i=1} X_i$:
+
+$$
+\frac{\sqrt{n}(\bar X_n - \mu)}{\sigma} \rightarrow N(0,1)
+$$
+
+as $n\rightarrow \infty$.
+
+
+## CLT
+
+$$
+\bar{X} \approx \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right)
+$$
+
+- **Mean:** $\mu_{\bar{X}} = \mu$
+- **Standard deviation:** $\sigma_{\bar{X}} = \frac{\sigma}{\sqrt{n}}$
+- **Shape:** Approximately Normal for large $n$
+
+
+## Sampling Distribution of a Proportion
+
+For a population proportion $p$ and sample size $n$:
+
+- Mean: $\mu_{\hat{p}} = p$
+- Standard deviation (standard error):  
+  $$
+  \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}
+  $$
+
+Normal approximation holds if:
+- $np \ge 10$ and $n(1-p) \ge 10$
+
+
