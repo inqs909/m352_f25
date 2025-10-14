@@ -1351,13 +1351,6 @@
     "text": "What Are Statistics?\nA statistic is a numerical value that describes a characteristic of a sample, (\\(\\theta\\)).\nFor MATH 352:\n&gt; A statistic is any function of the sample data that does not depend on unknown population parameters.\nStatistic Examples:\n\nSample mean: \\(\\bar{x} = \\frac{1}{n}\\sum x_i\\)\nSample variance: \\(s^2 = \\frac{1}{n-1}\\sum (x_i - \\bar{x})^2\\)\nSample proportion: \\(\\hat{p} = \\frac{x}{n}\\)"
   },
   {
-    "objectID": "lectures/8a.html#statistics-vs.-parameters",
-    "href": "lectures/8a.html#statistics-vs.-parameters",
-    "title": "Sampling Distributions",
-    "section": "Statistics vs. Parameters",
-    "text": "Statistics vs. Parameters\n\n\n\nType\nSymbol\nDescription\n\n\n\n\nPopulation Mean\n\\(\\mu\\)\nTrue average\n\n\nSample Mean\n\\(\\bar{x}\\)\nAverage from a sample\n\n\nPopulation Variance\n\\(\\sigma^2\\)\nTrue variance\n\n\nSample Variance\n\\(s^2\\)\nVariance from sample data\n\n\nPopulation Proportion\n\\(p\\)\nTrue proportion\n\n\nSample Proportion\n\\(\\hat{p}\\)\nObserved proportion"
-  },
-  {
     "objectID": "lectures/8a.html#types-of-statistics",
     "href": "lectures/8a.html#types-of-statistics",
     "title": "Sampling Distributions",
@@ -1432,7 +1425,7 @@
     "href": "lectures/8a.html#two-versions-of-lln",
     "title": "Sampling Distributions",
     "section": "Two Versions of LLN",
-    "text": "Two Versions of LLN\n\n\n\n\n\n\n\n\nVersion\nType of Convergence\nDescription\n\n\n\n\nWeak Law\nIn probability\n\\(\\bar{X}_n\\) becomes probably close to \\(\\mu\\)\n\n\nStrong Law\nAlmost surely\n\\(\\bar{X}_n\\) converges to \\(\\mu\\) with probability 1\n\n\n\nMathematically: \\[\n\\lim_{n \\to \\infty} P(|\\bar{X}_n - \\mu| &lt; \\varepsilon) = 1\n\\]"
+    "text": "Two Versions of LLN\n\n\n\n\n\n\n\n\nVersion\nType of Convergence\nDescription\n\n\n\n\nWeak Law\nIn probability\n\\(\\bar{X}_n\\) becomes probably close to \\(\\mu\\)\n\n\nStrong Law\nAlmost surely\n\\(\\bar{X}_n\\) converges to \\(\\mu\\) with probability 1"
   },
   {
     "objectID": "lectures/8a.html#lln-intuition-coin-flip-example",
@@ -1453,14 +1446,14 @@
     "href": "lectures/8a.html#clt",
     "title": "Sampling Distributions",
     "section": "CLT",
-    "text": "CLT\n\\[\n\\bar{X} \\approx \\mathcal{N}\\!\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]\n\nMean: \\(\\mu_{\\bar{X}} = \\mu\\)\nStandard deviation: \\(\\sigma_{\\bar{X}} = \\frac{\\sigma}{\\sqrt{n}}\\)\nShape: Approximately Normal for large \\(n\\)"
+    "text": "CLT\n\\[\n\\bar{X} \\overset{\\cdot}{\\sim} \\mathcal{N}\\!\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]\n\nMean: \\(\\mu_{\\bar{X}} = \\mu\\)\nStandard deviation: \\(\\sigma_{\\bar{X}} = \\frac{\\sigma}{\\sqrt{n}}\\)\nShape: Approximately Normal for large \\(n\\)"
   },
   {
     "objectID": "lectures/8a.html#sampling-distribution-of-a-proportion",
     "href": "lectures/8a.html#sampling-distribution-of-a-proportion",
     "title": "Sampling Distributions",
     "section": "Sampling Distribution of a Proportion",
-    "text": "Sampling Distribution of a Proportion\nFor a population proportion \\(p\\) and sample size \\(n\\):\n\nMean: \\(\\mu_{\\hat{p}} = p\\)\nStandard deviation (standard error):\n\\[\n\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}\n\\]\n\nNormal approximation holds if: - \\(np \\ge 10\\) and \\(n(1-p) \\ge 10\\)"
+    "text": "Sampling Distribution of a Proportion\nFor a sample proportion \\(\\hat p\\) and sample size \\(n\\):\n\nMean: \\(\\mu_{\\hat{p}} = p\\)\nStandard deviation (standard error):\n\\[\n\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}\n\\]\n\nNormal approximation holds if:\n\n\\(np \\ge 10\\) and \\(n(1-p) \\ge 10\\)\n\n\\[\n\\hat p \\overset{\\cdot}{\\sim} N(p,   \\frac{p(1-p)}{n})\n\\]"
   },
   {
     "objectID": "lectures/7a.html#learning-outcomes",

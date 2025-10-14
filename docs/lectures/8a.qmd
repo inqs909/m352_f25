@@ -71,17 +71,6 @@ Statistic Examples:
 - Sample proportion: $\hat{p} = \frac{x}{n}$
 
 
-## Statistics vs. Parameters
-
-| Type | Symbol | Description |
-|------|---------|-------------|
-| **Population Mean** | $\mu$ | True average |
-| **Sample Mean** | $\bar{x}$ | Average from a sample |
-| **Population Variance** | $\sigma^2$ | True variance |
-| **Sample Variance** | $s^2$ | Variance from sample data |
-| **Population Proportion** | $p$ | True proportion |
-| **Sample Proportion** | $\hat{p}$ | Observed proportion |
-
 
 ## Types of Statistics
 
@@ -184,11 +173,6 @@ $$
 | **Weak Law** | In probability | $\bar{X}_n$ becomes *probably close* to $\mu$ |
 | **Strong Law** | Almost surely | $\bar{X}_n$ converges to $\mu$ with probability 1 |
 
-Mathematically:
-$$
-\lim_{n \to \infty} P(|\bar{X}_n - \mu| < \varepsilon) = 1
-$$
-
 
 ## LLN Intuition: Coin Flip Example
 
@@ -215,7 +199,7 @@ as $n\rightarrow \infty$.
 ## CLT
 
 $$
-\bar{X} \approx \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right)
+\bar{X} \overset{\cdot}{\sim} \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right)
 $$
 
 - **Mean:** $\mu_{\bar{X}} = \mu$
@@ -225,7 +209,7 @@ $$
 
 ## Sampling Distribution of a Proportion
 
-For a population proportion $p$ and sample size $n$:
+For a sample proportion $\hat p$ and sample size $n$:
 
 - Mean: $\mu_{\hat{p}} = p$
 - Standard deviation (standard error):  
@@ -234,6 +218,10 @@ For a population proportion $p$ and sample size $n$:
   $$
 
 Normal approximation holds if:
+
 - $np \ge 10$ and $n(1-p) \ge 10$
 
+$$
+\hat p \overset{\cdot}{\sim} N(p,   \frac{p(1-p)}{n})
+$$
 

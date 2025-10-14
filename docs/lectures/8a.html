@@ -216,50 +216,6 @@ f_{X_1, X_2, \ldots, X_n}(x_1, x_2, \ldots, x_n) = \prod^n_{i=1}f_{X_i}(x_i)
 <li>Sample proportion: <span class="math inline">\(\hat{p} = \frac{x}{n}\)</span></li>
 </ul>
 </section>
-<section id="statistics-vs.-parameters" class="slide level2">
-<h2>Statistics vs.&nbsp;Parameters</h2>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th>Type</th>
-<th>Symbol</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Population Mean</strong></td>
-<td><span class="math inline">\(\mu\)</span></td>
-<td>True average</td>
-</tr>
-<tr class="even">
-<td><strong>Sample Mean</strong></td>
-<td><span class="math inline">\(\bar{x}\)</span></td>
-<td>Average from a sample</td>
-</tr>
-<tr class="odd">
-<td><strong>Population Variance</strong></td>
-<td><span class="math inline">\(\sigma^2\)</span></td>
-<td>True variance</td>
-</tr>
-<tr class="even">
-<td><strong>Sample Variance</strong></td>
-<td><span class="math inline">\(s^2\)</span></td>
-<td>Variance from sample data</td>
-</tr>
-<tr class="odd">
-<td><strong>Population Proportion</strong></td>
-<td><span class="math inline">\(p\)</span></td>
-<td>True proportion</td>
-</tr>
-<tr class="even">
-<td><strong>Sample Proportion</strong></td>
-<td><span class="math inline">\(\hat{p}\)</span></td>
-<td>Observed proportion</td>
-</tr>
-</tbody>
-</table>
-</section>
 <section id="types-of-statistics" class="slide level2">
 <h2>Types of Statistics</h2>
 <h3 id="descriptive-statistics">Descriptive Statistics</h3>
@@ -389,9 +345,6 @@ P(\lim_{n\rightarrow \infty} |X_n - X| &lt; \epsilon ) = 1
 </tr>
 </tbody>
 </table>
-<p>Mathematically: <span class="math display">\[
-\lim_{n \to \infty} P(|\bar{X}_n - \mu| &lt; \varepsilon) = 1
-\]</span></p>
 </section>
 <section id="lln-intuition-coin-flip-example" class="slide level2">
 <h2>LLN Intuition: Coin Flip Example</h2>
@@ -416,7 +369,7 @@ P(\lim_{n\rightarrow \infty} |X_n - X| &lt; \epsilon ) = 1
 <section id="clt" class="slide level2">
 <h2>CLT</h2>
 <p><span class="math display">\[
-\bar{X} \approx \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right)
+\bar{X} \overset{\cdot}{\sim} \mathcal{N}\!\left(\mu, \frac{\sigma^2}{n}\right)
 \]</span></p>
 <ul>
 <li><strong>Mean:</strong> <span class="math inline">\(\mu_{\bar{X}} = \mu\)</span></li>
@@ -426,7 +379,7 @@ P(\lim_{n\rightarrow \infty} |X_n - X| &lt; \epsilon ) = 1
 </section>
 <section id="sampling-distribution-of-a-proportion" class="slide level2">
 <h2>Sampling Distribution of a Proportion</h2>
-<p>For a population proportion <span class="math inline">\(p\)</span> and sample size <span class="math inline">\(n\)</span>:</p>
+<p>For a sample proportion <span class="math inline">\(\hat p\)</span> and sample size <span class="math inline">\(n\)</span>:</p>
 <ul>
 <li>Mean: <span class="math inline">\(\mu_{\hat{p}} = p\)</span></li>
 <li>Standard deviation (standard error):<br>
@@ -434,7 +387,13 @@ P(\lim_{n\rightarrow \infty} |X_n - X| &lt; \epsilon ) = 1
 \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}
 \]</span></li>
 </ul>
-<p>Normal approximation holds if: - <span class="math inline">\(np \ge 10\)</span> and <span class="math inline">\(n(1-p) \ge 10\)</span></p>
+<p>Normal approximation holds if:</p>
+<ul>
+<li><span class="math inline">\(np \ge 10\)</span> and <span class="math inline">\(n(1-p) \ge 10\)</span></li>
+</ul>
+<p><span class="math display">\[
+\hat p \overset{\cdot}{\sim} N(p,   \frac{p(1-p)}{n})
+\]</span></p>
 
 
 </section>
