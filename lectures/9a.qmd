@@ -115,3 +115,51 @@ Suppose $X_1, \dots, X_n \sim \text{N}(\mu, \sigma^2)$
 $$
 f(x_i; \lambda) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}
 $$
+
+# Optimization
+
+## Optimization
+
+For a given function $f(x)$, optimization is the process of finding the value of $x$ where $f(x)$ is either the maximum or minimum.
+
+## Finding X
+
+To find $x$,
+
+$$
+f^\prime (x) = 0
+$$
+
+## Maximum or Minimum
+::: {.column}
+
+### Maximum
+
+$$
+f^{\prime\prime} (X) <0  
+$$
+
+:::
+::: {.column}
+
+### Minimum
+
+$$
+f^{\prime\prime} (X) <0  
+$$
+
+:::
+
+
+## Example
+
+$$
+f(x) = x^2 + 5x + 3
+$$
+
+
+## Example
+
+$$
+f(x) = -4(3x - 9)^2 + 12
+$$

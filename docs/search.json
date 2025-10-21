@@ -1295,6 +1295,41 @@
     "text": "Example 3: Normal Random Variables\nSuppose \\(X_1, \\dots, X_n \\sim \\text{N}(\\mu, \\sigma^2)\\)\n\\[\nf(x_i; \\lambda) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x_i-\\mu)^2}{2\\sigma^2}}\n\\]"
   },
   {
+    "objectID": "lectures/9a.html#optimization-1",
+    "href": "lectures/9a.html#optimization-1",
+    "title": "Sampling Distributions",
+    "section": "Optimization",
+    "text": "Optimization\nFor a given function \\(f(x)\\), optimization is the process of finding the value of \\(x\\) where \\(f(x)\\) is either the maximum or minimum."
+  },
+  {
+    "objectID": "lectures/9a.html#finding-x",
+    "href": "lectures/9a.html#finding-x",
+    "title": "Sampling Distributions",
+    "section": "Finding X",
+    "text": "Finding X\nTo find \\(x\\),\n\\[\nf^\\prime (x) = 0\n\\]"
+  },
+  {
+    "objectID": "lectures/9a.html#maximum-or-minimum",
+    "href": "lectures/9a.html#maximum-or-minimum",
+    "title": "Sampling Distributions",
+    "section": "Maximum or Minimum",
+    "text": "Maximum or Minimum\n\nMaximum\n\\[\nf^{\\prime\\prime} (X) &lt;0  \n\\]\n\nMinimum\n\\[\nf^{\\prime\\prime} (X) &lt;0  \n\\]"
+  },
+  {
+    "objectID": "lectures/9a.html#example",
+    "href": "lectures/9a.html#example",
+    "title": "Sampling Distributions",
+    "section": "Example",
+    "text": "Example\n\\[\nf(x) = x^2 + 5x + 3\n\\]"
+  },
+  {
+    "objectID": "lectures/9a.html#example-1",
+    "href": "lectures/9a.html#example-1",
+    "title": "Sampling Distributions",
+    "section": "Example",
+    "text": "Example\n\\[\nf(x) = -4(3x - 9)^2 + 12\n\\]"
+  },
+  {
     "objectID": "lectures/8a.html#introduction",
     "href": "lectures/8a.html#introduction",
     "title": "Sampling Distributions",
