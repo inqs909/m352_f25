@@ -138,84 +138,105 @@
 <section id="learning-outcomes" class="slide level2">
 <h2>Learning Outcomes</h2>
 <ul>
-<li class="fragment"><p>Covariance</p></li>
-<li class="fragment"><p>Statistics and Inference</p></li>
-<li class="fragment"><p>Sampling Distributions</p></li>
-<li class="fragment"><p>Central Limit Theorem</p></li>
+<li class="fragment"><p>Distribution of Mean</p></li>
+<li class="fragment"><p>Distribution of Sample Variance</p></li>
+<li class="fragment"><p>Likelihood Function</p></li>
 </ul>
 </section>
-<section>
-<section id="statistics-and-inference" class="title-slide slide level1 center">
-<h1>Statistics and Inference</h1>
-
+<section id="mgf-independence-property" class="slide level2">
+<h2>MGF Independence Property</h2>
+<p>If <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are <strong>independent</strong>, then the MGF of <span class="math inline">\(Z = X + Y\)</span> equals the product of their MGFs:</p>
+<p><span class="math display">\[
+M_{Z}(t) = M_X(t)M_Y(t).
+\]</span></p>
 </section>
-<section id="sample" class="slide level2">
-<h2>Sample</h2>
-</section>
-<section id="statistics" class="slide level2">
-<h2>Statistics</h2>
-</section>
-<section id="inference" class="slide level2">
-<h2>Inference</h2>
-</section></section>
 <section>
 <section id="sampling-distributions" class="title-slide slide level1 center">
 <h1>Sampling Distributions</h1>
 
 </section>
-<section id="iid-random-variables" class="slide level2">
-<h2>iid Random Variables</h2>
+<section id="distribution-of-means" class="slide level2">
+<h2>Distribution of Means</h2>
+<p>Suppose <span class="math inline">\(X_1, \dots, X_n \sim \text{N}(\mu, \sigma^2)\)</span></p>
 </section>
-<section id="sampling-distributions-1" class="slide level2">
-<h2>Sampling Distributions</h2>
-<p>A sampling distribution is the distribution of a statistic. Many known statistics have a known distribution.</p>
-</section>
-<section id="bar-x" class="slide level2">
-<h2><span class="math inline">\(\bar X\)</span></h2>
-</section>
-<section id="s2" class="slide level2">
-<h2><span class="math inline">\(s^2\)</span></h2>
-</section>
-<section id="t-distribution" class="slide level2">
-<h2>t-distribution</h2>
-<p>Let <span class="math inline">\(Z\sim N(0,1)\)</span>, <span class="math inline">\(W\sim \chi^2_\nu\)</span>, <span class="math inline">\(Z\perp W\)</span>; therefore:</p>
-<p><span class="math display">\[
-T=\frac{Z}{\sqrt{W/\nu}} \sim t_\nu
-\]</span></p>
-</section>
-<section id="f-distribution" class="slide level2">
-<h2>F-distribution</h2>
-<p>Let <span class="math inline">\(W_1\sim\chi^2_{\nu_1}\)</span> <span class="math inline">\(W_2\sim\chi^2_{\nu_2}\)</span>, and <span class="math inline">\(W_1\perp W_2\)</span>; therefore:</p>
-<p><span class="math display">\[
-F = \frac{W_1/\nu_1}{W_2/\nu_2}\sim F_{\nu_1,\nu_2}
-\]</span></p>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\overset{iid}{\sim}N(\mu,\sigma^2)\)</span> , show that <span class="math inline">\(\bar X \sim N(\mu,\sigma^2/n)\)</span>. Note: the MGF of <span class="math inline">\(X_i\)</span> is <span class="math inline">\(e^{\mu t + \frac{t^2\sigma^2}{2}}\)</span>.</p>
+<section id="distribution-of-sample-variance" class="slide level2">
+<h2>Distribution of Sample Variance</h2>
+<p>Suppose <span class="math inline">\(X_1, \dots, X_n \sim \text{N}(\mu, \sigma^2)\)</span></p>
 </section></section>
 <section>
-<section id="central-limit-theorem" class="title-slide slide level1 center">
-<h1>Central Limit Theorem</h1>
+<section id="likelihood-function" class="title-slide slide level1 center">
+<h1>Likelihood Function</h1>
 
 </section>
-<section id="central-limit-theorem-1" class="slide level2">
-<h2>Central Limit Theorem</h2>
-<p>Let <span class="math inline">\(X_1, X_2, \ldots, X_n\)</span> be identical and independent distributed random variables with <span class="math inline">\(E(X_i)=\mu\)</span> and <span class="math inline">\(Var(X_i) = \sigma²\)</span>. We define</p>
-<p><span class="math display">\[
-Y_n = \sqrt n \left(\frac{\bar X-\mu}{\sigma}\right) \mathrm{ where }\ \bar X = \frac{1}{n}\sum^n_{i=1}X_i.
-\]</span></p>
-<p>Then, the distribution of the function <span class="math inline">\(Y_n\)</span> converges to a standard normal distribution function as <span class="math inline">\(n\rightarrow \infty\)</span>.</p>
+<section id="likelihood-function-1" class="slide level2">
+<h2>Likelihood Function</h2>
+<p>The likelihood function tells us how plausible a set of parameter values is, given the observed data.</p>
 </section>
-<section id="central-limit-theorem-2" class="slide level2">
-<h2>Central Limit Theorem</h2>
+<section id="setup" class="slide level2">
+<h2>Setup</h2>
+<p>Given a random sample <span class="math inline">\(X_1, X_2, \dots, X_n \overset{iid}{\sim} F(x;\theta)\)</span>, where <span class="math inline">\(\theta\)</span> are the parameters that shape the distribution function.</p>
+<p>Then, the <strong>joint density function</strong> of the sample is:</p>
 <p><span class="math display">\[
-\bar X \sim N\left(\mu, \frac{\sigma^2}{n}\right)
+f(x_1, x_2, \dots, x_n; \theta) = \prod_{i=1}^n f(x_i; \theta)
+\]</span></p>
+<p>This expression, viewed as a function of <span class="math inline">\(\theta\)</span> (for fixed data <span class="math inline">\(x_i\)</span>), is the <strong>likelihood function</strong>:</p>
+<p><span class="math display">\[
+L(\theta \mid x_1, x_2, \dots, x_n) = \prod_{i=1}^n f(x_i; \theta)
 \]</span></p>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example</h2>
-<p>Let <span class="math inline">\(X_1, \ldots, X_n \overset{iid}{\sim} \chi^2_p\)</span>, the MGF is <span class="math inline">\(M(t)=(1-2t)^{-p/2}\)</span>. Find the distribution of <span class="math inline">\(\bar X\)</span>.</p>
+<section id="likelihood-vs.-probability" class="slide level2">
+<h2>Likelihood vs.&nbsp;Probability</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Probability</strong></td>
+<td><span class="math inline">\(P(X = x \mid \theta)\)</span>: <span class="math inline">\(x\)</span> is random, <span class="math inline">\(\theta\)</span> fixed</td>
+</tr>
+<tr class="even">
+<td><strong>Likelihood</strong></td>
+<td><span class="math inline">\(L(\theta \mid x)\)</span>: <span class="math inline">\(x\)</span> fixed, <span class="math inline">\(\theta\)</span> variable</td>
+</tr>
+</tbody>
+</table>
+<p>Although they share the same mathematical form, their interpretations differ.</p>
+</section>
+<section id="log-likelihood-function" class="slide level2">
+<h2>Log-Likelihood Function</h2>
+<p>For convenience, we often work with the <strong>log-likelihood</strong>:</p>
+<p><span class="math display">\[
+\ell(\theta) = \log L(\theta)
+\]</span></p>
+</section>
+<section id="example-1-bernoulli-random-variables" class="slide level2">
+<h2>Example 1: Bernoulli Random Variables</h2>
+<p>Suppose <span class="math inline">\(X_1, \dots, X_n \sim \text{Bernoulli}(p)\)</span>.</p>
+<p><span class="math display">\[
+f(x_i; p) = p^{x_i}(1 - p)^{1 - x_i}
+\]</span></p>
+</section>
+<section id="example-2-poisson-random-variables" class="slide level2">
+<h2>Example 2: Poisson Random Variables</h2>
+<p>Suppose <span class="math inline">\(X_1, \dots, X_n \sim \text{Pois}(\lambda)\)</span></p>
+<p><span class="math display">\[
+f(x_i; \lambda) = \frac{e^{-\lambda}\lambda^{x_i}}{x_i!}
+\]</span></p>
+</section>
+<section id="example-3-normal-random-variables" class="slide level2">
+<h2>Example 3: Normal Random Variables</h2>
+<p>Suppose <span class="math inline">\(X_1, \dots, X_n \sim \text{N}(\mu, \sigma^2)\)</span></p>
+<p><span class="math display">\[
+f(x_i; \lambda) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}}
+\]</span></p>
 
 
 </section></section>

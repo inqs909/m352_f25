@@ -56,6 +56,20 @@
     "text": "University Policies\n\nSyllabus Policies and Assistance\nCSUCI’s Syllabus Policies and Assistance Website provides important details about academic policies, campus expectations, and student support services that are all highly applicable to your success as a student both in and outside of the classroom. Ensure that you review this site on a regular basis to stay informed about the policies and resources that support your success, as campus resources or policies may change semester to semester.\n\n\nAcademic Honesty\nConduct yourself with honesty and integrity. Do not submit others’ work as your own. For assignments and quizzes that allow you to work with a group, only put your name on what the group submits if you genuinely contributed to the work. Work completely independently on exams, using only the materials that are indicated as allowed. Failure to observe academic honesty results in substantial penalties that can include failing the course.\n\n\nCSUCI Basic Needs\nPlease use the link to the Basic Needs Program on the Syllabus Policies and Assistance website (&lt;go.csuci.edu/syllabuspolicies&gt;) for information on emergency food, housing accommodations, toiletries, and connections to critical resources.\n\n\nCSUCI Disability Statement\nIf you are a student with a disability requesting reasonable accommodations in this course, you need to contact Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, via email accommodations@csuci.edu or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need: https://www.csuci.edu/dass/students/apply-for-services.htm. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved.\n\n\nDisruption\n\nIf I Am Out: I will communicate via email and will hold classes asynchronously.\nIf You Are Out: Contact me as soon as possible to talk about your options. Reasonable accommodations will be provided for a brief absence. With proper documentation, extended accommodations will be provided."
   },
   {
+    "objectID": "posts/week_9.html",
+    "href": "posts/week_9.html",
+    "title": "Week 9",
+    "section": "",
+    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+  },
+  {
+    "objectID": "posts/week_9.html#learning-outcomes",
+    "href": "posts/week_9.html#learning-outcomes",
+    "title": "Week 9",
+    "section": "",
+    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+  },
+  {
     "objectID": "posts/week_7.html",
     "href": "posts/week_7.html",
     "title": "Week 7",
@@ -1208,98 +1222,77 @@
     "href": "lectures/9a.html#learning-outcomes",
     "title": "Sampling Distributions",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nCovariance\nStatistics and Inference\nSampling Distributions\nCentral Limit Theorem"
+    "text": "Learning Outcomes\n\nDistribution of Mean\nDistribution of Sample Variance\nLikelihood Function"
   },
   {
-    "objectID": "lectures/9a.html#sample",
-    "href": "lectures/9a.html#sample",
+    "objectID": "lectures/9a.html#mgf-independence-property",
+    "href": "lectures/9a.html#mgf-independence-property",
     "title": "Sampling Distributions",
-    "section": "Sample",
-    "text": "Sample"
+    "section": "MGF Independence Property",
+    "text": "MGF Independence Property\nIf \\(X\\) and \\(Y\\) are independent, then the MGF of \\(Z = X + Y\\) equals the product of their MGFs:\n\\[\nM_{Z}(t) = M_X(t)M_Y(t).\n\\]"
   },
   {
-    "objectID": "lectures/9a.html#statistics",
-    "href": "lectures/9a.html#statistics",
+    "objectID": "lectures/9a.html#distribution-of-means",
+    "href": "lectures/9a.html#distribution-of-means",
     "title": "Sampling Distributions",
-    "section": "Statistics",
-    "text": "Statistics"
+    "section": "Distribution of Means",
+    "text": "Distribution of Means\nSuppose \\(X_1, \\dots, X_n \\sim \\text{N}(\\mu, \\sigma^2)\\)"
   },
   {
-    "objectID": "lectures/9a.html#inference",
-    "href": "lectures/9a.html#inference",
+    "objectID": "lectures/9a.html#distribution-of-sample-variance",
+    "href": "lectures/9a.html#distribution-of-sample-variance",
     "title": "Sampling Distributions",
-    "section": "Inference",
-    "text": "Inference"
+    "section": "Distribution of Sample Variance",
+    "text": "Distribution of Sample Variance\nSuppose \\(X_1, \\dots, X_n \\sim \\text{N}(\\mu, \\sigma^2)\\)"
   },
   {
-    "objectID": "lectures/9a.html#iid-random-variables",
-    "href": "lectures/9a.html#iid-random-variables",
+    "objectID": "lectures/9a.html#likelihood-function-1",
+    "href": "lectures/9a.html#likelihood-function-1",
     "title": "Sampling Distributions",
-    "section": "iid Random Variables",
-    "text": "iid Random Variables"
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\nThe likelihood function tells us how plausible a set of parameter values is, given the observed data."
   },
   {
-    "objectID": "lectures/9a.html#sampling-distributions-1",
-    "href": "lectures/9a.html#sampling-distributions-1",
+    "objectID": "lectures/9a.html#setup",
+    "href": "lectures/9a.html#setup",
     "title": "Sampling Distributions",
-    "section": "Sampling Distributions",
-    "text": "Sampling Distributions\nA sampling distribution is the distribution of a statistic. Many known statistics have a known distribution."
+    "section": "Setup",
+    "text": "Setup\nGiven a random sample \\(X_1, X_2, \\dots, X_n \\overset{iid}{\\sim} F(x;\\theta)\\), where \\(\\theta\\) are the parameters that shape the distribution function.\nThen, the joint density function of the sample is:\n\\[\nf(x_1, x_2, \\dots, x_n; \\theta) = \\prod_{i=1}^n f(x_i; \\theta)\n\\]\nThis expression, viewed as a function of \\(\\theta\\) (for fixed data \\(x_i\\)), is the likelihood function:\n\\[\nL(\\theta \\mid x_1, x_2, \\dots, x_n) = \\prod_{i=1}^n f(x_i; \\theta)\n\\]"
   },
   {
-    "objectID": "lectures/9a.html#bar-x",
-    "href": "lectures/9a.html#bar-x",
+    "objectID": "lectures/9a.html#likelihood-vs.-probability",
+    "href": "lectures/9a.html#likelihood-vs.-probability",
     "title": "Sampling Distributions",
-    "section": "\\(\\bar X\\)",
-    "text": "\\(\\bar X\\)"
+    "section": "Likelihood vs. Probability",
+    "text": "Likelihood vs. Probability\n\n\n\n\n\n\n\nConcept\nInterpretation\n\n\n\n\nProbability\n\\(P(X = x \\mid \\theta)\\): \\(x\\) is random, \\(\\theta\\) fixed\n\n\nLikelihood\n\\(L(\\theta \\mid x)\\): \\(x\\) fixed, \\(\\theta\\) variable\n\n\n\nAlthough they share the same mathematical form, their interpretations differ."
   },
   {
-    "objectID": "lectures/9a.html#s2",
-    "href": "lectures/9a.html#s2",
+    "objectID": "lectures/9a.html#log-likelihood-function",
+    "href": "lectures/9a.html#log-likelihood-function",
     "title": "Sampling Distributions",
-    "section": "\\(s^2\\)",
-    "text": "\\(s^2\\)"
+    "section": "Log-Likelihood Function",
+    "text": "Log-Likelihood Function\nFor convenience, we often work with the log-likelihood:\n\\[\n\\ell(\\theta) = \\log L(\\theta)\n\\]"
   },
   {
-    "objectID": "lectures/9a.html#t-distribution",
-    "href": "lectures/9a.html#t-distribution",
+    "objectID": "lectures/9a.html#example-1-bernoulli-random-variables",
+    "href": "lectures/9a.html#example-1-bernoulli-random-variables",
     "title": "Sampling Distributions",
-    "section": "t-distribution",
-    "text": "t-distribution\nLet \\(Z\\sim N(0,1)\\), \\(W\\sim \\chi^2_\\nu\\), \\(Z\\perp W\\); therefore:\n\\[\nT=\\frac{Z}{\\sqrt{W/\\nu}} \\sim t_\\nu\n\\]"
+    "section": "Example 1: Bernoulli Random Variables",
+    "text": "Example 1: Bernoulli Random Variables\nSuppose \\(X_1, \\dots, X_n \\sim \\text{Bernoulli}(p)\\).\n\\[\nf(x_i; p) = p^{x_i}(1 - p)^{1 - x_i}\n\\]"
   },
   {
-    "objectID": "lectures/9a.html#f-distribution",
-    "href": "lectures/9a.html#f-distribution",
+    "objectID": "lectures/9a.html#example-2-poisson-random-variables",
+    "href": "lectures/9a.html#example-2-poisson-random-variables",
     "title": "Sampling Distributions",
-    "section": "F-distribution",
-    "text": "F-distribution\nLet \\(W_1\\sim\\chi^2_{\\nu_1}\\) \\(W_2\\sim\\chi^2_{\\nu_2}\\), and \\(W_1\\perp W_2\\); therefore:\n\\[\nF = \\frac{W_1/\\nu_1}{W_2/\\nu_2}\\sim F_{\\nu_1,\\nu_2}\n\\]"
+    "section": "Example 2: Poisson Random Variables",
+    "text": "Example 2: Poisson Random Variables\nSuppose \\(X_1, \\dots, X_n \\sim \\text{Pois}(\\lambda)\\)\n\\[\nf(x_i; \\lambda) = \\frac{e^{-\\lambda}\\lambda^{x_i}}{x_i!}\n\\]"
   },
   {
-    "objectID": "lectures/9a.html#example",
-    "href": "lectures/9a.html#example",
+    "objectID": "lectures/9a.html#example-3-normal-random-variables",
+    "href": "lectures/9a.html#example-3-normal-random-variables",
     "title": "Sampling Distributions",
-    "section": "Example",
-    "text": "Example\nLet \\(X_1, X_2, \\ldots, X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\) , show that \\(\\bar X \\sim N(\\mu,\\sigma^2/n)\\). Note: the MGF of \\(X_i\\) is \\(e^{\\mu t + \\frac{t^2\\sigma^2}{2}}\\)."
-  },
-  {
-    "objectID": "lectures/9a.html#central-limit-theorem-1",
-    "href": "lectures/9a.html#central-limit-theorem-1",
-    "title": "Sampling Distributions",
-    "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\nLet \\(X_1, X_2, \\ldots, X_n\\) be identical and independent distributed random variables with \\(E(X_i)=\\mu\\) and \\(Var(X_i) = \\sigma²\\). We define\n\\[\nY_n = \\sqrt n \\left(\\frac{\\bar X-\\mu}{\\sigma}\\right) \\mathrm{ where }\\ \\bar X = \\frac{1}{n}\\sum^n_{i=1}X_i.\n\\]\nThen, the distribution of the function \\(Y_n\\) converges to a standard normal distribution function as \\(n\\rightarrow \\infty\\)."
-  },
-  {
-    "objectID": "lectures/9a.html#central-limit-theorem-2",
-    "href": "lectures/9a.html#central-limit-theorem-2",
-    "title": "Sampling Distributions",
-    "section": "Central Limit Theorem",
-    "text": "Central Limit Theorem\n\\[\n\\bar X \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)\n\\]"
-  },
-  {
-    "objectID": "lectures/9a.html#example-1",
-    "href": "lectures/9a.html#example-1",
-    "title": "Sampling Distributions",
-    "section": "Example",
-    "text": "Example\nLet \\(X_1, \\ldots, X_n \\overset{iid}{\\sim} \\chi^2_p\\), the MGF is \\(M(t)=(1-2t)^{-p/2}\\). Find the distribution of \\(\\bar X\\)."
+    "section": "Example 3: Normal Random Variables",
+    "text": "Example 3: Normal Random Variables\nSuppose \\(X_1, \\dots, X_n \\sim \\text{N}(\\mu, \\sigma^2)\\)\n\\[\nf(x_i; \\lambda) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x_i-\\mu)^2}{2\\sigma^2}}\n\\]"
   },
   {
     "objectID": "lectures/8a.html#introduction",
@@ -1453,7 +1446,7 @@
     "href": "lectures/8a.html#sampling-distribution-of-a-proportion",
     "title": "Sampling Distributions",
     "section": "Sampling Distribution of a Proportion",
-    "text": "Sampling Distribution of a Proportion\nFor a sample proportion \\(\\hat p\\) and sample size \\(n\\):\n\nMean: \\(\\mu_{\\hat{p}} = p\\)\nStandard deviation (standard error):\n\\[\n\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}\n\\]\n\nNormal approximation holds if:\n\n\\(np \\ge 10\\) and \\(n(1-p) \\ge 10\\)\n\n\\[\n\\hat p \\overset{\\cdot}{\\sim} N(p,   \\frac{p(1-p)}{n})\n\\]"
+    "text": "Sampling Distribution of a Proportion\nFor a sample proportion \\(\\hat p\\) and sample size \\(n\\):\n\nMean: \\(\\mu_{\\hat{p}} = p\\)\nStandard deviation (standard error):\n\\[\n\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}\n\\]\n\nNormal approximation holds if:\n\n\\(np \\ge 10\\) and \\(n(1-p) \\ge 10\\)\n\n\\[\n\\hat p \\overset{\\cdot}{\\sim}IQ N(p,   \\frac{p(1-p)}{n})\n\\]"
   },
   {
     "objectID": "lectures/7a.html#learning-outcomes",
@@ -2657,7 +2650,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/10b.html#learning-outcomes",
