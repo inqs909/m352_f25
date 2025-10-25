@@ -11,7 +11,7 @@ format:
 
 ### Problem 1
 
-Find the likelihood function and log-likelihood function for the following distributions:
+Find the likelihood function and log-likelihood function for a random sample from the following distributions:
 
 - Normal Distribution
 - Binomial Distrubition
