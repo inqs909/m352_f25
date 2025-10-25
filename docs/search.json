@@ -2650,7 +2650,7 @@
     "href": "hw.html",
     "title": "Homework",
     "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\n\n\n\n\n\n\nOct 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw1.html",
@@ -2700,6 +2700,20 @@
     "title": "Homework 2",
     "section": "Problem 5",
     "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
+  },
+  {
+    "objectID": "hws/hw4.html",
+    "href": "hws/hw4.html",
+    "title": "Homework 4",
+    "section": "",
+    "text": "Find the likelihood function and log-likelihood function for the following distributions:\n\nNormal Distribution\nBinomial Distrubition\nUniform Distribution\nPoisson Distribution\nGamma Distribution"
+  },
+  {
+    "objectID": "hws/hw4.html#problem-3",
+    "href": "hws/hw4.html#problem-3",
+    "title": "Homework 4",
+    "section": "Problem 3",
+    "text": "Problem 3\nFind the value of x that maximizes or minimizes the function:\n\nf(x) = -4(3x - 9)^2 + 12"
   },
   {
     "objectID": "index.html",
