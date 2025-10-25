@@ -64,6 +64,12 @@ The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that 
 
 # Example
 
+## Example 1
+
+## Example 2
+
+## Example 3
+
 ## Poisson Distribution
 
 Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Pois}(\lambda)$, show that the MLE of $\lambda$ is $\bar x$.
@@ -75,3 +81,4 @@ Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$. Show that the MLE's of $
 ## Exponential Distribution
 
 Let $X_1,\ldots,X_n\overset{iid}{\sim}Exp(\lambda)$. Find the MLE of $\lambda$
+

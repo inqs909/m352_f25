@@ -60,14 +60,14 @@
     "href": "posts/week_9.html",
     "title": "Week 9",
     "section": "",
-    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
+    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
   },
   {
     "objectID": "posts/week_9.html#learning-outcomes",
     "href": "posts/week_9.html#learning-outcomes",
     "title": "Week 9",
     "section": "",
-    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
+    "text": "Sampling Distributions\n\n\n\n\n\nCentral Limit Theorem\n\n\n\n\nTuesday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
   },
   {
     "objectID": "posts/week_7.html",
@@ -2511,6 +2511,27 @@
     "title": "Maximum Likelihood Estimators",
     "section": "Maximum log-Likelihood Estimator",
     "text": "Maximum log-Likelihood Estimator\nThe maximum likelihood estimator are the estimates of \\(\\boldsymbol \\theta\\) that maximize \\(\\ell(\\boldsymbol\\theta)\\)."
+  },
+  {
+    "objectID": "lectures/10a.html#example-1",
+    "href": "lectures/10a.html#example-1",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Example 1",
+    "text": "Example 1"
+  },
+  {
+    "objectID": "lectures/10a.html#example-2",
+    "href": "lectures/10a.html#example-2",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Example 2",
+    "text": "Example 2"
+  },
+  {
+    "objectID": "lectures/10a.html#example-3",
+    "href": "lectures/10a.html#example-3",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Example 3",
+    "text": "Example 3"
   },
   {
     "objectID": "lectures/10a.html#poisson-distribution",

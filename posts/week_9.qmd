@@ -26,5 +26,5 @@ editor_options:
 
 | Section | Tuesday | Thursday | 
 |---------|---------|----------|
-| 001     | [Video](https://youtu.be/egAU59cdHeQ) |          |
-| 002     | [Video](https://youtu.be/SvT8HXnSA7A) |          |
+| 001     | [Video](https://youtu.be/egAU59cdHeQ) | [Video](https://youtu.be/Ecd3NnhXRk8)  |
+| 002     | [Video](https://youtu.be/SvT8HXnSA7A) | [Video](https://youtu.be/CK68M-ZL1Ug)  |

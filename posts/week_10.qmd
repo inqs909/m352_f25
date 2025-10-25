@@ -1,6 +1,6 @@
 ---
 title: "Week 10"
-date: 04-03-23
+date: 10-26-25
 description: This week, we will discuss maximum likelihood estimators.
 editor: source
 draft: true
@@ -12,77 +12,19 @@ editor_options:
 
 ### First Lecture
 
--   Maximum Likelihood Estimator
+-   Maximum Likelihood Estimators
 
 ### Second Lecture
 
--   MLE Properties
+-   MLE: Properties
 
-## Important Concepts
+### Lecture
 
-### Data
+[Tuesday Slides](https://m352.inqs.info/lectures/10a) | [Thursday Slides](https://m352.inqs.info/lectures/10b)
 
-Let $X_1,\ldots,X_n\overset{iid}{\sim}F(\boldsymbol \theta)$ where $F(\cdot)$ is a known distribution function and $\boldsymbol\theta$ is a vector of parameters. Let $\boldsymbol X = (X_1,\ldots, X_n)^\mathrm{T}$, be the sample collected.
+### Videos
 
-### Maximum Likelihood Estimator
-
-#### Likelihood Function
-
-Using the joint pdf or pmf of the sample $\boldsymbol X$, the likelihood function is a function of $\boldsymbol \theta$, given the observed data $\boldsymbol X =\boldsymbol x$, defined as
-
-$$
-L(\boldsymbol \theta|\boldsymbol x)=f(\boldsymbol x|\boldsymbol \theta)
-$$
-
-If the data is iid, then
-
-$$
-f(\boldsymbol x|\boldsymbol \theta) = \prod^n_{i=1}f(x_i|\boldsymbol\theta)
-$$
-
-#### Estimator
-
-The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $L(\boldsymbol\theta)$.
-
-#### Log-Likelihood Approach
-
-If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maximizing $\ln\{L(\boldsymbol \theta)\}$ will yield the maximum likelihood estimators.
-
-### MLE Properties
-
-#### Unbiasedness
-
-Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be an estimator for a parameter $\theta$. Then $\hat \theta$ is an unbiased estimator if $E(\hat \theta) = \theta$. Otherwise, $\hat\theta$ is considered biased.
-
-#### Consistency
-
-Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. The estimator $\hat \theta$ is a consistent estimator of the $\theta$ if
-
-1.  $E\{(\hat\theta-\theta)^2\}\rightarrow0$ as $n\rightarrow \infty$
-2.  $P(|\hat\theta-\theta|\ge \epsilon)\rightarrow0$ as $n\rightarrow \infty$ for every $\epsilon>0$
-
-#### Invariance Principle
-
-If $\hat \theta$ is an ML estimator of $\theta$, then for any one-to-one function $g$, the ML estimator for $g(\theta)$ is $g(\hat\theta)$.
-
-#### Large Sample MLE Properties
-
-Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be the MLE estimator for a parameter $\theta$. As $n\rightarrow\infty$, then $\hat \theta$ has a normal distribution with mean $\theta$ and variance $1/nI(\theta)$, where
-
-$$
-I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
-$$
-
-## Resources
-
-### First Lecture
-
-| Slides | Videos | Notes |
-|------------------|------------------------|------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_17.html) | [Video 001](https://youtu.be/a8W_q_rcJNQ) [Video 002](https://youtu.be/IUFygIHCHJ8) | [Notes 001](https://m352.inqs.info/files/m_17_001.pdf) [Notes 002](https://m352.inqs.info/files/m_17_002.pdf) |
-
-### Second Lecture
-
-| Slides | Videos | Notes |
-|------------------|------------------------|------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_18.html) | [Video 001](https://youtu.be/Vrl7deSbbKM) [Video 002](https://youtu.be/wGoRGX_qfsk) | [Notes 001](https://m352.inqs.info/files/m_18_001.pdf) [Notes 002](https://m352.inqs.info/files/m_18_002.pdf) |
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  |   |
+| 002     |  |   |
