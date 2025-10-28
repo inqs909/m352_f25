@@ -2555,6 +2555,13 @@
     "text": "Exponential Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}Exp(\\lambda)\\). Find the MLE of \\(\\lambda\\)"
   },
   {
+    "objectID": "hws/hw5.html",
+    "href": "hws/hw5.html",
+    "title": "Homework 5",
+    "section": "",
+    "text": "Submit your homework on Canvas as one PDF document.\n\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n(\\theta + 1)x^\\theta& 0\\le x\\le 1;\\theta&gt;-1 \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nFind the MLE for \\theta.\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n\\frac{1}{\\Gamma(\\alpha)\\theta^\\alpha}x^{\\alpha-1}e^{-x/\\theta} & 0&lt;x;0&lt; \\theta \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nwhere \\alpha&gt;0 is known. Find the MLE for \\theta.\nLet X_1, \\ldots, X_n\\overset{iid}{\\sim}Geo(p), what is the MLE of p."
+  },
+  {
     "objectID": "hws/hw3.html",
     "href": "hws/hw3.html",
     "title": "Homework 3",
@@ -2650,7 +2657,7 @@
     "href": "hw.html",
     "title": "Homework",
     "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\n\n\n\n\n\n\nOct 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\n\n\n\nNo matching items"
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\n\n\n\n\n\n\nOct 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\n\n\n\n\n\n\nOct 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "hws/hw1.html",
@@ -2706,7 +2713,7 @@
     "href": "hws/hw4.html",
     "title": "Homework 4",
     "section": "",
-    "text": "Find the likelihood function and log-likelihood function for the following distributions:\n\nNormal Distribution\nBinomial Distrubition\nUniform Distribution\nPoisson Distribution\nGamma Distribution"
+    "text": "Find the likelihood function and log-likelihood function for a random sample from the following distributions:\n\nNormal Distribution\nBinomial Distrubition\nUniform Distribution\nPoisson Distribution\nGamma Distribution"
   },
   {
     "objectID": "hws/hw4.html#problem-3",
@@ -2720,7 +2727,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 10\n\n\nThis week, we will discuss maximum likelihood estimators.\n\n\n\n\n\nOct 26, 2025\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/10b.html#learning-outcomes",
@@ -5129,6 +5136,20 @@
     "title": "Continuous Random Variables",
     "section": "PDF",
     "text": "PDF"
+  },
+  {
+    "objectID": "posts/week_10.html",
+    "href": "posts/week_10.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+  },
+  {
+    "objectID": "posts/week_10.html#learning-outcomes",
+    "href": "posts/week_10.html#learning-outcomes",
+    "title": "Week 10",
+    "section": "",
+    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
   },
   {
     "objectID": "posts/week_2.html",
