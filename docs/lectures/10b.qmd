@@ -64,6 +64,7 @@ I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
 $$
 
 
+# Examples
 
 ## Binomial Distribution
 
