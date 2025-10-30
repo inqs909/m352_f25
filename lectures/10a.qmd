@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = T)
 
 ## Estimators
 
-An *estimator* is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample.
+An *estimator* is an operation computing the value of an estimate, that targets a parameter, using measurements from a sample.
 
 ## Data
 
@@ -62,13 +62,6 @@ If $\ln\{L(\boldsymbol \theta)\}$ is monotone of $\boldsymbol \theta$, then maxi
 
 The maximum likelihood estimator are the estimates of $\boldsymbol \theta$ that maximize $\ell(\boldsymbol\theta)$.
 
-# Example
-
-## Example 1
-
-## Example 2
-
-## Example 3
 
 ## Poisson Distribution
 

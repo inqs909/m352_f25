@@ -2482,7 +2482,7 @@
     "href": "lectures/10a.html#estimators",
     "title": "Maximum Likelihood Estimators",
     "section": "Estimators",
-    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample."
+    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets a parameter, using measurements from a sample."
   },
   {
     "objectID": "lectures/10a.html#data",
@@ -2511,27 +2511,6 @@
     "title": "Maximum Likelihood Estimators",
     "section": "Maximum log-Likelihood Estimator",
     "text": "Maximum log-Likelihood Estimator\nThe maximum likelihood estimator are the estimates of \\(\\boldsymbol \\theta\\) that maximize \\(\\ell(\\boldsymbol\\theta)\\)."
-  },
-  {
-    "objectID": "lectures/10a.html#example-1",
-    "href": "lectures/10a.html#example-1",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Example 1",
-    "text": "Example 1"
-  },
-  {
-    "objectID": "lectures/10a.html#example-2",
-    "href": "lectures/10a.html#example-2",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Example 2",
-    "text": "Example 2"
-  },
-  {
-    "objectID": "lectures/10a.html#example-3",
-    "href": "lectures/10a.html#example-3",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Example 3",
-    "text": "Example 3"
   },
   {
     "objectID": "lectures/10a.html#poisson-distribution",
@@ -2779,25 +2758,32 @@
     "text": "Large Sample Theory\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be the MLE estimator for a parameter \\(\\theta\\). As \\(n\\rightarrow\\infty\\), then \\(\\hat \\theta\\) has a normal distribution with mean \\(\\theta\\) and variance \\(1/nI(\\theta)\\), where\n\\[\nI(\\theta)=E\\left[-\\frac{\\partial^2}{\\partial\\theta^2}\\log\\{f(X;\\theta)\\}\\right]\n\\]"
   },
   {
-    "objectID": "lectures/10b.html#exponential-distribution",
-    "href": "lectures/10b.html#exponential-distribution",
+    "objectID": "lectures/10b.html#binomial-distribution",
+    "href": "lectures/10b.html#binomial-distribution",
     "title": "Maximum Likelihood Estimators",
-    "section": "Exponential Distribution",
-    "text": "Exponential Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}Exp(\\lambda)\\). Find the sampling distribution of the MLE of \\(\\lambda\\)"
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bin}(m, p)\\), find the mle of \\(p\\). Check if it is an unbiased estimator."
   },
   {
     "objectID": "lectures/10b.html#poisson-distribution",
     "href": "lectures/10b.html#poisson-distribution",
     "title": "Maximum Likelihood Estimators",
     "section": "Poisson Distribution",
-    "text": "Poisson Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Pois}(\\lambda)\\), Find the sampling distribution of the MLE."
+    "text": "Poisson Distribution\nCheck if \\(\\bar X\\) is an unbiased estimator for \\(\\lambda\\) in the Poisson distribution."
   },
   {
     "objectID": "lectures/10b.html#normal-distribution",
     "href": "lectures/10b.html#normal-distribution",
     "title": "Maximum Likelihood Estimators",
     "section": "Normal Distribution",
-    "text": "Normal Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\). Are the MLE’s of \\(\\mu\\) and \\(\\sigma^2\\) unbiased?"
+    "text": "Normal Distribution\nUsing the MLE’s for a normal distribution, \\(\\hat\\mu = \\bar X = \\frac{1}{n}\\sum X_i\\) and \\(\\hat\\sigma^2 = \\frac{1}{n}\\sum (X_i-\\bar X)^2\\) check if there are unbiased estimators for \\(\\mu\\) and \\(\\sigma^2\\)."
+  },
+  {
+    "objectID": "lectures/10b.html#bernoulli-distribution",
+    "href": "lectures/10b.html#bernoulli-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Bernoulli Distribution",
+    "text": "Bernoulli Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bernoulli}(p)\\), show that the MLE of \\(p\\) is \\(\\bar X\\). Find the distribution of the MLE as \\(n\\rightarrow\\infty\\)"
   },
   {
     "objectID": "lectures/11b.html#learning-objectives",
@@ -5142,14 +5128,14 @@
     "href": "posts/week_10.html",
     "title": "Week 10",
     "section": "",
-    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
   },
   {
     "objectID": "posts/week_10.html#learning-outcomes",
     "href": "posts/week_10.html#learning-outcomes",
     "title": "Week 10",
     "section": "",
-    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\n\n\n\n\n002"
+    "text": "Maximum Likelihood Estimators\n\n\n\n\n\nMLE: Properties\n\n\n\n\nTuesday Slides | Thursday Slides\n\n\n\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\n\n\n\n002\nVideo"
   },
   {
     "objectID": "posts/week_2.html",

@@ -63,16 +63,21 @@ $$
 I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
 $$
 
-# Example
 
-## Exponential Distribution
 
-Let $X_1,\ldots,X_n\overset{iid}{\sim}Exp(\lambda)$. Find the sampling distribution of the MLE of $\lambda$
+## Binomial Distribution
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Bin}(m, p)$, find the mle of $p$. Check if it is an unbiased estimator.
 
 ## Poisson Distribution
 
-Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Pois}(\lambda)$, Find the sampling distribution of the MLE.
+Check if $\bar X$ is an unbiased estimator for $\lambda$ in the Poisson distribution.
+
 
 ## Normal Distribution
 
-Let $X_1,\ldots,X_n\overset{iid}{\sim}N(\mu,\sigma^2)$. Are the MLE's of $\mu$ and $\sigma^2$ unbiased?
+Using the MLE's for a normal distribution, $\hat\mu = \bar X = \frac{1}{n}\sum X_i$ and $\hat\sigma^2 = \frac{1}{n}\sum (X_i-\bar X)^2$ check if there are unbiased estimators for $\mu$ and $\sigma^2$.
+
+## Bernoulli Distribution 
+
+Let $X_1,\ldots,X_n\overset{iid}{\sim}\mathrm{Bernoulli}(p)$, show that the MLE of $p$ is $\bar X$. Find the distribution of the MLE as $n\rightarrow\infty$
