@@ -126,7 +126,7 @@ The following outline may be subject to change. Any changes will be announced in
 | 11/10     | Holiday/Regression            | HW #6             | 7.2                 |
 | 11/17     | Standard Errors               | Take-Home Exam #2 | Handouts            |
 | 11/24     | Hypothesis Testing            | HW #7             | 9.3                 |
-| 12/1      | Confidence Intervals          | HW #8            | 9.2 - 9.4           |
+| 12/1      | Confidence Intervals          | HW #8             | 9.2 - 9.4           |
 | 12/8      | Exam #2                       |                   |                     |
 
 

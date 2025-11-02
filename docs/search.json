@@ -140,6 +140,27 @@
     "text": "Important Concepts\n\nFirst Lecture\n\nDiscrete Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.\n\nPMF\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\).\n\n\nCDF\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\).\n\n\nCommonly Used Distributions\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-y}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nHypergeometric\n\\(N\\), \\(n\\), and \\(r\\)\n\\(\\frac{(^r_y)(^{N-r}_{n-y})}{(^N_n)}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)\n\n\n\n\n\n\n\nSecond Lecture\n\nExpected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of a discrete random variable is \\(Y\\) with PMF of \\(P(y)\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\n\n\nExpected Value Properties\nSpecial properties of the expected value:\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(Y)\\}=cE\\{g(Y)\\}\\)\n\\(E\\{g_1(Y)+\\cdots+g_n(Y)\\}=E\\{g_1(Y)\\}+\\cdots+E\\{g_n(Y)\\}\\)\n\n\n\nVariance\nThe variance represents the variation of a random variable. The variance for a random variable Y is\n\\[\nVar(Y) = E[\\{Y-E(Y)\\}^2]\n\\]"
   },
   {
+    "objectID": "posts/week_11.html",
+    "href": "posts/week_11.html",
+    "title": "Week 11",
+    "section": "",
+    "text": "Linear Regression"
+  },
+  {
+    "objectID": "posts/week_11.html#learning-outcomes",
+    "href": "posts/week_11.html#learning-outcomes",
+    "title": "Week 11",
+    "section": "",
+    "text": "Linear Regression"
+  },
+  {
+    "objectID": "posts/week_11.html#resources",
+    "href": "posts/week_11.html#resources",
+    "title": "Week 11",
+    "section": "Resources",
+    "text": "Resources\n\nLecture\nTuesday Slides | Thursday Slides\n\n\nVideos\n\n\n\nSection\nTuesday\nThursday\n\n\n\n\n001\nVideo\nVideo\n\n\n002\nVideo\nVideo"
+  },
+  {
     "objectID": "posts/week_1.html",
     "href": "posts/week_1.html",
     "title": "Week 1",
@@ -2706,7 +2727,7 @@
     "href": "index.html",
     "title": "Welcome to Probability and Statistics!",
     "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 10\n\n\nThis week, we will discuss maximum likelihood estimators.\n\n\n\n\n\nOct 26, 2025\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 11\n\n\nThis week, we will discuss linear regression functions.\n\n\n\n\n\nNov 1, 2025\n\n\n\n\n\n\n\nWeek 10\n\n\nThis week, we will discuss maximum likelihood estimators.\n\n\n\n\n\nOct 26, 2025\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/10b.html#learning-outcomes",

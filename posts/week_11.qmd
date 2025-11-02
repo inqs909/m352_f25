@@ -1,9 +1,9 @@
 ---
 title: "Week 11"
-date: 03-27-23
-description: This week, we will discuss functions of random variables and sampling distributions.
+date: 11-01-25
+description: This week, we will discuss linear regression functions.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console
 ---
@@ -14,3 +14,13 @@ editor_options:
 
 ## Resources
 
+### Lecture
+
+[Tuesday Slides](https://m352.inqs.info/lectures/11a) | [Thursday Slides](https://m352.inqs.info/lectures/11b)
+
+### Videos
+
+| Section | Tuesday | Thursday | 
+|---------|---------|----------|
+| 001     |  [Video]() | [Video]() |
+| 002     |  [Video]() | [Video]() |
