@@ -2811,7 +2811,42 @@
     "href": "lectures/11b.html#learning-objectives",
     "title": "Linear Regression",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nMatrix Formulation\nMultiple Linear Regression\nModel Assumptions"
+    "text": "Learning Objectives\n\nOLS Estimator\nMatrix Formulation\nMultiple Linear Regression\nModel Assumptions"
+  },
+  {
+    "objectID": "lectures/11b.html#ordinary-least-squares-1",
+    "href": "lectures/11b.html#ordinary-least-squares-1",
+    "title": "Linear Regression",
+    "section": "Ordinary Least Squares",
+    "text": "Ordinary Least Squares\nFor a data pair \\((X_i,Y_i)_{i=1}^n\\), the ordinary least squares estimator will find the estimates of \\(\\hat\\beta_0\\) and \\(\\hat\\beta_1\\) that minimize the following function:\n\\[\n\\sum^n_{i=1}\\{y_i-(\\beta_0+\\beta_1x_i)\\}^2\n\\]"
+  },
+  {
+    "objectID": "lectures/11b.html#estimating-betas",
+    "href": "lectures/11b.html#estimating-betas",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta\\)’s",
+    "text": "Estimating \\(\\beta\\)’s"
+  },
+  {
+    "objectID": "lectures/11b.html#estimating-beta_1",
+    "href": "lectures/11b.html#estimating-beta_1",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta_1\\)",
+    "text": "Estimating \\(\\beta_1\\)"
+  },
+  {
+    "objectID": "lectures/11b.html#estimating-beta_0",
+    "href": "lectures/11b.html#estimating-beta_0",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta_0\\)",
+    "text": "Estimating \\(\\beta_0\\)"
+  },
+  {
+    "objectID": "lectures/11b.html#estimates",
+    "href": "lectures/11b.html#estimates",
+    "title": "Linear Regression",
+    "section": "Estimates",
+    "text": "Estimates\n\\[\n\\hat\\beta_0 = \\bar y - \\hat\\beta_1\\bar x\n\\] \\[\n\\hat\\beta_1 = \\frac{\\sum^n_{i=1}(y_i-\\bar y)(x_i-\\bar x)}{\\sum^n_{i=1}(x_i-\\bar x)^2}\n\\] \\[\n\\hat\\sigma^2 = \\frac{1}{n-2}\\sum^n_{i=1}(y_i-\\hat y_i)^2\n\\]"
   },
   {
     "objectID": "lectures/11b.html#matrix-version-of-model",
@@ -2835,8 +2870,8 @@
     "text": "Least Squares Formula\n\\[\n(Y - \\boldsymbol X ^\\mathrm T\\boldsymbol \\beta)^\\mathrm T(Y - \\boldsymbol X ^\\mathrm T\\boldsymbol \\beta)\n\\]"
   },
   {
-    "objectID": "lectures/11b.html#estimates",
-    "href": "lectures/11b.html#estimates",
+    "objectID": "lectures/11b.html#estimates-1",
+    "href": "lectures/11b.html#estimates-1",
     "title": "Linear Regression",
     "section": "Estimates",
     "text": "Estimates\n\\[\n\\hat{\\boldsymbol \\beta} = (\\boldsymbol X ^\\mathrm T\\boldsymbol X)^{-1}\\boldsymbol X ^\\mathrm T\\boldsymbol Y\n\\]"

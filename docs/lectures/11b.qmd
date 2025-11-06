@@ -2,14 +2,19 @@
 title: "Linear Regression"
 format:
   revealjs:
+    width: 1200
     scrollable: true
-    navigation-mode: vertical
-    controls-layout: bottom-right
+    theme: [default, styles.scss]
     controls-tutorial: true
+    navigation-mode: vertical
     incremental: false 
+    touch: false
+    controls: true
+    pointer:
+      pointerSize: 32
+    slide-number: true
+    sc-sb-title: h1
     chalkboard:
-      src: chalkboard.json
-      storage: chalkboard_pres
       theme: whiteboard
       chalk-width: 4
 knitr:
@@ -21,6 +26,19 @@ knitr:
     comment: "#>" 
 
 editor: source
+
+revealjs-plugins:
+  - pointer
+  - verticator
+  
+filters: 
+  - reveal-header
+  - code-fullscreen
+  - reveal-auto-agenda
+  
+auto-agenda:
+  bullets: numbered
+  clickable: true
 ---
 
 ```{r}
@@ -39,11 +57,41 @@ library(magrittr)
 
 ## Learning Objectives
 
+-   OLS Estimator 
+
 -   Matrix Formulation
 
 -   Multiple Linear Regression
 
 -   Model Assumptions
+
+# Ordinary Least Squares
+
+## Ordinary Least Squares
+
+For a data pair $(X_i,Y_i)_{i=1}^n$, the ordinary least squares estimator will find the estimates of $\hat\beta_0$ and $\hat\beta_1$ that minimize the following function:
+
+$$
+\sum^n_{i=1}\{y_i-(\beta_0+\beta_1x_i)\}^2
+$$
+
+## Estimating $\beta$'s
+
+## Estimating $\beta_1$
+
+## Estimating $\beta_0$
+
+## Estimates
+
+$$
+\hat\beta_0 = \bar y - \hat\beta_1\bar x
+$$ $$
+\hat\beta_1 = \frac{\sum^n_{i=1}(y_i-\bar y)(x_i-\bar x)}{\sum^n_{i=1}(x_i-\bar x)^2}
+$$ $$
+\hat\sigma^2 = \frac{1}{n-2}\sum^n_{i=1}(y_i-\hat y_i)^2
+$$
+
+
 
 # Matrix Formulation
 

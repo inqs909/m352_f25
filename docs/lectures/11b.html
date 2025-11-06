@@ -6,7 +6,15 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.js" defer="true"></script>
+<link href="../site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/jquery-3.6.3/jquery-3.6.3.min.js"></script>
+<script src="../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.js" defer="true"></script>
+<link href="../site_libs/quarto-contrib/code-fullscreen-1.0.0/code-fullscreen.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/sc-sb-title-1.0.0/sc_sb_title.js" defer="true"></script>
+<link href="../site_libs/quarto-contrib/grid-no-htext-1.0.0/grid_no_htext.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
   <title>MATH 352 – Linear Regression</title>
@@ -28,12 +36,14 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-0c7aaefe3f5b0264e428838978df7300.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-pointer/pointer.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/verticator/verticator.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
@@ -138,15 +148,77 @@
 <section id="learning-objectives" class="slide level2">
 <h2>Learning Objectives</h2>
 <ul>
+<li><p>OLS Estimator</p></li>
 <li><p>Matrix Formulation</p></li>
 <li><p>Multiple Linear Regression</p></li>
 <li><p>Model Assumptions</p></li>
 </ul>
 </section>
 <section>
-<section id="matrix-formulation" class="title-slide slide level1 center">
+<section id="ordinary-least-squares" class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Ordinary Least Squares</h1>
+<div class="agenda">
+<ol>
+<li><div class="agenda-active agenda-clickable">
+<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/matrix-formulation">Matrix Formulation</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/model-assumptions">Model Assumptions</a>
+</div></li>
+</ol>
+</div>
+</section>
+<section id="ordinary-least-squares-1" class="slide level2">
+<h2>Ordinary Least Squares</h2>
+<p>For a data pair <span class="math inline">\((X_i,Y_i)_{i=1}^n\)</span>, the ordinary least squares estimator will find the estimates of <span class="math inline">\(\hat\beta_0\)</span> and <span class="math inline">\(\hat\beta_1\)</span> that minimize the following function:</p>
+<p><span class="math display">\[
+\sum^n_{i=1}\{y_i-(\beta_0+\beta_1x_i)\}^2
+\]</span></p>
+</section>
+<section id="estimating-betas" class="slide level2">
+<h2>Estimating <span class="math inline">\(\beta\)</span>’s</h2>
+</section>
+<section id="estimating-beta_1" class="slide level2">
+<h2>Estimating <span class="math inline">\(\beta_1\)</span></h2>
+</section>
+<section id="estimating-beta_0" class="slide level2">
+<h2>Estimating <span class="math inline">\(\beta_0\)</span></h2>
+</section>
+<section id="estimates" class="slide level2">
+<h2>Estimates</h2>
+<p><span class="math display">\[
+\hat\beta_0 = \bar y - \hat\beta_1\bar x
+\]</span> <span class="math display">\[
+\hat\beta_1 = \frac{\sum^n_{i=1}(y_i-\bar y)(x_i-\bar x)}{\sum^n_{i=1}(x_i-\bar x)^2}
+\]</span> <span class="math display">\[
+\hat\sigma^2 = \frac{1}{n-2}\sum^n_{i=1}(y_i-\hat y_i)^2
+\]</span></p>
+</section></section>
+<section>
+<section id="matrix-formulation" class="title-slide slide level1 agenda-slide center scrollable">
 <h1>Matrix Formulation</h1>
-
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
+</div></li>
+<li><div class="agenda-active agenda-clickable">
+<a href="#/matrix-formulation">Matrix Formulation</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/model-assumptions">Model Assumptions</a>
+</div></li>
+</ol>
+</div>
 </section>
 <section id="matrix-version-of-model" class="slide level2">
 <h2>Matrix Version of Model</h2>
@@ -179,16 +251,31 @@ Y_i = \boldsymbol X_i^\mathrm T \boldsymbol \beta + \epsilon_i
 (Y - \boldsymbol X ^\mathrm T\boldsymbol \beta)^\mathrm T(Y - \boldsymbol X ^\mathrm T\boldsymbol \beta)
 \]</span></p>
 </section>
-<section id="estimates" class="slide level2">
+<section id="estimates-1" class="slide level2">
 <h2>Estimates</h2>
 <p><span class="math display">\[
 \hat{\boldsymbol \beta} = (\boldsymbol X ^\mathrm T\boldsymbol X)^{-1}\boldsymbol X ^\mathrm T\boldsymbol Y
 \]</span></p>
 </section></section>
 <section>
-<section id="multiple-linear-regression" class="title-slide slide level1 center">
+<section id="multiple-linear-regression" class="title-slide slide level1 agenda-slide center scrollable">
 <h1>Multiple Linear Regression</h1>
-
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/matrix-formulation">Matrix Formulation</a>
+</div></li>
+<li><div class="agenda-active agenda-clickable">
+<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/model-assumptions">Model Assumptions</a>
+</div></li>
+</ol>
+</div>
 </section>
 <section id="mlr" class="slide level2">
 <h2>MLR</h2>
@@ -259,9 +346,24 @@ Y = \boldsymbol \beta^T\boldsymbol X
 </ul>
 </section></section>
 <section>
-<section id="model-assumptions" class="title-slide slide level1 center">
+<section id="model-assumptions" class="title-slide slide level1 agenda-slide center scrollable">
 <h1>Model Assumptions</h1>
-
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/matrix-formulation">Matrix Formulation</a>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
+</div></li>
+<li><div class="agenda-active agenda-clickable">
+<a href="#/model-assumptions">Model Assumptions</a>
+</div></li>
+</ol>
+</div>
 </section>
 <section id="model" class="slide level2">
 <h2>Model</h2>
@@ -311,6 +413,20 @@ Y = \boldsymbol \beta^T\boldsymbol X
 <p>A residual analysis is used to assess the validity of the assumptions.</p>
 
 
+<div class="reveal-header">
+<div class="header-logo">
+<img data-src="">
+</div>
+<div class="sc-title">
+<p> </p>
+</div>
+<div class="header-text">
+<p> </p>
+</div>
+<div class="sb-title">
+<p> </p>
+</div>
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -327,6 +443,8 @@ Y = \boldsymbol \beta^T\boldsymbol X
   <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-pointer/pointer.js"></script>
+  <script src="../site_libs/revealjs/plugin/verticator/verticator.js"></script>
   <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -341,7 +459,7 @@ Y = \boldsymbol \beta^T\boldsymbol X
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
+'controlsAuto': false,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -349,18 +467,20 @@ Y = \boldsymbol \beta^T\boldsymbol X
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true,"src":"chalkboard.json","storage":"chalkboard_pres","theme":"whiteboard","chalkWidth":4},
+'chalkboard': {"buttons":true,"theme":"whiteboard","chalkWidth":4},
+'pointer': {"key":"q","color":"red","pointerSize":32,"alwaysVisible":false},
+'verticator': {"themetag":"h1","color":"","inversecolor":"","skipuncounted":false,"clickable":true,"position":"auto","offset":"3vmin","autogenerate":true,"tooltip":false,"scale":1,"debug":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
         controlsTutorial: true,
 
         // Determines where controls appear, "edges" or "bottom-right"
-        controlsLayout: 'bottom-right',
+        controlsLayout: 'edges',
 
         // Visibility rule for backwards navigation arrows; "faded", "hidden"
         // or "visible"
@@ -370,7 +490,7 @@ Y = \boldsymbol \beta^T\boldsymbol X
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'h.v',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -402,7 +522,7 @@ Y = \boldsymbol \beta^T\boldsymbol X
         center: false,
 
         // Enables touch navigation on devices with touch input
-        touch: true,
+        touch: false,
 
         // Loop the presentation
         loop: false,
@@ -495,7 +615,7 @@ Y = \boldsymbol \beta^T\boldsymbol X
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1200,
 
         height: 700,
 
@@ -520,7 +640,7 @@ Y = \boldsymbol \beta^T\boldsymbol X
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, RevealPointer, Verticator, QuartoSupport,
 
           RevealMath,
           RevealNotes,
