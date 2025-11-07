@@ -17,7 +17,7 @@
 <link href="../site_libs/quarto-contrib/reveal-auto-agenda-0.0.3/reveal-auto-agenda.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.31">
 
-  <title>MATH 352 – Linear Regression</title>
+  <title>MATH 352 – GLM</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -139,278 +139,414 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Linear Regression</h1>
+  <h1 class="title">GLM</h1>
+  <p class="subtitle">Generalized Linear Models</p>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="learning-objectives" class="slide level2">
-<h2>Learning Objectives</h2>
+<section id="learning-outcomes" class="slide level2">
+<h2>Learning Outcomes</h2>
 <ul>
-<li><p>OLS Estimator</p></li>
-<li><p>Matrix Formulation</p></li>
-<li><p>Multiple Linear Regression</p></li>
-<li><p>Model Assumptions</p></li>
+<li><p>Exponential Family of Distributions</p></li>
+<li><p>Generalized Linear Models</p></li>
+<li><p>Regression Models</p></li>
 </ul>
 </section>
 <section>
-<section id="ordinary-least-squares" class="title-slide slide level1 agenda-slide center scrollable">
-<h1>Ordinary Least Squares</h1>
+<section id="exponential-family-of-distributions" class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Exponential Family of Distributions</h1>
 <div class="agenda">
 <ol>
 <li><div class="agenda-active agenda-clickable">
-<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
+<a href="#/exponential-family-of-distributions">Exponential Family of Distributions</a>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/matrix-formulation">Matrix Formulation</a>
+<a href="#/generalized-linear-models">Generalized Linear Models</a>
 </div></li>
 <li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/model-assumptions">Model Assumptions</a>
+<a href="#/regression-models">Regression Models</a>
 </div></li>
 </ol>
 </div>
 </section>
-<section id="ordinary-least-squares-1" class="slide level2">
-<h2>Ordinary Least Squares</h2>
-<p>For a data pair <span class="math inline">\((X_i,Y_i)_{i=1}^n\)</span>, the ordinary least squares estimator will find the estimates of <span class="math inline">\(\hat\beta_0\)</span> and <span class="math inline">\(\hat\beta_1\)</span> that minimize the following function:</p>
+<section id="exponential-family-of-distributions-1" class="slide level2">
+<h2>Exponential Family of Distributions</h2>
+<p>An exponential family of distributions are random variables that allow their probability density function to have the following form:</p>
 <p><span class="math display">\[
-\sum^n_{i=1}\{y_i-(\beta_0+\beta_1x_i)\}^2
-\]</span></p>
-</section>
-<section id="estimating-betas" class="slide level2">
-<h2>Estimating <span class="math inline">\(\beta\)</span>’s</h2>
-</section>
-<section id="estimating-beta_1" class="slide level2">
-<h2>Estimating <span class="math inline">\(\beta_1\)</span></h2>
-</section>
-<section id="estimating-beta_0" class="slide level2">
-<h2>Estimating <span class="math inline">\(\beta_0\)</span></h2>
-</section>
-<section id="estimates" class="slide level2">
-<h2>Estimates</h2>
-<p><span class="math display">\[
-\hat\beta_0 = \bar y - \hat\beta_1\bar x
-\]</span> <span class="math display">\[
-\hat\beta_1 = \frac{\sum^n_{i=1}(y_i-\bar y)(x_i-\bar x)}{\sum^n_{i=1}(x_i-\bar x)^2}
-\]</span> <span class="math display">\[
-\hat\sigma^2 = \frac{1}{n-2}\sum^n_{i=1}(y_i-\hat y_i)^2
-\]</span></p>
-</section></section>
-<section>
-<section id="matrix-formulation" class="title-slide slide level1 agenda-slide center scrollable">
-<h1>Matrix Formulation</h1>
-<div class="agenda">
-<ol>
-<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
-</div></li>
-<li><div class="agenda-active agenda-clickable">
-<a href="#/matrix-formulation">Matrix Formulation</a>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/model-assumptions">Model Assumptions</a>
-</div></li>
-</ol>
-</div>
-</section>
-<section id="matrix-version-of-model" class="slide level2">
-<h2>Matrix Version of Model</h2>
-<p><span class="math display">\[
-Y_i = \boldsymbol X_i^\mathrm T \boldsymbol \beta + \epsilon_i
+f(x; \theta,\phi) = a(x,\phi)\exp\left\{\frac{x\theta-\kappa(\theta)}{\phi}\right\}
 \]</span></p>
 <ul>
-<li><p><span class="math inline">\(Y_i\)</span>: Outcome Variable</p></li>
-<li><p><span class="math inline">\(\boldsymbol X_i=(1, X_i)^\mathrm T\)</span>: Predictors</p></li>
-<li><p><span class="math inline">\(\boldsymbol \beta = (\beta_0, \beta_1)^\mathrm T\)</span>: Coefficients</p></li>
-<li><p><span class="math inline">\(\epsilon_i\)</span>: error term</p></li>
+<li><p><span class="math inline">\(\theta\)</span>: is the canonical parameter (also a function of other parameters)</p></li>
+<li><p><span class="math inline">\(\kappa(\theta)\)</span>: is a known cumulant function</p></li>
+<li><p><span class="math inline">\(\phi&gt;0\)</span>: dispersion parameter function</p></li>
+<li><p><span class="math inline">\(a(y,\phi)\)</span>: normalizing constant</p></li>
 </ul>
 </section>
-<section id="data-matrix-formulation" class="slide level2">
-<h2>Data Matrix Formulation</h2>
-<p>For <span class="math inline">\(n\)</span> data points</p>
-<p><span class="math display">\[
-\boldsymbol Y = \boldsymbol X^\mathrm T\boldsymbol \beta + \boldsymbol \epsilon
-\]</span></p>
-<ul>
-<li><p><span class="math inline">\(\boldsymbol Y = (Y_1, \cdots, Y_n)^\mathrm T\)</span>: Outcome Variable</p></li>
-<li><p><span class="math inline">\(\boldsymbol X=(\boldsymbol X_1, \cdots, \boldsymbol X_n)^\mathrm T\)</span>: Predictors</p></li>
-<li><p><span class="math inline">\(\boldsymbol \beta = (\beta_0, \beta_1)^\mathrm T\)</span>: Coefficients</p></li>
-<li><p><span class="math inline">\(\boldsymbol \epsilon = (\epsilon_1, \cdots, \epsilon_n)^\mathrm T\)</span>: Error terms</p></li>
-</ul>
+<section id="canonical-parameter" class="slide level2">
+<h2>Canonical Parameter</h2>
+<p>The canonical parameter represents the relationship between the random variable and the <span class="math inline">\(E(Y)=\mu\)</span></p>
 </section>
-<section id="least-squares-formula" class="slide level2">
-<h2>Least Squares Formula</h2>
+<section id="normal-distribution" class="slide level2">
+<h2>Normal Distribution</h2>
 <p><span class="math display">\[
-(Y - \boldsymbol X ^\mathrm T\boldsymbol \beta)^\mathrm T(Y - \boldsymbol X ^\mathrm T\boldsymbol \beta)
+f(x;\mu,\sigma^2)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 \]</span></p>
-</section>
-<section id="estimates-1" class="slide level2">
-<h2>Estimates</h2>
+<div class="fragmet">
 <p><span class="math display">\[
-\hat{\boldsymbol \beta} = (\boldsymbol X ^\mathrm T\boldsymbol X)^{-1}\boldsymbol X ^\mathrm T\boldsymbol Y
+f(x;\mu,\sigma^2)= \frac{1}{\sqrt{2\pi \sigma^2}}\exp\left\{\frac{x\mu-\mu^2/2}{\sigma^2}-\frac{x^2}{2\sigma^2}\right\}
 \]</span></p>
-</section></section>
-<section>
-<section id="multiple-linear-regression" class="title-slide slide level1 agenda-slide center scrollable">
-<h1>Multiple Linear Regression</h1>
-<div class="agenda">
-<ol>
-<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
-</div></li>
-<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/matrix-formulation">Matrix Formulation</a>
-</div></li>
-<li><div class="agenda-active agenda-clickable">
-<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
-</div></li>
-<li><div class="agenda-inactive agenda-post-active agenda-clickable">
-<a href="#/model-assumptions">Model Assumptions</a>
-</div></li>
-</ol>
 </div>
 </section>
-<section id="mlr" class="slide level2">
-<h2>MLR</h2>
-<p>Multivariable linear regression models are used when more than one explanatory variable is used to explain the outcome of interest.</p>
-</section>
-<section id="continuous-variable" class="slide level2">
-<h2>Continuous Variable</h2>
-<p>To fit an additional continuous random variable to the model, we will only need to add it to the model:</p>
+<section id="binomial-distribution" class="slide level2">
+<h2>Binomial Distribution</h2>
 <p><span class="math display">\[
-Y = \beta_0 +\beta_1 X_1 + \beta_2 X_2
+f(x;n,p) = \left(\begin{array}{c}n\\x\end{array}\right) p^x(1-p)^{n-p}
 \]</span></p>
+<div class="fragment">
+<p><span class="math display">\[
+f(x;n,p) = \left(\begin{array}{c}n\\x\end{array}\right) \exp\left\{x\log\left(\frac{p}{1-p}\right) + n \log(1-p)\right\}
+\]</span></p>
+</div>
 </section>
-<section id="categorical-variable" class="slide level2">
-<h2>Categorical Variable</h2>
-<p>A categorical variable can be included in a model, but a reference category must be specified.</p>
-</section>
-<section id="fitting-a-model-with-categorical-variables" class="slide level2">
-<h2>Fitting a model with categorical variables</h2>
-<p>To fit a model with categorical variables, we must utilize dummy (binary) variables that indicate which category is being referenced. We use <span class="math inline">\(C-1\)</span> dummy variables where <span class="math inline">\(C\)</span> indicates the number of categories. When coded correctly, each category will be represented by a combination of dummy variables.</p>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<p>If we have 4 categories, we will need 3 dummy variables:</p>
+<section id="distributions-and-canonical-parameters" class="slide level2">
+<h2>Distributions and Canonical Parameters</h2>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th></th>
-<th>Cat 1</th>
-<th>Cat 2</th>
-<th>Cat 3</th>
-<th>Cat 4</th>
+<th>Random Variable</th>
+<th>Canonical Parameter</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dummy 1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
+<td>Normal</td>
+<td><span class="math inline">\(\mu\)</span></td>
 </tr>
 <tr class="even">
-<td>Dummy 2</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
+<td>Binomial</td>
+<td><span class="math inline">\(\log\left(\frac{\mu}{1-\mu}\right)\)</span></td>
 </tr>
 <tr class="odd">
-<td>Dummy 3</td>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
+<td>Negative Binomial</td>
+<td><span class="math inline">\(\log\left(\frac{\mu}{\mu+\phi^{-1}}\right)\)</span></td>
+</tr>
+<tr class="even">
+<td>Poisson</td>
+<td><span class="math inline">\(\log(\mu)\)</span></td>
+</tr>
+<tr class="odd">
+<td>Gamma</td>
+<td><span class="math inline">\(-\frac{1}{\mu}\)</span></td>
+</tr>
+<tr class="even">
+<td>Inverse Gaussian</td>
+<td><span class="math inline">\(-\frac{1}{2\mu^2}\)</span></td>
 </tr>
 </tbody>
 </table>
-<p>Which one is the reference category?</p>
-</section>
-<section id="matrix-notation" class="slide level2">
-<h2>Matrix Notation</h2>
-<p><span class="math display">\[
-Y = \boldsymbol \beta^T\boldsymbol X
-\]</span></p>
-<ul>
-<li><p><span class="math inline">\(\boldsymbol \beta\)</span>: a column vector of regression coefficients</p></li>
-<li><p><span class="math inline">\(\boldsymbol X\)</span>: a column vector of predictor variables</p></li>
-</ul>
 </section></section>
 <section>
-<section id="model-assumptions" class="title-slide slide level1 agenda-slide center scrollable">
-<h1>Model Assumptions</h1>
+<section id="generalized-linear-models" class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Generalized Linear Models</h1>
 <div class="agenda">
 <ol>
 <li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/ordinary-least-squares">Ordinary Least Squares</a>
-</div></li>
-<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/matrix-formulation">Matrix Formulation</a>
-</div></li>
-<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
-<a href="#/multiple-linear-regression">Multiple Linear Regression</a>
+<a href="#/exponential-family-of-distributions">Exponential Family of Distributions</a>
 </div></li>
 <li><div class="agenda-active agenda-clickable">
-<a href="#/model-assumptions">Model Assumptions</a>
+<a href="#/generalized-linear-models">Generalized Linear Models</a>
+</div></li>
+<li><div class="agenda-inactive agenda-post-active agenda-clickable">
+<a href="#/regression-models">Regression Models</a>
 </div></li>
 </ol>
 </div>
 </section>
-<section id="model" class="slide level2">
-<h2>Model</h2>
+<section id="generalized-linear-models-1" class="slide level2">
+<h2>Generalized Linear Models</h2>
+<p>A generalized linear model (GLM) is used to model the association between an outcome variable (of any data type) and a set of predictor values. We estimate a set of regression coefficients <span class="math inline">\(\boldsymbol \beta\)</span> to explain how each predictor is related to the expected value of the outcome.</p>
+</section>
+<section id="generalized-linear-models-2" class="slide level2">
+<h2>Generalized Linear Models</h2>
+<p>A GLM is composed of a systematic and random component.</p>
+</section>
+<section id="random-component" class="slide level2">
+<h2>Random Component</h2>
+<p>The random component is the random variable that defines the randomness and variation of the outcome variable.</p>
+</section>
+<section id="systematic-component" class="slide level2">
+<h2>Systematic Component</h2>
+<p>The systematic component is the linear model that models the association between a set of predictors and the expected value of Y:</p>
 <p><span class="math display">\[
-Y = \boldsymbol \beta^T\boldsymbol X
+g(\mu_i)=\eta_i=\boldsymbol X_i^\mathrm T \boldsymbol \beta
 \]</span></p>
 <ul>
-<li><span class="math inline">\(\epsilon \sim N(0,\sigma^2)\)</span></li>
+<li><p><span class="math inline">\(\boldsymbol\beta\)</span>: regression coefficients</p></li>
+<li><p><span class="math inline">\(\boldsymbol X_i=(1, X_{i1}, \ldots, X_{ik})^\mathrm T\)</span>: design vector</p></li>
+<li><p><span class="math inline">\(\eta\)</span>: linear model</p></li>
+<li><p><span class="math inline">\(\mu_i=E(Y_i)\)</span></p></li>
+<li><p><span class="math inline">\(g(\cdot)\)</span>: link function</p></li>
 </ul>
+</section></section>
+<section>
+<section id="regression-models" class="title-slide slide level1 agenda-slide center scrollable">
+<h1>Regression Models</h1>
+<div class="agenda">
+<ol>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/exponential-family-of-distributions">Exponential Family of Distributions</a>
+</div></li>
+<li><div class="agenda-inactive agenda-pre-active agenda-clickable">
+<a href="#/generalized-linear-models">Generalized Linear Models</a>
+</div></li>
+<li><div class="agenda-active agenda-clickable">
+<a href="#/regression-models">Regression Models</a>
+</div></li>
+</ol>
+</div>
 </section>
-<section id="model-scatter-plot" class="slide level2">
-<h2>Model Scatter Plot</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section>
-<section id="model-assumptions-1" class="slide level2">
-<h2>Model Assumptions</h2>
+<section id="logistic-regression" class="slide level2">
+<h2>Logistic Regression</h2>
 <ul>
-<li><p>Errors are normally distributed</p></li>
-<li><p>Constant Variance</p></li>
-<li><p>Linearity</p></li>
-<li><p>Independence</p></li>
-<li><p>No outliers</p></li>
+<li><strong>Logistic Regression</strong> models the probability that a binary outcome equals 1.</li>
+<li>The model assumes a linear relationship between predictors and the log-odds of the outcome.</li>
+<li>To map probabilities (0–1) to the real line, we use a link function. Usually the logit function.</li>
+<li>Utilizes a Bernoulli Model</li>
 </ul>
 </section>
-<section id="errors-normally-distributed" class="slide level2">
-<h2>Errors Normally Distributed</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-<section id="constant-variance" class="slide level2">
-<h2>Constant Variance</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
-<section id="linearity" class="slide level2">
-<h2>Linearity</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
-<section id="linearity-1" class="slide level2">
-<h2>Linearity</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section>
-<section id="no-outliers" class="slide level2">
-<h2>No Outliers</h2>
-
-<img data-src="11b_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
-<section id="residual-analysis" class="slide level2">
-<h2>Residual Analysis</h2>
-<p>A residual analysis is used to assess the validity of the assumptions.</p>
+<section id="the-logit-function" class="slide level2">
+<h2>The logit Function</h2>
+<p><span class="math display">\[
+g(p_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+<p><span class="math display">\[
+g(p_i) = \log\left(\frac{p_i}{1 - p_i}\right)
+\]</span></p>
+<p><span class="math display">\[
+p_i = g^{-1}(\eta_i) = \frac{1}{1 + e^{-\eta_i}}
+\]</span></p>
+</section>
+<section id="the-logit-function-1" class="slide level2">
+<h2>The logit Function</h2>
+<ul>
+<li><p>The logit link ensures predicted probabilities stay between 0 and 1.</p></li>
+<li><p>Small changes in predictors can have nonlinear effects on probability.</p></li>
+</ul>
+</section>
+<section id="likelihood-function" class="slide level2">
+<h2>Likelihood Function</h2>
+<p><span class="math display">\[
+L(\boldsymbol \beta) = \prod^n_{i=1} p_i^{Y_i}(1-p_i)^{1-Y_i}
+\]</span></p>
+<p><span class="math display">\[
+L(\boldsymbol \beta) = \prod^n_{i=1} \left(\frac{1}{1 + e^{-\eta_i}}\right)^{Y_i}\left\{1-\frac{1}{1 + e^{-\eta_i}}\right\}^{1-Y_i}
+\]</span></p>
+<p><span class="math display">\[
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+</section>
+<section id="poisson-regression" class="slide level2">
+<h2>Poisson Regression</h2>
+<ul>
+<li><strong>Poisson regression</strong> models are used for modeling <strong>count data</strong> (e.g., number of events per unit time or space).<br>
+</li>
+<li>It assumes that the response variable <span class="math inline">\(Y\)</span> follows a <strong>Poisson distribution</strong>.</li>
+<li>It is recommended not to use the regression model since the assumption is that <span class="math inline">\(E(Y)=Var(y)\)</span>, which is unrealistic.
+<ul>
+<li>It is recommended to use a negative binomial regression instead.</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-log-link-function" class="slide level2">
+<h2>The Log Link Function</h2>
+<p>For the Poisson model, the canonical link is the log link:</p>
+<p><span class="math display">\[
+g(\lambda_i) = \log(\lambda_i) = \eta_i
+\]</span></p>
+<p>This ensures that the predicted mean <span class="math inline">\(\lambda_i\)</span> is always <strong>positive</strong>, since:</p>
+<p><span class="math display">\[
+\lambda_i = e^{\eta_i}
+\]</span></p>
+</section>
+<section id="likelihood-function-1" class="slide level2">
+<h2>Likelihood Function</h2>
+<p><span class="math display">\[
+L(\boldsymbol \beta) = \prod^n_{i=1} \frac{e^{-\lambda_i}(\lambda_i)^{Y_i}}{Y_i!}
+\]</span></p>
+<p><span class="math display">\[
+L(\boldsymbol \beta) = \prod^n_{i=1} \frac{e^{-\exp(\eta_i)}(\exp(\eta_i))^{Y_i}}{Y_i!}
+\]</span></p>
+<p><span class="math display">\[
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+</section>
+<section id="negative-binomial-regression" class="slide level2">
+<h2>Negative Binomial Regression</h2>
+<ul>
+<li><strong>Negative Binomial Regression </strong> is used for <strong>overdispersed count data</strong>,<br>
+where the variance exceeds the mean.</li>
+</ul>
+<p><span class="math display">\[
+\text{Var}(Y_i) &gt; E[Y_i]
+\]</span></p>
+<ul>
+<li><p>It generalizes Poisson regression by introducing a <strong>dispersion parameter</strong>.</p></li>
+<li><p>In real data, we often observe <strong>overdispersion</strong> (variance &gt; mean).<br>
+This leads to:</p>
+<ul>
+<li>Underestimated standard errors</li>
+</ul></li>
+</ul>
+</section>
+<section id="negative-binomial-model" class="slide level2">
+<h2>Negative Binomial Model</h2>
+<p>The Negative Binomial can be derived as a <strong>Poisson-Gamma mixture</strong>:</p>
+<p><span class="math display">\[
+Y_i \mid \lambda_i \sim \text{Poisson}(\lambda_i), \quad
+\lambda_i \sim \text{Gamma}(\mu_i, \phi)
+\]</span></p>
+<p>Resulting in:</p>
+<p><span class="math display">\[
+E[Y_i] = \mu_i, \quad
+\text{Var}(Y_i) = \mu_i + \phi\mu_i^2
+\]</span></p>
+<p>where <span class="math inline">\(\phi\)</span> controls overdispersion.</p>
+</section>
+<section id="negative-binomial-model-1" class="slide level2">
+<h2>Negative Binomial Model</h2>
+<p><span class="math display">\[
+f(y) = \frac{\Gamma(y + \phi^{-1})}{\Gamma(\phi^{-1})\Gamma(y + 1)} \left( \frac{\mu}{\mu + \phi^{-1}} \right)^y\left(1- \frac{\mu}{\mu + \phi^{-1}} \right)^{\phi^{-1}}
+\]</span></p>
+</section>
+<section id="the-log-link-function-1" class="slide level2">
+<h2>The log link function</h2>
+<p>Just like in Poisson regression, we use the <strong>log link function</strong>:</p>
+<p><span class="math display">\[
+g(\mu_i) = \log(\mu_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+<p>and the inverse link:</p>
+<p><span class="math display">\[
+\mu_i = e^{\eta_i}
+\]</span></p>
+<div class="fragment">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Using the log-link function is different from our canonical parameter <span class="math inline">\(\log\left(\frac{\mu}{\mu + \phi^{-1}}\right)\)</span>. This leads to more interpretable results.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="likelihood-function-2" class="slide level2">
+<h2>Likelihood Function</h2>
+<p><span class="math display">\[
+L(\boldsymbol \beta, \phi) = \prod^n_{i=1} \frac{\Gamma(y_i + \phi^{-1})}{\Gamma(\phi^{-1})\Gamma(y_i + 1)} \left( \frac{\mu_i}{\mu_i + \phi^{-1}} \right)^{y_i}\left(1- \frac{\mu}{\mu_i + \phi^{-1}} \right)^{\phi^{-1}}
+\]</span></p>
+<p><span class="math display">\[
+\mu_i = e^{\eta_i}
+\]</span></p>
+<p><span class="math display">\[
+\mu_i = e^{\eta_i}
+\]</span></p>
+<p><span class="math display">\[
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+</section>
+<section id="gamma-regression" class="slide level2">
+<h2>Gamma Regression</h2>
+<ul>
+<li><strong>Gamma regression</strong> models positive continuous responses that are right-skewed.<br>
+</li>
+<li>Examples:
+<ul>
+<li>Waiting times</li>
+<li>Insurance claims</li>
+<li>Reaction times</li>
+</ul></li>
+</ul>
+</section>
+<section id="gamma-distribution" class="slide level2">
+<h2>Gamma Distribution</h2>
+<p><span class="math display">\[
+f(y) = \frac{1}{\Gamma(\alpha)\beta^\alpha}y^{\alpha-1}e^{-y/\beta}
+\]</span></p>
+<div class="fragment">
+<p>Let <span class="math inline">\(\alpha = 1/\psi\)</span> and <span class="math inline">\(\beta=\mu\psi\)</span> <span class="math display">\[
+f(y) = \frac{1}{\Gamma(1/\psi)}\left(\frac{1}{y}\right)\left(\frac{y}{\psi\mu}\right)^{1/\psi}e^{-\frac{y}{\psi\mu}}
+\]</span></p>
+</div>
+<div class="fragment">
+<p><span class="math display">\[
+\text{E}(Y) = \mu \quad \text{Var}(Y) = \psi \mu_i^2
+\]</span></p>
+</div>
+</section>
+<section id="the-inverse-link-function" class="slide level2">
+<h2>The inverse-link function</h2>
+<p>We relate the mean to predictors through a canonical link function:</p>
+<p><span class="math display">\[
+g(\mu_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+<p><span class="math display">\[
+g(\mu_i) = \frac{1}{\mu_i}
+\]</span></p>
+</section>
+<section id="the-log-link-function-2" class="slide level2">
+<h2>The log-link function</h2>
+<p>But the <strong>log link</strong> is often used for interpretability as well maintian a positive expected value:</p>
+<p><span class="math display">\[
+g(\mu) = \log(\mu)
+\]</span></p>
+</section>
+<section id="likelihood-function-3" class="slide level2">
+<h2>Likelihood Function</h2>
+<p><span class="math display">\[
+L(\boldsymbol \beta, \psi) = \prod^n_{i=1} \frac{1}{\Gamma(1/\psi)}\left(\frac{1}{y_i}\right)\left(\frac{y_i}{\psi\mu_i}\right)^{1/\psi}e^{-\frac{y_i}{\psi\mu_i}}
+\]</span></p>
+<p><span class="math display">\[
+\mu_i = \exp(\eta_i)
+\]</span></p>
+<p><span class="math display">\[
+\eta_i X_i^\mathrm T \boldsymbol \beta
+\]</span></p>
+</section>
+<section id="other-regression-models" class="slide level2">
+<h2>Other regression Models</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Binomial Models</li>
+<li>Beta Models</li>
+<li>Tweedie Models</li>
+<li>Cox Models</li>
+<li>Zero-Inflated Models
+<ul>
+<li>Poisson</li>
+<li>Negative Binomial</li>
+</ul></li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Log-Normal Models</li>
+<li>Beta-Binomial Models</li>
+<li>Multinomial Models</li>
+<li>Student Models</li>
+<li>Hurdle Models
+<ul>
+<li>Gamma</li>
+<li>Log-Normal</li>
+</ul></li>
+</ul>
+</div></div>
 
 
 <div class="reveal-header">

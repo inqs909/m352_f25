@@ -1,0 +1,390 @@
+---
+title: "GLM"
+subtitle: "Generalized Linear Models"
+format:
+  revealjs:
+    width: 1200
+    scrollable: true
+    theme: [default, styles.scss]
+    controls-tutorial: true
+    navigation-mode: vertical
+    incremental: false 
+    touch: false
+    controls: true
+    pointer:
+      pointerSize: 32
+    slide-number: true
+    sc-sb-title: h1
+    chalkboard:
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: false
+    message: false
+    warnings: false
+    comment: "#>" 
+
+editor: source
+
+revealjs-plugins:
+  - pointer
+  - verticator
+  
+filters: 
+  - reveal-header
+  - code-fullscreen
+  - reveal-auto-agenda
+  
+auto-agenda:
+  bullets: numbered
+  clickable: true
+---
+
+## Learning Outcomes
+
+-   Exponential Family of Distributions
+
+-   Generalized Linear Models
+
+-   Regression Models
+
+# Exponential Family of Distributions
+
+## Exponential Family of Distributions
+
+An exponential family of distributions are random variables that allow their probability density function to have the following form:
+
+$$
+f(x; \theta,\phi) = a(x,\phi)\exp\left\{\frac{x\theta-\kappa(\theta)}{\phi}\right\}
+$$
+
+-   $\theta$: is the canonical parameter (also a function of other parameters)
+
+-   $\kappa(\theta)$: is a known cumulant function
+
+-   $\phi>0$: dispersion parameter function
+
+-   $a(y,\phi)$: normalizing constant
+
+## Canonical Parameter
+
+The canonical parameter represents the relationship between the random variable and the $E(Y)=\mu$
+
+## Normal Distribution
+
+$$
+f(x;\mu,\sigma^2)=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+::: fragmet
+$$
+f(x;\mu,\sigma^2)= \frac{1}{\sqrt{2\pi \sigma^2}}\exp\left\{\frac{x\mu-\mu^2/2}{\sigma^2}-\frac{x^2}{2\sigma^2}\right\}
+$$
+:::
+
+## Binomial Distribution
+
+$$
+f(x;n,p) = \left(\begin{array}{c}n\\x\end{array}\right) p^x(1-p)^{n-p}
+$$
+
+::: fragment
+$$
+f(x;n,p) = \left(\begin{array}{c}n\\x\end{array}\right) \exp\left\{x\log\left(\frac{p}{1-p}\right) + n \log(1-p)\right\}
+$$
+:::
+
+## Distributions and Canonical Parameters
+
+| Random Variable   | Canonical Parameter                  |
+|-------------------|--------------------------------------|
+| Normal            | $\mu$                                |
+| Binomial          | $\log\left(\frac{\mu}{1-\mu}\right)$ |
+| Negative Binomial | $\log\left(\frac{\mu}{\mu+\phi^{-1}}\right)$ |
+| Poisson           | $\log(\mu)$                          |
+| Gamma             | $-\frac{1}{\mu}$                     |
+| Inverse Gaussian  | $-\frac{1}{2\mu^2}$                  |
+
+# Generalized Linear Models
+
+## Generalized Linear Models
+
+A generalized linear model (GLM) is used to model the association between an outcome variable (of any data type) and a set of predictor values. We estimate a set of regression coefficients $\boldsymbol \beta$ to explain how each predictor is related to the expected value of the outcome.
+
+## Generalized Linear Models
+
+A GLM is composed of a systematic and random component.
+
+## Random Component
+
+The random component is the random variable that defines the randomness and variation of the outcome variable.
+
+## Systematic Component
+
+The systematic component is the linear model that models the association between a set of predictors and the expected value of Y:
+
+$$
+g(\mu_i)=\eta_i=\boldsymbol X_i^\mathrm T \boldsymbol \beta
+$$
+
+-   $\boldsymbol\beta$: regression coefficients
+
+-   $\boldsymbol X_i=(1, X_{i1}, \ldots, X_{ik})^\mathrm T$: design vector
+
+-   $\eta$: linear model
+
+-   $\mu_i=E(Y_i)$
+
+-   $g(\cdot)$: link function
+
+# Regression Models
+
+## Logistic Regression
+
+- **Logistic Regression** models the probability that a binary outcome equals 1.
+- The model assumes a linear relationship between predictors and the log-odds of the outcome.
+- To map probabilities (0–1) to the real line, we use a link function. Usually the logit function.
+- Utilizes a Bernoulli Model
+
+## The logit Function
+
+$$
+g(p_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+$$
+g(p_i) = \log\left(\frac{p_i}{1 - p_i}\right)
+$$
+
+$$
+p_i = g^{-1}(\eta_i) = \frac{1}{1 + e^{-\eta_i}}
+$$
+
+
+## The logit Function
+
+- The logit link ensures predicted probabilities stay between 0 and 1.
+
+- Small changes in predictors can have nonlinear effects on probability.
+
+
+## Likelihood Function
+
+$$
+L(\boldsymbol \beta) = \prod^n_{i=1} p_i^{Y_i}(1-p_i)^{1-Y_i}
+$$
+
+$$
+L(\boldsymbol \beta) = \prod^n_{i=1} \left(\frac{1}{1 + e^{-\eta_i}}\right)^{Y_i}\left\{1-\frac{1}{1 + e^{-\eta_i}}\right\}^{1-Y_i}
+$$
+
+$$
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+
+## Poisson Regression
+
+- **Poisson regression** models are used for modeling **count data** (e.g., number of events per unit time or space).  
+- It assumes that the response variable $Y$ follows a **Poisson distribution**.
+- It is recommended not to use the regression model since the assumption is that $E(Y)=Var(y)$, which is unrealistic.
+    - It is recommended to use a negative binomial regression instead.
+
+## The Log Link Function
+
+For the Poisson model, the canonical link is the log link:
+
+$$
+g(\lambda_i) = \log(\lambda_i) = \eta_i
+$$
+
+This ensures that the predicted mean $\lambda_i$ is always **positive**, since:
+
+$$
+\lambda_i = e^{\eta_i}
+$$
+
+## Likelihood Function
+
+$$
+L(\boldsymbol \beta) = \prod^n_{i=1} \frac{e^{-\lambda_i}(\lambda_i)^{Y_i}}{Y_i!}
+$$
+
+$$
+L(\boldsymbol \beta) = \prod^n_{i=1} \frac{e^{-\exp(\eta_i)}(\exp(\eta_i))^{Y_i}}{Y_i!}
+$$
+
+$$
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+## Negative Binomial Regression
+
+- **Negative Binomial Regression ** is used for **overdispersed count data**,  
+  where the variance exceeds the mean.
+
+$$
+\text{Var}(Y_i) > E[Y_i]
+$$
+
+- It generalizes Poisson regression by introducing a **dispersion parameter**.
+
+- In real data, we often observe **overdispersion** (variance > mean).  
+  This leads to:
+  - Underestimated standard errors  
+
+## Negative Binomial Model
+
+The Negative Binomial can be derived as a **Poisson-Gamma mixture**:
+
+$$
+Y_i \mid \lambda_i \sim \text{Poisson}(\lambda_i), \quad
+\lambda_i \sim \text{Gamma}(\mu_i, \phi)
+$$
+
+Resulting in:
+
+$$
+E[Y_i] = \mu_i, \quad
+\text{Var}(Y_i) = \mu_i + \phi\mu_i^2
+$$
+
+where $\phi$ controls overdispersion.
+
+## Negative Binomial Model
+
+$$
+f(y) = \frac{\Gamma(y + \phi^{-1})}{\Gamma(\phi^{-1})\Gamma(y + 1)} \left( \frac{\mu}{\mu + \phi^{-1}} \right)^y\left(1- \frac{\mu}{\mu + \phi^{-1}} \right)^{\phi^{-1}}
+$$
+
+## The log link function
+
+Just like in Poisson regression, we use the **log link function**:
+
+$$
+g(\mu_i) = \log(\mu_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+and the inverse link:
+
+$$
+\mu_i = e^{\eta_i}
+$$
+
+:::: fragment
+::: callout-note
+
+Using the log-link function is different from our canonical parameter $\log\left(\frac{\mu}{\mu + \phi^{-1}}\right)$. This leads to more interpretable results.
+
+:::
+::::
+
+## Likelihood Function
+
+$$
+L(\boldsymbol \beta, \phi) = \prod^n_{i=1} \frac{\Gamma(y_i + \phi^{-1})}{\Gamma(\phi^{-1})\Gamma(y_i + 1)} \left( \frac{\mu_i}{\mu_i + \phi^{-1}} \right)^{y_i}\left(1- \frac{\mu}{\mu_i + \phi^{-1}} \right)^{\phi^{-1}}
+$$
+
+$$
+\mu_i = e^{\eta_i}
+$$
+
+$$
+\mu_i = e^{\eta_i}
+$$
+
+$$
+\eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+## Gamma Regression
+
+- **Gamma regression** models positive continuous responses that are right-skewed.  
+- Examples:
+  - Waiting times
+  - Insurance claims
+  - Reaction times
+
+
+## Gamma Distribution
+
+$$
+f(y) = \frac{1}{\Gamma(\alpha)\beta^\alpha}y^{\alpha-1}e^{-y/\beta}
+$$
+
+::: fragment
+
+Let $\alpha = 1/\psi$ and $\beta=\mu\psi$
+$$
+f(y) = \frac{1}{\Gamma(1/\psi)}\left(\frac{1}{y}\right)\left(\frac{y}{\psi\mu}\right)^{1/\psi}e^{-\frac{y}{\psi\mu}}
+$$
+
+:::
+
+::: fragment
+$$
+\text{E}(Y) = \mu \quad \text{Var}(Y) = \psi \mu_i^2
+$$
+:::
+
+
+
+
+## The inverse-link function
+
+We relate the mean to predictors through a canonical link function:
+
+$$
+g(\mu_i) = \eta_i = X_i^\mathrm T \boldsymbol \beta
+$$
+
+$$
+g(\mu_i) = \frac{1}{\mu_i}
+$$
+
+## The log-link function
+
+But the **log link** is often used for interpretability as well maintian a positive expected value:
+
+$$
+g(\mu) = \log(\mu)
+$$
+
+## Likelihood Function
+
+$$
+L(\boldsymbol \beta, \psi) = \prod^n_{i=1} \frac{1}{\Gamma(1/\psi)}\left(\frac{1}{y_i}\right)\left(\frac{y_i}{\psi\mu_i}\right)^{1/\psi}e^{-\frac{y_i}{\psi\mu_i}}
+$$
+
+$$
+\mu_i = \exp(\eta_i)
+$$
+
+$$
+\eta_i X_i^\mathrm T \boldsymbol \beta
+$$
+
+## Other regression Models
+
+:::: {.columns}
+::: {.column}
+- Binomial Models
+- Beta Models
+- Tweedie Models
+- Cox Models
+- Zero-Inflated Models
+    - Poisson
+    - Negative Binomial
+:::
+::: {.column}
+- Log-Normal Models
+- Beta-Binomial Models
+- Multinomial Models
+- Student Models
+- Hurdle Models
+    - Gamma
+    - Log-Normal
+:::
+::::

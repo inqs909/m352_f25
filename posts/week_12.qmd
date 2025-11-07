@@ -1,9 +1,9 @@
 ---
 title: "Week 12"
-date: 03-27-23
-description: This week, we will discuss functions of random variables and sampling distributions.
+date: 11-06-25
+description: This week, we will discuss generalized linear models.
 editor: source
-draft: true
+draft: falae
 editor_options: 
   chunk_output_type: console
 ---
@@ -14,14 +14,13 @@ editor_options:
 
 ## Resources
 
-### First Lecture
+### Lecture
 
-| Slides                                                 | Videos                                                                              | Notes                                                                                                         |
-|------------------|------------------------|------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_21.html) | [Video 001](https://youtu.be/duQs-oIzAoA) [Video 002](https://youtu.be/xrHrdQ7SxHs) | [Notes 001](https://m352.inqs.info/files/m_21_001.pdf) [Notes 002](https://m352.inqs.info/files/m_21_002.pdf) |
+[Thursday Slides](https://m352.inqs.info/lectures/12b)
 
-### Second Lecture
+### Videos
 
-| Slides                                                 | Videos                                                                              | Notes                                                                                                         |
-|------------------|------------------------|------------------------------|
-| [Slides](https://m352.inqs.info/files/lecture_22.html) | [Video 001](https://youtu.be/62ZNeK8LHDo)  | [Notes 001](https://m352.inqs.info/files/m_22_001.pdf)  |
+| Section | Thursday | 
+|---------|----------|
+| 001     | [Video]() |
+| 002     | [Video]() |

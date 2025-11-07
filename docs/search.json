@@ -140,6 +140,27 @@
     "text": "Important Concepts\n\nFirst Lecture\n\nDiscrete Variables\nA random variable is considered to be discrete if it can only map to a finite or countably infinite number of distinct values.\n\nPMF\nThe probability mass function of discrete variable can be represented by a formula, table, or a graph. The Probability of a random variable Y can be expressed as \\(P(Y=y)\\) for all values of \\(y\\).\n\n\nCDF\nThe cumulative distribution function provides the \\(P(Y\\leq y)\\) for a random variable \\(Y\\).\n\n\nCommonly Used Distributions\n\n\n\n\n\n\n\n\nDistribution\nParameter(s)\nPMF \\(P(Y=y)\\)\n\n\n\n\nBernoulli\n\\(p\\)\n\\(p\\)\n\n\nBinomial\n\\(n\\) and \\(p\\)\n\\((^n_y)p^y(1-p)^{n-y}\\)\n\n\nGeometric\n\\(p\\)\n\\((1-p)^{y-1}p\\)\n\n\nNegative Binomial\n\\(r\\) and \\(p\\)\n\\((^{y-1}_{r-1})p^{r-1}(1-p)^{y-r}\\)\n\n\nHypergeometric\n\\(N\\), \\(n\\), and \\(r\\)\n\\(\\frac{(^r_y)(^{N-r}_{n-y})}{(^N_n)}\\)\n\n\nPoisson\n\\(\\lambda\\)\n\\(\\frac{\\lambda^y}{y!} e^{-\\lambda}\\)\n\n\n\n\n\n\n\nSecond Lecture\n\nExpected Value\nThe expected value is the value we expect when we randomly sample from population that follows a specific distribution. The expected value of a discrete random variable is \\(Y\\) with PMF of \\(P(y)\\) is\n\\[\nE(Y)=\\sum_y yP(y)\n\\]\n\n\nExpected Value Properties\nSpecial properties of the expected value:\n\n\\(E(c)=c\\), where \\(c\\) is constant\n\\(E\\{cg(Y)\\}=cE\\{g(Y)\\}\\)\n\\(E\\{g_1(Y)+\\cdots+g_n(Y)\\}=E\\{g_1(Y)\\}+\\cdots+E\\{g_n(Y)\\}\\)\n\n\n\nVariance\nThe variance represents the variation of a random variable. The variance for a random variable Y is\n\\[\nVar(Y) = E[\\{Y-E(Y)\\}^2]\n\\]"
   },
   {
+    "objectID": "posts/week_12.html",
+    "href": "posts/week_12.html",
+    "title": "Week 12",
+    "section": "",
+    "text": "Generalized Linear Models"
+  },
+  {
+    "objectID": "posts/week_12.html#learning-outcomes",
+    "href": "posts/week_12.html#learning-outcomes",
+    "title": "Week 12",
+    "section": "",
+    "text": "Generalized Linear Models"
+  },
+  {
+    "objectID": "posts/week_12.html#resources",
+    "href": "posts/week_12.html#resources",
+    "title": "Week 12",
+    "section": "Resources",
+    "text": "Resources\n\nLecture\nThursday Slides\n\n\nVideos\n\n\n\nSection\nThursday\n\n\n\n\n001\nVideo\n\n\n002\nVideo"
+  },
+  {
     "objectID": "posts/week_11.html",
     "href": "posts/week_11.html",
     "title": "Week 11",
@@ -2310,501 +2331,200 @@
     "text": "Sampling Distributions\n\n\n\\(\\phi\\) known\n\\[\n\\frac{\\hat\\beta_j - \\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim N(0,1)\n\\]\n\n\\(\\phi\\) unknown\n\\[\n\\frac{\\hat\\beta_j-\\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim t_{n-p^\\prime}\n\\]"
   },
   {
-    "objectID": "lectures/12a.html#learning-outcomes",
-    "href": "lectures/12a.html#learning-outcomes",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#learning-outcomes",
+    "href": "lectures/12b.html#learning-outcomes",
+    "title": "GLM",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nExponential Family of Distributions\nGeneralized Linear Models"
+    "text": "Learning Outcomes\n\nExponential Family of Distributions\nGeneralized Linear Models\nRegression Models"
   },
   {
-    "objectID": "lectures/12a.html#exponential-family-of-distributions-1",
-    "href": "lectures/12a.html#exponential-family-of-distributions-1",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#exponential-family-of-distributions-1",
+    "href": "lectures/12b.html#exponential-family-of-distributions-1",
+    "title": "GLM",
     "section": "Exponential Family of Distributions",
-    "text": "Exponential Family of Distributions\nAn exponential family of distributions are random variables that allow their probability density function to have the following form:\n\\[\nf(y; \\theta,\\phi) = a(y,\\phi)\\exp\\left\\{\\frac{y\\theta-\\kappa(\\theta)}{\\phi}\\right\\}\n\\]\n\n\\(\\theta\\): is the canonical parameter (also a function of other parameters)\n\\(\\kappa(\\theta)\\): is a known cumulant function\n\\(\\phi&gt;0\\): dispersion parameter function\n\\(a(y,\\phi)\\): normalizing constant"
+    "text": "Exponential Family of Distributions\nAn exponential family of distributions are random variables that allow their probability density function to have the following form:\n\\[\nf(x; \\theta,\\phi) = a(x,\\phi)\\exp\\left\\{\\frac{x\\theta-\\kappa(\\theta)}{\\phi}\\right\\}\n\\]\n\n\\(\\theta\\): is the canonical parameter (also a function of other parameters)\n\\(\\kappa(\\theta)\\): is a known cumulant function\n\\(\\phi&gt;0\\): dispersion parameter function\n\\(a(y,\\phi)\\): normalizing constant"
   },
   {
-    "objectID": "lectures/12a.html#canonical-parameter",
-    "href": "lectures/12a.html#canonical-parameter",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#canonical-parameter",
+    "href": "lectures/12b.html#canonical-parameter",
+    "title": "GLM",
     "section": "Canonical Parameter",
     "text": "Canonical Parameter\nThe canonical parameter represents the relationship between the random variable and the \\(E(Y)=\\mu\\)"
   },
   {
-    "objectID": "lectures/12a.html#normal-distribution",
-    "href": "lectures/12a.html#normal-distribution",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#normal-distribution",
+    "href": "lectures/12b.html#normal-distribution",
+    "title": "GLM",
     "section": "Normal Distribution",
-    "text": "Normal Distribution\n\\[\nf(x;\\mu,\\sigma^2)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\]"
+    "text": "Normal Distribution\n\\[\nf(x;\\mu,\\sigma^2)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\]\n\n\\[\nf(x;\\mu,\\sigma^2)= \\frac{1}{\\sqrt{2\\pi \\sigma^2}}\\exp\\left\\{\\frac{x\\mu-\\mu^2/2}{\\sigma^2}-\\frac{x^2}{2\\sigma^2}\\right\\}\n\\]"
   },
   {
-    "objectID": "lectures/12a.html#binomial-distribution",
-    "href": "lectures/12a.html#binomial-distribution",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#binomial-distribution",
+    "href": "lectures/12b.html#binomial-distribution",
+    "title": "GLM",
     "section": "Binomial Distribution",
-    "text": "Binomial Distribution\n\\[\nf(x;n,p)=\\big(^n_x\\big) p^x(1-p)^{n-x}\n\\]"
+    "text": "Binomial Distribution\n\\[\nf(x;n,p) = \\left(\\begin{array}{c}n\\\\x\\end{array}\\right) p^x(1-p)^{n-p}\n\\]\n\n\\[\nf(x;n,p) = \\left(\\begin{array}{c}n\\\\x\\end{array}\\right) \\exp\\left\\{x\\log\\left(\\frac{p}{1-p}\\right) + n \\log(1-p)\\right\\}\n\\]"
   },
   {
-    "objectID": "lectures/12a.html#poisson-distribution",
-    "href": "lectures/12a.html#poisson-distribution",
-    "title": "Generalized Linear Models",
-    "section": "Poisson Distribution",
-    "text": "Poisson Distribution\n\\[\nf(x;\\lambda) = \\frac{e^{-\\lambda}\\lambda^x}{x!}\n\\]"
+    "objectID": "lectures/12b.html#distributions-and-canonical-parameters",
+    "href": "lectures/12b.html#distributions-and-canonical-parameters",
+    "title": "GLM",
+    "section": "Distributions and Canonical Parameters",
+    "text": "Distributions and Canonical Parameters\n\n\n\nRandom Variable\nCanonical Parameter\n\n\n\n\nNormal\n\\(\\mu\\)\n\n\nBinomial\n\\(\\log\\left(\\frac{\\mu}{1-\\mu}\\right)\\)\n\n\nNegative Binomial\n\\(\\log\\left(\\frac{\\mu}{\\mu+\\phi^{-1}}\\right)\\)\n\n\nPoisson\n\\(\\log(\\mu)\\)\n\n\nGamma\n\\(-\\frac{1}{\\mu}\\)\n\n\nInverse Gaussian\n\\(-\\frac{1}{2\\mu^2}\\)"
   },
   {
-    "objectID": "lectures/12a.html#common-distributions-and-canonical-parameters",
-    "href": "lectures/12a.html#common-distributions-and-canonical-parameters",
-    "title": "Generalized Linear Models",
-    "section": "Common Distributions and Canonical Parameters",
-    "text": "Common Distributions and Canonical Parameters\n\n\n\nRandom Variable\nCanonical Parameter\n\n\n\n\nNormal\n\\(\\mu\\)\n\n\nBinomial\n\\(\\log\\left(\\frac{\\mu}{1-\\mu}\\right)\\)\n\n\nNegative Binomial\n\\(\\log\\left(\\frac{\\mu}{\\mu+k}\\right)\\)\n\n\nPoisson\n\\(\\log(\\mu)\\)\n\n\nGamma\n\\(-\\frac{1}{\\mu}\\)\n\n\nInverse Gaussian\n\\(-\\frac{1}{2\\mu^2}\\)"
-  },
-  {
-    "objectID": "lectures/12a.html#generalized-linear-models-1",
-    "href": "lectures/12a.html#generalized-linear-models-1",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#generalized-linear-models-1",
+    "href": "lectures/12b.html#generalized-linear-models-1",
+    "title": "GLM",
     "section": "Generalized Linear Models",
     "text": "Generalized Linear Models\nA generalized linear model (GLM) is used to model the association between an outcome variable (of any data type) and a set of predictor values. We estimate a set of regression coefficients \\(\\boldsymbol \\beta\\) to explain how each predictor is related to the expected value of the outcome."
   },
   {
-    "objectID": "lectures/12a.html#generalized-linear-models-2",
-    "href": "lectures/12a.html#generalized-linear-models-2",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#generalized-linear-models-2",
+    "href": "lectures/12b.html#generalized-linear-models-2",
+    "title": "GLM",
     "section": "Generalized Linear Models",
     "text": "Generalized Linear Models\nA GLM is composed of a systematic and random component."
   },
   {
-    "objectID": "lectures/12a.html#random-component",
-    "href": "lectures/12a.html#random-component",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#random-component",
+    "href": "lectures/12b.html#random-component",
+    "title": "GLM",
     "section": "Random Component",
     "text": "Random Component\nThe random component is the random variable that defines the randomness and variation of the outcome variable."
   },
   {
-    "objectID": "lectures/12a.html#systematic-component",
-    "href": "lectures/12a.html#systematic-component",
-    "title": "Generalized Linear Models",
+    "objectID": "lectures/12b.html#systematic-component",
+    "href": "lectures/12b.html#systematic-component",
+    "title": "GLM",
     "section": "Systematic Component",
-    "text": "Systematic Component\nThe systematic component is the linear model that models the association between a set of predictors and the expected value of Y:\n\\[\ng(\\mu)=\\eta=\\boldsymbol X_i^\\mathrm T \\boldsymbol \\beta\n\\]\n\n\\(\\boldsymbol\\beta\\): regression coefficients\n\\(\\boldsymbol X_i=(1, X_{i1}, \\ldots, X_{ip})^\\mathrm T\\): design vector\n\\(\\eta\\): linear model\n\\(\\mu=E(Y)\\)\n\\(g(\\cdot)\\): link function"
+    "text": "Systematic Component\nThe systematic component is the linear model that models the association between a set of predictors and the expected value of Y:\n\\[\ng(\\mu_i)=\\eta_i=\\boldsymbol X_i^\\mathrm T \\boldsymbol \\beta\n\\]\n\n\\(\\boldsymbol\\beta\\): regression coefficients\n\\(\\boldsymbol X_i=(1, X_{i1}, \\ldots, X_{ik})^\\mathrm T\\): design vector\n\\(\\eta\\): linear model\n\\(\\mu_i=E(Y_i)\\)\n\\(g(\\cdot)\\): link function"
   },
   {
-    "objectID": "lectures/11a.html#learning-outcomes",
-    "href": "lectures/11a.html#learning-outcomes",
-    "title": "Linear Regression",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nScatter Plot\nLinear Regression\nOrdinary Least Squares\nUnbiasedness"
+    "objectID": "lectures/12b.html#logistic-regression",
+    "href": "lectures/12b.html#logistic-regression",
+    "title": "GLM",
+    "section": "Logistic Regression",
+    "text": "Logistic Regression\n\nLogistic Regression models the probability that a binary outcome equals 1.\nThe model assumes a linear relationship between predictors and the log-odds of the outcome.\nTo map probabilities (0–1) to the real line, we use a link function. Usually the logit function.\nUtilizes a Bernoulli Model"
   },
   {
-    "objectID": "lectures/11a.html#scatter-plot-1",
-    "href": "lectures/11a.html#scatter-plot-1",
-    "title": "Linear Regression",
-    "section": "Scatter Plot",
-    "text": "Scatter Plot"
+    "objectID": "lectures/12b.html#the-logit-function",
+    "href": "lectures/12b.html#the-logit-function",
+    "title": "GLM",
+    "section": "The logit Function",
+    "text": "The logit Function\n\\[\ng(p_i) = \\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]\n\\[\ng(p_i) = \\log\\left(\\frac{p_i}{1 - p_i}\\right)\n\\]\n\\[\np_i = g^{-1}(\\eta_i) = \\frac{1}{1 + e^{-\\eta_i}}\n\\]"
   },
   {
-    "objectID": "lectures/11a.html#scatter-plot-2",
-    "href": "lectures/11a.html#scatter-plot-2",
-    "title": "Linear Regression",
-    "section": "Scatter Plot",
-    "text": "Scatter Plot"
+    "objectID": "lectures/12b.html#the-logit-function-1",
+    "href": "lectures/12b.html#the-logit-function-1",
+    "title": "GLM",
+    "section": "The logit Function",
+    "text": "The logit Function\n\nThe logit link ensures predicted probabilities stay between 0 and 1.\nSmall changes in predictors can have nonlinear effects on probability."
   },
   {
-    "objectID": "lectures/11a.html#linear-regression-1",
-    "href": "lectures/11a.html#linear-regression-1",
-    "title": "Linear Regression",
-    "section": "Linear Regression",
-    "text": "Linear Regression\nLinear regression is used to model the association between a set of predictor variables (x’s) and an outcome variable (y). Linear regression will fit a line that best describes the data points."
-  },
-  {
-    "objectID": "lectures/11a.html#simple-linear-regression",
-    "href": "lectures/11a.html#simple-linear-regression",
-    "title": "Linear Regression",
-    "section": "Simple Linear Regression",
-    "text": "Simple Linear Regression\nSimple linear regression will model the association between one predictor variable and an outcome:\n\\[\nY = \\beta_0 + \\beta_1 X + \\epsilon\n\\]\n\n\\(\\beta_0\\): Intercept term\n\\(\\beta_1\\): Slope term\n\\(\\epsilon\\sim N(0,\\sigma^2)\\)"
-  },
-  {
-    "objectID": "lectures/11a.html#fitting-a-line",
-    "href": "lectures/11a.html#fitting-a-line",
-    "title": "Linear Regression",
-    "section": "Fitting a Line",
-    "text": "Fitting a Line"
-  },
-  {
-    "objectID": "lectures/11a.html#interpretation",
-    "href": "lectures/11a.html#interpretation",
-    "title": "Linear Regression",
-    "section": "Interpretation",
-    "text": "Interpretation\n\\[\n\\hat y = 136.73 + 0.015 x\n\\]"
-  },
-  {
-    "objectID": "lectures/11a.html#ordinary-least-squares-1",
-    "href": "lectures/11a.html#ordinary-least-squares-1",
-    "title": "Linear Regression",
-    "section": "Ordinary Least Squares",
-    "text": "Ordinary Least Squares\nFor a data pair \\((X_i,Y_i)_{i=1}^n\\), the ordinary least squares estimator will find the estimates of \\(\\hat\\beta_0\\) and \\(\\hat\\beta_1\\) that minimize the following function:\n\\[\n\\sum^n_{i=1}\\{y_i-(\\beta_0+\\beta_1x_i)\\}^2\n\\]"
-  },
-  {
-    "objectID": "lectures/11a.html#estimating-betas",
-    "href": "lectures/11a.html#estimating-betas",
-    "title": "Linear Regression",
-    "section": "Estimating \\(\\beta\\)’s",
-    "text": "Estimating \\(\\beta\\)’s"
-  },
-  {
-    "objectID": "lectures/11a.html#estimating-beta_1",
-    "href": "lectures/11a.html#estimating-beta_1",
-    "title": "Linear Regression",
-    "section": "Estimating \\(\\beta_1\\)",
-    "text": "Estimating \\(\\beta_1\\)"
-  },
-  {
-    "objectID": "lectures/11a.html#estimating-beta_0",
-    "href": "lectures/11a.html#estimating-beta_0",
-    "title": "Linear Regression",
-    "section": "Estimating \\(\\beta_0\\)",
-    "text": "Estimating \\(\\beta_0\\)"
-  },
-  {
-    "objectID": "lectures/11a.html#estimates",
-    "href": "lectures/11a.html#estimates",
-    "title": "Linear Regression",
-    "section": "Estimates",
-    "text": "Estimates\n\\[\n\\hat\\beta_0 = \\bar y - \\hat\\beta_1\\bar x\n\\] \\[\n\\hat\\beta_1 = \\frac{\\sum^n_{i=1}(y_i-\\bar y)(x_i-\\bar x)}{\\sum^n_{i=1}(x_i-\\bar x)^2}\n\\] \\[\n\\hat\\sigma^2 = \\frac{1}{n-2}\\sum^n_{i=1}(y_i-\\hat y_i)^2\n\\]"
-  },
-  {
-    "objectID": "lectures/11a.html#unbiasedness-of-betas-1",
-    "href": "lectures/11a.html#unbiasedness-of-betas-1",
-    "title": "Linear Regression",
-    "section": "Unbiasedness of \\(\\beta\\)’s",
-    "text": "Unbiasedness of \\(\\beta\\)’s\nBoth \\(\\beta_0\\) and \\(\\beta_1\\) are unbiased estimators."
-  },
-  {
-    "objectID": "lectures/11a.html#ebeta_0",
-    "href": "lectures/11a.html#ebeta_0",
-    "title": "Linear Regression",
-    "section": "\\(E(\\beta_0)\\)",
-    "text": "\\(E(\\beta_0)\\)"
-  },
-  {
-    "objectID": "lectures/11a.html#ebeta_1",
-    "href": "lectures/11a.html#ebeta_1",
-    "title": "Linear Regression",
-    "section": "\\(E(\\beta_1)\\)",
-    "text": "\\(E(\\beta_1)\\)"
-  },
-  {
-    "objectID": "lectures/10a.html#learning-outcomes",
-    "href": "lectures/10a.html#learning-outcomes",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nMaximum Likelihood Estimators\nLog-Likelihood Functions"
-  },
-  {
-    "objectID": "lectures/10a.html#estimators",
-    "href": "lectures/10a.html#estimators",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Estimators",
-    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets a parameter, using measurements from a sample."
-  },
-  {
-    "objectID": "lectures/10a.html#data",
-    "href": "lectures/10a.html#data",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Data",
-    "text": "Data\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}F(\\boldsymbol \\theta)\\) where \\(F(\\cdot)\\) is a known distribution function and \\(\\boldsymbol\\theta\\) is a vector of parameters. Let \\(\\boldsymbol X = (X_1,\\ldots, X_n)^\\mathrm{T}\\), be the sample collected."
-  },
-  {
-    "objectID": "lectures/10a.html#likelihood-function",
-    "href": "lectures/10a.html#likelihood-function",
-    "title": "Maximum Likelihood Estimators",
+    "objectID": "lectures/12b.html#likelihood-function",
+    "href": "lectures/12b.html#likelihood-function",
+    "title": "GLM",
     "section": "Likelihood Function",
-    "text": "Likelihood Function\nUsing the joint pdf or pmf of the sample \\(\\boldsymbol X\\), the likelihood function is a function of \\(\\boldsymbol \\theta\\), given the observed data \\(\\boldsymbol X =\\boldsymbol x\\), defined as\n\\[\nL(\\boldsymbol \\theta|\\boldsymbol x)=f(\\boldsymbol x|\\boldsymbol \\theta)\n\\]\nIf the data is iid, then\n\\[\nf(\\boldsymbol x|\\boldsymbol \\theta) = \\prod^n_{i=1}f(x_i|\\boldsymbol\\theta)\n\\]"
+    "text": "Likelihood Function\n\\[\nL(\\boldsymbol \\beta) = \\prod^n_{i=1} p_i^{Y_i}(1-p_i)^{1-Y_i}\n\\]\n\\[\nL(\\boldsymbol \\beta) = \\prod^n_{i=1} \\left(\\frac{1}{1 + e^{-\\eta_i}}\\right)^{Y_i}\\left\\{1-\\frac{1}{1 + e^{-\\eta_i}}\\right\\}^{1-Y_i}\n\\]\n\\[\n\\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]"
   },
   {
-    "objectID": "lectures/10a.html#log-likelihood-function",
-    "href": "lectures/10a.html#log-likelihood-function",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Log-Likelihood Function",
-    "text": "Log-Likelihood Function\nIf \\(\\ln\\{L(\\boldsymbol \\theta)\\}\\) is monotone of \\(\\boldsymbol \\theta\\), then maximizing \\(\\ell(\\boldsymbol\\theta) = \\ln\\{L(\\boldsymbol \\theta)\\}\\) will yield the maximum likelihood estimators."
+    "objectID": "lectures/12b.html#poisson-regression",
+    "href": "lectures/12b.html#poisson-regression",
+    "title": "GLM",
+    "section": "Poisson Regression",
+    "text": "Poisson Regression\n\nPoisson regression models are used for modeling count data (e.g., number of events per unit time or space).\n\nIt assumes that the response variable \\(Y\\) follows a Poisson distribution.\nIt is recommended not to use the regression model since the assumption is that \\(E(Y)=Var(y)\\), which is unrealistic.\n\nIt is recommended to use a negative binomial regression instead."
   },
   {
-    "objectID": "lectures/10a.html#maximum-log-likelihood-estimator",
-    "href": "lectures/10a.html#maximum-log-likelihood-estimator",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Maximum log-Likelihood Estimator",
-    "text": "Maximum log-Likelihood Estimator\nThe maximum likelihood estimator are the estimates of \\(\\boldsymbol \\theta\\) that maximize \\(\\ell(\\boldsymbol\\theta)\\)."
+    "objectID": "lectures/12b.html#the-log-link-function",
+    "href": "lectures/12b.html#the-log-link-function",
+    "title": "GLM",
+    "section": "The Log Link Function",
+    "text": "The Log Link Function\nFor the Poisson model, the canonical link is the log link:\n\\[\ng(\\lambda_i) = \\log(\\lambda_i) = \\eta_i\n\\]\nThis ensures that the predicted mean \\(\\lambda_i\\) is always positive, since:\n\\[\n\\lambda_i = e^{\\eta_i}\n\\]"
   },
   {
-    "objectID": "lectures/10a.html#poisson-distribution",
-    "href": "lectures/10a.html#poisson-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Poisson Distribution",
-    "text": "Poisson Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Pois}(\\lambda)\\), show that the MLE of \\(\\lambda\\) is \\(\\bar x\\)."
+    "objectID": "lectures/12b.html#likelihood-function-1",
+    "href": "lectures/12b.html#likelihood-function-1",
+    "title": "GLM",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\n\\[\nL(\\boldsymbol \\beta) = \\prod^n_{i=1} \\frac{e^{-\\lambda_i}(\\lambda_i)^{Y_i}}{Y_i!}\n\\]\n\\[\nL(\\boldsymbol \\beta) = \\prod^n_{i=1} \\frac{e^{-\\exp(\\eta_i)}(\\exp(\\eta_i))^{Y_i}}{Y_i!}\n\\]\n\\[\n\\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]"
   },
   {
-    "objectID": "lectures/10a.html#normal-distribution",
-    "href": "lectures/10a.html#normal-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Normal Distribution",
-    "text": "Normal Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\). Show that the MLE’s of \\(\\mu\\) and \\(\\sigma^2\\) are \\(\\bar x\\) and \\(\\frac{n-1}{n}s^2\\), respectively."
+    "objectID": "lectures/12b.html#negative-binomial-regression",
+    "href": "lectures/12b.html#negative-binomial-regression",
+    "title": "GLM",
+    "section": "Negative Binomial Regression",
+    "text": "Negative Binomial Regression\n\nNegative Binomial Regression  is used for overdispersed count data,\nwhere the variance exceeds the mean.\n\n\\[\n\\text{Var}(Y_i) &gt; E[Y_i]\n\\]\n\nIt generalizes Poisson regression by introducing a dispersion parameter.\nIn real data, we often observe overdispersion (variance &gt; mean).\nThis leads to:\n\nUnderestimated standard errors"
   },
   {
-    "objectID": "lectures/10a.html#exponential-distribution",
-    "href": "lectures/10a.html#exponential-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Exponential Distribution",
-    "text": "Exponential Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}Exp(\\lambda)\\). Find the MLE of \\(\\lambda\\)"
+    "objectID": "lectures/12b.html#negative-binomial-model",
+    "href": "lectures/12b.html#negative-binomial-model",
+    "title": "GLM",
+    "section": "Negative Binomial Model",
+    "text": "Negative Binomial Model\nThe Negative Binomial can be derived as a Poisson-Gamma mixture:\n\\[\nY_i \\mid \\lambda_i \\sim \\text{Poisson}(\\lambda_i), \\quad\n\\lambda_i \\sim \\text{Gamma}(\\mu_i, \\phi)\n\\]\nResulting in:\n\\[\nE[Y_i] = \\mu_i, \\quad\n\\text{Var}(Y_i) = \\mu_i + \\phi\\mu_i^2\n\\]\nwhere \\(\\phi\\) controls overdispersion."
   },
   {
-    "objectID": "hws/hw5.html",
-    "href": "hws/hw5.html",
-    "title": "Homework 5",
-    "section": "",
-    "text": "Submit your homework on Canvas as one PDF document.\n\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n(\\theta + 1)x^\\theta& 0\\le x\\le 1;\\theta&gt;-1 \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nFind the MLE for \\theta.\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n\\frac{1}{\\Gamma(\\alpha)\\theta^\\alpha}x^{\\alpha-1}e^{-x/\\theta} & 0&lt;x;0&lt; \\theta \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nwhere \\alpha&gt;0 is known. Find the MLE for \\theta.\nLet X_1, \\ldots, X_n\\overset{iid}{\\sim}Geo(p), what is the MLE of p."
+    "objectID": "lectures/12b.html#negative-binomial-model-1",
+    "href": "lectures/12b.html#negative-binomial-model-1",
+    "title": "GLM",
+    "section": "Negative Binomial Model",
+    "text": "Negative Binomial Model\n\\[\nf(y) = \\frac{\\Gamma(y + \\phi^{-1})}{\\Gamma(\\phi^{-1})\\Gamma(y + 1)} \\left( \\frac{\\mu}{\\mu + \\phi^{-1}} \\right)^y\\left(1- \\frac{\\mu}{\\mu + \\phi^{-1}} \\right)^{\\phi^{-1}}\n\\]"
   },
   {
-    "objectID": "hws/hw3.html",
-    "href": "hws/hw3.html",
-    "title": "Homework 3",
-    "section": "",
-    "text": "Submit the assignment as one PDF file. Due October 5th, 2025 at 11:59 PM."
+    "objectID": "lectures/12b.html#the-log-link-function-1",
+    "href": "lectures/12b.html#the-log-link-function-1",
+    "title": "GLM",
+    "section": "The log link function",
+    "text": "The log link function\nJust like in Poisson regression, we use the log link function:\n\\[\ng(\\mu_i) = \\log(\\mu_i) = \\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]\nand the inverse link:\n\\[\n\\mu_i = e^{\\eta_i}\n\\]\n\n\n\n\n\n\n\nNote\n\n\nUsing the log-link function is different from our canonical parameter \\(\\log\\left(\\frac{\\mu}{\\mu + \\phi^{-1}}\\right)\\). This leads to more interpretable results."
   },
   {
-    "objectID": "hws/hw3.html#problem-1",
-    "href": "hws/hw3.html#problem-1",
-    "title": "Homework 3",
-    "section": "Problem 1",
-    "text": "Problem 1\nProblem from Probability 4 Data Science Chapter 4: Exercises 2"
+    "objectID": "lectures/12b.html#likelihood-function-2",
+    "href": "lectures/12b.html#likelihood-function-2",
+    "title": "GLM",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\n\\[\nL(\\boldsymbol \\beta, \\phi) = \\prod^n_{i=1} \\frac{\\Gamma(y_i + \\phi^{-1})}{\\Gamma(\\phi^{-1})\\Gamma(y_i + 1)} \\left( \\frac{\\mu_i}{\\mu_i + \\phi^{-1}} \\right)^{y_i}\\left(1- \\frac{\\mu}{\\mu_i + \\phi^{-1}} \\right)^{\\phi^{-1}}\n\\]\n\\[\n\\mu_i = e^{\\eta_i}\n\\]\n\\[\n\\mu_i = e^{\\eta_i}\n\\]\n\\[\n\\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]"
   },
   {
-    "objectID": "hws/hw3.html#problem-2",
-    "href": "hws/hw3.html#problem-2",
-    "title": "Homework 3",
-    "section": "Problem 2",
-    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 4: Exercises 3"
+    "objectID": "lectures/12b.html#gamma-regression",
+    "href": "lectures/12b.html#gamma-regression",
+    "title": "GLM",
+    "section": "Gamma Regression",
+    "text": "Gamma Regression\n\nGamma regression models positive continuous responses that are right-skewed.\n\nExamples:\n\nWaiting times\nInsurance claims\nReaction times"
   },
   {
-    "objectID": "hws/hw3.html#problem-3",
-    "href": "hws/hw3.html#problem-3",
-    "title": "Homework 3",
-    "section": "Problem 3",
-    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 4: Exercises 4"
+    "objectID": "lectures/12b.html#gamma-distribution",
+    "href": "lectures/12b.html#gamma-distribution",
+    "title": "GLM",
+    "section": "Gamma Distribution",
+    "text": "Gamma Distribution\n\\[\nf(y) = \\frac{1}{\\Gamma(\\alpha)\\beta^\\alpha}y^{\\alpha-1}e^{-y/\\beta}\n\\]\n\nLet \\(\\alpha = 1/\\psi\\) and \\(\\beta=\\mu\\psi\\) \\[\nf(y) = \\frac{1}{\\Gamma(1/\\psi)}\\left(\\frac{1}{y}\\right)\\left(\\frac{y}{\\psi\\mu}\\right)^{1/\\psi}e^{-\\frac{y}{\\psi\\mu}}\n\\]\n\n\n\\[\n\\text{E}(Y) = \\mu \\quad \\text{Var}(Y) = \\psi \\mu_i^2\n\\]"
   },
   {
-    "objectID": "hws/hw3.html#problem-4",
-    "href": "hws/hw3.html#problem-4",
-    "title": "Homework 3",
-    "section": "Problem 4",
-    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 4: Exercises 5"
+    "objectID": "lectures/12b.html#the-inverse-link-function",
+    "href": "lectures/12b.html#the-inverse-link-function",
+    "title": "GLM",
+    "section": "The inverse-link function",
+    "text": "The inverse-link function\nWe relate the mean to predictors through a canonical link function:\n\\[\ng(\\mu_i) = \\eta_i = X_i^\\mathrm T \\boldsymbol \\beta\n\\]\n\\[\ng(\\mu_i) = \\frac{1}{\\mu_i}\n\\]"
   },
   {
-    "objectID": "hws/hw3.html#problem-5",
-    "href": "hws/hw3.html#problem-5",
-    "title": "Homework 3",
-    "section": "Problem 5",
-    "text": "Problem 5\nShow that the Expected Value of a \\mathrm{Beta}(\\alpha, \\beta) random variable is \\frac{\\alpha}{\\alpha + \\beta}"
+    "objectID": "lectures/12b.html#the-log-link-function-2",
+    "href": "lectures/12b.html#the-log-link-function-2",
+    "title": "GLM",
+    "section": "The log-link function",
+    "text": "The log-link function\nBut the log link is often used for interpretability as well maintian a positive expected value:\n\\[\ng(\\mu) = \\log(\\mu)\n\\]"
   },
   {
-    "objectID": "hws/hw0.html",
-    "href": "hws/hw0.html",
-    "title": "Homework 0",
-    "section": "",
-    "text": "If you plan to submit this assignment, please try to submit the assignment as 1 PDF if possible."
+    "objectID": "lectures/12b.html#likelihood-function-3",
+    "href": "lectures/12b.html#likelihood-function-3",
+    "title": "GLM",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\n\\[\nL(\\boldsymbol \\beta, \\psi) = \\prod^n_{i=1} \\frac{1}{\\Gamma(1/\\psi)}\\left(\\frac{1}{y_i}\\right)\\left(\\frac{y_i}{\\psi\\mu_i}\\right)^{1/\\psi}e^{-\\frac{y_i}{\\psi\\mu_i}}\n\\]\n\\[\n\\mu_i = \\exp(\\eta_i)\n\\]\n\\[\n\\eta_i X_i^\\mathrm T \\boldsymbol \\beta\n\\]"
   },
   {
-    "objectID": "hws/hw0.html#footnotes",
-    "href": "hws/hw0.html#footnotes",
-    "title": "Homework 0",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nEither convert to summation notation or evaluate the summation.↩︎"
-  },
-  {
-    "objectID": "exc/exc4.html",
-    "href": "exc/exc4.html",
-    "title": "Extra Credit 3",
-    "section": "",
-    "text": "Create a video essay on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://towardsdatascience.com/an-overview-of-monte-carlo-methods-675384eb1694\nhttps://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
-  },
-  {
-    "objectID": "ec.html",
-    "href": "ec.html",
-    "title": "Extra Credit",
-    "section": "",
-    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "exc/exc1.html",
-    "href": "exc/exc1.html",
-    "title": "Extra Credit 1",
-    "section": "",
-    "text": "Write a 2-page report practices related to self care. As you move on through college and your future careers, it is important to practice self care. For this extra credit assignments, write about what are some practices you will do to for your well being.\nWorth 1 percent points.\nReport guidelines\n\n2-3 Pages\nDouble Spaced\n12 point font\nDue 9/21/2025"
-  },
-  {
-    "objectID": "exc/exc3.html",
-    "href": "exc/exc3.html",
-    "title": "Extra Credit 2",
-    "section": "",
-    "text": "Create a video essay on Survival Analysis. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Survival Analysis in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394262/\nhttps://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_survival/BS704_Survival_print.html\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
-  },
-  {
-    "objectID": "exc/exc5.html",
-    "href": "exc/exc5.html",
-    "title": "Extra Credit 4",
-    "section": "",
-    "text": "After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.\nBooks:\n\nEmpire of AI\n\nKaren Hao\n\nThe Last Human Job\n\nAllison Pugh\n\nThe Book of Why\n\nJudea Pearl\n\nAlgorithms of Oppression\n\nSafiya Umoja Noble\n\nData Feminism\n\nCatherine D’Ignazio and Lauren Klein\n\nWeapons of Math Destruction\n\nCathy O’Niel\n\nInvisible Women : data bias in a world designed for men\n\nCaroline Criado Perez\n\nFactfulness: Ten Reasons We’re Wrong About the World… and Why Things are Better Than You Think\n\nHans Rosling\n\nArtificial Unintelligence: How Computers Misunderstand the World\n\nMerideth Broussard\n\nTechnically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech\n\nSara Wachter-Boettcher\n\nOR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
-  },
-  {
-    "objectID": "hw.html",
-    "href": "hw.html",
-    "title": "Homework",
-    "section": "",
-    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\n\n\n\n\n\n\nOct 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\n\n\n\n\n\n\nOct 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "hws/hw1.html",
-    "href": "hws/hw1.html",
-    "title": "Homework 1",
-    "section": "",
-    "text": "Problems from Probability 4 Data Science Chapter 2:\nExercises 1, 6 (11 is 22; ignore F), 8, 9\nHomework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
-  },
-  {
-    "objectID": "hws/hw2.html",
-    "href": "hws/hw2.html",
-    "title": "Homework 2",
-    "section": "",
-    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-1",
-    "href": "hws/hw2.html#problem-1",
-    "title": "Homework 2",
-    "section": "",
-    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-2",
-    "href": "hws/hw2.html#problem-2",
-    "title": "Homework 2",
-    "section": "Problem 2",
-    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 3: Exercises 5"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-3",
-    "href": "hws/hw2.html#problem-3",
-    "title": "Homework 2",
-    "section": "Problem 3",
-    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 3: Exercises 8"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-4",
-    "href": "hws/hw2.html#problem-4",
-    "title": "Homework 2",
-    "section": "Problem 4",
-    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 3: Exercises 13"
-  },
-  {
-    "objectID": "hws/hw2.html#problem-5",
-    "href": "hws/hw2.html#problem-5",
-    "title": "Homework 2",
-    "section": "Problem 5",
-    "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
-  },
-  {
-    "objectID": "hws/hw4.html",
-    "href": "hws/hw4.html",
-    "title": "Homework 4",
-    "section": "",
-    "text": "Find the likelihood function and log-likelihood function for a random sample from the following distributions:\n\nNormal Distribution\nBinomial Distrubition\nUniform Distribution\nPoisson Distribution\nGamma Distribution"
-  },
-  {
-    "objectID": "hws/hw4.html#problem-3",
-    "href": "hws/hw4.html#problem-3",
-    "title": "Homework 4",
-    "section": "Problem 3",
-    "text": "Problem 3\nFind the value of x that maximizes or minimizes the function:\n\nf(x) = -4(3x - 9)^2 + 12"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome to Probability and Statistics!",
-    "section": "",
-    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 11\n\n\nThis week, we will discuss linear regression functions.\n\n\n\n\n\nNov 1, 2025\n\n\n\n\n\n\n\nWeek 10\n\n\nThis week, we will discuss maximum likelihood estimators.\n\n\n\n\n\nOct 26, 2025\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lectures/10b.html#learning-outcomes",
-    "href": "lectures/10b.html#learning-outcomes",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nMaximum Likelihood Estimators\nProperties"
-  },
-  {
-    "objectID": "lectures/10b.html#estimators",
-    "href": "lectures/10b.html#estimators",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Estimators",
-    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample."
-  },
-  {
-    "objectID": "lectures/10b.html#data",
-    "href": "lectures/10b.html#data",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Data",
-    "text": "Data\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}F(\\boldsymbol \\theta)\\) where \\(F(\\cdot)\\) is a known distribution function and \\(\\boldsymbol\\theta\\) is a vector of parameters. Let \\(\\boldsymbol X = (X_1,\\ldots, X_n)^\\mathrm{T}\\), be the sample collected."
-  },
-  {
-    "objectID": "lectures/10b.html#unbiased-estimators",
-    "href": "lectures/10b.html#unbiased-estimators",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Unbiased Estimators",
-    "text": "Unbiased Estimators\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be an estimator for a parameter \\(\\theta\\). Then \\(\\hat \\theta\\) is an unbiased estimator if \\(E(\\hat \\theta) = \\theta\\). Otherwise, \\(\\hat\\theta\\) is considered biased."
-  },
-  {
-    "objectID": "lectures/10b.html#consistent-estimators",
-    "href": "lectures/10b.html#consistent-estimators",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Consistent Estimators",
-    "text": "Consistent Estimators\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). The estimator \\(\\hat \\theta\\) is a consistent estimator of the \\(\\theta\\) if\n\n\\(E\\{(\\hat\\theta-\\theta)^2\\}\\rightarrow0\\) as \\(n\\rightarrow \\infty\\)\n\\(P(|\\hat\\theta-\\theta|\\ge \\epsilon)\\rightarrow0\\) as \\(n\\rightarrow \\infty\\) for every \\(\\epsilon&gt;0\\)"
-  },
-  {
-    "objectID": "lectures/10b.html#invariance-property",
-    "href": "lectures/10b.html#invariance-property",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Invariance Property",
-    "text": "Invariance Property\nIf \\(\\hat \\theta\\) is an ML estimator of \\(\\theta\\), then for any one-to-one function \\(g\\), the ML estimator for \\(g(\\theta)\\) is \\(g(\\hat\\theta)\\)."
-  },
-  {
-    "objectID": "lectures/10b.html#large-sample-theory",
-    "href": "lectures/10b.html#large-sample-theory",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Large Sample Theory",
-    "text": "Large Sample Theory\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be the MLE estimator for a parameter \\(\\theta\\). As \\(n\\rightarrow\\infty\\), then \\(\\hat \\theta\\) has a normal distribution with mean \\(\\theta\\) and variance \\(1/nI(\\theta)\\), where\n\\[\nI(\\theta)=E\\left[-\\frac{\\partial^2}{\\partial\\theta^2}\\log\\{f(X;\\theta)\\}\\right]\n\\]"
-  },
-  {
-    "objectID": "lectures/10b.html#binomial-distribution",
-    "href": "lectures/10b.html#binomial-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Binomial Distribution",
-    "text": "Binomial Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bin}(m, p)\\), find the mle of \\(p\\). Check if it is an unbiased estimator."
-  },
-  {
-    "objectID": "lectures/10b.html#poisson-distribution",
-    "href": "lectures/10b.html#poisson-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Poisson Distribution",
-    "text": "Poisson Distribution\nCheck if \\(\\bar X\\) is an unbiased estimator for \\(\\lambda\\) in the Poisson distribution."
-  },
-  {
-    "objectID": "lectures/10b.html#normal-distribution",
-    "href": "lectures/10b.html#normal-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Normal Distribution",
-    "text": "Normal Distribution\nUsing the MLE’s for a normal distribution, \\(\\hat\\mu = \\bar X = \\frac{1}{n}\\sum X_i\\) and \\(\\hat\\sigma^2 = \\frac{1}{n}\\sum (X_i-\\bar X)^2\\) check if there are unbiased estimators for \\(\\mu\\) and \\(\\sigma^2\\)."
-  },
-  {
-    "objectID": "lectures/10b.html#bernoulli-distribution",
-    "href": "lectures/10b.html#bernoulli-distribution",
-    "title": "Maximum Likelihood Estimators",
-    "section": "Bernoulli Distribution",
-    "text": "Bernoulli Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bernoulli}(p)\\), show that the MLE of \\(p\\) is \\(\\bar X\\). Find the distribution of the MLE as \\(n\\rightarrow\\infty\\)"
+    "objectID": "lectures/12b.html#other-regression-models",
+    "href": "lectures/12b.html#other-regression-models",
+    "title": "GLM",
+    "section": "Other regression Models",
+    "text": "Other regression Models\n\n\n\nBinomial Models\nBeta Models\nTweedie Models\nCox Models\nZero-Inflated Models\n\nPoisson\nNegative Binomial\n\n\n\n\nLog-Normal Models\nBeta-Binomial Models\nMultinomial Models\nStudent Models\nHurdle Models\n\nGamma\nLog-Normal"
   },
   {
     "objectID": "lectures/11b.html#learning-objectives",
@@ -2980,6 +2700,503 @@
     "title": "Linear Regression",
     "section": "Residual Analysis",
     "text": "Residual Analysis\nA residual analysis is used to assess the validity of the assumptions."
+  },
+  {
+    "objectID": "lectures/10b.html#learning-outcomes",
+    "href": "lectures/10b.html#learning-outcomes",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nMaximum Likelihood Estimators\nProperties"
+  },
+  {
+    "objectID": "lectures/10b.html#estimators",
+    "href": "lectures/10b.html#estimators",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Estimators",
+    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets the parameter, using measurements from a sample."
+  },
+  {
+    "objectID": "lectures/10b.html#data",
+    "href": "lectures/10b.html#data",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Data",
+    "text": "Data\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}F(\\boldsymbol \\theta)\\) where \\(F(\\cdot)\\) is a known distribution function and \\(\\boldsymbol\\theta\\) is a vector of parameters. Let \\(\\boldsymbol X = (X_1,\\ldots, X_n)^\\mathrm{T}\\), be the sample collected."
+  },
+  {
+    "objectID": "lectures/10b.html#unbiased-estimators",
+    "href": "lectures/10b.html#unbiased-estimators",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Unbiased Estimators",
+    "text": "Unbiased Estimators\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be an estimator for a parameter \\(\\theta\\). Then \\(\\hat \\theta\\) is an unbiased estimator if \\(E(\\hat \\theta) = \\theta\\). Otherwise, \\(\\hat\\theta\\) is considered biased."
+  },
+  {
+    "objectID": "lectures/10b.html#consistent-estimators",
+    "href": "lectures/10b.html#consistent-estimators",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Consistent Estimators",
+    "text": "Consistent Estimators\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). The estimator \\(\\hat \\theta\\) is a consistent estimator of the \\(\\theta\\) if\n\n\\(E\\{(\\hat\\theta-\\theta)^2\\}\\rightarrow0\\) as \\(n\\rightarrow \\infty\\)\n\\(P(|\\hat\\theta-\\theta|\\ge \\epsilon)\\rightarrow0\\) as \\(n\\rightarrow \\infty\\) for every \\(\\epsilon&gt;0\\)"
+  },
+  {
+    "objectID": "lectures/10b.html#invariance-property",
+    "href": "lectures/10b.html#invariance-property",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Invariance Property",
+    "text": "Invariance Property\nIf \\(\\hat \\theta\\) is an ML estimator of \\(\\theta\\), then for any one-to-one function \\(g\\), the ML estimator for \\(g(\\theta)\\) is \\(g(\\hat\\theta)\\)."
+  },
+  {
+    "objectID": "lectures/10b.html#large-sample-theory",
+    "href": "lectures/10b.html#large-sample-theory",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Large Sample Theory",
+    "text": "Large Sample Theory\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be the MLE estimator for a parameter \\(\\theta\\). As \\(n\\rightarrow\\infty\\), then \\(\\hat \\theta\\) has a normal distribution with mean \\(\\theta\\) and variance \\(1/nI(\\theta)\\), where\n\\[\nI(\\theta)=E\\left[-\\frac{\\partial^2}{\\partial\\theta^2}\\log\\{f(X;\\theta)\\}\\right]\n\\]"
+  },
+  {
+    "objectID": "lectures/10b.html#binomial-distribution",
+    "href": "lectures/10b.html#binomial-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bin}(m, p)\\), find the mle of \\(p\\). Check if it is an unbiased estimator."
+  },
+  {
+    "objectID": "lectures/10b.html#poisson-distribution",
+    "href": "lectures/10b.html#poisson-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nCheck if \\(\\bar X\\) is an unbiased estimator for \\(\\lambda\\) in the Poisson distribution."
+  },
+  {
+    "objectID": "lectures/10b.html#normal-distribution",
+    "href": "lectures/10b.html#normal-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nUsing the MLE’s for a normal distribution, \\(\\hat\\mu = \\bar X = \\frac{1}{n}\\sum X_i\\) and \\(\\hat\\sigma^2 = \\frac{1}{n}\\sum (X_i-\\bar X)^2\\) check if there are unbiased estimators for \\(\\mu\\) and \\(\\sigma^2\\)."
+  },
+  {
+    "objectID": "lectures/10b.html#bernoulli-distribution",
+    "href": "lectures/10b.html#bernoulli-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Bernoulli Distribution",
+    "text": "Bernoulli Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Bernoulli}(p)\\), show that the MLE of \\(p\\) is \\(\\bar X\\). Find the distribution of the MLE as \\(n\\rightarrow\\infty\\)"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Probability and Statistics!",
+    "section": "",
+    "text": "Brief Introduction\n\n\n\n\n\nWELCOME TO THE COURSE! This is the home page of the course where I will provide a recap on what was covered in the week. Here I will post any documents or videos for your reference. If you have any questions, please email me at isaac.qs@csuci.edu.\n\n\n\n\n\n\n\n\n\n\n\n\nWeek 11\n\n\nThis week, we will discuss linear regression functions.\n\n\n\n\n\nNov 1, 2025\n\n\n\n\n\n\n\nWeek 10\n\n\nThis week, we will discuss maximum likelihood estimators.\n\n\n\n\n\nOct 26, 2025\n\n\n\n\n\n\n\nWeek 9\n\n\nThis week, we will discuss sampling distributions further.\n\n\n\n\n\nOct 19, 2025\n\n\n\n\n\n\n\nWeek 8\n\n\nMidterm this week\n\n\n\n\n\nOct 12, 2025\n\n\n\n\n\n\n\nWeek 7\n\n\nThis week, we will discuss joint distributions and their properties. As well as the Central Limit Theorem.\n\n\n\n\n\nOct 3, 2025\n\n\n\n\n\n\n\nWeek 6\n\n\nThis week, we will be discussing MGFs.\n\n\n\n\n\nSep 29, 2025\n\n\n\n\n\n\n\nWeek 5\n\n\nThis week, we will discuss continuous random variables and their properties.\n\n\n\n\n\nSep 21, 2025\n\n\n\n\n\n\n\nWeek 4\n\n\nThis week, we will discuss Expected Values and Moment Generating Function.\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\nWeek 3\n\n\nThis week, we will discuss the properties of discrete random variables.\n\n\n\n\n\nSep 6, 2025\n\n\n\n\n\n\n\nWeek 2\n\n\nThis week, we will briefly discuss topics related to conditional probabilities. Additionally, we will introduce commonly used distribution functions.\n\n\n\n\n\nSep 1, 2025\n\n\n\n\n\n\n\nWeek 1\n\n\nThis week is designed to be an introduction week. We will briefly discuss topics related to statistics and inference. Then we will look at installing R and RStudio as well as the basics of using R.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "hws/hw4.html",
+    "href": "hws/hw4.html",
+    "title": "Homework 4",
+    "section": "",
+    "text": "Find the likelihood function and log-likelihood function for a random sample from the following distributions:\n\nNormal Distribution\nBinomial Distrubition\nUniform Distribution\nPoisson Distribution\nGamma Distribution"
+  },
+  {
+    "objectID": "hws/hw4.html#problem-3",
+    "href": "hws/hw4.html#problem-3",
+    "title": "Homework 4",
+    "section": "Problem 3",
+    "text": "Problem 3\nFind the value of x that maximizes or minimizes the function:\n\nf(x) = -4(3x - 9)^2 + 12"
+  },
+  {
+    "objectID": "hws/hw2.html",
+    "href": "hws/hw2.html",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-1",
+    "href": "hws/hw2.html#problem-1",
+    "title": "Homework 2",
+    "section": "",
+    "text": "Problem from Probability 4 Data Science Chapter 3: Exercises 4 (ignore c)"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-2",
+    "href": "hws/hw2.html#problem-2",
+    "title": "Homework 2",
+    "section": "Problem 2",
+    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 3: Exercises 5"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-3",
+    "href": "hws/hw2.html#problem-3",
+    "title": "Homework 2",
+    "section": "Problem 3",
+    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 3: Exercises 8"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-4",
+    "href": "hws/hw2.html#problem-4",
+    "title": "Homework 2",
+    "section": "Problem 4",
+    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 3: Exercises 13"
+  },
+  {
+    "objectID": "hws/hw2.html#problem-5",
+    "href": "hws/hw2.html#problem-5",
+    "title": "Homework 2",
+    "section": "Problem 5",
+    "text": "Problem 5\nShow that the variance of a geometric distribution is \\frac{1-p}{p^2}.\nHomework 2 is due 9/21/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
+  },
+  {
+    "objectID": "hws/hw1.html",
+    "href": "hws/hw1.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "Problems from Probability 4 Data Science Chapter 2:\nExercises 1, 6 (11 is 22; ignore F), 8, 9\nHomework 1 is due 9/14/2025 at 11:59 PM. Submit your homework on Canvas as one PDF document."
+  },
+  {
+    "objectID": "hw.html",
+    "href": "hw.html",
+    "title": "Homework",
+    "section": "",
+    "text": "Below are the different homework assignments for the course. Make sure to upload your assignment as as single PDF on Canvas.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 5\n\n\n\n\n\n\n\n\nOct 30, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 4\n\n\n\n\n\n\n\n\nOct 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 3\n\n\n\n\n\n\n\n\nSep 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 2\n\n\n\n\n\n\n\n\nSep 12, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 1\n\n\n\n\n\n\n\n\nSep 3, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHomework 0\n\n\n\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "exc/exc5.html",
+    "href": "exc/exc5.html",
+    "title": "Extra Credit 4",
+    "section": "",
+    "text": "After reading one book below, create a video essay that summarizes the book, provide a brief analysis in supporting or opposing the book, and connect key elements of the book to your every day life. The video essay should be 10 minutes being narrated by your own voice. Use is visual aids, such as a powerpoint presentation, to highlight your main findings. All books should be available through the Broome Library.\nBooks:\n\nEmpire of AI\n\nKaren Hao\n\nThe Last Human Job\n\nAllison Pugh\n\nThe Book of Why\n\nJudea Pearl\n\nAlgorithms of Oppression\n\nSafiya Umoja Noble\n\nData Feminism\n\nCatherine D’Ignazio and Lauren Klein\n\nWeapons of Math Destruction\n\nCathy O’Niel\n\nInvisible Women : data bias in a world designed for men\n\nCaroline Criado Perez\n\nFactfulness: Ten Reasons We’re Wrong About the World… and Why Things are Better Than You Think\n\nHans Rosling\n\nArtificial Unintelligence: How Computers Misunderstand the World\n\nMerideth Broussard\n\nTechnically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech\n\nSara Wachter-Boettcher\n\nOR ANY Book Approved By Me (Deadline for Approval by March 28, 2025)\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+  },
+  {
+    "objectID": "exc/exc3.html",
+    "href": "exc/exc3.html",
+    "title": "Extra Credit 2",
+    "section": "",
+    "text": "Create a video essay on Survival Analysis. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Survival Analysis in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394262/\nhttps://sphweb.bumc.bu.edu/otlt/mph-modules/bs/bs704_survival/BS704_Survival_print.html\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+  },
+  {
+    "objectID": "exc/exc1.html",
+    "href": "exc/exc1.html",
+    "title": "Extra Credit 1",
+    "section": "",
+    "text": "Write a 2-page report practices related to self care. As you move on through college and your future careers, it is important to practice self care. For this extra credit assignments, write about what are some practices you will do to for your well being.\nWorth 1 percent points.\nReport guidelines\n\n2-3 Pages\nDouble Spaced\n12 point font\nDue 9/21/2025"
+  },
+  {
+    "objectID": "ec.html",
+    "href": "ec.html",
+    "title": "Extra Credit",
+    "section": "",
+    "text": "Extra Credit is designed to expand on different topics that related to Probability and Statistics, but are not necessarily required for the course. Additionally, these opportunities provide students relief when unexpected situations occur during the semester. While it is not required, I encourage everyone to attempt each opportunity.\nBelow is more information on each assignment.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 1\n\n\nInstructions for extra credit one.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 2\n\n\nInstructions for extra credit three.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 3\n\n\nInstructions for extra credit four.\n\n\n\n\n\nJan 16, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nExtra Credit 4\n\n\nInstructions for extra credit five.\n\n\n\n\n\nAug 24, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "exc/exc4.html",
+    "href": "exc/exc4.html",
+    "title": "Extra Credit 3",
+    "section": "",
+    "text": "Create a video essay on Monte Carlo Methods. Provide a brief history and their purpose. Lastly, provide a toy example demonstrating the use of Monte Carlo Methods in R or Python. The video essay should be 10 minutes being narrated by your own voice. Use visual aids, such as a powerpoint presentation, to highlight your main findings.\nWorth 3 percent points.\n\nResources\n\nhttps://towardsdatascience.com/an-overview-of-monte-carlo-methods-675384eb1694\nhttps://towardsdatascience.com/monte-carlo-simulation-a-practical-guide-85da45597f0e\n\nVideo Essay Guidelines:\n\n10 Minutes Long\nUse of visual aids\nNarrated by your own voice\nDue 12/5/2025\n\nWorth 3 final grade percentage points."
+  },
+  {
+    "objectID": "hws/hw0.html",
+    "href": "hws/hw0.html",
+    "title": "Homework 0",
+    "section": "",
+    "text": "If you plan to submit this assignment, please try to submit the assignment as 1 PDF if possible."
+  },
+  {
+    "objectID": "hws/hw0.html#footnotes",
+    "href": "hws/hw0.html#footnotes",
+    "title": "Homework 0",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nEither convert to summation notation or evaluate the summation.↩︎"
+  },
+  {
+    "objectID": "hws/hw3.html",
+    "href": "hws/hw3.html",
+    "title": "Homework 3",
+    "section": "",
+    "text": "Submit the assignment as one PDF file. Due October 5th, 2025 at 11:59 PM."
+  },
+  {
+    "objectID": "hws/hw3.html#problem-1",
+    "href": "hws/hw3.html#problem-1",
+    "title": "Homework 3",
+    "section": "Problem 1",
+    "text": "Problem 1\nProblem from Probability 4 Data Science Chapter 4: Exercises 2"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-2",
+    "href": "hws/hw3.html#problem-2",
+    "title": "Homework 3",
+    "section": "Problem 2",
+    "text": "Problem 2\nProblem from Probability 4 Data Science Chapter 4: Exercises 3"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-3",
+    "href": "hws/hw3.html#problem-3",
+    "title": "Homework 3",
+    "section": "Problem 3",
+    "text": "Problem 3\nProblem from Probability 4 Data Science Chapter 4: Exercises 4"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-4",
+    "href": "hws/hw3.html#problem-4",
+    "title": "Homework 3",
+    "section": "Problem 4",
+    "text": "Problem 4\nProblem from Probability 4 Data Science Chapter 4: Exercises 5"
+  },
+  {
+    "objectID": "hws/hw3.html#problem-5",
+    "href": "hws/hw3.html#problem-5",
+    "title": "Homework 3",
+    "section": "Problem 5",
+    "text": "Problem 5\nShow that the Expected Value of a \\mathrm{Beta}(\\alpha, \\beta) random variable is \\frac{\\alpha}{\\alpha + \\beta}"
+  },
+  {
+    "objectID": "hws/hw5.html",
+    "href": "hws/hw5.html",
+    "title": "Homework 5",
+    "section": "",
+    "text": "Submit your homework on Canvas as one PDF document.\n\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n(\\theta + 1)x^\\theta& 0\\le x\\le 1;\\theta&gt;-1 \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nFind the MLE for \\theta.\nLet X_1, X_2, \\ldots, X_n be iid with the following density function\n\nf(x) = \\left\\{\\begin{array}{cc}\n\\frac{1}{\\Gamma(\\alpha)\\theta^\\alpha}x^{\\alpha-1}e^{-x/\\theta} & 0&lt;x;0&lt; \\theta \\\\\n0 & \\mathrm{elsewhere}\n\\end{array}\n\\right.\n\nwhere \\alpha&gt;0 is known. Find the MLE for \\theta.\nLet X_1, \\ldots, X_n\\overset{iid}{\\sim}Geo(p), what is the MLE of p."
+  },
+  {
+    "objectID": "lectures/10a.html#learning-outcomes",
+    "href": "lectures/10a.html#learning-outcomes",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nMaximum Likelihood Estimators\nLog-Likelihood Functions"
+  },
+  {
+    "objectID": "lectures/10a.html#estimators",
+    "href": "lectures/10a.html#estimators",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Estimators",
+    "text": "Estimators\nAn estimator is an operation computing the value of an estimate, that targets a parameter, using measurements from a sample."
+  },
+  {
+    "objectID": "lectures/10a.html#data",
+    "href": "lectures/10a.html#data",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Data",
+    "text": "Data\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}F(\\boldsymbol \\theta)\\) where \\(F(\\cdot)\\) is a known distribution function and \\(\\boldsymbol\\theta\\) is a vector of parameters. Let \\(\\boldsymbol X = (X_1,\\ldots, X_n)^\\mathrm{T}\\), be the sample collected."
+  },
+  {
+    "objectID": "lectures/10a.html#likelihood-function",
+    "href": "lectures/10a.html#likelihood-function",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Likelihood Function",
+    "text": "Likelihood Function\nUsing the joint pdf or pmf of the sample \\(\\boldsymbol X\\), the likelihood function is a function of \\(\\boldsymbol \\theta\\), given the observed data \\(\\boldsymbol X =\\boldsymbol x\\), defined as\n\\[\nL(\\boldsymbol \\theta|\\boldsymbol x)=f(\\boldsymbol x|\\boldsymbol \\theta)\n\\]\nIf the data is iid, then\n\\[\nf(\\boldsymbol x|\\boldsymbol \\theta) = \\prod^n_{i=1}f(x_i|\\boldsymbol\\theta)\n\\]"
+  },
+  {
+    "objectID": "lectures/10a.html#log-likelihood-function",
+    "href": "lectures/10a.html#log-likelihood-function",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Log-Likelihood Function",
+    "text": "Log-Likelihood Function\nIf \\(\\ln\\{L(\\boldsymbol \\theta)\\}\\) is monotone of \\(\\boldsymbol \\theta\\), then maximizing \\(\\ell(\\boldsymbol\\theta) = \\ln\\{L(\\boldsymbol \\theta)\\}\\) will yield the maximum likelihood estimators."
+  },
+  {
+    "objectID": "lectures/10a.html#maximum-log-likelihood-estimator",
+    "href": "lectures/10a.html#maximum-log-likelihood-estimator",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Maximum log-Likelihood Estimator",
+    "text": "Maximum log-Likelihood Estimator\nThe maximum likelihood estimator are the estimates of \\(\\boldsymbol \\theta\\) that maximize \\(\\ell(\\boldsymbol\\theta)\\)."
+  },
+  {
+    "objectID": "lectures/10a.html#poisson-distribution",
+    "href": "lectures/10a.html#poisson-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}\\mathrm{Pois}(\\lambda)\\), show that the MLE of \\(\\lambda\\) is \\(\\bar x\\)."
+  },
+  {
+    "objectID": "lectures/10a.html#normal-distribution",
+    "href": "lectures/10a.html#normal-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}N(\\mu,\\sigma^2)\\). Show that the MLE’s of \\(\\mu\\) and \\(\\sigma^2\\) are \\(\\bar x\\) and \\(\\frac{n-1}{n}s^2\\), respectively."
+  },
+  {
+    "objectID": "lectures/10a.html#exponential-distribution",
+    "href": "lectures/10a.html#exponential-distribution",
+    "title": "Maximum Likelihood Estimators",
+    "section": "Exponential Distribution",
+    "text": "Exponential Distribution\nLet \\(X_1,\\ldots,X_n\\overset{iid}{\\sim}Exp(\\lambda)\\). Find the MLE of \\(\\lambda\\)"
+  },
+  {
+    "objectID": "lectures/11a.html#learning-outcomes",
+    "href": "lectures/11a.html#learning-outcomes",
+    "title": "Linear Regression",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nScatter Plot\nLinear Regression\nOrdinary Least Squares\nUnbiasedness"
+  },
+  {
+    "objectID": "lectures/11a.html#scatter-plot-1",
+    "href": "lectures/11a.html#scatter-plot-1",
+    "title": "Linear Regression",
+    "section": "Scatter Plot",
+    "text": "Scatter Plot"
+  },
+  {
+    "objectID": "lectures/11a.html#scatter-plot-2",
+    "href": "lectures/11a.html#scatter-plot-2",
+    "title": "Linear Regression",
+    "section": "Scatter Plot",
+    "text": "Scatter Plot"
+  },
+  {
+    "objectID": "lectures/11a.html#linear-regression-1",
+    "href": "lectures/11a.html#linear-regression-1",
+    "title": "Linear Regression",
+    "section": "Linear Regression",
+    "text": "Linear Regression\nLinear regression is used to model the association between a set of predictor variables (x’s) and an outcome variable (y). Linear regression will fit a line that best describes the data points."
+  },
+  {
+    "objectID": "lectures/11a.html#simple-linear-regression",
+    "href": "lectures/11a.html#simple-linear-regression",
+    "title": "Linear Regression",
+    "section": "Simple Linear Regression",
+    "text": "Simple Linear Regression\nSimple linear regression will model the association between one predictor variable and an outcome:\n\\[\nY = \\beta_0 + \\beta_1 X + \\epsilon\n\\]\n\n\\(\\beta_0\\): Intercept term\n\\(\\beta_1\\): Slope term\n\\(\\epsilon\\sim N(0,\\sigma^2)\\)"
+  },
+  {
+    "objectID": "lectures/11a.html#fitting-a-line",
+    "href": "lectures/11a.html#fitting-a-line",
+    "title": "Linear Regression",
+    "section": "Fitting a Line",
+    "text": "Fitting a Line"
+  },
+  {
+    "objectID": "lectures/11a.html#interpretation",
+    "href": "lectures/11a.html#interpretation",
+    "title": "Linear Regression",
+    "section": "Interpretation",
+    "text": "Interpretation\n\\[\n\\hat y = 136.73 + 0.015 x\n\\]"
+  },
+  {
+    "objectID": "lectures/11a.html#ordinary-least-squares-1",
+    "href": "lectures/11a.html#ordinary-least-squares-1",
+    "title": "Linear Regression",
+    "section": "Ordinary Least Squares",
+    "text": "Ordinary Least Squares\nFor a data pair \\((X_i,Y_i)_{i=1}^n\\), the ordinary least squares estimator will find the estimates of \\(\\hat\\beta_0\\) and \\(\\hat\\beta_1\\) that minimize the following function:\n\\[\n\\sum^n_{i=1}\\{y_i-(\\beta_0+\\beta_1x_i)\\}^2\n\\]"
+  },
+  {
+    "objectID": "lectures/11a.html#estimating-betas",
+    "href": "lectures/11a.html#estimating-betas",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta\\)’s",
+    "text": "Estimating \\(\\beta\\)’s"
+  },
+  {
+    "objectID": "lectures/11a.html#estimating-beta_1",
+    "href": "lectures/11a.html#estimating-beta_1",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta_1\\)",
+    "text": "Estimating \\(\\beta_1\\)"
+  },
+  {
+    "objectID": "lectures/11a.html#estimating-beta_0",
+    "href": "lectures/11a.html#estimating-beta_0",
+    "title": "Linear Regression",
+    "section": "Estimating \\(\\beta_0\\)",
+    "text": "Estimating \\(\\beta_0\\)"
+  },
+  {
+    "objectID": "lectures/11a.html#estimates",
+    "href": "lectures/11a.html#estimates",
+    "title": "Linear Regression",
+    "section": "Estimates",
+    "text": "Estimates\n\\[\n\\hat\\beta_0 = \\bar y - \\hat\\beta_1\\bar x\n\\] \\[\n\\hat\\beta_1 = \\frac{\\sum^n_{i=1}(y_i-\\bar y)(x_i-\\bar x)}{\\sum^n_{i=1}(x_i-\\bar x)^2}\n\\] \\[\n\\hat\\sigma^2 = \\frac{1}{n-2}\\sum^n_{i=1}(y_i-\\hat y_i)^2\n\\]"
+  },
+  {
+    "objectID": "lectures/11a.html#unbiasedness-of-betas-1",
+    "href": "lectures/11a.html#unbiasedness-of-betas-1",
+    "title": "Linear Regression",
+    "section": "Unbiasedness of \\(\\beta\\)’s",
+    "text": "Unbiasedness of \\(\\beta\\)’s\nBoth \\(\\beta_0\\) and \\(\\beta_1\\) are unbiased estimators."
+  },
+  {
+    "objectID": "lectures/11a.html#ebeta_0",
+    "href": "lectures/11a.html#ebeta_0",
+    "title": "Linear Regression",
+    "section": "\\(E(\\beta_0)\\)",
+    "text": "\\(E(\\beta_0)\\)"
+  },
+  {
+    "objectID": "lectures/11a.html#ebeta_1",
+    "href": "lectures/11a.html#ebeta_1",
+    "title": "Linear Regression",
+    "section": "\\(E(\\beta_1)\\)",
+    "text": "\\(E(\\beta_1)\\)"
+  },
+  {
+    "objectID": "lectures/12a.html#learning-outcomes",
+    "href": "lectures/12a.html#learning-outcomes",
+    "title": "Generalized Linear Models",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nExponential Family of Distributions\nGeneralized Linear Models"
+  },
+  {
+    "objectID": "lectures/12a.html#exponential-family-of-distributions-1",
+    "href": "lectures/12a.html#exponential-family-of-distributions-1",
+    "title": "Generalized Linear Models",
+    "section": "Exponential Family of Distributions",
+    "text": "Exponential Family of Distributions\nAn exponential family of distributions are random variables that allow their probability density function to have the following form:\n\\[\nf(y; \\theta,\\phi) = a(y,\\phi)\\exp\\left\\{\\frac{y\\theta-\\kappa(\\theta)}{\\phi}\\right\\}\n\\]\n\n\\(\\theta\\): is the canonical parameter (also a function of other parameters)\n\\(\\kappa(\\theta)\\): is a known cumulant function\n\\(\\phi&gt;0\\): dispersion parameter function\n\\(a(y,\\phi)\\): normalizing constant"
+  },
+  {
+    "objectID": "lectures/12a.html#canonical-parameter",
+    "href": "lectures/12a.html#canonical-parameter",
+    "title": "Generalized Linear Models",
+    "section": "Canonical Parameter",
+    "text": "Canonical Parameter\nThe canonical parameter represents the relationship between the random variable and the \\(E(Y)=\\mu\\)"
+  },
+  {
+    "objectID": "lectures/12a.html#normal-distribution",
+    "href": "lectures/12a.html#normal-distribution",
+    "title": "Generalized Linear Models",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\n\\[\nf(x;\\mu,\\sigma^2)=\\frac{1}{\\sqrt{2\\pi\\sigma^2}}e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\]"
+  },
+  {
+    "objectID": "lectures/12a.html#binomial-distribution",
+    "href": "lectures/12a.html#binomial-distribution",
+    "title": "Generalized Linear Models",
+    "section": "Binomial Distribution",
+    "text": "Binomial Distribution\n\\[\nf(x;n,p)=\\big(^n_x\\big) p^x(1-p)^{n-x}\n\\]"
+  },
+  {
+    "objectID": "lectures/12a.html#poisson-distribution",
+    "href": "lectures/12a.html#poisson-distribution",
+    "title": "Generalized Linear Models",
+    "section": "Poisson Distribution",
+    "text": "Poisson Distribution\n\\[\nf(x;\\lambda) = \\frac{e^{-\\lambda}\\lambda^x}{x!}\n\\]"
+  },
+  {
+    "objectID": "lectures/12a.html#common-distributions-and-canonical-parameters",
+    "href": "lectures/12a.html#common-distributions-and-canonical-parameters",
+    "title": "Generalized Linear Models",
+    "section": "Common Distributions and Canonical Parameters",
+    "text": "Common Distributions and Canonical Parameters\n\n\n\nRandom Variable\nCanonical Parameter\n\n\n\n\nNormal\n\\(\\mu\\)\n\n\nBinomial\n\\(\\log\\left(\\frac{\\mu}{1-\\mu}\\right)\\)\n\n\nNegative Binomial\n\\(\\log\\left(\\frac{\\mu}{\\mu+k}\\right)\\)\n\n\nPoisson\n\\(\\log(\\mu)\\)\n\n\nGamma\n\\(-\\frac{1}{\\mu}\\)\n\n\nInverse Gaussian\n\\(-\\frac{1}{2\\mu^2}\\)"
+  },
+  {
+    "objectID": "lectures/12a.html#generalized-linear-models-1",
+    "href": "lectures/12a.html#generalized-linear-models-1",
+    "title": "Generalized Linear Models",
+    "section": "Generalized Linear Models",
+    "text": "Generalized Linear Models\nA generalized linear model (GLM) is used to model the association between an outcome variable (of any data type) and a set of predictor values. We estimate a set of regression coefficients \\(\\boldsymbol \\beta\\) to explain how each predictor is related to the expected value of the outcome."
+  },
+  {
+    "objectID": "lectures/12a.html#generalized-linear-models-2",
+    "href": "lectures/12a.html#generalized-linear-models-2",
+    "title": "Generalized Linear Models",
+    "section": "Generalized Linear Models",
+    "text": "Generalized Linear Models\nA GLM is composed of a systematic and random component."
+  },
+  {
+    "objectID": "lectures/12a.html#random-component",
+    "href": "lectures/12a.html#random-component",
+    "title": "Generalized Linear Models",
+    "section": "Random Component",
+    "text": "Random Component\nThe random component is the random variable that defines the randomness and variation of the outcome variable."
+  },
+  {
+    "objectID": "lectures/12a.html#systematic-component",
+    "href": "lectures/12a.html#systematic-component",
+    "title": "Generalized Linear Models",
+    "section": "Systematic Component",
+    "text": "Systematic Component\nThe systematic component is the linear model that models the association between a set of predictors and the expected value of Y:\n\\[\ng(\\mu)=\\eta=\\boldsymbol X_i^\\mathrm T \\boldsymbol \\beta\n\\]\n\n\\(\\boldsymbol\\beta\\): regression coefficients\n\\(\\boldsymbol X_i=(1, X_{i1}, \\ldots, X_{ip})^\\mathrm T\\): design vector\n\\(\\eta\\): linear model\n\\(\\mu=E(Y)\\)\n\\(g(\\cdot)\\): link function"
   },
   {
     "objectID": "lectures/13a.html#learning-outcomes",

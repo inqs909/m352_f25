@@ -22,5 +22,5 @@ editor_options:
 
 | Section | Tuesday | Thursday | 
 |---------|---------|----------|
-| 001     |  [Video]() | [Video]() |
-| 002     |  [Video]() | [Video]() |
+| 001     |  [Video](https://youtu.be/jnLCigZrLZA) | [Video](https://youtu.be/lIN5lMNnkEg) |
+| 002     |  [Video](https://youtu.be/d8FAHHbrpso) | [Video](https://youtu.be/oXHw3opx2h8) |
