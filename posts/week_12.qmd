@@ -3,7 +3,7 @@ title: "Week 12"
 date: 11-06-25
 description: This week, we will discuss generalized linear models.
 editor: source
-draft: falae
+draft: false
 editor_options: 
   chunk_output_type: console
 ---
