@@ -3,7 +3,7 @@ title: "Week 13"
 date: 11-17-25
 description: We will discuss estimation and standard errors.
 editor: source
-draft: true
+draft: false
 editor_options: 
   chunk_output_type: console
 ---
