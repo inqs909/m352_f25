@@ -157,6 +157,26 @@ $$
 
 -   $\beta_j^{(it+1)}$: Updated estimate of $\beta_j$
 
+## Stopping Rules
+
+How do you stop the algorithm?
+
+## Multivariate Newton-Raphson
+
+$$
+\boldsymbol \beta^{(it+1)} = \boldsymbol \beta^{(it)} - \frac{G_{\boldsymbol \beta}^{(it)}}{H_{\boldsymbol \beta}^{(it)}}
+$$
+
+-   $\boldsymbol \beta^{(it)}$: current estimate of $\boldsymbol \beta$
+
+-   $G_{\beta_j}^{(it)}$: Gradient
+
+-   $H_{\beta_j}^{(it)}$: Hessian Matrix
+
+-   $\boldsymbol \beta^{(it+1)}$: Updated estimate of $\boldsymbol \beta$
+
+
+
 # Example
 
 ## Logistic Regression
@@ -166,3 +186,5 @@ Let $(Y_i,X_i)_{i=1}^n$ be a data set where $Y_i\overset{iid}{\sim}Bernoulli(p)$
 ## Poisson Regression
 
 Let $(Y_i,X_i)_{i=1}^n$ be a data set where $Y_i\overset{iid}{\sim}Pois(\lambda)$. Find the first and second derivative for $\beta_0$, when a GLM is fitted to the model.
+
+##  Regression

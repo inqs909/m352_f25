@@ -272,6 +272,22 @@ x_0 = \mathrm{argmax}_{x}f(x)
 <li><p><span class="math inline">\(H_{\beta_j}^{(it)}=d^2\ell(\boldsymbol \beta)/d\beta_j^2|_{\beta_j=\beta_j^{(it)}}\)</span></p></li>
 <li><p><span class="math inline">\(\beta_j^{(it+1)}\)</span>: Updated estimate of <span class="math inline">\(\beta_j\)</span></p></li>
 </ul>
+</section>
+<section id="stopping-rules" class="slide level2">
+<h2>Stopping Rules</h2>
+<p>How do you stop the algorithm?</p>
+</section>
+<section id="multivariate-newton-raphson" class="slide level2">
+<h2>Multivariate Newton-Raphson</h2>
+<p><span class="math display">\[
+\boldsymbol \beta^{(it+1)} = \boldsymbol \beta^{(it)} - \frac{G_{\boldsymbol \beta}^{(it)}}{H_{\boldsymbol \beta}^{(it)}}
+\]</span></p>
+<ul>
+<li><p><span class="math inline">\(\boldsymbol \beta^{(it)}\)</span>: current estimate of <span class="math inline">\(\boldsymbol \beta\)</span></p></li>
+<li><p><span class="math inline">\(G_{\beta_j}^{(it)}\)</span>: Gradient</p></li>
+<li><p><span class="math inline">\(H_{\beta_j}^{(it)}\)</span>: Hessian Matrix</p></li>
+<li><p><span class="math inline">\(\boldsymbol \beta^{(it+1)}\)</span>: Updated estimate of <span class="math inline">\(\boldsymbol \beta\)</span></p></li>
+</ul>
 </section></section>
 <section>
 <section id="example" class="title-slide slide level1 center">
@@ -285,6 +301,9 @@ x_0 = \mathrm{argmax}_{x}f(x)
 <section id="poisson-regression" class="slide level2">
 <h2>Poisson Regression</h2>
 <p>Let <span class="math inline">\((Y_i,X_i)_{i=1}^n\)</span> be a data set where <span class="math inline">\(Y_i\overset{iid}{\sim}Pois(\lambda)\)</span>. Find the first and second derivative for <span class="math inline">\(\beta_0\)</span>, when a GLM is fitted to the model.</p>
+</section>
+<section id="regression" class="slide level2">
+<h2>Regression</h2>
 
 
 </section></section>

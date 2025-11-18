@@ -3290,6 +3290,20 @@
     "text": "Newton-Raphson\n\\[\n\\beta_j^{(it+1)} = \\beta_j^{(it)} - \\frac{G_{\\beta_j}^{(it)}}{H_{\\beta_j}^{(it)}}\n\\]\n\n\\(\\beta_j^{(it)}\\): current estimate of \\(\\beta_j\\)\n\\(G_{\\beta_j}^{(it)}=d\\ell(\\boldsymbol \\beta)/d\\beta_j|_{\\beta_j=\\beta_j^{(it)}}\\)\n\\(H_{\\beta_j}^{(it)}=d^2\\ell(\\boldsymbol \\beta)/d\\beta_j^2|_{\\beta_j=\\beta_j^{(it)}}\\)\n\\(\\beta_j^{(it+1)}\\): Updated estimate of \\(\\beta_j\\)"
   },
   {
+    "objectID": "lectures/13a.html#stopping-rules",
+    "href": "lectures/13a.html#stopping-rules",
+    "title": "Generalized Linear Models",
+    "section": "Stopping Rules",
+    "text": "Stopping Rules\nHow do you stop the algorithm?"
+  },
+  {
+    "objectID": "lectures/13a.html#multivariate-newton-raphson",
+    "href": "lectures/13a.html#multivariate-newton-raphson",
+    "title": "Generalized Linear Models",
+    "section": "Multivariate Newton-Raphson",
+    "text": "Multivariate Newton-Raphson\n\\[\n\\boldsymbol \\beta^{(it+1)} = \\boldsymbol \\beta^{(it)} - \\frac{G_{\\boldsymbol \\beta}^{(it)}}{H_{\\boldsymbol \\beta}^{(it)}}\n\\]\n\n\\(\\boldsymbol \\beta^{(it)}\\): current estimate of \\(\\boldsymbol \\beta\\)\n\\(G_{\\beta_j}^{(it)}\\): Gradient\n\\(H_{\\beta_j}^{(it)}\\): Hessian Matrix\n\\(\\boldsymbol \\beta^{(it+1)}\\): Updated estimate of \\(\\boldsymbol \\beta\\)"
+  },
+  {
     "objectID": "lectures/13a.html#logistic-regression",
     "href": "lectures/13a.html#logistic-regression",
     "title": "Generalized Linear Models",
@@ -3302,6 +3316,13 @@
     "title": "Generalized Linear Models",
     "section": "Poisson Regression",
     "text": "Poisson Regression\nLet \\((Y_i,X_i)_{i=1}^n\\) be a data set where \\(Y_i\\overset{iid}{\\sim}Pois(\\lambda)\\). Find the first and second derivative for \\(\\beta_0\\), when a GLM is fitted to the model."
+  },
+  {
+    "objectID": "lectures/13a.html#regression",
+    "href": "lectures/13a.html#regression",
+    "title": "Generalized Linear Models",
+    "section": "Regression",
+    "text": "Regression"
   },
   {
     "objectID": "lectures/1a.html#introductions",
