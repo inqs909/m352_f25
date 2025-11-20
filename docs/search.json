@@ -2317,18 +2317,39 @@
     "text": "Standard Errors Matrix Form\n\\[\nVar(\\hat {\\boldsymbol \\beta}) = (\\boldsymbol X ^\\mathrm T\\boldsymbol X)^{-1} \\hat \\sigma^2\n\\]"
   },
   {
-    "objectID": "lectures/13b.html#large-sample-theory",
-    "href": "lectures/13b.html#large-sample-theory",
+    "objectID": "lectures/13b.html#observed-information-matrix",
+    "href": "lectures/13b.html#observed-information-matrix",
     "title": "Standard Errors",
-    "section": "Large Sample Theory",
-    "text": "Large Sample Theory\nLet \\(X_1,\\ldots,X_n\\) be a random sample from a distribution with parameter \\(\\theta\\). Let \\(\\hat \\theta\\) be the MLE estimator for a parameter \\(\\theta\\). As \\(n\\rightarrow\\infty\\), then \\(\\hat \\theta\\) has a normal distribution with mean \\(\\theta\\) and variance \\(1/nI(\\theta)\\), where\n\\[\nI(\\theta)=E\\left[-\\frac{\\partial^2}{\\partial\\theta^2}\\log\\{f(X;\\theta)\\}\\right]\n\\]"
+    "section": "Observed Information Matrix",
+    "text": "Observed Information Matrix\nLet \\(\\hat{\\boldsymbol \\beta} = \\{\\hat \\beta_0, \\hat \\beta_1, \\cdots, \\hat \\beta_p\\}^\\mathrm{T}\\) be the MLE estimator for a parameter \\(\\boldsymbol \\beta = \\{\\beta_0, \\beta_1, \\cdots, \\beta_p\\}^\\mathrm{T}\\). The observed information matrix is\n\\[\nI(\\hat{\\boldsymbol \\beta})=E\\left[-\\frac{\\partial}{\\partial \\boldsymbol \\beta}\\frac{\\partial}{\\partial \\boldsymbol \\beta^\\mathrm{T}}\\log\\{f(X;\\boldsymbol \\beta)\\}\\right]\n\\]\n\\(I(\\hat{\\boldsymbol \\beta})\\) is a \\((p+1)\\times(p+1)\\) matrix."
   },
   {
-    "objectID": "lectures/13b.html#sampling-distributions-1",
-    "href": "lectures/13b.html#sampling-distributions-1",
+    "objectID": "lectures/13b.html#standard-error-of-hat-beta_j",
+    "href": "lectures/13b.html#standard-error-of-hat-beta_j",
     "title": "Standard Errors",
-    "section": "Sampling Distributions",
-    "text": "Sampling Distributions\n\n\n\\(\\phi\\) known\n\\[\n\\frac{\\hat\\beta_j - \\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim N(0,1)\n\\]\n\n\\(\\phi\\) unknown\n\\[\n\\frac{\\hat\\beta_j-\\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim t_{n-p^\\prime}\n\\]"
+    "section": "Standard Error of \\(\\hat \\beta_j\\)",
+    "text": "Standard Error of \\(\\hat \\beta_j\\)\n\\[\n\\mathrm{se}(\\hat \\beta_j) = \\sqrt{I(\\hat{\\boldsymbol \\beta})_{[j,j]}}\n\\]"
+  },
+  {
+    "objectID": "lectures/13b.html#sampling-distributions-of-hat-beta_j",
+    "href": "lectures/13b.html#sampling-distributions-of-hat-beta_j",
+    "title": "Standard Errors",
+    "section": "Sampling Distributions of \\(\\hat \\beta_j\\)",
+    "text": "Sampling Distributions of \\(\\hat \\beta_j\\)\n\n\n\\(\\phi\\) known\n\\[\n\\frac{\\hat\\beta_j - \\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim N(0,1)\n\\]\n\n\\(\\phi\\) unknown\n\\[\n\\frac{\\hat\\beta_j-\\beta_j}{\\mathrm{se}(\\hat\\beta_j)} \\sim t_{n-p}\n\\]"
+  },
+  {
+    "objectID": "lectures/13b.html#anova-distribution",
+    "href": "lectures/13b.html#anova-distribution",
+    "title": "Standard Errors",
+    "section": "ANOVA Distribution",
+    "text": "ANOVA Distribution\n\n\n\n\n\n\n\n\n\n\nSource\nDF\nSS\nMS\nF\n\n\n\n\nModel\n\\(DFR=k-1\\)\n\\(SSR\\)\n\\(MSR=\\frac{SSM}{DFR}\\)\n\\(\\hat F=\\frac{MSR}{MSE}\\)\n\n\nError\n\\(DFE=n-k\\)\n\\(SSE\\)\n\\(MSE=\\frac{SSE}{DFE}\\)\n\n\n\nTotal\n\\(TDF=n-1\\)\n\\(TSS=SSR+SSE\\)\n\n\n\n\n\n\\[\n\\hat F \\sim F(DFR, DFE)\n\\]"
+  },
+  {
+    "objectID": "lectures/13b.html#likelihood-ratio-distribution",
+    "href": "lectures/13b.html#likelihood-ratio-distribution",
+    "title": "Standard Errors",
+    "section": "Likelihood Ratio Distribution",
+    "text": "Likelihood Ratio Distribution\n\\[\n\\Lambda = \\frac{L(\\boldsymbol \\beta_1)}{L(\\boldsymbol \\beta_0)} \\sim \\chi^2_\\varphi\n\\]"
   },
   {
     "objectID": "lectures/12b.html#learning-outcomes",

@@ -90,17 +90,27 @@ $$
 
 # Generalized Linear Models
 
-## Large Sample Theory
+## Observed Information Matrix 
 
-Let $X_1,\ldots,X_n$ be a random sample from a distribution with parameter $\theta$. Let $\hat \theta$ be the MLE estimator for a parameter $\theta$. As $n\rightarrow\infty$, then $\hat \theta$ has a normal distribution with mean $\theta$ and variance $1/nI(\theta)$, where
+Let $\hat{\boldsymbol \beta} = \{\hat \beta_0, \hat \beta_1, \cdots, \hat \beta_p\}^\mathrm{T}$ be the MLE estimator for a parameter $\boldsymbol \beta = \{\beta_0, \beta_1, \cdots, \beta_p\}^\mathrm{T}$. The observed information matrix is 
 
 $$
-I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
+I(\hat{\boldsymbol \beta})=E\left[-\frac{\partial}{\partial \boldsymbol \beta}\frac{\partial}{\partial \boldsymbol \beta^\mathrm{T}}\log\{f(X;\boldsymbol \beta)\}\right]
 $$
+
+$I(\hat{\boldsymbol \beta})$ is a $(p+1)\times(p+1)$ matrix.
+
+## Standard Error of $\hat \beta_j$
+
+$$
+\mathrm{se}(\hat \beta_j) = \sqrt{I(\hat{\boldsymbol \beta})_{[j,j]}}
+$$
+
+
 
 # Sampling Distributions
 
-## Sampling Distributions
+## Sampling Distributions of $\hat \beta_j$
 
 ::::: columns
 ::: {.column width="50%"}
@@ -115,7 +125,27 @@ $$
 ### $\phi$ unknown
 
 $$
-\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p^\prime}
+\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p}
 $$
 :::
 :::::
+
+## ANOVA Distribution
+
+
+| Source | DF        | SS            | MS                    | F                        |
+|---------------|---------------|---------------|---------------|---------------|
+| Model  | $DFR=k-1$ | $SSR$         | $MSR=\frac{SSM}{DFR}$ | $\hat F=\frac{MSR}{MSE}$ |
+| Error  | $DFE=n-k$ | $SSE$         | $MSE=\frac{SSE}{DFE}$ |                          |
+| Total  | $TDF=n-1$ | $TSS=SSR+SSE$ |                       |                          |
+
+$$
+\hat F \sim F(DFR, DFE)
+$$
+
+
+## Likelihood Ratio Distribution
+
+$$
+\Lambda = \frac{L(\boldsymbol \beta_1)}{L(\boldsymbol \beta_0)} \sim \chi^2_\varphi
+$$

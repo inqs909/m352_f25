@@ -189,11 +189,18 @@ Var(\hat {\boldsymbol \beta}) = (\boldsymbol X ^\mathrm T\boldsymbol X)^{-1} \ha
 <h1>Generalized Linear Models</h1>
 
 </section>
-<section id="large-sample-theory" class="slide level2">
-<h2>Large Sample Theory</h2>
-<p>Let <span class="math inline">\(X_1,\ldots,X_n\)</span> be a random sample from a distribution with parameter <span class="math inline">\(\theta\)</span>. Let <span class="math inline">\(\hat \theta\)</span> be the MLE estimator for a parameter <span class="math inline">\(\theta\)</span>. As <span class="math inline">\(n\rightarrow\infty\)</span>, then <span class="math inline">\(\hat \theta\)</span> has a normal distribution with mean <span class="math inline">\(\theta\)</span> and variance <span class="math inline">\(1/nI(\theta)\)</span>, where</p>
+<section id="observed-information-matrix" class="slide level2">
+<h2>Observed Information Matrix</h2>
+<p>Let <span class="math inline">\(\hat{\boldsymbol \beta} = \{\hat \beta_0, \hat \beta_1, \cdots, \hat \beta_p\}^\mathrm{T}\)</span> be the MLE estimator for a parameter <span class="math inline">\(\boldsymbol \beta = \{\beta_0, \beta_1, \cdots, \beta_p\}^\mathrm{T}\)</span>. The observed information matrix is</p>
 <p><span class="math display">\[
-I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
+I(\hat{\boldsymbol \beta})=E\left[-\frac{\partial}{\partial \boldsymbol \beta}\frac{\partial}{\partial \boldsymbol \beta^\mathrm{T}}\log\{f(X;\boldsymbol \beta)\}\right]
+\]</span></p>
+<p><span class="math inline">\(I(\hat{\boldsymbol \beta})\)</span> is a <span class="math inline">\((p+1)\times(p+1)\)</span> matrix.</p>
+</section>
+<section id="standard-error-of-hat-beta_j" class="slide level2">
+<h2>Standard Error of <span class="math inline">\(\hat \beta_j\)</span></h2>
+<p><span class="math display">\[
+\mathrm{se}(\hat \beta_j) = \sqrt{I(\hat{\boldsymbol \beta})_{[j,j]}}
 \]</span></p>
 </section></section>
 <section>
@@ -201,8 +208,8 @@ I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
 <h1>Sampling Distributions</h1>
 
 </section>
-<section id="sampling-distributions-1" class="slide level2">
-<h2>Sampling Distributions</h2>
+<section id="sampling-distributions-of-hat-beta_j" class="slide level2">
+<h2>Sampling Distributions of <span class="math inline">\(\hat \beta_j\)</span></h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="phi-known"><span class="math inline">\(\phi\)</span> known</h3>
@@ -212,9 +219,62 @@ I(\theta)=E\left[-\frac{\partial^2}{\partial\theta^2}\log\{f(X;\theta)\}\right]
 </div><div class="column" style="width:50%;">
 <h3 id="phi-unknown"><span class="math inline">\(\phi\)</span> unknown</h3>
 <p><span class="math display">\[
-\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p^\prime}
+\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p}
 \]</span></p>
 </div></div>
+</section>
+<section id="anova-distribution" class="slide level2">
+<h2>ANOVA Distribution</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>DF</th>
+<th>SS</th>
+<th>MS</th>
+<th>F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Model</td>
+<td><span class="math inline">\(DFR=k-1\)</span></td>
+<td><span class="math inline">\(SSR\)</span></td>
+<td><span class="math inline">\(MSR=\frac{SSM}{DFR}\)</span></td>
+<td><span class="math inline">\(\hat F=\frac{MSR}{MSE}\)</span></td>
+</tr>
+<tr class="even">
+<td>Error</td>
+<td><span class="math inline">\(DFE=n-k\)</span></td>
+<td><span class="math inline">\(SSE\)</span></td>
+<td><span class="math inline">\(MSE=\frac{SSE}{DFE}\)</span></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td><span class="math inline">\(TDF=n-1\)</span></td>
+<td><span class="math inline">\(TSS=SSR+SSE\)</span></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[
+\hat F \sim F(DFR, DFE)
+\]</span></p>
+</section>
+<section id="likelihood-ratio-distribution" class="slide level2">
+<h2>Likelihood Ratio Distribution</h2>
+<p><span class="math display">\[
+\Lambda = \frac{L(\boldsymbol \beta_1)}{L(\boldsymbol \beta_0)} \sim \chi^2_\varphi
+\]</span></p>
 
 
 </section></section>
