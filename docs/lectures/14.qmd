@@ -1,0 +1,648 @@
+---
+title: "Hypothesis Testing"
+subtitle: "Linear and Generalized Linear Models"
+format:
+  revealjs:
+    width: 1200
+    scrollable: true
+    theme: [default, styles.scss]
+    controls-tutorial: true
+    navigation-mode: vertical
+    incremental: false 
+    touch: false
+    controls: true
+    pointer:
+      pointerSize: 48
+    slide-number: true
+    sc-sb-title: h1
+    chalkboard:
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: true
+    message: false
+    warnings: false
+    comment: "#>" 
+
+editor: source
+
+revealjs-plugins:
+  - pointer
+  - verticator
+  
+filters: 
+  - reveal-header
+  - code-fullscreen
+  - reveal-auto-agenda
+  
+auto-agenda:
+  bullets: numbered
+  clickable: true
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+library(csucistats)
+library(broom)
+theme_set(theme_bw() + 
+            theme(
+              axis.text.x = element_text(size = 24),
+              axis.title = element_text(size = 30),
+              plot.title = element_text(size = 48),
+              strip.text = element_text(size = 20),
+              legend.title = element_blank(),
+              legend.text = element_text(size = 24)))
+
+heart_disease <- kmed::heart
+heart_disease$disease <- factor(ifelse(heart_disease$class == 0, "no", "yes")) 
+
+```
+
+# Statistical Inference
+
+## What is Statistical Inference?
+
+-   Drawing conclusions about a **population** based on a **sample**
+-   Population = entire group
+-   Sample = subset
+
+::: notes
+Introduce the big idea: We want to make st
+:::
+
+## Two Main Types of Inference
+
+1.  Estimation
+2.  Hypothesis Testing
+
+::: notes
+We'll be focusing on two fundamental techniques in inference. First, estimating population values (like the mean), and second, testing claims about the population.
+:::
+
+## Estimation
+
+-   **Point Estimate**: Single best guess (e.g., $\hat \beta_1$)
+-   **Interval Estimate**: Range likely to contain the true value
+
+::: notes
+Point estimates are easy but not very informative. Intervals give us a sense of uncertainty, which is critical in inference.
+:::
+
+## Hypothesis Testing
+
+-   $H_0$: No effect or difference\
+-   $H_1$: Some effect or difference\
+-   We use sample data to support or reject $H_0$
+
+::: notes
+Mention that $H_0$ is the default assumption. We only reject it if the data give us strong enough evidence.
+:::
+
+## Key Concepts and Tools
+
+-   Sampling Distribution
+-   Central Limit Theorem
+-   Standard Error
+
+::: notes
+These three concepts are foundational. Understanding them helps us assess how reliable our estimates are.
+:::
+
+## p-values
+
+-   Probability of observing data as extreme as this if $H_0$ is true
+
+-   Misinterpretation of p-values is common.
+
+-   Emphasize: low p-value means data is unusual under $H_0$.
+
+## Confidence Intervals
+
+-   A range where we expect the true value to fall
+
+::: notes
+Clarify interpretation: it's not about the probability the parameter is inside the interval, but about the method producing accurate intervals in the long run.
+:::
+
+# Hypothesis Testing
+
+## Hypothesis Tests
+
+Hypothesis tests are used to test whether claims are valid or not. This is conducted by collecting data, setting the **Null** and **Alternative** Hypothesis.
+
+## Null Hypothesis $H_0$
+
+The null hypothesis is the claim that is initially believed to be true. For the most part, it is always equal to the hypothesized value.
+
+## Alternative Hypothesis $H_1$
+
+The alternative hypothesis contradicts the null hypothesis.
+
+## Example of Null and Alternative Hypothesis
+
+We want to see if $\beta$ is different from $\beta^*$
+
+| Null Hypothesis        | Alternative Hypothesis |
+|------------------------|------------------------|
+| $H_0: \beta=\beta^*$   | $H_1: \beta\ne\beta^*$ |
+| $H_0: \beta\le\beta^*$ | $H_1: \beta>\beta^*$   |
+| $H_0: \beta\ge\beta^*$ | $H_1: \beta<\beta^*$   |
+
+## One-Side vs Two-Side Hypothesis Tests
+
+Notice how there are 3 types of null and alternative hypothesis, The first type of hypothesis ($H_1:\beta\ne\beta^*$) is considered a 2-sided hypothesis because the rejection region is located in 2 regions. The remaining two hypotheses are considered 1-sided because the rejection region is located on one side of the distribution.
+
+| Null Hypothesis        | Alternative Hypothesis | Side    |
+|------------------------|------------------------|---------|
+| $H_0: \beta=\beta^*$   | $H_1: \beta\ne\beta^*$ | 2-Sided |
+| $H_0: \beta\le\beta^*$ | $H_1: \beta>\beta^*$   | 1-Sided |
+| $H_0: \beta\ge\beta^*$ | $H_1: \beta<\beta^*$   | 1-Sided |
+
+## Hypothesis Testing Steps
+
+1.  State $H_0$ and $H_1$
+2.  Choose $\alpha$
+3.  Compute confidence interval/p-value
+4.  Make a decision
+
+::: notes
+Walk through the steps slowly with an example in mind. Emphasize that $\alpha$ is a threshold, not the actual probability of error.
+:::
+
+## Rejection Region
+
+-   The rejection region is the set of all test statistic values that lead to rejecting $H_0$.
+
+-   It’s defined by a significance level ($\alpha$) — the probability of rejecting $H_0$, when it’s actually true.
+
+## Rejection Region
+
+```{r}
+#| code-fold: true
+#| fig-alt: "A normal distribution demonstrating the rejection regions."
+#| fig-align: center
+
+alpha <- 0.05
+
+# Critical values for two-tailed test
+z_critical <- qnorm(1 - alpha / 2)
+
+# Create data for the normal curve
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+df <- data.frame(x = x, y = y)
+
+ggplot(df, aes(x = x, y = y)) +
+  geom_line(color = "deepskyblue", linewidth = 1) +
+  geom_area(data = subset(df, x <= -z_critical), aes(y = y), fill = "firebrick", alpha = 0.5) +
+  geom_area(data = subset(df, x >= z_critical), aes(y = y), fill = "firebrick", alpha = 0.5) +
+  geom_vline(xintercept = c(-z_critical, z_critical), linetype = "dashed", color = "black") +
+  theme_bw()
+```
+
+# Decision Making
+
+## Decision Making
+
+Hypothesis Testing will force you to make a decision: Reject $H_0$ **OR** Fail to Reject $H_0$
+
+::: fragment
+Reject $H_0$: The effect seen is not due to random chance, there is a process contributing to the effect.
+:::
+
+::: fragment
+Fail to Reject $H_0$: The effect seen is due to random chance. Random sampling is the reason why an effect is displayed, not an underlying process.
+:::
+
+## Decision Making: Test Statistic
+
+::::: columns
+::: {.column width="50%"}
+### $\phi$ known
+
+$$
+ts = \frac{\hat\beta_j - \beta_j}{\mathrm{se}(\hat\beta_j)} \sim N(0,1) 
+$$
+:::
+
+::: {.column width="50%"}
+### $\phi$ unknown
+
+$$
+ts = \frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p}
+$$
+:::
+:::::
+
+
+## Decision Making: P-Value
+
+**Two-Sided Test**
+
+$$
+P(T > |ts|) = \int^\infty_{ts} f(t) dt + \int_{-\infty}^{ts} f(t) dt
+$$
+
+**One-Sided Test**
+$$
+P(T > ts) = \int^\infty_{ts} f(t) dt
+$$
+
+OR
+$$
+P(T < ts) = \int_{-\infty}^{ts} f(t) dt
+$$
+
+
+## Rejection Region
+
+```{r}
+#| code-fold: true
+#| fig-alt: "A normal distribution demonstrating the rejection regions."
+#| fig-align: center
+
+alpha <- 0.05
+
+# Critical values for two-tailed test
+z_critical <- qnorm(1 - alpha / 2)
+
+# Create data for the normal curve
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+df <- data.frame(x = x, y = y)
+
+ggplot(df, aes(x = x, y = y)) +
+  geom_line(color = "deepskyblue", linewidth = 1) 
+```
+
+## Decision Making: P-Value
+
+The p-value approach is one of the most common methods to report significant results. It is easier to interpret the p-value because it provides the probability of observing our test statistics, or something more extreme, given that the null hypothesis is true.
+
+::: fragment
+**If** $p < \alpha$, then you reject $H_0$; otherwise, you will fail to reject $H_0$.
+:::
+
+## Significance Level $\alpha$
+
+The significance level $\alpha$ is the probability you will reject the null hypothesis given that it was true.
+
+::: fragment
+In other words, $\alpha$ is the error rate that a researcher controls.
+:::
+
+::: fragment
+Typically, we want this error rate to be small ($\alpha = 0.05$).
+:::
+
+# Model Inference
+
+## Model Inference
+
+**Model Inference** is the act of conducting a hypothesis test on the entire model (line). We do this to determine if the fully explained model is **significantly** different from the smaller models or average.
+
+::: fragment
+Model inference determines if more variation is explained by including more predictors.
+:::
+
+## Model inference
+
+-   We will conduct model inference to determine if different models are better at explaining variation. Both Linear and Logistic Regression have techniques to test different models.
+
+
+## Full and Reduced Model
+
+::::: columns
+::: column
+### Full Model
+
+$$
+Y =  \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p
+$$
+:::
+
+::: column
+### Reduced Model
+
+$$
+Y =  \beta_0 + \beta_1 X_1
+$$
+:::
+:::::
+
+## Null and Alt Hypothesis
+
+$H_0$: The fully-parameterized model does not explain more variation than the reduced model.
+
+$H_a$: The fully-parameterized model does explain more variation than the reduced model.
+
+# Confidence Intervals
+
+## Confidence Intervals
+
+-   A confidence interval gives a **range of plausible values** that captures population parameter.
+-   It reflects **uncertainty** in point estimates from sample data.
+
+::: notes
+Introduce confidence intervals as the natural next step after understanding sampling variability and standard error. Emphasize that point estimates are useful, but intervals give a more complete picture.
+:::
+
+## CI: Formula
+
+$$
+PE \pm CV \times SE
+$$
+
+- $PE$: Point estimate ($\hat \beta$)
+- $CV$: Critical Value $P(X > CV) + P(X < -CV) = \alpha$
+- $SE$: Standard Error of $\hat \beta$
+
+
+
+::: fragment
+
+$$
+(LB = PE - CV \times SE, UB = PE + CV \times SE)
+$$
+
+:::
+
+## Interpretation
+
+> "We are 95% confident that the true mean lies between A and B."
+
+-   This does **not** mean there's a 95% chance the mean is in that interval.
+-   It means: if we repeated the sampling process many times, **95% of the intervals would contain the true value**.
+
+::: notes
+This is one of the most common misconceptions. Clarify that the confidence is in the *method*, not any one interval.
+:::
+
+## CI Plot
+
+```{r}
+#| echo: false
+library(ggplot2)
+library(dplyr)
+
+set.seed(123)
+
+# --- Simulation settings ---
+n_sims <- 100       # number of samples
+n <- 30             # sample size
+true_mean <- 50     # true population mean
+sd_pop <- 10        # population SD
+alpha <- 0.05       # for 95% CI
+
+# --- Run the simulations ---
+results <- replicate(n_sims, {
+  sample_vals <- rnorm(n, mean = true_mean, sd = sd_pop)
+  xbar <- mean(sample_vals)
+  se <- sd(sample_vals)/sqrt(n)
+  
+  # CI using t-distribution
+  t_crit <- qt(1 - alpha/2, df = n - 1)
+  lower <- xbar - t_crit * se
+  upper <- xbar + t_crit * se
+  
+  contains <- (lower <= true_mean & upper >= true_mean)
+  c(xbar = xbar, lower = lower, upper = upper, contains = contains)
+})
+
+df <- as.data.frame(t(results))
+df$sim <- 1:n_sims
+df$contains <- as.logical(df$contains)
+
+# --- Plot ---
+ggplot(df, aes(x = sim, y = xbar)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper, color = contains), width = 0.2) +
+  geom_point(aes(color = contains)) +
+  geom_hline(yintercept = true_mean, linetype = "dashed", color = "red") +
+  scale_color_manual(values = c("blue", "forestgreen"),
+                     labels = c("CI misses true mean", "CI captures true mean")) +
+  labs(
+    x = "Simulation number",
+    y = "Mean estimate",
+    color = "Interval outcome"
+  ) +
+  theme_minimal()
+
+```
+
+
+## Factors Affecting CI Width
+
+-   Sample size ($n$): larger $n$ → narrower CI\
+-   Standard deviation ($s$ or $\sigma$): more variability → wider CI\
+-   Confidence level: higher confidence → wider CI
+
+::: notes
+Use this to summarize what controls how “precise” our confidence interval is. Give examples of each.
+:::
+
+## Decision Making: Confidence Interval Approach
+
+The confidence interval approach can evaluate a hypothesis test where the alternative hypothesis is $\beta\ne\beta^*$. The confidence interval approach will result in a lower and upper bound denoted as: $(LB, UB)$.
+
+::: fragment
+**If** $\beta^*$ is in $(LB, UB)$, then you fail to reject $H_0$. If $\beta^*$ is not in $(LB,UB)$, then you reject $H_0$.
+:::
+
+# Power Analysis
+
+## What is Statistical Power
+
+-   **Statistical Power** is the probability of correctly rejecting a false null hypothesis.
+-   In other words, it's the chance of **detecting a real effect** when it exists.
+
+## Why Power Matters
+
+-   Low power → high risk of **Type II Error** (false negatives)
+-   High power → better chance of finding true effects
+-   Common threshold: **80% power**
+
+## Errors in Inference
+
+|         |                               |                         |
+|:--------|:------------------------------|:------------------------|
+| Type I  | Reject $H_0$ when true        | False positive          |
+| Type II | Don't reject $H_0$ when false | False negative          |
+| Power   | $1 - P(\text{Type II})$       | Detecting a true effect |
+
+::: notes
+Power is often overlooked. It's about how sensitive the test is to real effects. Larger samples increase power.
+:::
+
+## Type I Error (False Positive)
+
+-   **Rejecting** $H_0$ when it is actually true
+-   Probability = $\alpha$ (significance level)
+
+::: notes
+Type I errors happen when we detect an effect that doesn't really exist. This is controlled by our chosen alpha level.
+:::
+
+## Type II Error (False Negative)
+
+-   **Failing to reject** $H_0$ when it is actually false
+-   Probability = $\beta$
+-   Power = $1 - \beta$
+
+::: notes
+Type II errors are often due to small sample sizes or high variability. Power analysis helps us plan to avoid these.
+:::
+
+## Balancing Errors
+
+-   Lowering $\alpha$ reduces Type I errors, but **increases** risk of Type II errors.
+-   To reduce both:
+    -   Increase sample size
+    -   Use more appropriate statistical tests
+
+::: notes
+There's a trade-off between these errors. We can't eliminate both, but we can **manage** the risk based on the consequences of each type.
+:::
+
+## What Affects Power?
+
+1.  **Effect Size**
+    -   Bigger effects are easier to detect
+2.  **Sample Size (**$n$)
+    -   Larger samples reduce standard error
+3.  **Significance Level (**$\alpha$)
+    -   Higher $\alpha$ increases power (but riskier!)
+4.  **Variability**
+    -   Less noise in data = better power
+
+## Boosting Power
+
+-   Power = Probability of rejecting $H_0$ when it's false
+-   Helps avoid **Type II Errors**
+-   Driven by:
+    -   Sample size
+    -   Effect size
+    -   $\alpha$
+    -   Variability
+-   Aim for **80% or higher**
+
+# Model Conditions
+
+## Model Conditions
+
+When we are conducting inference with regression models, we will have to check the following conditions:
+
+-   Linearity
+-   Independence
+-   Probability Assumption
+-   Equal Variances
+-   Multicollinearity (for Multi-Regression)
+
+## Linearity
+
+There must be a linear relationship between both the outcome variable (y) and a set of predictors ($x_1$, $x_2$, ...).
+
+## Independence
+
+The data points must not influence each other.
+
+## Probability Assumption
+
+The model errors (also known as residuals) must follow a specified distribution.
+
+-   Linear Regression: Normal Distribution
+
+-   Logistic Regression: Binomial Distribution
+
+## Equal Variances
+
+The variability of the data points must be the same for all predictor values.
+
+## Residuals
+
+Residuals are the errors between the observed value and the estimated model. Common residuals include
+
+-   Raw Residual
+
+-   Standardized Residuals
+
+-   Jackknife (studentized) Residuals
+
+-   Deviance Residuals
+
+-   Quantized Residuals
+
+## Influential Measurements
+
+Influential measures are statistics that determine how much a data point affects the model. Common influential measures are
+
+-   Leverages
+
+-   Cook's Distance
+
+## Raw Residuals
+
+$$
+\hat r_i = y_i - \hat y_i
+$$
+
+## Residual Analysis
+
+A residual analysis is used to test the assumptions of linear regression.
+
+## QQ Plot
+
+A qq (quantile-quantile) plot will plot the estimated quantiles of the residuals against the theoretical quantiles from a normal distribution function. If the points from the qq-plot lie on the $y=x$ line, it is said that the residuals follow a normal distribution.
+
+## Residual vs Fitted Plot
+
+This plot allows you to assess the linearity, constant variance, and identify potential outliers. Create a scatter plot between the fitted values (x-axis)
+
+## Penguins: Example
+
+```{r}
+#| code-fold: show
+m3 <- lm(body_mass ~   island + species + flipper_len,
+          penguins)
+#tidy(m3)
+
+dfm3 <- resid_df(m3)
+#head(dfm3)
+```
+
+```{r}
+#| code-fold: show
+ggplot(dfm3, aes(fitted, resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, col = "red")
+
+ggplot(dfm3, aes(sample = resid)) + 
+  stat_qq() +
+  stat_qq_line() 
+```
+
+## Heart: Example
+
+```{r}
+#| code-fold: show
+m4 <- glm(disease ~ trestbps + cp, heart_disease, family = binomial())
+#tidy(m4)
+
+dfm4 <- resid_df(m4)
+#head(dfm4)
+```
+
+```{r}
+#| code-fold: show
+ggplot(dfm4, aes(fitted, quantile_resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0, col = "red")
+
+ggplot(dfm4, aes(sample = quantile_resid)) + 
+  stat_qq() +
+  stat_qq_line() 
+```

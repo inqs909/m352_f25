@@ -21,8 +21,12 @@
     <lastmod>2025-09-12T02:39:36.902Z</lastmod>
   </url>
   <url>
+    <loc>m352.inqs.info/posts/week_14.html</loc>
+    <lastmod>2025-11-26T00:00:19.588Z</lastmod>
+  </url>
+  <url>
     <loc>m352.inqs.info/posts/week_12.html</loc>
-    <lastmod>2025-11-12T18:48:59.463Z</lastmod>
+    <lastmod>2025-11-25T23:58:27.968Z</lastmod>
   </url>
   <url>
     <loc>m352.inqs.info/posts/week_11.html</loc>
@@ -109,88 +113,92 @@
     <lastmod>2025-08-28T20:21:06.550Z</lastmod>
   </url>
   <url>
-    <loc>m352.inqs.info/lectures/13b.html</loc>
-    <lastmod>2025-11-20T21:37:08.876Z</lastmod>
+    <loc>m352.inqs.info/lectures/14.html</loc>
+    <lastmod>2025-11-25T22:34:09.151Z</lastmod>
   </url>
   <url>
-    <loc>m352.inqs.info/lectures/12b.html</loc>
-    <lastmod>2025-11-07T08:12:17.750Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/lectures/11b.html</loc>
-    <lastmod>2025-11-06T16:33:13.873Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/lectures/10b.html</loc>
-    <lastmod>2025-10-30T17:25:04.111Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/index.html</loc>
-    <lastmod>2025-08-22T05:40:12.587Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw4.html</loc>
-    <lastmod>2025-10-25T18:38:51.207Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw2.html</loc>
-    <lastmod>2025-10-25T18:39:32.522Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw1.html</loc>
-    <lastmod>2025-09-22T00:04:53.290Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hw.html</loc>
-    <lastmod>2025-08-22T05:22:04.037Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/exc/exc5.html</loc>
-    <lastmod>2025-08-25T07:19:08.856Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/exc/exc3.html</loc>
-    <lastmod>2025-09-11T20:16:16.758Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/exc/exc1.html</loc>
-    <lastmod>2025-09-11T20:20:11.616Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/ec.html</loc>
-    <lastmod>2023-05-10T19:28:07.000Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/exc/exc4.html</loc>
-    <lastmod>2025-09-11T20:16:16.758Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw0.html</loc>
-    <lastmod>2025-08-27T22:12:31.865Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw3.html</loc>
-    <lastmod>2025-09-22T00:09:45.797Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/hws/hw5.html</loc>
-    <lastmod>2025-10-25T22:55:44.943Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/lectures/10a.html</loc>
-    <lastmod>2025-10-30T04:53:55.476Z</lastmod>
-  </url>
-  <url>
-    <loc>m352.inqs.info/lectures/11a.html</loc>
-    <lastmod>2025-09-22T03:53:27.589Z</lastmod>
+    <loc>m352.inqs.info/lectures/13a.html</loc>
+    <lastmod>2025-11-18T08:16:58.834Z</lastmod>
   </url>
   <url>
     <loc>m352.inqs.info/lectures/12a.html</loc>
     <lastmod>2025-09-22T03:54:39.437Z</lastmod>
   </url>
   <url>
-    <loc>m352.inqs.info/lectures/13a.html</loc>
-    <lastmod>2025-11-18T08:16:58.834Z</lastmod>
+    <loc>m352.inqs.info/lectures/11a.html</loc>
+    <lastmod>2025-09-22T03:53:27.589Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/lectures/10a.html</loc>
+    <lastmod>2025-10-30T04:53:55.476Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw5.html</loc>
+    <lastmod>2025-10-25T22:55:44.943Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw3.html</loc>
+    <lastmod>2025-09-22T00:09:45.797Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw0.html</loc>
+    <lastmod>2025-08-27T22:12:31.865Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/exc/exc4.html</loc>
+    <lastmod>2025-09-11T20:16:16.758Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/ec.html</loc>
+    <lastmod>2023-05-10T19:28:07.000Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/exc/exc1.html</loc>
+    <lastmod>2025-09-11T20:20:11.616Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/exc/exc3.html</loc>
+    <lastmod>2025-09-11T20:16:16.758Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/exc/exc5.html</loc>
+    <lastmod>2025-08-25T07:19:08.856Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hw.html</loc>
+    <lastmod>2025-08-22T05:22:04.037Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw1.html</loc>
+    <lastmod>2025-09-22T00:04:53.290Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw2.html</loc>
+    <lastmod>2025-10-25T18:39:32.522Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/hws/hw4.html</loc>
+    <lastmod>2025-10-25T18:38:51.207Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/index.html</loc>
+    <lastmod>2025-08-22T05:40:12.587Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/lectures/10b.html</loc>
+    <lastmod>2025-10-30T17:25:04.111Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/lectures/11b.html</loc>
+    <lastmod>2025-11-06T16:33:13.873Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/lectures/12b.html</loc>
+    <lastmod>2025-11-07T08:12:17.750Z</lastmod>
+  </url>
+  <url>
+    <loc>m352.inqs.info/lectures/13b.html</loc>
+    <lastmod>2025-11-20T21:37:08.876Z</lastmod>
   </url>
   <url>
     <loc>m352.inqs.info/lectures/1a.html</loc>
@@ -278,7 +286,7 @@
   </url>
   <url>
     <loc>m352.inqs.info/posts/week_13.html</loc>
-    <lastmod>2025-11-18T17:17:49.505Z</lastmod>
+    <lastmod>2025-11-25T23:59:36.472Z</lastmod>
   </url>
   <url>
     <loc>m352.inqs.info/posts/week_2.html</loc>

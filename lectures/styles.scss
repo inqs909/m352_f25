@@ -46,6 +46,20 @@ section.has-light-background {
   }
 }
 
+b, strong {
+  font-weight: 700; /* Or 'normal', 'lighter', 'bolder', or a numerical value */
+  color: #AA4A44; /* Example: change color as well */
+  }
+
+.slides h2 {
+  font-size: 1.25em;
+}
+
+.columns h3 {
+  color: #AA4A44;
+  font-size: .8em;
+}
+
 .reveal .slides section .subtitle {
   color: #AA4A44;
   font-size: 1.5em;
