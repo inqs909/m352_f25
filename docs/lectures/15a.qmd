@@ -67,6 +67,7 @@ $$
 ## Critical Value
 
 A **critical value** is a cutoff point on a probability distribution used to:
+
 - Construct confidence intervals  
 - Make decisions in hypothesis testing  
 
@@ -156,6 +157,7 @@ For a confidence level $1 - \alpha$:
 - **t-critical value**: $t_{\alpha/2, df}$
 
 Interpretation:
+
 - $\alpha$ = total probability in both tails
 - $\alpha/2$ = probability in one tail
 
@@ -223,8 +225,8 @@ ggplot(df, aes(x = sim, y = xbar)) +
 
 ## Factors Affecting CI Width
 
--   Sample size ($n$): larger $n$ → narrower CI\
--   Standard deviation ($s$ or $\sigma$): more variability → wider CI\
+-   Sample size ($n$): larger $n$ → narrower CI
+-   Standard deviation ($s$ or $\sigma$): more variability → wider CI
 -   Confidence level: higher confidence → wider CI
 
 ::: notes

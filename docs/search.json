@@ -3742,7 +3742,7 @@
     "href": "lectures/15a.html#critical-value",
     "title": "Confidence Intervals",
     "section": "Critical Value",
-    "text": "Critical Value\nA critical value is a cutoff point on a probability distribution used to: - Construct confidence intervals\n- Make decisions in hypothesis testing\n\nIt corresponds to a chosen significance or confidence level."
+    "text": "Critical Value\nA critical value is a cutoff point on a probability distribution used to:\n\nConstruct confidence intervals\n\nMake decisions in hypothesis testing\n\n\nIt corresponds to a chosen significance or confidence level."
   },
   {
     "objectID": "lectures/15a.html#distributions-used-for-critical-values",
@@ -3770,7 +3770,7 @@
     "href": "lectures/15a.html#critical-value-notation",
     "title": "Confidence Intervals",
     "section": "Critical Value Notation",
-    "text": "Critical Value Notation\nFor a confidence level \\(1 - \\alpha\\):\n\nZ-critical value: \\(z_{\\alpha/2}\\)\nt-critical value: \\(t_{\\alpha/2, df}\\)\n\nInterpretation: - \\(\\alpha\\) = total probability in both tails - \\(\\alpha/2\\) = probability in one tail"
+    "text": "Critical Value Notation\nFor a confidence level \\(1 - \\alpha\\):\n\nZ-critical value: \\(z_{\\alpha/2}\\)\nt-critical value: \\(t_{\\alpha/2, df}\\)\n\nInterpretation:\n\n\\(\\alpha\\) = total probability in both tails\n\\(\\alpha/2\\) = probability in one tail"
   },
   {
     "objectID": "lectures/15a.html#interpretation",
@@ -3791,7 +3791,7 @@
     "href": "lectures/15a.html#factors-affecting-ci-width",
     "title": "Confidence Intervals",
     "section": "Factors Affecting CI Width",
-    "text": "Factors Affecting CI Width\n\nSample size (\\(n\\)): larger \\(n\\) → narrower CI\n\nStandard deviation (\\(s\\) or \\(\\sigma\\)): more variability → wider CI\n\nConfidence level: higher confidence → wider CI\n\n\nUse this to summarize what controls how “precise” our confidence interval is. Give examples of each."
+    "text": "Factors Affecting CI Width\n\nSample size (\\(n\\)): larger \\(n\\) → narrower CI\nStandard deviation (\\(s\\) or \\(\\sigma\\)): more variability → wider CI\nConfidence level: higher confidence → wider CI\n\n\nUse this to summarize what controls how “precise” our confidence interval is. Give examples of each."
   },
   {
     "objectID": "lectures/15a.html#ci-mean-1",
