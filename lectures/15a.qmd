@@ -1,0 +1,321 @@
+---
+title: "Confidence Intervals"
+subtitle: "Linear and Generalized Linear Models"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: true
+    message: false
+    warnings: false
+    comment: "#>" 
+
+
+revealjs-plugins:
+  - pointer
+  - verticator
+  
+filters: 
+  - reveal-header
+  - code-fullscreen
+  - reveal-auto-agenda
+
+editor: source
+---
+
+
+# Confidence Intervals
+
+## Confidence Intervals
+
+-   A confidence interval gives a **range of plausible values** that captures population parameter.
+-   It reflects **uncertainty** in point estimates from sample data.
+
+::: notes
+Introduce confidence intervals as the natural next step after understanding sampling variability and standard error. Emphasize that point estimates are useful, but intervals give a more complete picture.
+:::
+
+## CI: Formula
+
+$$
+PE \pm CV \times SE
+$$
+
+- $PE$: Point estimate ($\hat \beta$)
+- $CV$: Critical Value $P(X > CV) + P(X < -CV) = \alpha$
+- $SE$: Standard Error of $\hat \beta$
+
+
+
+::: fragment
+
+$$
+(LB = PE - CV \times SE, UB = PE + CV \times SE)
+$$
+
+:::
+
+## Critical Value
+
+A **critical value** is a cutoff point on a probability distribution used to:
+- Construct confidence intervals  
+- Make decisions in hypothesis testing  
+
+::: fragment
+It corresponds to a chosen significance or confidence level.
+:::
+
+
+
+
+## Distributions Used for Critical Values
+
+1. **Z-distribution** (standard normal)
+   - Used when population σ is known or n is large.
+2. **t-distribution**
+   - Used when population σ is unknown (most common).
+3. **χ² distribution**
+   - For variance tests and CI for σ².
+
+
+## Obtaining Critical Values
+
+
+```{r}
+# Load library
+library(ggplot2)
+
+# Critical values for 95% CI
+alpha <- 0.05
+z_crit <- qnorm(1 - alpha/2)  # 1.96
+
+# Create data frame for the normal curve
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+df <- data.frame(x, y)
+
+# Regions to shade
+left_region  <- subset(df, x <= -z_crit)
+right_region <- subset(df, x >= z_crit)
+
+# Plot
+ggplot(df, aes(x, y)) +
+  geom_line(size = 1.2) +
+  theme_bw()
+```
+
+## Obtaining Critical Values
+
+
+```{r}
+# Load library
+
+# Critical values for 95% CI
+# Create data frame for the normal curve
+x <- seq(-4, 4, length = 1000)
+y <- dnorm(x)
+
+df <- data.frame(x, y)
+
+# Regions to shade
+left_region  <- subset(df, x <= -z_crit)
+right_region <- subset(df, x >= z_crit)
+
+# Plot
+ggplot(df, aes(x, y)) +
+  geom_line(size = 1.2) +
+  
+  # Shade the critical regions
+  geom_area(data = left_region, aes(x, y), fill = "red", alpha = 0.4) +
+  geom_area(data = right_region, aes(x, y), fill = "red", alpha = 0.4) +
+  
+  # Vertical lines at critical values
+  geom_vline(xintercept = c(-z_crit, z_crit),
+             linetype = "dashed", size = 1, color = "red") +
+  
+  # Annotate
+  labs(x = "Z-score", y = "Density") +
+  theme_bw(base_size = 15)
+
+```
+
+## Critical Value Notation
+For a confidence level $1 - \alpha$:
+
+- **Z-critical value**: $z_{\alpha/2}$
+- **t-critical value**: $t_{\alpha/2, df}$
+
+Interpretation:
+- $\alpha$ = total probability in both tails
+- $\alpha/2$ = probability in one tail
+
+
+## Interpretation
+
+> "We are 95% confident that the true mean lies between A and B."
+
+-   This does **not** mean there's a 95% chance the mean is in that interval.
+-   It means: if we repeated the sampling process many times, **95% of the intervals would contain the true value**.
+
+::: notes
+This is one of the most common misconceptions. Clarify that the confidence is in the *method*, not any one interval.
+:::
+
+## CI Plot
+
+```{r}
+#| echo: false
+library(ggplot2)
+library(dplyr)
+
+# --- Simulation settings ---
+n_sims <- 50        # number of samples
+n <- 30             # sample size
+true_mean <- 50     # true population mean
+sd_pop <- 10        # population SD
+alpha <- 0.05       # for 95% CI
+
+# --- Run the simulations ---
+results <- replicate(n_sims, {
+  sample_vals <- rnorm(n, mean = true_mean, sd = sd_pop)
+  xbar <- mean(sample_vals)
+  se <- sd(sample_vals)/sqrt(n)
+  
+  # CI using t-distribution
+  t_crit <- qt(1 - alpha/2, df = n - 1)
+  lower <- xbar - t_crit * se
+  upper <- xbar + t_crit * se
+  
+  contains <- (lower <= true_mean & upper >= true_mean)
+  c(xbar = xbar, lower = lower, upper = upper, contains = contains)
+})
+
+df <- as.data.frame(t(results))
+df$sim <- 1:n_sims
+df$contains <- as.logical(df$contains)
+
+# --- Plot ---
+ggplot(df, aes(x = sim, y = xbar)) +
+  geom_errorbar(aes(ymin = lower, ymax = upper, color = contains), width = 0.2) +
+  geom_point(aes(color = contains)) +
+  geom_hline(yintercept = true_mean, linetype = "dashed", color = "red") +
+  scale_color_manual(values = c("blue", "forestgreen"),
+                     labels = c("CI misses true mean", "CI captures true mean")) +
+  labs(
+    x = "Simulation number",
+    y = "Mean estimate",
+    color = "Interval outcome"
+  ) +
+  theme_minimal()
+
+```
+
+
+## Factors Affecting CI Width
+
+-   Sample size ($n$): larger $n$ → narrower CI\
+-   Standard deviation ($s$ or $\sigma$): more variability → wider CI\
+-   Confidence level: higher confidence → wider CI
+
+::: notes
+Use this to summarize what controls how “precise” our confidence interval is. Give examples of each.
+:::
+
+
+
+# CI: Mean
+
+## CI: Mean
+
+- For a mean, it represents uncertainty due to sampling.
+- A 95% CI means: *If we repeated sampling many times, 95% of those intervals would contain the true mean.*
+
+## CI: Formula
+
+A (1 – α) confidence interval is:
+
+$$
+\bar{x} \pm Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}
+$$
+
+## CI: Formula
+
+$$
+\bar{x} \pm t_{\alpha/2; df} \cdot \frac{s}{\sqrt{n}}
+$$
+
+
+# CI: Variance
+
+## CI: Variance
+
+We want a confidence interval for the population variance $\sigma^2$.
+
+## Distribution
+
+$$
+\frac{(n-1)s^2}{\sigma^2} \sim \chi^2_{(n-1)}
+$$
+
+This allows us to form a confidence interval for $\sigma^2$ (variance) and then take the square root for $\sigma$.
+
+## Formula
+
+A (1–α) confidence interval is:
+
+$$
+\left(
+\frac{(n-1)s^2}{\chi^2_{\,\alpha/2,\;df}},\ 
+\frac{(n-1)s^2}{\chi^2_{\,1-\alpha/2,\;df}}
+\right)
+$$
+
+
+# CI: Regression Coefficients
+
+## Sampling Distributions of $\hat \beta_j$
+
+::::: columns
+::: {.column width="50%"}
+### $\phi$ known
+
+$$
+\frac{\hat\beta_j - \beta_j}{\mathrm{se}(\hat\beta_j)} \sim N(0,1)
+$$
+:::
+
+::: {.column width="50%"}
+### $\phi$ unknown
+
+$$
+\frac{\hat\beta_j-\beta_j}{\mathrm{se}(\hat\beta_j)} \sim t_{n-p}
+$$
+:::
+:::::
+
+## CI: $\beta_j$
+
+$$
+\hat \beta_j \pm CV \times SE
+$$
+
+
+# Hypothesis Testing
+
+## Hypothesis Testing: Confidence Interval Approach
+
+The confidence interval approach can evaluate a hypothesis test where the alternative hypothesis is $\beta\ne\beta^*$. The confidence interval approach will result in a lower and upper bound denoted as: $(LB, UB)$.
+
+## Decision Making
+
+**If** $\beta^*$ is in $(LB, UB)$, then you fail to reject $H_0$. If $\beta^*$ is not in $(LB,UB)$, then you reject $H_0$.

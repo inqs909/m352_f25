@@ -1,0 +1,22 @@
+---
+title: "Week 15"
+date: 12-01-25
+description: This week, we will discuss confidence intervals.
+editor: source
+draft: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Learning Outcomes
+
+-   Confidence Intervals
+
+## Resources
+
+### First Lecture
+
+| Slides | Videos | 
+|-------------|-----------------------------------------------|
+| [Slides]() | [Video]() |
+
