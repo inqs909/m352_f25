@@ -18,5 +18,5 @@ editor_options:
 
 | Slides | Videos | 
 |-------------|-----------------------------------------------|
-| [Slides]() | [Video]() |
+| [Slides](https://m352.inqs.info/lectures/15a) | [Video]() |
 
