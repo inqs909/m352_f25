@@ -3868,14 +3868,21 @@
     "href": "lectures/15b.html#online-course-evaluation-survey",
     "title": "Statistics",
     "section": "Online Course Evaluation Survey",
-    "text": "Online Course Evaluation Survey"
+    "text": "Online Course Evaluation Survey\nPlease fill out the course eval survey from your email."
+  },
+  {
+    "objectID": "lectures/15b.html#csuci-rebranding-survey",
+    "href": "lectures/15b.html#csuci-rebranding-survey",
+    "title": "Statistics",
+    "section": "CSUCI Rebranding Survey",
+    "text": "CSUCI Rebranding Survey\nVoice Your Opinion\nCI Rebranding\nSurvey"
   },
   {
     "objectID": "lectures/15b.html#traditional-statistics",
     "href": "lectures/15b.html#traditional-statistics",
     "title": "Statistics",
     "section": "Traditional Statistics",
-    "text": "Traditional Statistics\nTraditional Statistics methods can conducted using either linear or logistic regression.\nVisit Here for more information."
+    "text": "Traditional Statistics\nTraditional Statistics methods can conducted using either linear or generalized linear models.\nVisit Here for more information."
   },
   {
     "objectID": "lectures/15b.html#what-is-statistics",

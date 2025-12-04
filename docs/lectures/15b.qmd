@@ -35,11 +35,23 @@ editor: source
 
 ## Online Course Evaluation Survey
 
+Please fill out the course eval survey from your email.
+
+## CSUCI Rebranding Survey
+
+**Voice Your Opinion**
+
+[CI Rebranding](https://www.youtube.com/watch?v=pBnOOJp-dfw)
+
+[Survey](https://csuci.qualtrics.com/jfe/form/SV_dgkQ7dqHvde4d4a)
+
+
+
 # Statistics
 
 ## Traditional Statistics
 
-Traditional Statistics methods can conducted using either linear or logistic regression.
+Traditional Statistics methods can conducted using either linear or generalized linear models.
 
 Visit [Here](https://lindeloev.github.io/tests-as-linear/) for more information.
 
