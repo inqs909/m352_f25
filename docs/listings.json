@@ -1,25 +1,5 @@
 [
   {
-    "listing": "/ec.html",
-    "items": [
-      "/exc/exc1.html",
-      "/exc/exc3.html",
-      "/exc/exc4.html",
-      "/exc/exc5.html"
-    ]
-  },
-  {
-    "listing": "/hw.html",
-    "items": [
-      "/hws/hw5.html",
-      "/hws/hw4.html",
-      "/hws/hw3.html",
-      "/hws/hw2.html",
-      "/hws/hw1.html",
-      "/hws/hw0.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/week_15.html",
@@ -37,6 +17,26 @@
       "/posts/week_3.html",
       "/posts/week_2.html",
       "/posts/week_1.html"
+    ]
+  },
+  {
+    "listing": "/hw.html",
+    "items": [
+      "/hws/hw5.html",
+      "/hws/hw4.html",
+      "/hws/hw3.html",
+      "/hws/hw2.html",
+      "/hws/hw1.html",
+      "/hws/hw0.html"
+    ]
+  },
+  {
+    "listing": "/ec.html",
+    "items": [
+      "/exc/exc1.html",
+      "/exc/exc3.html",
+      "/exc/exc4.html",
+      "/exc/exc5.html"
     ]
   },
   {

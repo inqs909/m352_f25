@@ -1,0 +1,281 @@
+---
+title: "Statistics"
+format:
+  revealjs:
+    scrollable: true
+    navigation-mode: vertical
+    controls-layout: bottom-right
+    controls-tutorial: true
+    incremental: false 
+    chalkboard:
+      theme: whiteboard
+      chalk-width: 4
+knitr:
+  opts_chunk: 
+    echo: false
+    eval: true
+    message: false
+    warnings: false
+    comment: "#>" 
+
+
+revealjs-plugins:
+  - pointer
+  - verticator
+  
+filters: 
+  - reveal-header
+  - code-fullscreen
+  - reveal-auto-agenda
+
+editor: source
+---
+
+# Surveys
+
+## Online Course Evaluation Survey
+
+# Statistics
+
+## Traditional Statistics
+
+Traditional Statistics methods can conducted using either linear or logistic regression.
+
+Visit [Here](https://lindeloev.github.io/tests-as-linear/) for more information.
+
+## What is Statistics? 
+
+It is the study of variation and randomness!
+
+
+## What's the goal of Statistics?
+
+::: {.fragment style="font-size: 2em; color: red;"}
+**INFERENCE**
+:::
+
+::: fragment
+Use our sample data to understand the larger population.
+:::
+
+::: fragment
+The data will tell us how the population generally behaves.
+:::
+
+::: fragment
+The data will guide us in the differences in units.
+:::
+
+::: fragment
+Data will tell us if there is a signal or just noise.
+:::
+
+## Final Thoughts
+
+::: fragment
+When conducting a study, literature review and study design are as equally important as statistics.
+:::
+
+::: fragment
+If you don't see variability in the data, something is wrong.
+:::
+
+::: fragment
+Focus on consistency in the methodology, not consistency in data.
+:::
+
+::: fragment
+Understand that you can be wrong, and that is okay.
+:::
+
+::: fragment
+Don't let data influence the methodology during a study/experiment.
+:::
+
+
+## Statistics Mantra
+
+::: columns
+::: {.column width="50%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/GeorgeEPBox.jpg/400px-GeorgeEPBox.jpg){fig-alt="An image of George Box" fig-align="center" width="333"}
+:::
+
+::: {.column width="50%"}
+**All models are wrong,**
+
+**some are useful!**
+:::
+:::
+
+# Statistical Books
+
+## Introductory Statistics
+
+- [Introduction to Modern Statistics](https://openintro-ims.netlify.app/)
+
+- [OpenIntro Statistics](https://www.openintro.org/book/os/)
+
+## Probability Theory
+
+::: {.columns}
+::: {.column}
+
+### "Beginner Friendly"
+
+- [Probability for Data Science](https://probability4datascience.com/)
+
+- [Introduction to Probability](https://math.dartmouth.edu/~prob/prob/prob.pdf)
+
+- Modern Mathematical Statistics
+
+:::
+::: {.column}
+### Advanced 
+
+- A Probability Path
+    - Resnick
+
+- An Introduction to Probability and Statistics
+    - Rohatgi
+
+:::
+::: 
+
+## Mathematical Statistics
+
+::: {.columns}
+::: {.column}
+
+### "Beginner Friendly"
+
+- [Probability for Data Science](https://probability4datascience.com/)
+
+- [Introduction to Probability](https://math.dartmouth.edu/~prob/prob/prob.pdf)
+
+- Modern Mathematical Statistics
+
+:::
+::: {.column}
+### Advanced 
+
+-   Testing Statistical Hypotheses (4th Edition)
+
+    -   Lehmann and Romano
+
+-   Theory of Point Estimation
+
+    -   Lehmann and Casella
+
+-    Intro to Probability and Statistics
+    - Rohatgi
+
+:::
+::: 
+
+
+## Regression
+
+-   **Generalized Linear Models With Examples in R**
+
+    -   Dunn and Smyth
+
+-   Linear and Generalized Linear Mixed Models and Their Applications (2nd Edition)
+
+    -   Jiang and Nguyen
+
+-   Regression Modeling Strategies
+
+    -   Harrell
+
+-   Vector Generalized Linear and Additive Models
+
+    -   Yee
+
+
+## Bayesian
+
+-   [Bayes Rules](https://www.bayesrulesbook.com/)
+
+-   [Bayesian Data Analysis (3rd Edition)](https://sites.stat.columbia.edu/gelman/book/)
+
+-   Introduction to Bayesian Inference, Methods and Computation
+
+    -   Heard
+
+-   Applied Bayesian Statistics
+
+    -   Cowles
+
+-   **Bayesian Statistical Modeling with Stan, R, and Python**
+
+    -   Matsuura
+
+-   Bayesian Essentials in R
+
+    -   Marin and Robert
+
+
+## Survival Analysis
+
+-   Statistical Modelling of Survival Data with Random Effects
+
+    -   Ha, Jeong, and Lee
+
+-   Survival Analysis (3rd Edition)
+
+    -   Kleinbaum and Klein
+
+-   Applied Survival Analysis in R
+
+    -   Moore
+
+-   **Survival Analysis Techniques for Censored and Truncated Data (2nd Edition)**
+
+    -   Klein and Moeschberger
+
+
+## Machine Learning
+
+- [Deep Learning](https://www.deeplearningbook.org/)
+
+- [An Introduction to Statistical Learning (2nd Edition)](https://www.statlearning.com/)
+    -   James, Witten, Hastie and Tibshirani
+
+-   Elements of Statistical Learning
+
+    -   Hastie, Friedman, and Tibshirani
+
+# Data Science Classes
+
+## Data 308
+
+**Applied Statistical Models**
+
+- Offered in the Fall
+
+## Math 408
+
+**Machine Learning**
+
+- Offered in the Spring
+
+## Data 426
+
+**Statistical Computing**
+
+- Offered in the Fall
+
+## Math 448
+
+**Scientific Computing**
+
+- Offered in Spring Semester
+
+## Math 453
+
+**Mathematical Statistics**
+
+- Offered in Spring Semester
+
+
+
